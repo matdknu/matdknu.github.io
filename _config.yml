@@ -23,7 +23,7 @@ author:
   # Biographic information
   avatar           : "profile.jpg"
   name             : "Matías Deneken"
-  pronouns         : example: "él/he"  
+  pronouns         :  "él/he"  
   bio              : "Sociologist, MA in Sociology and MDS in Data Science"
   location         : "Chile"
   employer         : "CIIR & OLES "
