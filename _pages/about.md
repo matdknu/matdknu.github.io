@@ -7,5 +7,10 @@ redirect_from:
   - /about.html
 ---
 
+## About me
+
+Matías Deneken is socioligist, ma in sociologist and master in data science. 
+
+## Interess
 
 ======
