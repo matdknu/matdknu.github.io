@@ -9,7 +9,9 @@ redirect_from:
 
 ## About me
 
-My name is Matías Deneken, and I hold a degree in sociology and a master's in sociology from the Pontificia Universidad Católica de Chile (www.uc.cl). I am currently a candidate for a Master's in Data Science and Innovation at the Center for Data and Artificial Intelligence - UDEC (https://cdia.udec.cl). At present, I am interested in topics such as Natural Language Processing (NLP), Longitudinal Surveys, and Intergroup Relations.
+My name is Matías Deneken, and I hold a degree in sociology and a master's in sociology from the Pontificia Universidad Católica de Chile (www.uc.cl). I am currently a candidate for a Master's in Data Science and Innovation at the Center for Data and Artificial Intelligence - UDEC (https://cdia.udec.cl). 
+
+At present, I am interested in topics such as Natural Language Processing (NLP), Longitudinal Surveys, and Intergroup Relations.
 
 In the near future, I would like to pursue a Ph.D. in Social Psychology or Computational Social Sciences. Can you help me with some questions?
 
