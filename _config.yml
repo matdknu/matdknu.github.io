@@ -24,7 +24,7 @@ author:
   avatar           : "profile.jpg"
   name             : "Matías Deneken"
   pronouns         :  "él/he"  
-  bio              : "Sociologist, MA in Sociology and MDS in Data Science"
+  bio              : "Sociologist, MA in Sociology (UC) and MDS in Data Science (CDIA -  UDEC)"
   location         : "Chile"
   employer         : "CIIR & OLES "
   uri              : # URL
@@ -32,7 +32,7 @@ author:
 
   # Academic websites
   arxiv            : # URL - Update with the correct link to your profile
-  googlescholar    : "https://scholar.google.com/citations?user=PS_CX0AAAAAJ"
+  #googlescholar    : "https://scholar.google.com/citations?user=PS_CX0AAAAAJ"
   impactstory      : # URL
   orcid            : "http://orcid.org/yourorcidurl"
   semantic         : # URL
