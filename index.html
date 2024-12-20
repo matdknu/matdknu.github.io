@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>matdknu.github.io</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        header {
+            width: 100%;
+            text-align: center;
+            padding: 20px 0;
+            background-color: #333;
+            color: #fff;
+        }
+        main {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            max-width: 1200px;
+            margin: 20px;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+        .about {
+            flex: 1;
+            padding-right: 20px;
+        }
+        .about h1 {
+            margin-bottom: 10px;
+        }
+        .about p {
+            line-height: 1.6;
+        }
+        .photo {
+            flex: 0 0 auto;
+        }
+        .photo img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 50%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        nav {
+            display: flex;
+            gap: 10px;
+            margin-top: 20px;
+        }
+        nav a {
+            text-decoration: none;
+            padding: 10px 20px;
+            background-color: #333;
+            color: #fff;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        nav a:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to my personal page</h1>
+    </header>
+    <main>
+        <div class="about">
+            <h1>About Me</h1>
+            <p>Hi, I’m Matías, a sociologist and data scientist passionate about analyzing and visualizing complex data, especially in the context of social change and intercultural dynamics.</p>
+            <p>Feel free to explore my CV, ongoing projects, and more using the links below!</p>
+        </div>
+        <div class="photo">
+            <img src="path-to-your-photo.jpg" alt="Photo of Matías">
+        </div>
+    </main>
+    <nav>
+        <a href="/cv">CV</a>
+        <a href="/projects">Projects</a>
+        <a href="/contact">Contact</a>
+    </nav>
+</body>
+</html>
