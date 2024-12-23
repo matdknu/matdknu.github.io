@@ -1,0 +1,127 @@
+---
+title: "CV Matías Deneken"
+author: "Last upload 23/12/2024"
+format: html
+geometry: "left=0.4in, top=0.4in, right=0.4in, bottom=0.4in"
+fontsize: 10pt
+---
+
+### Información personal
+
+**Ubicación:** Santiago, Chile\
+**Teléfono:** +56942265426\
+**Email:** m.deneken\@alumni.uc.cl\
+**LinkedIn:** [linkedin.com/deneken](https://linkedin.com/deneken)
+
+------------------------------------------------------------------------
+
+## **Educación**
+
+-   **Magíster en Ciencia de Datos e Innovación**\
+    Centro de Datos e Inteligencia Artificial - Universidad de Concepción\
+    *2024 - 2025*\
+    **Financiamiento:** Premio Universidad de Concepción
+
+-   **Magíster en Sociología**\
+    Pontificia Universidad Católica de Chile\
+    *2022 - 2023*\
+    **Financiamiento:** Beca ANID - Magíster Nacional
+
+-   **Título en Sociología**\
+    Universidad de Concepción\
+    *2017 - 2021*
+
+------------------------------------------------------------------------
+
+## **Diplomas, cursos y pasantías**
+
+-   **Pasantía en Institute for Applied Computational Science (IACS)**\
+    School of Engineering and Applied Sciences - Harvard University\
+    *Jun. 2024*
+
+-   **Escuela de Verano en Métodos Mixtos (EVMM)**\
+    Instituto de Ciencia Política - Pontificia Universidad Católica de Chile\
+    *Ene. 2024*\
+    [Certificado](https://www.dropbox.com/scl/fi/kxzhx4ghkrs8oumadra8k/Mat-as-Javier-Deneken-Uribe-_Constancia_EVMM2024.pdf?dl=0)
+
+-   **Postítulo en Procesamiento y Análisis Avanzado de Datos en R (96 horas)**\
+    Pontificia Universidad Católica de Chile\
+    *Mar. - Dic. 2021*\
+    [Certificado](https://www.dropbox.com/scl/fi/46vjn1gf4iglkpyznk16q/Certificado-Mat-as-Deneken-Diplomado-Procesamiento-2021-1.pdf?dl=0)
+
+------------------------------------------------------------------------
+
+## **Becas y reconocimientos**
+
+-   **Fulbright Doctoral Scholarship** *2024*\
+    [Documento oficial](https://s3.us-east-1.amazonaws.com/documentos.anid.cl/BecasChile/2024/Fulbright/ListadoSeleccionadosFulbright2024_YrgrH16BwLvWG2o11pQIKTC8jSboOG3.pdf)
+
+-   **Beca de Investigación para Escuela de Verano Métodos Mixtos 2024**\
+    Instituto de Ciencia Política UC *2023*\
+    [Certificado](https://www.dropbox.com/scl/fi/0tqbeo4usavaxxfua2woj/EVMM-2024-Beca.pdf?dl=0)
+
+-   **Beca ANID - Magíster Nacional N°22220115** *2022*\
+    [Certificado](https://www.dropbox.com/scl/fi/cz30dt31xhnm9yczosikk/Carta-ANID-Adjudicacion-Deneken-Mat-as.pdf?dl=0)
+
+-   **Premio Universidad de Concepción** *2022*\
+    [Certificado](https://www.dropbox.com/scl/fi/1f1trzfetmkia2aufiizb/Premio-Universidad-de-Concepci-n.PDF?dl=0)
+
+-   **Mejor estudiante carrera de Sociología**\
+    Universidad de Concepción, Cohorte 2017 - 2021 *2021*\
+    [Certificado](https://www.dropbox.com/s/cew3sx4dc2qfxkq/Premio%20Mejor%20Estudiante.pdf?dl=0)
+
+------------------------------------------------------------------------
+
+## **Experiencia laboral**
+
+### **Asistente de Investigación**
+
+**Observatorio de Violencia y Legitimidad Social (OLES)**\
+*Santiago, Chile, Ene. 2024 - Actualidad*
+
+-   Web scraping en medios nacionales para capturar discursos sobre Carabineros.\
+-   Coordinación técnica del Estudio Longitudinal de Percepciones de Seguridad y Policías en Chile, 2023-2025.\
+-   **Técnicas utilizadas:** Web scraping, NLP, efectos fijos, SEM.
+
+------------------------------------------------------------------------
+
+## **Publicaciones**
+
+### Revistas académicas
+
+-   **Deneken, M.** (2024). *La breve historia del Centro de Estudios de la Realidad Nacional, CEREN (1968–1973).*\
+    Revista Temas Sociológicos, 37.\
+    [Artículo](http://www.izquierdas.cl/images/pdf/2023/52/art28.pdf)
+
+-   **Maltrain, V., Cárdenas, J. C., Iglesias, M., Deneken, M.** (2023). *La “sociología camuflada” en ARCIS (1984-1991): Crítica, compromiso y militancia.*\
+    Revista Izquierdas, 52.
+
+### Libros
+
+-   **Deneken, M., Valenzuela, E.** (Eds.) (2025). *Radiografía del cambio intercultural en Chile: Dinámicas contemporáneas entre indígenas y no indígenas.*\
+    Editorial Catalonia.
+
+------------------------------------------------------------------------
+
+## **Conocimientos técnicos**
+
+-   **Procesamiento de datos:** R, Python, Stata, SQL\
+-   **Gestión de información:** Atlas.Ti, Mendeley, Zotero\
+-   **Procesadores de texto:** Microsoft Office, \LaTeX
+
+------------------------------------------------------------------------
+
+## **Idiomas**
+
+-   Español: Nativo\
+-   Inglés: Avanzado (C1)
+
+------------------------------------------------------------------------
+
+## **Referencias Académicas y Laborales**
+
+-   **Andrés Biehl:** Académico, Instituto de Sociología, Pontificia Universidad Católica de Chile\
+-   **Mauricio Bucca:** Académico, Instituto de Sociología, Pontificia Universidad Católica de Chile\
+-   **Mónica Gerber:** Académica, Facultad de Psicología, Universidad Diego Portales\
+-   **Alex Behn:** Académico, Escuela de Psicología, Pontificia Universidad Católica de Chile\
+-   **Roberto González:** Académico, Escuela de Psicología, Pontificia Universidad Católica de Chile
