@@ -6,53 +6,59 @@
     <title>ERROR 404</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #ffffff;
-            color: #333;
+            background-color: #0d0d0d;
+            color: #00ffcc;
             line-height: 1.6;
+            text-align: center;
         }
         header {
             display: flex;
             justify-content: space-between;
             align-items: center;
             padding: 20px;
-            background-color: #f4f4f9;
-            border-bottom: 1px solid #ddd;
+            background: linear-gradient(45deg, #002b36, #004d40);
+            box-shadow: 0px 0px 10px #00ffcc;
+        }
+        header h1 {
+            font-size: 1.8em;
+            text-shadow: 0 0 5px #00ffcc;
         }
         header nav a {
             margin-left: 15px;
             text-decoration: none;
-            color: #333;
+            color: #00ffcc;
             font-weight: bold;
+            transition: color 0.3s ease-in-out;
         }
         header nav a:hover {
-            color: #0073e6;
+            color: #ff00ff;
         }
         main {
             display: flex;
             justify-content: center;
             align-items: flex-start;
-            margin: 40px auto;
+            margin: 60px auto;
             max-width: 900px;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px #00ffcc;
         }
         .content {
             flex: 3;
             margin-right: 20px;
         }
         .content h1 {
-            font-size: 2.2em;
+            font-size: 2.5em;
             margin-bottom: 10px;
+            text-shadow: 0 0 8px #00ffcc;
         }
         .content p {
             margin-bottom: 20px;
-        }
-        .content h2 {
-            margin-top: 40px;
-            font-size: 1.5em;
-            border-bottom: 2px solid #ddd;
-            padding-bottom: 5px;
+            font-size: 1.2em;
         }
         .sidebar {
             flex: 1;
@@ -66,49 +72,42 @@
             object-fit: cover;
             border-radius: 50%;
             margin-bottom: 20px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 0 15px #00ffcc;
         }
         .sidebar a {
             margin: 5px 0;
             text-decoration: none;
             font-size: 1.2em;
-            color: #333;
+            color: #00ffcc;
+            transition: all 0.3s ease-in-out;
         }
         .sidebar a:hover {
-            color: #0073e6;
+            color: #ff00ff;
+            transform: scale(1.1);
         }
     </style>
 </head>
 <body>
     <header>
         <h1>Matías Deneken</h1>
- <nav>
+        <nav>
             <a href="#Publications">Publications</a>
             <a href="https://matdknu.github.io/cv/cv.html">CV</a>
-            <a href=". ">Projects</a>
-            <a href=". ">Miscellaneous</a>
-            
-
+            <a href=".">Projects</a>
+            <a href=".">Miscellaneous</a>
         </nav>
     </header>
     <main>
         <div class="content">
-            <h1>About Me </h1>
-            <p> Matías Deneken is a Sociologist, Master in Sociology and Master Candidate in Data Science and Innovation. He is currently working at the Centre for Intercultural and Indigenous Studies (www.ciir.cl) and at the Observatory of Social Violence and Legitimacy (www.oles.cl). His interests are in Computational Social Science, Intergroup Relations and Natural Language Processing (NLP). </p>
-            <p> He is a user of R and Python.  </p>
-            <p> Matías is a Fulbright Scholar, so he will start his PhD in the United States in 2027 at a university to be defined. His programme ideals are Social Psychology, Computational Social Science or Public Policy (with a focus on data science). Could you help him with a conversation about this?   </p>
-
+            <h1>About Me</h1>
+            <p>Matías Deneken is a Sociologist, Master in Sociology and Master Candidate in Data Science and Innovation.</p>
+            <p>He is currently working at the Centre for Intercultural and Indigenous Studies and at the Observatory of Social Violence and Legitimacy.</p>
+            <p>His interests are in Computational Social Science, Intergroup Relations, and Natural Language Processing (NLP).</p>
         </div>
         <div class="sidebar">
-            <img src="image/yo.jpg" alt="photo">
+            <img src="image/yo.jpeg" alt="photo">
             <a href="mailto:m.deneken@alumni.uc.cl">Email</a>
-            <a href="https://github.com/matdknu">
-    <svg height="24" width="24" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.54 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path>
-    </svg>
-    GitHub
-</a>
-
+            <a href="https://github.com/matdknu">GitHub</a>
             <a href="https://scholar.google.com">Google Scholar</a>
         </div>
     </main>
