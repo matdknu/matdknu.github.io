@@ -1,0 +1,15 @@
+{
+  "hash": "6f649e9d6871fea2a172293434825133",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Curriculum vitæ\"\ndescription: \"Vsevolod Suschevskiy's CV\"\ndate: today\npublished-title: \"CV last updated\"\nfreeze: true\nformat:\n  html:\n    theme: litera\n    toc: false\n    css: cv.css\n---\n\n::: {.cell}\n\n:::\n\n\n\n::: {#avoid_rmd}\n<p class=\"text-center\">\n\n<center><a class=\"btn btn-primary\" \n  href=\"Vsevolod_Suschevskiy_CV.pdf\" target=\"_blank\"> <i class=\"fa-solid fa-file-arrow-down\"></i> Download current CV </a></center>\n\n</p>\n:::\n\n::: embed-container\n<iframe src=\"Vsevolod_Suschevskiy_CV.pdf\" style=\"border: 0.5px\">\n\n</iframe>\n:::\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

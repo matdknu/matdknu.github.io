@@ -1,0 +1,17 @@
+{
+  "hash": "def675045080a2e7760c394f8a6c022e",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"OCMC24\"\nauthor: \"Vsevolod Suschevskiy\"\ndate: \"2024-08-31\"\ncategories: [news, conference]\n---\n\n\nI helped with organization of the [Organizational Communication Mini-Conference at Northwestern University](https://sites.northwestern.edu/ocmc24/) from September 27th to 29th, 2024\n\nGantt chart of some sort with all the previous organizers\n\n![](hosts.png)\n\n\n::: {.cell}\n\n```{.r .cell-code}\nlibrary(tidyverse)\n\ndf <- read_csv(\"ocmc24.csv\") |> \n  group_by(university) |> \n  mutate(max_year = max(year)) |> \n  ungroup() |> \n  mutate(university = fct_reorder(university, max_year))\n\nuniversity_colors <- df |> \n  select(university, color) |> \n  unique() |> \n  rename(value = university) |> \n  tibble::deframe()\n\ndf |> \n  ggplot(aes(x = year, y = university, color = university), family=\"Roboto\")+ \n  geom_vline(xintercept = 1988, linetype = \"dashed\", color = \"grey\")+ \n  geom_point(alpha = 0.5, size = 5)+ geom_line(alpha = 0.5, size = 5)+ \n  geom_text(aes(label = university), x = 2025, hjust = 0, \n            family=\"Roboto\", size = 12)+ \n  ggtitle(\"Who hosted Organizational Communication Mini-Conference?\")+ \n  geom_text(x = 1986, y = 1, label = \"OCMC was founded at the UIUC in 1988\", \n            color = \"grey\", angle = 90, hjust = 0, \n            family=\"Roboto\", size = 10)+ \n  theme_minimal()+ \n  scale_color_manual(values = university_colors)+ \n  theme(\n    legend.position = \"none\", \n    axis.text.y=element_blank(), \n    axis.title.x=element_blank(), \n    axis.title.y=element_blank(), \n    panel.grid.major.y = element_blank(), \n    panel.grid.minor.y = element_blank(), \n    panel.grid.minor.x = element_blank(), \n    text=element_text(size=24, family=\"Roboto\"), \n    plot.title = element_text(hjust = 0.25))+ \n  scale_x_continuous(\n    breaks = c(seq(1990,2024,5), 2024), \n    limits = c(1980, 2086)) -> g\n\ng\n```\n\n::: {.cell-output-display}\n![](ocmc24_files/figure-html/unnamed-chunk-1-1.png){width=672}\n:::\n:::\n",
+    "supporting": [
+      "ocmc24_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

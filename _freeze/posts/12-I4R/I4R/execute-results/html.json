@@ -1,0 +1,15 @@
+{
+  "hash": "621ae8e410fd1a768062a579634b56a4",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Replication Game\"\nauthor: \"Vsevolod Suschevskiy\"\ndate: \"2024-10-20\"\ncategories: [news, publication, replication]\n---\n\n\n\nTogether with Efrén, John Lee, and Emilio at Northwestern [replication game](https://i4replication.org/games.html), we looked at the \"**Se Habla Español: Spanish-Language Appeals and Candidate Evaluatioited States**\" paper and replication package. Suffered for a bit and put together a computational replication. Results held the same. See the [replication report](https://osf.io/xfp4k).\n\n![](good.png)\n\nHowever, some of the computational representations and analytic choices were questionable. For example, my biggest concern was about the identification of participants as White and Latino. Some parts of the study relied on Prolific's survey, which did not match the paper's survey. While it may not have had a significant impact on the final results, one part of the code was hilariously wrong.\n\n\n\n::: {.cell}\n\n```{.r .cell-code}\n# Race/Ethnicity\n# prolific.df$race[prolific.df$Q53_1==1] <-1 #Black\n# prolific.df$race[prolific.df$Q53_2==1] <-2 #White\n# prolific.df$race[prolific.df$Q53_3==1] <-3 #Asian\n# prolific.df$race[prolific.df$Q53_4==1] <-4 #Latino\n# prolific.df$race[prolific.df$Q53_5==1] <-5 #Native Americanp\n# rolific.df$race[prolific.df$Q53_6==1] <-6 #Marked other\n```\n:::\n\n\n\nDuring data processing, we noticed that a series of questions were asked to report their ethnicity in multiple-choice questions Q53_1, Q53_2, Q53_3, Q53_4, Q53_5, Q53_6. The provided code used a unique strategy for coding race, based on exclusive self-nomination, where the last option overwrites all previous choices. For example, if a participant self-reported to be Black and White, the race column would reflect only white Race/Ethnicity. At the same time, if a participant self-reported to be Black, White and Latino then the Latino option will overwrite all previous ones.\n\n![](bad.png)\n\nIn the grand schema of things, those minor details did not matter and a good model should be replicated from a summary. However, it is always good to make sure the code makes sense.\n\n![](ugly.png)\n\nOverall, the paper is good.\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

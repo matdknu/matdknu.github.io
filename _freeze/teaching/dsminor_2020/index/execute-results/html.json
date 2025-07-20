@@ -1,0 +1,15 @@
+{
+  "hash": "049f80874407544070b1d64d8785c47c",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Data Science Minor\"\nauthor: \"Invited Lecturer\"\ndate: \"2020-09-01\"\ncategories: [HSE University, Data Science]\nimage: \"image.jpg\"\n---\n\n\nThis is a post with executable code.\n\n\n::: {.cell}\n\n```{.r .cell-code}\n1 + 1\n```\n\n::: {.cell-output .cell-output-stdout}\n\n```\n[1] 2\n```\n\n\n:::\n:::\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

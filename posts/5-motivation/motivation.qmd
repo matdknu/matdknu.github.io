@@ -1,0 +1,15 @@
+---
+title: "self-nudging"
+author: "Vsevolod Suschevskiy"
+date: "2020-06-01"
+categories: [experiment]
+image: "nudging.png"
+---
+
+My MSc thesis on self-nudging and boosting. I have run four studies and five experiments on crowdworking platform to test the effectiveness of boosting and create guidelines for designing personalized motivational interventions.
+
+::: {div}
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vRhLDG-EI_YMB5kBRAHSgteg4i6xZbB_rZvogoI5e5VB1gqu4U8IZkXtok9j8lkCc0BPfO9rbC-Eoby/embed?start=false&amp;loop=false&amp;delayms=3000" frameborder="0" width="960" height="1469" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true">
+
+</iframe>
+:::

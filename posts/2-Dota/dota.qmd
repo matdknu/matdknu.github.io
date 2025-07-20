@@ -1,0 +1,19 @@
+---
+title: "eSports Transfers"
+author: "Vsevolod Suschevskiy"
+date: "2018-08-01"
+categories: [SNA]
+image: "sunbelt-transfers.png"
+---
+
+This was my first ever research project as an undergraduate sociology student.
+
+ESports became a large phenomenon of contemporary entertainment landscape. One of the work directions of traditional sports management is global transfer networks analysis. Gerhards and Mutz (2017) used social network analysis to estimate team performance within the league on a macro level and assess significance of player by their structural position. Liu et al. (2016) applied coreness and brokerage to analyse power on the transfer market for football. In this work, we analyse the structure of local and regional market of player transfers in popular eSports discipline Dota 2. Together with team performance metrics, these data provide us with an opportunity to model network of transfers between teams. We gathered the dataset of player transfers for the top professional teams and their transfer partners, based on transactions between two world tournaments: TI 16 to TI 17. In our work, we built a directed network of transfers and analyzed centralities, assortative mixing, and link formation with the help of ERGM model. The global transfer market structure shows strong geographic clusterization. One of the transfer predictors is the difference in team ratings, so teams which located side by side in the rating rarely have transfers. The core of the network consists of the most successful teams participated in The International. Admission to this tournament requires prominent performance on majors and minors. Inside this group, transfers are more frequent than outside. Geographical segments not only show homophily but possess unique structure. One outstanding case is Chinese eSports ecosystem where the special structure of organizations exists with several teams under the auspices of one brand, and recruitment to high-profile teams goes through these channels. There is no such structure in any other region.
+
+::: {div}
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSuYQ6wCvqPWB8Mq74_bic7UqOtwLGg4qp6yXwRbqtE82BAQZ4h1ggnilJg7Oh2kUU6x29NWH13alMy/embed?start=false&amp;loop=false&amp;delayms=3000" frameborder="0" width="657" height="960" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true">
+
+</iframe>
+:::
+
+That was a nice picture! You can find a [poster here](https://docs.google.com/presentation/d/19EvS0fwrpbFN8ccj6MWjYk_H7Os-kNhqd2DbennVCUo/edit?usp=sharing). Also, we managed to publish a paper [Analysis of Players Transfers in Esports. The Case of Dota 2](https://dl.acm.org/doi/abs/10.1145/3275116.3275151).

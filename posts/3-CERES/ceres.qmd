@@ -1,0 +1,13 @@
+---
+title: "CERES"
+author: "Vsevolod Suschevskiy"
+date: "2020-04-20"
+categories: [experiment]
+---
+
+
+![](sequence%20diagram.png)
+
+
+
+![](likert.png)

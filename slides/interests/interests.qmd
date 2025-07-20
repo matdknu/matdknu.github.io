@@ -1,0 +1,410 @@
+---
+title: "Research interest"
+format:
+  revealjs:
+    slide-number: true
+    show-slide-number: print
+    auto-animate: true
+    auto-animate-easing: ease-in-out
+    auto-animate-unmatched: true
+    auto-animate-duration: 0.8
+    background-color: "#ededed"
+---
+
+```{=html}
+<style>
+.content {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+</style>
+```
+##  {auto-animate="true" auto-animate-easing="ease-in-out"}
+
+::: {.absolute data-id="box1" style="background: #66c2a5; width: 350px; height: 150px;" top="200" left="0"}
+::: {.div .content}
+Computational Social Science
+:::
+:::
+
+##  {auto-animate="true" auto-animate-easing="ease-in-out"}
+
+::: columns
+::: {.column width="33%"}
+::: {.absolute data-id="box1" style="background: #66c2a5; width: 350px; height: 150px;"}
+::: {.div .content}
+Computational Social Science
+:::
+:::
+:::
+:::
+
+::: {.absolute data-id="box3" style="background: #8da0cb; width: 350px; height: 150px;" top="200" left="0" auto-animate-delay="0.1"}
+::: {.div .content}
+Human-Computer Interactions
+:::
+:::
+
+##  {auto-animate="true" auto-animate-easing="ease-in-out"}
+
+::: columns
+::: {.column width="33%"}
+::: {data-id="box1" style="background: #66c2a5; width: 350px; height: 150px;"}
+::: {.div .content}
+Computational Social Science
+:::
+:::
+:::
+
+::: {.column width="33%"}
+:::
+
+::: {.absolute data-id="box2" style="background: #fc8d62; width: 350px; height: 150px;" top="200" left="0" auto-animate-delay="0.1"}
+::: {.div .content}
+Open Science
+:::
+:::
+
+::: {.column width="33%"}
+::: {data-id="box3" style="background: #8da0cb; width: 350px; height: 150px;"}
+::: {.div .content}
+Human-Computer Interactions
+:::
+:::
+:::
+:::
+
+##  {auto-animate="true" auto-animate-easing="ease-in-out"}
+
+::: columns
+::: {.column width="33%"}
+::: {data-id="box1" style="background: #66c2a5; width: 350px; height: 150px;"}
+::: {.div .content}
+Computational Social Science
+:::
+:::
+:::
+
+::: {.column width="33%"}
+::: {data-id="box2" style="background: #fc8d62; width: 350px; height: 150px;"}
+::: {.div .content}
+Open Science
+:::
+:::
+:::
+
+::: {.column width="33%"}
+::: {data-id="box3" style="background: #8da0cb; width: 350px; height: 150px;"}
+::: {.div .content}
+Human-Computer Interactions
+:::
+:::
+:::
+:::
+
+##  {auto-animate="true" auto-animate-easing="ease-in-out"}
+
+::: columns
+::: {.column width="33%"}
+::: {data-id="box1" style="background: #66c2a5; width: 350px; height: 150px; align = center;"}
+::: {.div .content}
+Computational Social Science
+:::
+:::
+
+-   Digital Experiments
+-   Agent Based Modeling
+-   Social Network Analysis
+:::
+
+::: {.column width="33%"}
+::: {data-id="box2" style="background: #fc8d62; width: 350px; height: 150px;"}
+::: {.div .content}
+Open Science
+:::
+:::
+:::
+
+::: {.column width="33%"}
+::: {data-id="box3" style="background: #8da0cb; width: 350px; height: 150px;"}
+::: {.div .content}
+Human-Computer Interactions
+:::
+:::
+:::
+:::
+
+##  {auto-animate="true" auto-animate-easing="ease-in-out"}
+
+::: columns
+::: {.column width="33%"}
+::: {data-id="box1" style="background: #66c2a5; width: 350px; height: 150px; align = center;"}
+::: {.div .content}
+Computational Social Science
+:::
+:::
+
+-   Digital Experiments
+-   Agent Based Modeling
+-   Social Network Analysis
+:::
+
+::: {.column width="33%"}
+::: {data-id="box2" style="background: #fc8d62; width: 350px; height: 150px;"}
+::: {.div .content}
+Open Science
+:::
+:::
+
+-   Reproducibility Packages for Studies
+-   Science of Science
+:::
+
+::: {.column width="33%"}
+::: {data-id="box3" style="background: #8da0cb; width: 350px; height: 150px;"}
+::: {.div .content}
+Human-Computer Interactions
+:::
+:::
+:::
+:::
+
+##  {auto-animate="true" auto-animate-easing="ease-in-out"}
+
+::: columns
+::: {.column width="33%"}
+::: {data-id="box1" style="background: #66c2a5; width: 350px; height: 150px; align = center;"}
+::: {.div .content}
+Computational Social Science
+:::
+:::
+
+-   Digital Experiments
+-   Agent Based Modeling
+-   Social Network Analysis
+:::
+
+::: {.column width="33%"}
+::: {data-id="box2" style="background: #fc8d62; width: 350px; height: 150px;"}
+::: {.div .content}
+Open Science
+:::
+:::
+
+-   Reproducibility Packages for Studies
+-   Science of Science
+:::
+
+::: {.column width="33%"}
+::: {data-id="box3" style="background: #8da0cb; width: 350px; height: 150px;"}
+::: {.div .content}
+Human-Computer Interactions
+:::
+:::
+
+-   Computer Supported Collaborative Work
+    -   Human AI Teams
+-   UX of Digital Experiments
+:::
+:::
+
+##  {auto-animate="true" auto-animate-easing="ease-in-out"}
+
+::: {.absolute data-id="box1" top="275" left="50" style="background: #66c2a5; width: 450px; height: 450px; border-radius: 400px; opacity: 0.5; text-align: center;"}
+::: {.div .content style="opacity: 1;"}
+Computational Social Science
+:::
+:::
+
+::: {.absolute data-id="box2" style="background: #fc8d62; width: 450px; height: 450px; border-radius: 400px; opacity: 0.5; text-align: center;" data-background-opacity="0.5" top="150" left="400"}
+::: {.div .content style="opacity: 1;"}
+Open Science
+:::
+:::
+
+::: {.absolute data-id="box3" style="background: #8da0cb; width: 450px; height: 450px; border-radius: 400px; opacity: 0.5; text-align: center;" data-background-opacity="0.5" top="-25" left="175"}
+::: {.div .content style="opacity: 1;"}
+Human-Computer Interactions
+:::
+:::
+
+##  {auto-animate="true" auto-animate-easing="ease-in-out"}
+
+::: {.absolute data-id="box1" top="275" left="50" style="background: #66c2a5; width: 450px; height: 450px; border-radius: 400px; opacity: 0.5; text-align: center;"}
+::: {.div .content style="opacity: 1;"}
+Computational Social Science
+:::
+:::
+
+::: {.absolute data-id="box2" style="background: #fc8d62; width: 450px; height: 450px; border-radius: 400px; opacity: 0.5; text-align: center;" data-background-opacity="0.5" top="150" left="400"}
+::: {.div .content style="opacity: 1;"}
+Open Science
+:::
+:::
+
+::: {.absolute data-id="box3" style="background: #8da0cb; width: 450px; height: 450px; border-radius: 400px; opacity: 0.5; text-align: center;" data-background-opacity="0.5" top="-25" left="175"}
+::: {.div .content style="opacity: 1;"}
+Human-Computer Interactions
+:::
+:::
+
+::: {.absolute data-id="box4" style="width: 450px; height: 450px;" top="125" left="250"}
+::: {.div .content style="opacity: 1;"}
+PhD in Collaborative Viz Design
+:::
+:::
+
+##  {auto-animate="true" auto-animate-easing="ease-in-out"}
+
+::: columns
+::: {.column width="33%"}
+::: {data-id="box1" style="background: #66c2a5; width: 350px; height: 150px; align = center;"}
+::: {.div .content}
+Computational Social Science
+:::
+:::
+:::
+
+::: {.column width="33%"}
+::: {data-id="box2" style="background: #fc8d62; width: 350px; height: 150px;"}
+::: {.div .content}
+Open Science
+:::
+:::
+:::
+
+::: {.column width="33%"}
+::: {data-id="box3" style="background: #8da0cb; width: 350px; height: 150px;"}
+::: {.div .content}
+Human-Computer Interactions
+:::
+:::
+:::
+:::
+
+##  {auto-animate="true" auto-animate-easing="ease-in-out"}
+
+::: columns
+::: {.column width="33%"}
+::: {data-id="box1" style="background: #66c2a5; width: 350px; height: 150px; align = center;"}
+::: {.div .content}
+Computational Social Science
+:::
+:::
+
+-   Design space where I can immerse myself and engage in collaboration with domain experts.
+:::
+
+::: {.column width="33%"}
+::: {data-id="box2" style="background: #fc8d62; width: 350px; height: 150px;"}
+::: {.div .content}
+Open Science
+:::
+:::
+:::
+
+::: {.column width="33%"}
+::: {data-id="box3" style="background: #8da0cb; width: 350px; height: 150px;"}
+::: {.div .content}
+Human-Computer Interactions
+:::
+:::
+:::
+:::
+
+##  {auto-animate="true" auto-animate-easing="ease-in-out"}
+
+::: columns
+::: {.column width="33%"}
+::: {data-id="box1" style="background: #66c2a5; width: 350px; height: 150px; align = center;"}
+::: {.div .content}
+Computational Social Science
+:::
+:::
+
+-   Design space where I can immerse myself and engage in collaboration with domain experts.
+:::
+
+::: {.column width="33%"}
+::: {data-id="box2" style="background: #fc8d62; width: 350px; height: 150px;"}
+::: {.div .content}
+Open Science
+:::
+:::
+
+-   Contribution to the Communication of Results, a.k.a. viz artifacts, tools, frameworks
+:::
+
+::: {.column width="33%"}
+::: {data-id="box3" style="background: #8da0cb; width: 350px; height: 150px;"}
+::: {.div .content}
+Human-Computer Interactions
+:::
+:::
+:::
+:::
+
+##  {auto-animate="true" auto-animate-easing="ease-in-out"}
+
+::: columns
+::: {.column width="33%"}
+::: {data-id="box1" style="background: #66c2a5; width: 350px; height: 150px; align = center;"}
+::: {.div .content}
+Computational Social Science
+:::
+:::
+
+-   Design space where I can immerse myself and engage in collaboration with domain experts.
+:::
+
+::: {.column width="33%"}
+::: {data-id="box2" style="background: #fc8d62; width: 350px; height: 150px;"}
+::: {.div .content}
+Open Science
+:::
+:::
+
+-   Contribution to the Communication of Results, a.k.a. viz artifacts, tools, frameworks
+:::
+
+::: {.column width="33%"}
+::: {data-id="box3" style="background: #8da0cb; width: 350px; height: 150px;"}
+::: {.div .content}
+Human-Computer Interactions
+:::
+:::
+
+-   Design Study Research
+:::
+:::
+
+##  {auto-animate="true" auto-animate-easing="ease-in-out" background-color="#00ff00"}
+
+::: columns
+::: {.column width="33%"}
+::: {data-id="box1" style="background: #66c2a5; width: 350px; height: 150px;"}
+::: {.div .content}
+Computational Social Science
+:::
+:::
+:::
+
+::: {.column width="33%"}
+::: {data-id="box2" style="background: #fc8d62; width: 350px; height: 150px;" top="200" left="0" auto-animate-delay="0.1"}
+::: {.div .content}
+Open Science
+:::
+:::
+:::
+
+::: {.column width="33%"}
+::: {data-id="box3" style="background: #8da0cb; width: 350px; height: 150px;"}
+::: {.div .content}
+Human-Computer Interactions
+:::
+:::
+:::
+:::

@@ -1,0 +1,17 @@
+---
+title: "Science of Science"
+author: "Vsevolod Suschevskiy"
+date: "2020-06-01"
+categories: [SNA]
+image: "icssi.png"
+---
+
+That was my undergraduate thesis in BA Sociology that i presented at the INTERNATIONAL CONFERENCE ON SCIENCE OF SCIENCE AND INNOVATION (ICSSI 2023, Kellogg, Northwestern University)
+
+While the field of Computational Social Science allows modelling with almost unlimited freedom, so it requires explicit transition from **theoretical assumptions** (how individuals behave and what are the consequences) into **computational representations** (data structures, decision-making rules). Moreover, researchers are **embedded in disciplines** (invisible colleges), so they apply **tacit knowledge** in the form of **disciplinary** **conventions**, e.g., **concepts** **and** **references**
+
+::: {div}
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQI2Wh7W5zBtn_1Qyn_AhSQbMvFrEefNk1dyBJVzDqMBdkbZijTnLIbWfK4MnvN3ifFJJbLzAYEx2PE/embed?start=false&amp;loop=false&amp;delayms=3000" frameborder="0" width="960" height="605" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true">
+
+</iframe>
+:::
