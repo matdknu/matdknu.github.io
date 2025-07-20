@@ -1,17 +1,25 @@
 ---
-title: Curriculum vitæ
-description: "vsevolod Suschevskiy's CV"
+title: "Curriculum vitæ"
+description: "Vsevolod Suschevskiy's CV"
 date: today
-published-title: CV last updated
+published-title: "CV last updated"
 freeze: true
+format:
+  html:
+    theme: litera
+    toc: false
+    css: cv.css
 ---
+
 
 ```{r}
 #| echo: false
 download.file(
-  url = "https://github.com/vvseva/cv/raw/master/Vsevolod_Suschevskiy_CV.pdf", 
+  url = "https://raw.githubusercontent.com/matdknu/matdknu.github.io/main/cv/raw/master/Vsevolod_Suschevskiy_CV.pdf", 
   destfile = "Vsevolod_Suschevskiy_CV.pdf",
-  mode = "wb")
+  mode = "wb"
+)
+
 ```
 
 ::: {#avoid_rmd}
