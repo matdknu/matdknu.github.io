@@ -1,0 +1,14 @@
+---
+title: "Teaching"
+listing:
+  - id: teaching
+    contents: teaching
+    fields: [title, categories, date]
+    sort: "date desc"
+    type: table
+    categories: true
+    sort-ui: false
+    filter-ui: false
+page-layout: full
+title-block-banner: false
+---

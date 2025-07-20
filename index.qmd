@@ -1,0 +1,32 @@
+---
+title: "about"
+image: icon/do-not-save-me.jpeg
+about:
+  template: solana
+  links:
+    - icon: linkedin
+      text: LinkedIn
+      href: https://www.linkedin.com/in/deneken/
+      target: _blank
+    - icon: github
+      text: Github
+      href: https://github.com/matdknu
+---
+
+### 
+
+::: {#div}
+Please call me Matt, and here is my [CV](https://github.com/matdknu/matdknu.github.io/blob/main/cv/raw/master/Vsevolod_Suschevskiy_CV.pdf).
+:::
+
+::: {#hero-heading}
+I study how to improve human-AI teamwork in teams and organizations. I combine th
+
+## Bio
+
+Sociologist, M.A in Sociologist and M.A in Data Scienc
+
+
+:::
+
+

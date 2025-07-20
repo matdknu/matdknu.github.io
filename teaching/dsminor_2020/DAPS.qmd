@@ -1,0 +1,15 @@
+---
+title: "Hola"
+author: "Invited Lecturer"
+date: "2020-09-01"
+categories: [HSE University, Data Science]
+# image: "image.jpg"
+---
+
+-   20ish student
+
+-   MSc: Data Analytics for Politics and Society
+
+-   [syllabus](https://docs.google.com/document/d/1NndI5iMiHmthjEwwhlGKr2xaSXmZVx9_DqqGtMjAbiA/edit?usp=sharing)
+
+-   [github](https://github.com/vvseva/DS_DAPS) with class materials

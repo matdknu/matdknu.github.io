@@ -1,0 +1,13 @@
+---
+title: "R and Python"
+listing:
+  - id: posts2
+    contents: posts2
+    sort: "date desc"
+    type: grid
+    categories: true
+    sort-ui: false
+    filter-ui: false
+page-layout: full
+title-block-banner: false
+---

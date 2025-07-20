@@ -1,0 +1,11 @@
+---
+title: "Advanced Procces with R"
+author: "Teaching assistant"
+date: "2023-09-01"
+categories: [Pontificia Universidad Católica de Chile, R]
+# image: "image.jpg"
+---
+:::{div}
+
+:::
+

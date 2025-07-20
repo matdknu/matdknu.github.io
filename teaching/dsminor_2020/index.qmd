@@ -1,0 +1,15 @@
+---
+title: "InteRculturales"
+author: "Coordinator and Instructor"
+date: "2024-09-01"
+categories: [Centro de Estudios Interculturales, Data Science]
+# image: "image.jpg"
+---
+
+-   200 Students
+
+-   non-STEM
+
+-   tidyverse, tidymodels, shiny
+
+
