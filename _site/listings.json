@@ -3,10 +3,23 @@
     "listing": "/projects.html",
     "items": [
       "/posts/1-welcome/index.html",
+      "/website-src/matdknu.github.io/posts/1-welcome/index.html",
       "/posts/4-scienceofscience/icssi.html",
       "/posts/5-motivation/motivation.html",
+      "/website-src/matdknu.github.io/posts/4-scienceofscience/icssi.html",
+      "/website-src/matdknu.github.io/posts/5-motivation/motivation.html",
       "/posts/3-CERES/ceres.html",
-      "/posts/2-Dota/dota.html"
+      "/website-src/matdknu.github.io/posts/3-CERES/ceres.html",
+      "/posts/2-Dota/dota.html",
+      "/website-src/matdknu.github.io/posts/2-Dota/dota.html"
+    ]
+  },
+  {
+    "listing": "/website-src/matdknu.github.io/teaching.html",
+    "items": [
+      "/website-src/matdknu.github.io/teaching/dsminor_2020/index.html",
+      "/website-src/matdknu.github.io/teaching/dsminor_2020/TCMB.html",
+      "/website-src/matdknu.github.io/teaching/dsminor_2020/DAPS.html"
     ]
   },
   {
@@ -16,9 +29,26 @@
   {
     "listing": "/teaching.html",
     "items": [
+      "/website-src/matdknu.github.io/teaching/dsminor_2020/index.html",
       "/teaching/dsminor_2020/index.html",
+      "/website-src/matdknu.github.io/teaching/dsminor_2020/TCMB.html",
       "/teaching/dsminor_2020/TCMB.html",
+      "/website-src/matdknu.github.io/teaching/dsminor_2020/DAPS.html",
       "/teaching/dsminor_2020/DAPS.html"
+    ]
+  },
+  {
+    "listing": "/website-src/matdknu.github.io/tutorial.html",
+    "items": []
+  },
+  {
+    "listing": "/website-src/matdknu.github.io/projects.html",
+    "items": [
+      "/website-src/matdknu.github.io/posts/1-welcome/index.html",
+      "/website-src/matdknu.github.io/posts/4-scienceofscience/icssi.html",
+      "/website-src/matdknu.github.io/posts/5-motivation/motivation.html",
+      "/website-src/matdknu.github.io/posts/3-CERES/ceres.html",
+      "/website-src/matdknu.github.io/posts/2-Dota/dota.html"
     ]
   }
 ]
