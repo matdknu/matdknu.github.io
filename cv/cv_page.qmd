@@ -1,0 +1,30 @@
+---
+title: Curriculum vitæ
+description: "vsevolod Suschevskiy's CV"
+date: today
+published-title: CV last updated
+freeze: true
+---
+
+```{r}
+#| echo: false
+download.file(
+  url = "https://github.com/vvseva/cv/raw/master/Vsevolod_Suschevskiy_CV.pdf", 
+  destfile = "Vsevolod_Suschevskiy_CV.pdf",
+  mode = "wb")
+```
+
+::: {#avoid_rmd}
+<p class="text-center">
+
+<center><a class="btn btn-primary" 
+  href="Vsevolod_Suschevskiy_CV.pdf" target="_blank"> <i class="fa-solid fa-file-arrow-down"></i> Download current CV </a></center>
+
+</p>
+:::
+
+::: embed-container
+<iframe src="Vsevolod_Suschevskiy_CV.pdf" style="border: 0.5px">
+
+</iframe>
+:::
