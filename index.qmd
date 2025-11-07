@@ -12,8 +12,8 @@ about:
   template: trestles
   image-width: 70%
   links:
-    - icon: sun
-      text: Lab
+    - icon: github
+      text: GitHub
       href: https://www.github.com/matdknu
       target: _blank
     - icon: envelope
@@ -53,18 +53,23 @@ listing:   # Comment the listing section and delete corresponding lines in the i
 
 :::{#hero-heading}
 
-[Introducción]
+## Introduction
+
+Matías Deneken is a Chilean sociologist and data scientist. His research bridges social data science, violence, and computational methods to study how -------- . He has collaborated on large-scale longitudinal studies such as the *Estudio Longitudinal de Relaciones Interculturales (ELRI)* and the *Estudio Panel de Percepciones de Seguridad y Policías (EPSEP)* 
+
+Beyond research, Matías is passionate about photography, travel, and visual storytelling, which often inspire his analytical and creative work.
 
 ## Experience
 
-- Researcher, Univerisity
+--
 
 ## Education
 
-- MsC in Sociology, Pontificia Universidad Católica de Chile
-- Socioligst, Universidad de Concepción 
+- MSc in Sociology, Pontificia Universidad Católica de Chile  
+- BA in Sociology, Universidad de Concepción  
 
 :::
+
 
 
 <!-- Delete the following section and delete corresponding lines in the yaml part to remove the recent posts -->

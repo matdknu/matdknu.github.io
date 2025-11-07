@@ -6,19 +6,8 @@ title-block-banner: false
 
 <center>
 
-**Quarto Academic**
 
-School
-
-College
-
-University
-
-Address: 
-
-Phone: 
-
-E-mail: 
+E-mail: m.deneken[at].cl
 
 
 </center>
