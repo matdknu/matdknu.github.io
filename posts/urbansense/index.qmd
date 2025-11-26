@@ -1,0 +1,26 @@
+---
+title: "UrbanSense 2025"
+description: "Una mirada sobre sensores ciudadanos y movilidad en tiempo real."
+author: "Mat"
+date: "2025-11-26"
+categories: [urban, data]
+image: "/files/images/placeholder1.JPG"
+---
+
+## Contexto
+Estamos cruzando datos de movilidad, sensores de ruido y reportes ciudadanos para describir patrones en barrios periféricos. La integración se hizo con el conjunto abierto del municipio y etiquetas geoespaciales construidas internamente.
+
+## Lo que hemos aprendido
+- El foco temprano debe ser la calidad de la geolocalización; un 30% de los dispositivos aún no obtiene una referencia precisa al cierre del día.
+- Las tensiones entre ruido residual y la señal útil se mitigaron al aplicar filtros de mediana en ventana móvil.
+- Compartir prototipos con agentes locales ayudó a encontrar nuevas fuentes de validación para los sensores comunitarios.
+
+## Próximos pasos
+- Automatizar las alertas de congestión con dashboards ligeros para el área de movilidad.
+- Documentar la API de datos urbanos y publicar el flujo en `posts/post-links.yml`.
+- Coordinar un piloto con el laboratorio de participación ciudadana del municipio.
+
+<!--Include social share buttons-->
+
+{{< include /files/includes/_socialshare.qmd >}}
+

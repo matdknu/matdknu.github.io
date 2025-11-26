@@ -2,9 +2,12 @@
   {
     "listing": "/posts.html",
     "items": [
+      "/posts/avance-socia/index.html",
+      "/posts/news-prueba/index.html",
       "/posts/event-title/index.html",
       "/posts/news-title/index.html",
-      "/posts/paper-title/index.html"
+      "/posts/paper-title/index.html",
+      "/posts/news-title/bla.html"
     ]
   },
   {
@@ -14,6 +17,7 @@
   {
     "listing": "/index.html",
     "items": [
+      "/posts/avance-socia/index.html",
       "/posts/news-prueba/index.html",
       "/posts/event-title/index.html",
       "/posts/news-title/index.html",

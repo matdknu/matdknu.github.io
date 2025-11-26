@@ -1,0 +1,26 @@
+---
+title: "Interfaces cívicas para datos abiertos"
+description: "Diseño de experiencias que conectan ciudadanos con datos municipales."
+author: "Mat"
+date: "2025-11-26"
+categories: [civic, design]
+image: "/files/images/my-face.jpg"
+---
+
+## En qué trabajamos
+Diseñamos una serie de microexperiencias que permiten a ciudadanos filtrar datos de presupuesto participativo y generar visualizaciones en segundos.
+
+## Lo que destaca
+- Las interfaces enfocadas en preguntas guiadas aumentaron en 40% el tiempo de sesión en los portales piloto.
+- Se incorporaron testimonios en audio para que personas con menor alfabetización digital puedan interpretar los datos.
+- El backend conecta directamente con `open civic data` y genera visualizaciones responsivas para móviles.
+
+## Qué sigue
+- Analizar los registros de uso para refinar las historias guiadas y reducir la fricción.
+- Documentar las componentes de interfaz en el repositorio `posts/post-links.yml`.
+- Establecer un pequeño kit de entrenamiento para los nodos comunitarios que gestionarán estas herramientas.
+
+<!--Include social share buttons-->
+
+{{< include /files/includes/_socialshare.qmd >}}
+

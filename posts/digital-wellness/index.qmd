@@ -1,0 +1,26 @@
+---
+title: "Bienestar digital: métricas de pausa activa"
+description: "Qué aprendimos midiendo descansos en la jornada remota."
+author: "Mat"
+date: "2025-11-26"
+categories: [health, workplace]
+image: "/files/images/placeholder2.JPG"
+---
+
+## Introducción
+Compilamos señales de dispositivos conectados y encuestas breves para entender cómo las pausas activas impactan el bienestar en equipos distribuidos.
+
+## Hallazgos recientes
+- Los picos de concentración se mantienen cuando el equipo toma dos pausas cortas (4 minutos) por cada hora, según los datos de pulso y uso del teclado.
+- Un dashboard compartido incentivó un 15% más de participación en las sesiones de estiramiento guiado.
+- La percepción de agotamiento se redujo en los equipos que recibieron retroalimentación automatizada sobre su jornada.
+
+## Qué sigue
+- Enlazar las métricas con el cronograma de la nueva cátedra para que estudiantes puedan replicar la metodología.
+- Crear un resumen visual y subirlo a `posts/post-links.yml` para referencia rápida.
+- Compartir este análisis con la comunidad de coordinación digital antes del cierre del trimestre.
+
+<!--Include social share buttons-->
+
+{{< include /files/includes/_socialshare.qmd >}}
+

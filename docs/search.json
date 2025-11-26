@@ -4,7 +4,7 @@
     "href": "posts.html",
     "title": "What’s New & Updated",
     "section": "",
-    "text": "Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Author\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\nQuarto Academic Website Examples and Tips\n\n\n\n\n\n\nnews\n\n\n\nExamples and tips for Quarto Academic Website\n\n\n\n\n\nOct 15, 2024\n\n\nDr. Gang He\n\n\n\n\n\n\n\n\n\n\n\n\nEvent item\n\n\n\n\n\n\nevent\n\n\npresentation\n\n\n\nAbout Event item.\n\n\n\n\n\nSep 3, 2024\n\n\nEvent\n\n\n\n\n\n\n\n\n\n\n\n\nNews item\n\n\n\n\n\n\nnews\n\n\n\nAbout new item\n\n\n\n\n\nJun 24, 2024\n\n\nNews\n\n\n\n\n\n\n\n\n\n\n\n\nCan quantum-mechanical description of physical reality be considered complete?\n\n\nPhysical Review\n\n\n\npaper\n\n\n\nOne is thus led to conclude that the description of reality as given by a wave function is not complete.\n\n\n\n\n\nMay 15, 1935\n\n\nAlbert Einstein, Boris Podolsky, Nathan Rosen\n\n\n\n\n\n\nNo matching items"
+    "text": "Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Author\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\nAvance sobre datos sociales 2025\n\n\n\n\n\n\nnews\n\n\n\nResumen de lo más reciente en la recolección y visualización de datos sociales.\n\n\n\n\n\nNov 26, 2025\n\n\nMat\n\n\n\n\n\n\n\n\n\n\n\n\nxd\n\n\n\n\n\n\nnews\n\n\n\nxd\n\n\n\n\n\nJun 24, 2025\n\n\nNews\n\n\n\n\n\n\n\n\n\n\n\n\nEvent item\n\n\n\n\n\n\nevent\n\n\npresentation\n\n\n\nAbout Event item.\n\n\n\n\n\nSep 3, 2024\n\n\nEvent\n\n\n\n\n\n\n\n\n\n\n\n\nNews item\n\n\n\n\n\n\nnews\n\n\n\nAbout new item\n\n\n\n\n\nJun 24, 2024\n\n\nNews\n\n\n\n\n\n\n\n\n\n\n\n\nCan quantum-mechanical description of physical reality be considered complete?\n\n\nPhysical Review\n\n\n\npaper\n\n\n\nOne is thus led to conclude that the description of reality as given by a wave function is not complete.\n\n\n\n\n\nMay 15, 1935\n\n\nAlbert Einstein, Boris Podolsky, Nathan Rosen\n\n\n\n\n\n\n\n\n\n\n\n\nbalalalalala\n\n\nPhysical Review\n\n\n\nnews\n\n\n\nOne is thus led to conclude that the description of reality as given by a wave function is not complete.\n\n\n\n\n\nMay 15, 1935\n\n\nAlbert Einstein, Boris Podolsky, Nathan Rosen\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "publications.html",
@@ -116,7 +116,7 @@
     "href": "index.html#recent-posts",
     "title": "Matías Deneken",
     "section": "Recent Posts",
-    "text": "Recent Posts\nCheck out the latest  Papers ,  News ,  Events , and  More »\n\n\n\n\n\n\n\n\n\n\nxd\n\n\n\nJun 24, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nQuarto Academic Website Examples and Tips\n\n\n\nOct 15, 2024\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nEvent item\n\n\n\nSep 3, 2024\n\n\n\n\n\n\n\n\nNo matching items\n\n\n\nAll Posts »"
+    "text": "Recent Posts\nCheck out the latest  Papers ,  News ,  Events , and  More »\n\n\n\n\n\n\n\n\n\n\nAvance sobre datos sociales 2025\n\n\n\nNov 26, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nxd\n\n\n\nJun 24, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nEvent item\n\n\n\nSep 3, 2024\n\n\n\n\n\n\n\n\nNo matching items\n\n\n\nAll Posts »"
   },
   {
     "objectID": "people.html",
@@ -271,5 +271,26 @@
     "title": "Matías Deneken",
     "section": "",
     "text": "Matías Deneken is a Chilean sociologist and data scientist. His research bridges social data science, violence, and computational methods to study how ——– . He has collaborated on large-scale longitudinal studies such as the Estudio Longitudinal de Relaciones Interculturales (ELRI) and the Estudio Panel de Percepciones de Seguridad y Policías (EPSEP)\nBeyond research, Matías is passionate about photography, travel, and visual storytelling, which often inspire his analytical and creative work."
+  },
+  {
+    "objectID": "posts/avance-socia/index.html",
+    "href": "posts/avance-socia/index.html",
+    "title": "Avance sobre datos sociales 2025",
+    "section": "",
+    "text": "Esta semana comparto una actualización sobre la recolección de datos sociales que hemos venido trabajando. Publicamos nuevos scripts de limpieza, añadimos anotaciones de calidad y generamos una primera serie de visualizaciones para el equipo, lo que nos permite comunicar mejor los patrones emergentes."
+  },
+  {
+    "objectID": "posts/avance-socia/index.html#resumen",
+    "href": "posts/avance-socia/index.html#resumen",
+    "title": "Avance sobre datos sociales 2025",
+    "section": "",
+    "text": "Esta semana comparto una actualización sobre la recolección de datos sociales que hemos venido trabajando. Publicamos nuevos scripts de limpieza, añadimos anotaciones de calidad y generamos una primera serie de visualizaciones para el equipo, lo que nos permite comunicar mejor los patrones emergentes."
+  },
+  {
+    "objectID": "posts/avance-socia/index.html#qué-sigue",
+    "href": "posts/avance-socia/index.html#qué-sigue",
+    "title": "Avance sobre datos sociales 2025",
+    "section": "Qué sigue",
+    "text": "Qué sigue\n\nDocumentar el proceso de verificación y sincronizarlo con el repositorio principal para que otros puedan reproducirlo.\nCompartir un breve cuaderno con los resultados preliminares en la sección de posts del sitio.\nPlanificar un taller interno para discutir cómo integrarlo a la próxima cátedra."
   }
 ]
