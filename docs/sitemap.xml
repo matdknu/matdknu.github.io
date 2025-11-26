@@ -1,79 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://drganghe.github.io/quarto-academic-website-template/posts.html</loc>
-    <lastmod>2025-11-06T23:04:55.821Z</lastmod>
+    <loc>https://matdknu.github.io/advising.html</loc>
+    <lastmod>2025-11-26T02:17:38.571Z</lastmod>
   </url>
   <url>
-    <loc>https://drganghe.github.io/quarto-academic-website-template/publications.html</loc>
+    <loc>https://matdknu.github.io/posts.html</loc>
+    <lastmod>2025-11-26T02:10:25.599Z</lastmod>
+  </url>
+  <url>
+    <loc>https://matdknu.github.io/publications.html</loc>
     <lastmod>2025-11-06T23:04:55.824Z</lastmod>
   </url>
   <url>
-    <loc>https://drganghe.github.io/quarto-academic-website-template/projects.html</loc>
+    <loc>https://matdknu.github.io/projects.html</loc>
     <lastmod>2025-11-06T23:04:55.824Z</lastmod>
   </url>
   <url>
-    <loc>https://drganghe.github.io/quarto-academic-website-template/posts/news-title/index.html</loc>
-    <lastmod>2025-11-06T23:04:55.821Z</lastmod>
+    <loc>https://matdknu.github.io/posts/avance-socia/index.html</loc>
+    <lastmod>2025-11-26T01:53:50.867Z</lastmod>
   </url>
   <url>
-    <loc>https://drganghe.github.io/quarto-academic-website-template/posts/paper-title/index.html</loc>
-    <lastmod>2025-11-06T23:04:55.824Z</lastmod>
+    <loc>https://matdknu.github.io/posts/programming-in-social-science/quickstart/index.html</loc>
+    <lastmod>2025-11-26T01:58:13.601Z</lastmod>
   </url>
   <url>
-    <loc>https://drganghe.github.io/quarto-academic-website-template/teaching.html</loc>
-    <lastmod>2025-11-06T23:04:55.825Z</lastmod>
+    <loc>https://matdknu.github.io/posts/experience-in-research/colaboraciones/index.html</loc>
+    <lastmod>2025-11-26T02:06:42.136Z</lastmod>
   </url>
   <url>
-    <loc>https://drganghe.github.io/quarto-academic-website-template/contact.html</loc>
+    <loc>https://matdknu.github.io/contact.html</loc>
     <lastmod>2025-11-07T13:43:07.841Z</lastmod>
   </url>
   <url>
-    <loc>https://drganghe.github.io/quarto-academic-website-template/posts/event-title/index.html</loc>
+    <loc>https://matdknu.github.io/teaching.html</loc>
+    <lastmod>2025-11-06T23:04:55.825Z</lastmod>
+  </url>
+  <url>
+    <loc>https://matdknu.github.io/posts/experience-in-research/roles/index.html</loc>
+    <lastmod>2025-11-26T02:04:37.066Z</lastmod>
+  </url>
+  <url>
+    <loc>https://matdknu.github.io/posts/experience-in-research/fondecyt/index.html</loc>
+    <lastmod>2025-11-26T02:05:30.102Z</lastmod>
+  </url>
+  <url>
+    <loc>https://matdknu.github.io/posts/programming-in-social-science/data-pipelines/index.html</loc>
+    <lastmod>2025-11-26T01:58:13.601Z</lastmod>
+  </url>
+  <url>
+    <loc>https://matdknu.github.io/index.html</loc>
+    <lastmod>2025-11-26T02:19:53.964Z</lastmod>
+  </url>
+  <url>
+    <loc>https://matdknu.github.io/people.html</loc>
     <lastmod>2025-11-06T23:04:55.821Z</lastmod>
   </url>
   <url>
-    <loc>https://drganghe.github.io/quarto-academic-website-template/index.html</loc>
-    <lastmod>2025-11-07T13:41:56.839Z</lastmod>
-  </url>
-  <url>
-    <loc>https://drganghe.github.io/quarto-academic-website-template/people.html</loc>
-    <lastmod>2025-11-06T23:04:55.821Z</lastmod>
-  </url>
-  <url>
-    <loc>https://drganghe.github.io/quarto-academic-website-template/posts/cueck/index.html</loc>
-    <lastmod>2025-11-07T12:53:02.386Z</lastmod>
-  </url>
-  <url>
-    <loc>https://drganghe.github.io/quarto-academic-website-template/posts/cueck/bla.html</loc>
-    <lastmod>2025-11-07T12:53:02.386Z</lastmod>
-  </url>
-  <url>
-    <loc>https://drganghe.github.io/quarto-academic-website-template/posts/lalalal/bla.html</loc>
-    <lastmod>2025-11-07T12:56:24.474Z</lastmod>
-  </url>
-  <url>
-    <loc>https://drganghe.github.io/quarto-academic-website-template/posts/lalalal/index.html</loc>
-    <lastmod>2025-11-07T12:56:24.474Z</lastmod>
-  </url>
-  <url>
-    <loc>https://drganghe.github.io/quarto-academic-website-template/posts/noticias1.html</loc>
-    <lastmod>2025-11-07T12:56:24.474Z</lastmod>
-  </url>
-  <url>
-    <loc>https://drganghe.github.io/quarto-academic-website-template/posts/news-title/bla.html</loc>
-    <lastmod>2025-11-07T13:29:50.446Z</lastmod>
-  </url>
-  <url>
-    <loc>https://drganghe.github.io/quarto-academic-website-template/posts/news-prueba/noticias1.html</loc>
-    <lastmod>2025-11-07T13:31:46.388Z</lastmod>
-  </url>
-  <url>
-    <loc>https://drganghe.github.io/quarto-academic-website-template/posts/news-prueba/index.html</loc>
-    <lastmod>2025-11-07T13:31:46.388Z</lastmod>
-  </url>
-  <url>
-    <loc>https://drganghe.github.io/quarto-academic-website-template/posts/avance-socia/index.html</loc>
-    <lastmod>2025-11-26T01:42:58.083Z</lastmod>
+    <loc>https://matdknu.github.io/photos.html</loc>
+    <lastmod>2025-11-26T02:14:10.928Z</lastmod>
   </url>
 </urlset>

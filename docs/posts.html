@@ -6,10 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Dr.&nbsp;Gang He">
-<meta name="description" content="Posts about papers, events, news, and more">
+<meta name="author" content="Matías Deneken">
+<meta name="description" content="Catalog of opinion columns, reports, tutorials, and reflections on research.">
 
-<title>What’s New &amp; Updated – Quarto Academic</title>
+<title>What’s New &amp; Updated – Matías Deneken</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -81,9 +81,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-date','listing-title','listing-author','listing-subtitle','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
       
-      searchColumns: ["listing-date","listing-title","listing-author","listing-subtitle","listing-image","listing-description","listing-categories"],
+      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -161,13 +161,13 @@ window.Quarto = {
 </script>
 
 <link rel="stylesheet" href="styles.css">
-<link rel="alternate" type="application/rss+xml" title="Quarto Academic" href="posts.xml" data-external="1"><meta property="og:title" content="What’s New &amp; Updated – Quarto Academic">
-<meta property="og:description" content="Posts about papers, events, news, and more">
-<meta property="og:image" content="https://drganghe.github.io/quarto-academic-website-template/posts/paper-title/featured.jpg">
-<meta property="og:site_name" content="Quarto Academic">
-<meta name="twitter:title" content="What’s New &amp; Updated – Quarto Academic">
-<meta name="twitter:description" content="Posts about papers, events, news, and more">
-<meta name="twitter:image" content="https://drganghe.github.io/quarto-academic-website-template/posts/paper-title/featured.jpg">
+<link rel="alternate" type="application/rss+xml" title="Matías Deneken" href="posts.xml" data-external="1"><meta property="og:title" content="What’s New &amp; Updated – Matías Deneken">
+<meta property="og:description" content="Opinion columns, reports, and tutorials">
+<meta property="og:image" content="https://matdknu.github.io/files/images/my-face.JPG">
+<meta property="og:site_name" content="Matías Deneken">
+<meta name="twitter:title" content="What’s New &amp; Updated – Matías Deneken">
+<meta name="twitter:description" content="Opinion columns, reports, and tutorials">
+<meta name="twitter:image" content="https://matdknu.github.io/files/images/my-face.JPG">
 <meta name="twitter:card" content="summary_large_image">
 </head>
 
@@ -179,7 +179,7 @@ window.Quarto = {
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a class="navbar-brand" href="./index.html">
-    <span class="navbar-title">Quarto Academic</span>
+    <span class="navbar-title">Matías Deneken</span>
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -198,8 +198,12 @@ window.Quarto = {
  <span class="dropdown-text">News</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./posts.html#category=event">
- <span class="dropdown-text">Events</span></a>
+    <a class="dropdown-item" href="./posts.html">
+ <span class="dropdown-text">Posts</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./posts.html#category=tutorial">
+ <span class="dropdown-text">Tutorials</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="./contact.html">
@@ -217,15 +221,15 @@ window.Quarto = {
  <span class="dropdown-text">List of Publications</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./posts.html#category=paper">
- <span class="dropdown-text">Selected Papers</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="./projects.html">
- <span class="dropdown-text">Grants</span></a>
+    <a class="dropdown-item" href="./posts.html#category=experience-in-research">
+ <span class="dropdown-text">Experience in Research</span></a>
   </li>  
     </ul>
   </li>
+  <li class="nav-item">
+    <a class="nav-link" href="./advising.html"> 
+<span class="menu-text">Advising</span></a>
+  </li>  
   <li class="nav-item">
     <a class="nav-link" href="./teaching.html"> 
 <span class="menu-text">Teaching</span></a>
@@ -242,8 +246,8 @@ window.Quarto = {
     </ul>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="./people.html"> 
-<span class="menu-text">Group</span></a>
+    <a class="nav-link" href="./photos.html"> 
+<span class="menu-text">Photos</span></a>
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
@@ -282,15 +286,21 @@ window.Quarto = {
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(6)</span></div><div class="category" data-category="event">event <span class="quarto-category-count">(1)</span></div><div class="category" data-category="news">news <span class="quarto-category-count">(4)</span></div><div class="category" data-category="paper">paper <span class="quarto-category-count">(1)</span></div><div class="category" data-category="presentation">presentation <span class="quarto-category-count">(1)</span></div></div></div>
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#opinion-columns" id="toc-opinion-columns" class="nav-link active" data-scroll-target="#opinion-columns">Opinion columns</a></li>
+  </ul>
+</nav>
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(7)</span></div><div class="category" data-category="experience-in-research">experience-in-research <span class="quarto-category-count">(3)</span></div><div class="category" data-category="news">news <span class="quarto-category-count">(2)</span></div><div class="category" data-category="programming-in-social-science">programming-in-social-science <span class="quarto-category-count">(2)</span></div><div class="category" data-category="tutorial">tutorial <span class="quarto-category-count">(2)</span></div></div></div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
 <h1 class="title">What’s New &amp; Updated</h1>
-<p class="subtitle lead">Posts about papers, events, news, and more</p>
+<p class="subtitle lead">Opinion columns, reports, and tutorials</p>
 </div>
 
 
@@ -307,12 +317,16 @@ window.Quarto = {
 </header>
 
 
+<section id="opinion-columns" class="level2">
+<h2 class="anchored" data-anchor-id="opinion-columns">Opinion columns</h2>
+<p>This catalog collects opinion columns, short reports, and tutorial notes from Matías Deneken’s work in social data science. Use the filters to view <code>News</code>, <code>Tutorials</code>, <code>Experience in Research</code>, or other tags and explore the most recent reflections and resources.</p>
 <div id="posts">
 
 </div>
 
 
 
+</section>
 
 <div class="quarto-listing quarto-listing-container-default" id="listing-listing">
 <div class="listing-actions-group">
@@ -341,7 +355,211 @@ window.Quarto = {
     </div>
 </div>
 <div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="news" data-listing-date-sort="1764126000000" data-listing-file-modified-sort="1764121378083" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="94">
+<div class="quarto-post image-right" data-index="0" data-categories="experience-in-research" data-listing-date-sort="1764212400000" data-listing-file-modified-sort="1764122677066" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="85">
+<div class="thumbnail">
+<p><a href="./posts/experience-in-research/roles/index.html" class="no-external"></a></p><a href="./posts/experience-in-research/roles/index.html" class="no-external">
+<p><img loading="lazy" src="./files/images/placeholder4.jpg" class="thumbnail-image"></p>
+</a><p><a href="./posts/experience-in-research/roles/index.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/experience-in-research/roles/index.html" class="no-external">Experience in Research: Field Coordination</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./posts/experience-in-research/roles/index.html" class="no-external"></a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('experience-in-research'); return false;">
+experience-in-research
+</div>
+</div>
+<div class="listing-description">
+<a href="./posts/experience-in-research/roles/index.html" class="no-external">Notas sobre la coordinación de campo en mis proyectos de datos sociales.</a>
+</div>
+</div>
+<div class="metadata">
+<a href="./posts/experience-in-research/roles/index.html" class="no-external">
+<div class="listing-date">
+Nov 27, 2025
+</div>
+<div class="listing-author">
+Matías Deneken
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="1" data-categories="experience-in-research" data-listing-date-sort="1764212400000" data-listing-file-modified-sort="1764122802136" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="53">
+<div class="thumbnail">
+<p><a href="./posts/experience-in-research/colaboraciones/index.html" class="no-external"></a></p><a href="./posts/experience-in-research/colaboraciones/index.html" class="no-external">
+<p><img loading="lazy" src="./files/images/placeholder1.jpg" class="thumbnail-image"></p>
+</a><p><a href="./posts/experience-in-research/colaboraciones/index.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/experience-in-research/colaboraciones/index.html" class="no-external">Alianzas e instrumentos de colaboración</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./posts/experience-in-research/colaboraciones/index.html" class="no-external"></a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('experience-in-research'); return false;">
+experience-in-research
+</div>
+</div>
+<div class="listing-description">
+<a href="./posts/experience-in-research/colaboraciones/index.html" class="no-external">Documentar cómo se organizan mesas, cartas y relaciones con otras instituciones.</a>
+</div>
+</div>
+<div class="metadata">
+<a href="./posts/experience-in-research/colaboraciones/index.html" class="no-external">
+<div class="listing-date">
+Nov 27, 2025
+</div>
+<div class="listing-author">
+Matías Deneken
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="2" data-categories="experience-in-research" data-listing-date-sort="1764212400000" data-listing-file-modified-sort="1764122730102" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="96">
+<div class="thumbnail">
+<p><a href="./posts/experience-in-research/fondecyt/index.html" class="no-external"></a></p><a href="./posts/experience-in-research/fondecyt/index.html" class="no-external">
+<p><img loading="lazy" src="./files/images/placeholder4.jpg" class="thumbnail-image"></p>
+</a><p><a href="./posts/experience-in-research/fondecyt/index.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/experience-in-research/fondecyt/index.html" class="no-external">Derechas FONDECYT, Interculturales, OLES, etc.</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./posts/experience-in-research/fondecyt/index.html" class="no-external"></a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('experience-in-research'); return false;">
+experience-in-research
+</div>
+</div>
+<div class="listing-description">
+<a href="./posts/experience-in-research/fondecyt/index.html" class="no-external">Registro de actividades conjuntas entre programas FONDECYT, interculturalidad y cooperación regional.</a>
+</div>
+</div>
+<div class="metadata">
+<a href="./posts/experience-in-research/fondecyt/index.html" class="no-external">
+<div class="listing-date">
+Nov 27, 2025
+</div>
+<div class="listing-author">
+Matías Deneken
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="3" data-categories="programming-in-social-science,tutorial" data-listing-date-sort="1764212400000" data-listing-file-modified-sort="1764122293601" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="88">
+<div class="thumbnail">
+<p><a href="./posts/programming-in-social-science/quickstart/index.html" class="no-external"></a></p><a href="./posts/programming-in-social-science/quickstart/index.html" class="no-external">
+<p><img loading="lazy" src="./files/images/placeholder1.JPG" class="thumbnail-image"></p>
+</a><p><a href="./posts/programming-in-social-science/quickstart/index.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/programming-in-social-science/quickstart/index.html" class="no-external">Programming in Social Science: Quickstart</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./posts/programming-in-social-science/quickstart/index.html" class="no-external"></a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('programming-in-social-science'); return false;">
+programming-in-social-science
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('tutorial'); return false;">
+tutorial
+</div>
+</div>
+<div class="listing-description">
+<a href="./posts/programming-in-social-science/quickstart/index.html" class="no-external">Pautas para arrancar análisis reproducible con scripts ligeros.</a>
+</div>
+</div>
+<div class="metadata">
+<a href="./posts/programming-in-social-science/quickstart/index.html" class="no-external">
+<div class="listing-date">
+Nov 27, 2025
+</div>
+<div class="listing-author">
+Mat
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="4" data-categories="programming-in-social-science,tutorial" data-listing-date-sort="1764212400000" data-listing-file-modified-sort="1764122293601" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="69">
+<div class="thumbnail">
+<p><a href="./posts/programming-in-social-science/data-pipelines/index.html" class="no-external"></a></p><a href="./posts/programming-in-social-science/data-pipelines/index.html" class="no-external">
+<p><img loading="lazy" src="./files/images/placeholder2.JPG" class="thumbnail-image"></p>
+</a><p><a href="./posts/programming-in-social-science/data-pipelines/index.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/programming-in-social-science/data-pipelines/index.html" class="no-external">Programming in Social Science: Data Pipelines</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./posts/programming-in-social-science/data-pipelines/index.html" class="no-external"></a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('programming-in-social-science'); return false;">
+programming-in-social-science
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('tutorial'); return false;">
+tutorial
+</div>
+</div>
+<div class="listing-description">
+<a href="./posts/programming-in-social-science/data-pipelines/index.html" class="no-external">Cómo encadenar scripts ligeros para actualizar el blog.</a>
+</div>
+</div>
+<div class="metadata">
+<a href="./posts/programming-in-social-science/data-pipelines/index.html" class="no-external">
+<div class="listing-date">
+Nov 27, 2025
+</div>
+<div class="listing-author">
+Mat
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="5" data-categories="news" data-listing-date-sort="1764212400000">
+<div class="thumbnail">
+<p><a href="https://matdknu.github.io" class="no-external"></a></p><a href="https://matdknu.github.io" class="no-external">
+<p><img loading="lazy" src="./files/images/my-face.JPG" class="thumbnail-image"></p>
+</a><p><a href="https://matdknu.github.io" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="https://matdknu.github.io" class="no-external">Portal de Matías Deneken</a>
+</h3>
+<div class="listing-subtitle">
+<a href="https://matdknu.github.io" class="no-external"></a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('news'); return false;">
+news
+</div>
+</div>
+<div class="listing-description">
+<a href="https://matdknu.github.io" class="no-external">Notas, tutoriales y proyectos en ciencia de datos sociales.</a>
+</div>
+</div>
+<div class="metadata">
+<a href="https://matdknu.github.io" class="no-external">
+<div class="listing-date">
+Nov 27, 2025
+</div>
+<div class="listing-author">
+Matías Deneken
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="6" data-categories="news" data-listing-date-sort="1764126000000" data-listing-file-modified-sort="1764122030867" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="94">
 <div class="thumbnail">
 <p><a href="./posts/avance-socia/index.html" class="no-external"></a></p><a href="./posts/avance-socia/index.html" class="no-external">
 <p><img loading="lazy" src="./files/images/placeholder4.jpg" class="thumbnail-image"></p>
@@ -370,174 +588,6 @@ Nov 26, 2025
 </div>
 <div class="listing-author">
 Mat
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="1" data-categories="news" data-listing-date-sort="1750737600000" data-listing-file-modified-sort="1762522306388" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="9">
-<div class="thumbnail">
-<p><a href="./posts/news-prueba/index.html" class="no-external"></a></p><a href="./posts/news-prueba/index.html" class="no-external">
-<p><img loading="lazy" src="./files/images/placeholder3.JPG" class="thumbnail-image"></p>
-</a><p><a href="./posts/news-prueba/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/news-prueba/index.html" class="no-external">xd</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/news-prueba/index.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('news'); return false;">
-news
-</div>
-</div>
-<div class="listing-description">
-<a href="./posts/news-prueba/index.html" class="no-external">xd</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/news-prueba/index.html" class="no-external">
-<div class="listing-date">
-Jun 24, 2025
-</div>
-<div class="listing-author">
-News
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="2" data-categories="event,presentation" data-listing-date-sort="1725336000000" data-listing-file-modified-sort="1762470295821" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="7">
-<div class="thumbnail">
-<p><a href="./posts/event-title/index.html" class="no-external"></a></p><a href="./posts/event-title/index.html" class="no-external">
-<p><img loading="lazy" src="./files/images/placeholder2.JPG" class="thumbnail-image"></p>
-</a><p><a href="./posts/event-title/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/event-title/index.html" class="no-external">Event item</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/event-title/index.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('event'); return false;">
-event
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('presentation'); return false;">
-presentation
-</div>
-</div>
-<div class="listing-description">
-<a href="./posts/event-title/index.html" class="no-external">About Event item.</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/event-title/index.html" class="no-external">
-<div class="listing-date">
-Sep 3, 2024
-</div>
-<div class="listing-author">
-Event
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="3" data-categories="news" data-listing-date-sort="1719201600000" data-listing-file-modified-sort="1762470295821" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="9">
-<div class="thumbnail">
-<p><a href="./posts/news-title/index.html" class="no-external"></a></p><a href="./posts/news-title/index.html" class="no-external">
-<p><img loading="lazy" src="./files/images/placeholder3.JPG" class="thumbnail-image"></p>
-</a><p><a href="./posts/news-title/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/news-title/index.html" class="no-external">News item</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/news-title/index.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('news'); return false;">
-news
-</div>
-</div>
-<div class="listing-description">
-<a href="./posts/news-title/index.html" class="no-external">About new item</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/news-title/index.html" class="no-external">
-<div class="listing-date">
-Jun 24, 2024
-</div>
-<div class="listing-author">
-News
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="4" data-categories="paper" data-listing-date-sort="-1092945600000" data-listing-file-modified-sort="1762470295824" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="168">
-<div class="thumbnail">
-<p><a href="./posts/paper-title/index.html" class="no-external"></a></p><a href="./posts/paper-title/index.html" class="no-external">
-<p><img loading="lazy" src="./posts/paper-title/featured.jpg" class="thumbnail-image"></p>
-</a><p><a href="./posts/paper-title/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/paper-title/index.html" class="no-external">Can quantum-mechanical description of physical reality be considered complete?</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/paper-title/index.html" class="no-external"><em>Physical Review</em></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('paper'); return false;">
-paper
-</div>
-</div>
-<div class="listing-description">
-<a href="./posts/paper-title/index.html" class="no-external">One is thus led to conclude that the description of reality as given by a wave function is not complete.</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/paper-title/index.html" class="no-external">
-<div class="listing-date">
-May 15, 1935
-</div>
-<div class="listing-author">
-Albert Einstein, Boris Podolsky, Nathan Rosen
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="5" data-categories="news" data-listing-date-sort="-1092945600000" data-listing-file-modified-sort="1762522190446" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="168">
-<div class="thumbnail">
-<p><a href="./posts/news-title/bla.html" class="no-external"></a></p><a href="./posts/news-title/bla.html" class="no-external">
-<p><img loading="lazy" src="./posts/news-title/featured.jpg" class="thumbnail-image"></p>
-</a><p><a href="./posts/news-title/bla.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/news-title/bla.html" class="no-external">balalalalala</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/news-title/bla.html" class="no-external"><em>Physical Review</em></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('news'); return false;">
-news
-</div>
-</div>
-<div class="listing-description">
-<a href="./posts/news-title/bla.html" class="no-external">One is thus led to conclude that the description of reality as given by a wave function is not complete.</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/news-title/bla.html" class="no-external">
-<div class="listing-date">
-May 15, 1935
-</div>
-<div class="listing-author">
-Albert Einstein, Boris Podolsky, Nathan Rosen
 </div>
 </a>
 </div>
@@ -976,11 +1026,11 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left">
-<a href="http://www.github.com">Your Name</a> ©
+<a href="https://matdknu.github.io">Matías Deneken</a> ©
 <script>document.write(new Date().getFullYear())</script>
 </div>   
     <div class="nav-footer-center">
-<p>Build on <a href="https://github.com/matdknu">Quart Academic Website Template</a> adapted by <a href="http://drganghe.github.io">Dr.&nbsp;Gang He</a></p>
+<p>Actualizado en Quarto por Matías Deneken</p>
 </div>
     <div class="nav-footer-right">
       <ul class="footer-items list-unstyled">

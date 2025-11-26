@@ -5,21 +5,233 @@
       xmlns:dc="http://purl.org/dc/elements/1.1/" 
       version="2.0">
 <channel>
-<title>Quarto Academic</title>
-<link>https://drganghe.github.io/quarto-academic-website-template/posts.html</link>
-<atom:link href="https://drganghe.github.io/quarto-academic-website-template/posts.xml" rel="self" type="application/rss+xml"/>
-<description>Quarto Academic Website Template adapted by Dr. Gang He</description>
+<title>Matías Deneken</title>
+<link>https://matdknu.github.io/posts.html</link>
+<atom:link href="https://matdknu.github.io/posts.xml" rel="self" type="application/rss+xml"/>
+<description>Investigación, tutoriales y avances en datos sociales desde el laboratorio de Matías Deneken.</description>
 <image>
-<url>https://quarto.org/quarto.png</url>
-<title>Quarto Academic</title>
-<link>https://drganghe.github.io/quarto-academic-website-template/posts.html</link>
+<url>https://matdknu.github.io/files/images/my-face.JPG</url>
+<title>Matías Deneken</title>
+<link>https://matdknu.github.io/posts.html</link>
 </image>
 <generator>quarto-1.5.56</generator>
-<lastBuildDate>Wed, 26 Nov 2025 03:00:00 GMT</lastBuildDate>
+<lastBuildDate>Thu, 27 Nov 2025 03:00:00 GMT</lastBuildDate>
+<item>
+  <title>Experience in Research: Field Coordination</title>
+  <dc:creator>Matías Deneken</dc:creator>
+  <link>https://matdknu.github.io/posts/experience-in-research/roles/</link>
+  <description><![CDATA[ 
+
+
+
+
+<section id="coordinación-y-operación-en-terreno" class="level2">
+<h2 class="anchored" data-anchor-id="coordinación-y-operación-en-terreno">Coordinación y operación en terreno</h2>
+<p>En este espacio documentaré tareas de coordinación (equipos, cronogramas, validaciones) para que cada experiencia quede registrada dentro del blog. Puedo agregar fotos o enlaces a reportes cuando sea útil.</p>
+</section>
+<section id="cómo-mantener-estas-notas" class="level2">
+<h2 class="anchored" data-anchor-id="cómo-mantener-estas-notas">Cómo mantener estas notas</h2>
+<ol type="1">
+<li>Duplica esta entrada o crea otra en <code>posts/experience-in-research/</code>.</li>
+<li>Actualiza el título, la fecha y la descripción con el proyecto específico.</li>
+<li>Describe brevemente qué pasó y qué aprendiste; adjunta enlaces o archivos si es relevante.</li>
+<li>La categoría <code>experience-in-research</code> mantiene todas estas notas agrupadas dentro del menú “Research”.</li>
+</ol>
+<!--Include social share buttons-->
+<!-- 
+AddToAny check more: https://www.addtoany.com/buttons/for/website 
+Using includes will make edits easier, will only need to add or remove button here if needed.
+https://quarto.org/docs/authoring/includes.html
+-->
+<div class="a2a_kit a2a_kit_size_32 a2a_default_style">
+<p><a class="a2a_dd" href="https://www.addtoany.com/share"></a> <a class="a2a_button_linkedin"></a> <a class="a2a_button_bluesky"></a> <a class="a2a_button_facebook"></a> <a class="a2a_button_copy_link"></a> <a class="a2a_button_email"></a></p>
+</div>
+<script async="" src="https://static.addtoany.com/menu/page.js"></script>
+
+
+</section>
+
+ ]]></description>
+  <category>experience-in-research</category>
+  <guid>https://matdknu.github.io/posts/experience-in-research/roles/</guid>
+  <pubDate>Thu, 27 Nov 2025 03:00:00 GMT</pubDate>
+  <media:content url="https://matdknu.github.io/files/images/placeholder4.jpg" medium="image" type="image/jpeg"/>
+</item>
+<item>
+  <title>Alianzas e instrumentos de colaboración</title>
+  <dc:creator>Matías Deneken</dc:creator>
+  <link>https://matdknu.github.io/posts/experience-in-research/colaboraciones/</link>
+  <description><![CDATA[ 
+
+
+
+
+<section id="mesa-de-trabajo-y-acuerdos" class="level2">
+<h2 class="anchored" data-anchor-id="mesa-de-trabajo-y-acuerdos">Mesa de trabajo y acuerdos</h2>
+<p>Se registran aquí los acuerdos operativos con equipos externos, mesadas de trabajo y protocolos que facilitan la colaboración sostenida en proyectos de datos sociales.</p>
+</section>
+<section id="documentación-rápida" class="level2">
+<h2 class="anchored" data-anchor-id="documentación-rápida">Documentación rápida</h2>
+<ul>
+<li>Carta de intención compartida con aliados académicos.</li>
+<li>Protocolos de entrevistas y consentimiento digital.</li>
+<li>Bitácoras de reuniones semanales y chequeos de avance.</li>
+</ul>
+<!--Include social share buttons-->
+<!-- 
+AddToAny check more: https://www.addtoany.com/buttons/for/website 
+Using includes will make edits easier, will only need to add or remove button here if needed.
+https://quarto.org/docs/authoring/includes.html
+-->
+<div class="a2a_kit a2a_kit_size_32 a2a_default_style">
+<p><a class="a2a_dd" href="https://www.addtoany.com/share"></a> <a class="a2a_button_linkedin"></a> <a class="a2a_button_bluesky"></a> <a class="a2a_button_facebook"></a> <a class="a2a_button_copy_link"></a> <a class="a2a_button_email"></a></p>
+</div>
+<script async="" src="https://static.addtoany.com/menu/page.js"></script>
+
+
+</section>
+
+ ]]></description>
+  <category>experience-in-research</category>
+  <guid>https://matdknu.github.io/posts/experience-in-research/colaboraciones/</guid>
+  <pubDate>Thu, 27 Nov 2025 03:00:00 GMT</pubDate>
+  <media:content url="https://matdknu.github.io/files/images/placeholder1.jpg" medium="image" type="image/jpeg"/>
+</item>
+<item>
+  <title>Derechas FONDECYT, Interculturales, OLES, etc.</title>
+  <dc:creator>Matías Deneken</dc:creator>
+  <link>https://matdknu.github.io/posts/experience-in-research/fondecyt/</link>
+  <description><![CDATA[ 
+
+
+
+
+<section id="notas-rápidas-de-colaboración" class="level2">
+<h2 class="anchored" data-anchor-id="notas-rápidas-de-colaboración">Notas rápidas de colaboración</h2>
+<ul>
+<li><strong>FONDECYT Derechas:</strong> coordinación con becarios y alianzas con investigadores de campo, revisión de avances trimestrales.</li>
+<li><strong>Interculturales:</strong> sesiones con comunidades, validación de metodologías y ajustes de protocolo para respeto cultural.</li>
+<li><strong>OLES y redes:</strong> encuentros virtuales para compartir aprendizajes y difundir resultados en español e inglés.</li>
+</ul>
+</section>
+<section id="próximos-pasos" class="level2">
+<h2 class="anchored" data-anchor-id="próximos-pasos">Próximos pasos</h2>
+<ol type="1">
+<li>Consolidar material audiovisual y referencias para los informes internos.</li>
+<li>Registrar quién se sumó a cada iniciativa para facilitar nuevas convocatorias de fondos.</li>
+<li>Compartir estos apuntes con los equipos a través de <code>posts.qmd</code> para que queden visibles como parte del blog “Experience in Research”.</li>
+</ol>
+<!--Include social share buttons-->
+<!-- 
+AddToAny check more: https://www.addtoany.com/buttons/for/website 
+Using includes will make edits easier, will only need to add or remove button here if needed.
+https://quarto.org/docs/authoring/includes.html
+-->
+<div class="a2a_kit a2a_kit_size_32 a2a_default_style">
+<p><a class="a2a_dd" href="https://www.addtoany.com/share"></a> <a class="a2a_button_linkedin"></a> <a class="a2a_button_bluesky"></a> <a class="a2a_button_facebook"></a> <a class="a2a_button_copy_link"></a> <a class="a2a_button_email"></a></p>
+</div>
+<script async="" src="https://static.addtoany.com/menu/page.js"></script>
+
+
+</section>
+
+ ]]></description>
+  <category>experience-in-research</category>
+  <guid>https://matdknu.github.io/posts/experience-in-research/fondecyt/</guid>
+  <pubDate>Thu, 27 Nov 2025 03:00:00 GMT</pubDate>
+  <media:content url="https://matdknu.github.io/files/images/placeholder4.jpg" medium="image" type="image/jpeg"/>
+</item>
+<item>
+  <title>Programming in Social Science: Quickstart</title>
+  <dc:creator>Mat </dc:creator>
+  <link>https://matdknu.github.io/posts/programming-in-social-science/quickstart/</link>
+  <description><![CDATA[ 
+
+
+
+
+<section id="paso-1-ambiente-mínimo" class="level2">
+<h2 class="anchored" data-anchor-id="paso-1-ambiente-mínimo">Paso 1: ambiente mínimo</h2>
+<p>Prepara un entorno con las librerías que usas con mayor frecuencia (por ejemplo: <code>tidyverse</code>, <code>quarto</code>, <code>janitor</code>). Guarda los paquetes en <code>deps.R</code> para que cualquier colaborador pueda instalar con <code>renv::restore()</code>.</p>
+</section>
+<section id="paso-2-datos-con-trazabilidad" class="level2">
+<h2 class="anchored" data-anchor-id="paso-2-datos-con-trazabilidad">Paso 2: datos con trazabilidad</h2>
+<p>Lee los datos desde <code>files/data/</code>, limpia columnas clave y guarda versiones intermedias. Añade <code>glue::glue("data/cleaned-{today()}.csv")</code> para evitar sobrescribir resultados previos.</p>
+</section>
+<section id="paso-3-blog-al-final" class="level2">
+<h2 class="anchored" data-anchor-id="paso-3-blog-al-final">Paso 3: blog al final</h2>
+<p>Este tutorial forma parte del blog “Programming in Social Science”: cada entrada breve ayuda a documentar procesos compartidos y a inspirar nuevos scripts para el equipo.</p>
+<!--Include social share buttons-->
+<!-- 
+AddToAny check more: https://www.addtoany.com/buttons/for/website 
+Using includes will make edits easier, will only need to add or remove button here if needed.
+https://quarto.org/docs/authoring/includes.html
+-->
+<div class="a2a_kit a2a_kit_size_32 a2a_default_style">
+<p><a class="a2a_dd" href="https://www.addtoany.com/share"></a> <a class="a2a_button_linkedin"></a> <a class="a2a_button_bluesky"></a> <a class="a2a_button_facebook"></a> <a class="a2a_button_copy_link"></a> <a class="a2a_button_email"></a></p>
+</div>
+<script async="" src="https://static.addtoany.com/menu/page.js"></script>
+
+
+</section>
+
+ ]]></description>
+  <category>programming-in-social-science</category>
+  <category>tutorial</category>
+  <guid>https://matdknu.github.io/posts/programming-in-social-science/quickstart/</guid>
+  <pubDate>Thu, 27 Nov 2025 03:00:00 GMT</pubDate>
+  <media:content url="https://matdknu.github.io/files/images/placeholder1.JPG" medium="image"/>
+</item>
+<item>
+  <title>Programming in Social Science: Data Pipelines</title>
+  <dc:creator>Mat </dc:creator>
+  <link>https://matdknu.github.io/posts/programming-in-social-science/data-pipelines/</link>
+  <description><![CDATA[ 
+
+
+
+
+<section id="coordinación-entre-scripts" class="level2">
+<h2 class="anchored" data-anchor-id="coordinación-entre-scripts">Coordinación entre scripts</h2>
+<p>Usa <code>targets</code> o <code>drake</code> para encadenar la limpieza, el análisis y la generación de reportes. Define <code>tar_make()</code> en un script que solo haga falta ejecutar cuando cambian los datos base.</p>
+</section>
+<section id="publicar-en-el-blog" class="level2">
+<h2 class="anchored" data-anchor-id="publicar-en-el-blog">Publicar en el blog</h2>
+<p>Los artefactos resultantes se esconden dentro de <code>posts/programming-in-social-science/</code>; cuando todo esté listo, solo queda ejecutar <code>quarto render posts.qmd</code> para que la lista del blog muestre automáticamente las entradas más recientes.</p>
+<!--Include social share buttons-->
+<!-- 
+AddToAny check more: https://www.addtoany.com/buttons/for/website 
+Using includes will make edits easier, will only need to add or remove button here if needed.
+https://quarto.org/docs/authoring/includes.html
+-->
+<div class="a2a_kit a2a_kit_size_32 a2a_default_style">
+<p><a class="a2a_dd" href="https://www.addtoany.com/share"></a> <a class="a2a_button_linkedin"></a> <a class="a2a_button_bluesky"></a> <a class="a2a_button_facebook"></a> <a class="a2a_button_copy_link"></a> <a class="a2a_button_email"></a></p>
+</div>
+<script async="" src="https://static.addtoany.com/menu/page.js"></script>
+
+
+</section>
+
+ ]]></description>
+  <category>programming-in-social-science</category>
+  <category>tutorial</category>
+  <guid>https://matdknu.github.io/posts/programming-in-social-science/data-pipelines/</guid>
+  <pubDate>Thu, 27 Nov 2025 03:00:00 GMT</pubDate>
+  <media:content url="https://matdknu.github.io/files/images/placeholder2.JPG" medium="image"/>
+</item>
+<item>
+  <title>Portal de Matías Deneken</title>
+  <link>https://matdknu.github.io/</link>
+  <description>Notas, tutoriales y proyectos en ciencia de datos sociales.</description>
+  <category>news</category>
+  <guid>https://matdknu.github.io/</guid>
+  <pubDate>Thu, 27 Nov 2025 03:00:00 GMT</pubDate>
+  <media:content url="https://matdknu.github.io/files/images/my-face.JPG" medium="image"/>
+</item>
 <item>
   <title>Avance sobre datos sociales 2025</title>
   <dc:creator>Mat </dc:creator>
-  <link>https://drganghe.github.io/quarto-academic-website-template/posts/avance-socia/</link>
+  <link>https://matdknu.github.io/posts/avance-socia/</link>
   <description><![CDATA[ 
 
 
@@ -52,226 +264,9 @@ https://quarto.org/docs/authoring/includes.html
 
  ]]></description>
   <category>news</category>
-  <guid>https://drganghe.github.io/quarto-academic-website-template/posts/avance-socia/</guid>
+  <guid>https://matdknu.github.io/posts/avance-socia/</guid>
   <pubDate>Wed, 26 Nov 2025 03:00:00 GMT</pubDate>
-  <media:content url="https://drganghe.github.io/quarto-academic-website-template/files/images/placeholder4.jpg" medium="image" type="image/jpeg"/>
-</item>
-<item>
-  <title>xd</title>
-  <dc:creator>News </dc:creator>
-  <link>https://drganghe.github.io/quarto-academic-website-template/posts/news-prueba/</link>
-  <description><![CDATA[ 
-
-
-
-
-<section id="summary" class="level2">
-<h2 class="anchored" data-anchor-id="summary">Summary</h2>
-<p>About the news</p>
-<!--Include social share buttons-->
-<!-- 
-AddToAny check more: https://www.addtoany.com/buttons/for/website 
-Using includes will make edits easier, will only need to add or remove button here if needed.
-https://quarto.org/docs/authoring/includes.html
--->
-<div class="a2a_kit a2a_kit_size_32 a2a_default_style">
-<p><a class="a2a_dd" href="https://www.addtoany.com/share"></a> <a class="a2a_button_linkedin"></a> <a class="a2a_button_bluesky"></a> <a class="a2a_button_facebook"></a> <a class="a2a_button_copy_link"></a> <a class="a2a_button_email"></a></p>
-</div>
-<script async="" src="https://static.addtoany.com/menu/page.js"></script>
-
-
-</section>
-
- ]]></description>
-  <category>news</category>
-  <guid>https://drganghe.github.io/quarto-academic-website-template/posts/news-prueba/</guid>
-  <pubDate>Tue, 24 Jun 2025 04:00:00 GMT</pubDate>
-  <media:content url="https://drganghe.github.io/quarto-academic-website-template/files/images/placeholder3.JPG" medium="image"/>
-</item>
-<item>
-  <title>Event item</title>
-  <dc:creator>Event </dc:creator>
-  <link>https://drganghe.github.io/quarto-academic-website-template/posts/event-title/</link>
-  <description><![CDATA[ 
-
-
-
-
-<p><a href="https://drganghe.github.io/quarto-academic-website-template/"><img src="https://drganghe.github.io/quarto-academic-website-template/files/images/placeholder2.JPG" class="img-fluid" style="width:90.0%"></a></p>
-<!--Include social share buttons-->
-<!-- 
-AddToAny check more: https://www.addtoany.com/buttons/for/website 
-Using includes will make edits easier, will only need to add or remove button here if needed.
-https://quarto.org/docs/authoring/includes.html
--->
-<div class="a2a_kit a2a_kit_size_32 a2a_default_style">
-<p><a class="a2a_dd" href="https://www.addtoany.com/share"></a> <a class="a2a_button_linkedin"></a> <a class="a2a_button_bluesky"></a> <a class="a2a_button_facebook"></a> <a class="a2a_button_copy_link"></a> <a class="a2a_button_email"></a></p>
-</div>
-<script async="" src="https://static.addtoany.com/menu/page.js"></script>
-
-
-
- ]]></description>
-  <category>event</category>
-  <category>presentation</category>
-  <guid>https://drganghe.github.io/quarto-academic-website-template/posts/event-title/</guid>
-  <pubDate>Tue, 03 Sep 2024 04:00:00 GMT</pubDate>
-  <media:content url="https://drganghe.github.io/quarto-academic-website-template/files/images/placeholder2.JPG" medium="image"/>
-</item>
-<item>
-  <title>News item</title>
-  <dc:creator>News </dc:creator>
-  <link>https://drganghe.github.io/quarto-academic-website-template/posts/news-title/</link>
-  <description><![CDATA[ 
-
-
-
-
-<section id="summary" class="level2">
-<h2 class="anchored" data-anchor-id="summary">Summary</h2>
-<p>About the news</p>
-<!--Include social share buttons-->
-<!-- 
-AddToAny check more: https://www.addtoany.com/buttons/for/website 
-Using includes will make edits easier, will only need to add or remove button here if needed.
-https://quarto.org/docs/authoring/includes.html
--->
-<div class="a2a_kit a2a_kit_size_32 a2a_default_style">
-<p><a class="a2a_dd" href="https://www.addtoany.com/share"></a> <a class="a2a_button_linkedin"></a> <a class="a2a_button_bluesky"></a> <a class="a2a_button_facebook"></a> <a class="a2a_button_copy_link"></a> <a class="a2a_button_email"></a></p>
-</div>
-<script async="" src="https://static.addtoany.com/menu/page.js"></script>
-
-
-</section>
-
- ]]></description>
-  <category>news</category>
-  <guid>https://drganghe.github.io/quarto-academic-website-template/posts/news-title/</guid>
-  <pubDate>Mon, 24 Jun 2024 04:00:00 GMT</pubDate>
-  <media:content url="https://drganghe.github.io/quarto-academic-website-template/files/images/placeholder3.JPG" medium="image"/>
-</item>
-<item>
-  <title>Can quantum-mechanical description of physical reality be considered complete?</title>
-  <dc:creator>Albert Einstein</dc:creator>
-  <dc:creator>Boris Podolsky</dc:creator>
-  <dc:creator>Nathan Rosen</dc:creator>
-  <link>https://drganghe.github.io/quarto-academic-website-template/posts/paper-title/</link>
-  <description><![CDATA[ 
-
-
-
-
-<!--Include academic icons or bottons-->
-<!-- 
-Load Academicons v1: https://jpswalsh.github.io/academicons/
--->
-<p><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css"></p>
-<p><link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"></p>
-<!---
-The following code are needed to show dimension citation and altmetrics.
-https://api.altmetric.com/embeds.html
-https://badge.dimensions.ai/
---->
-<script type="text/javascript" src="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js"></script>
-<script async="" src="https://badge.dimensions.ai/badge.js" charset="utf-8"></script>
-<script type="text/javascript" src="//cdn.plu.mx/widget-popup.js"></script>
-<section id="abstract" class="level2">
-<h2 class="anchored" data-anchor-id="abstract">Abstract</h2>
-<p>In a complete theory there is an element corresponding to each element of reality. A sufficient condition for the reality of a physical quantity is the possibility of predicting it with certainty, without disturbing the system. In quantum mechanics in the case of two physical quantities described by non-commuting operators, the knowledge of one precludes the knowledge of the other. Then either (1) the description of reality given by the wave function in quantum mechanics is not complete or (2) these two quantities cannot have simultaneous reality. Consideration of the problem of making predictions concerning a system on the basis of measurements made on another system that had previously interacted with it leads to the result that if (1) is false then (2) is also false. One is thus led to conclude that the description of reality as given by a wave function is not complete.</p>
-</section>
-<section id="links" class="level2">
-<h2 class="anchored" data-anchor-id="links">Links</h2>
-<p>Published <a href="https://journals.aps.org/pr/pdf/10.1103/PhysRev.47.777">paper</a></p>
-<script type="text/javascript" src="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js"></script><div class="altmetric-embed" data-badge-popover="right" data-badge-type="donut" data-doi="10.1103/PhysRev.47.777"></div>
-
-<span class="__dimensions_badge_embed__" data-doi="10.1103/PhysRev.47.777" data-hide-zero-citations="true" data-style="small_circle"></span><script async="" src="https://badge.dimensions.ai/badge.js" charset="utf-8"></script>
-
-
-</section>
-
-<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-citation"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">BibTeX citation:</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@article{einstein1935,
-  author = {Einstein, Albert and Podolsky, Boris and Rosen, Nathan},
-  title = {Can Quantum-Mechanical Description of Physical Reality Be
-    Considered Complete?},
-  journal = {Physical Review},
-  volume = {47},
-  number = {7938},
-  pages = {777-80},
-  date = {1935-05-15},
-  url = {https://journals.aps.org/pr/pdf/10.1103/PhysRev.47.777},
-  doi = {10.1103/PhysRev.47.777},
-  langid = {en}
-}
-</code></pre><div class="quarto-appendix-secondary-label">For attribution, please cite this work as:</div><div id="ref-einstein1935" class="csl-entry quarto-appendix-citeas">
-Einstein, Albert, Boris Podolsky, and Nathan Rosen. 1935. <span>“Can
-Quantum-Mechanical Description of Physical Reality Be Considered
-Complete?”</span> <em>Physical Review</em> 47 (7938): 777–80. <a href="https://doi.org/10.1103/PhysRev.47.777">https://doi.org/10.1103/PhysRev.47.777</a>.
-</div></div></section></div> ]]></description>
-  <category>paper</category>
-  <guid>https://drganghe.github.io/quarto-academic-website-template/posts/paper-title/</guid>
-  <pubDate>Wed, 15 May 1935 04:00:00 GMT</pubDate>
-  <media:content url="https://drganghe.github.io/quarto-academic-website-template/posts/paper-title/featured.jpg" medium="image" type="image/jpeg"/>
-</item>
-<item>
-  <title>balalalalala</title>
-  <dc:creator>Albert Einstein</dc:creator>
-  <dc:creator>Boris Podolsky</dc:creator>
-  <dc:creator>Nathan Rosen</dc:creator>
-  <link>https://drganghe.github.io/quarto-academic-website-template/posts/news-title/bla.html</link>
-  <description><![CDATA[ 
-
-
-
-
-<!--Include academic icons or bottons-->
-<!-- 
-Load Academicons v1: https://jpswalsh.github.io/academicons/
--->
-<p><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css"></p>
-<p><link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"></p>
-<!---
-The following code are needed to show dimension citation and altmetrics.
-https://api.altmetric.com/embeds.html
-https://badge.dimensions.ai/
---->
-<script type="text/javascript" src="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js"></script>
-<script async="" src="https://badge.dimensions.ai/badge.js" charset="utf-8"></script>
-<script type="text/javascript" src="//cdn.plu.mx/widget-popup.js"></script>
-<section id="abstract" class="level2">
-<h2 class="anchored" data-anchor-id="abstract">Abstract</h2>
-<p>In a complete theory there is an element corresponding to each element of reality. A sufficient condition for the reality of a physical quantity is the possibility of predicting it with certainty, without disturbing the system. In quantum mechanics in the case of two physical quantities described by non-commuting operators, the knowledge of one precludes the knowledge of the other. Then either (1) the description of reality given by the wave function in quantum mechanics is not complete or (2) these two quantities cannot have simultaneous reality. Consideration of the problem of making predictions concerning a system on the basis of measurements made on another system that had previously interacted with it leads to the result that if (1) is false then (2) is also false. One is thus led to conclude that the description of reality as given by a wave function is not complete.</p>
-</section>
-<section id="links" class="level2">
-<h2 class="anchored" data-anchor-id="links">Links</h2>
-<p>Published <a href="https://journals.aps.org/pr/pdf/10.1103/PhysRev.47.777">paper</a></p>
-<script type="text/javascript" src="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js"></script><div class="altmetric-embed" data-badge-popover="right" data-badge-type="donut" data-doi="10.1103/PhysRev.47.777"></div>
-
-<span class="__dimensions_badge_embed__" data-doi="10.1103/PhysRev.47.777" data-hide-zero-citations="true" data-style="small_circle"></span><script async="" src="https://badge.dimensions.ai/badge.js" charset="utf-8"></script>
-
-
-</section>
-
-<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-citation"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">BibTeX citation:</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@article{einstein2025,
-  author = {Einstein, Albert and Podolsky, Boris and Rosen, Nathan},
-  title = {Balalalalala},
-  journal = {Physical Review},
-  volume = {47},
-  number = {7938},
-  pages = {777-80},
-  date = {2025-05-15},
-  url = {https://journals.aps.org/pr/pdf/10.1103/PhysRev.47.777},
-  doi = {10.1103/PhysRev.47.777},
-  langid = {en}
-}
-</code></pre><div class="quarto-appendix-secondary-label">For attribution, please cite this work as:</div><div id="ref-einstein2025" class="csl-entry quarto-appendix-citeas">
-Einstein, Albert, Boris Podolsky, and Nathan Rosen. 2025.
-<span>“Balalalalala.”</span> <em>Physical Review</em> 47 (7938): 777–80.
-<a href="https://doi.org/10.1103/PhysRev.47.777">https://doi.org/10.1103/PhysRev.47.777</a>.
-</div></div></section></div> ]]></description>
-  <category>news</category>
-  <guid>https://drganghe.github.io/quarto-academic-website-template/posts/news-title/bla.html</guid>
-  <pubDate>Wed, 15 May 1935 04:00:00 GMT</pubDate>
-  <media:content url="https://drganghe.github.io/quarto-academic-website-template/posts/news-title/featured.jpg" medium="image" type="image/jpeg"/>
+  <media:content url="https://matdknu.github.io/files/images/placeholder4.jpg" medium="image" type="image/jpeg"/>
 </item>
 </channel>
 </rss>

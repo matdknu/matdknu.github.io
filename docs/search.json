@@ -1,10 +1,45 @@
 [
   {
+    "objectID": "advising.html",
+    "href": "advising.html",
+    "title": "Advising",
+    "section": "",
+    "text": "Strategic advising on study design, data governance, and reproducible workflows for social research teams.\nReviews of notebooks, scripts, and visual narratives to keep analysis transparent and maintainable.\nShort workshops (virtual or on-site) that translate methods into actionable practices for researchers, NGOs, or teams in transition."
+  },
+  {
+    "objectID": "advising.html#offerings",
+    "href": "advising.html#offerings",
+    "title": "Advising",
+    "section": "",
+    "text": "Strategic advising on study design, data governance, and reproducible workflows for social research teams.\nReviews of notebooks, scripts, and visual narratives to keep analysis transparent and maintainable.\nShort workshops (virtual or on-site) that translate methods into actionable practices for researchers, NGOs, or teams in transition."
+  },
+  {
+    "objectID": "advising.html#how-we-work-together",
+    "href": "advising.html#how-we-work-together",
+    "title": "Advising",
+    "section": "How we work together",
+    "text": "How we work together\n\nSend a short email (m.deneken@uc.cl) or LinkedIn message describing the project scope or questions.\nWe schedule a kickoff chat, define goals, and agree on deliverables (notes, reviewed code, workshop plan).\nInsights from each engagement feed back into the “Experience in Research” blog so teams see how knowledge spreads."
+  },
+  {
+    "objectID": "advising.html#contact",
+    "href": "advising.html#contact",
+    "title": "Advising",
+    "section": "Contact",
+    "text": "Contact\n\nEmail: m.deneken@uc.cl\nLinkedIn: https://linkedin.com/deneken\nBsky: https://bsky.app"
+  },
+  {
     "objectID": "posts.html",
     "href": "posts.html",
     "title": "What’s New & Updated",
     "section": "",
-    "text": "Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Author\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\nAvance sobre datos sociales 2025\n\n\n\n\n\n\nnews\n\n\n\nResumen de lo más reciente en la recolección y visualización de datos sociales.\n\n\n\n\n\nNov 26, 2025\n\n\nMat\n\n\n\n\n\n\n\n\n\n\n\n\nxd\n\n\n\n\n\n\nnews\n\n\n\nxd\n\n\n\n\n\nJun 24, 2025\n\n\nNews\n\n\n\n\n\n\n\n\n\n\n\n\nEvent item\n\n\n\n\n\n\nevent\n\n\npresentation\n\n\n\nAbout Event item.\n\n\n\n\n\nSep 3, 2024\n\n\nEvent\n\n\n\n\n\n\n\n\n\n\n\n\nNews item\n\n\n\n\n\n\nnews\n\n\n\nAbout new item\n\n\n\n\n\nJun 24, 2024\n\n\nNews\n\n\n\n\n\n\n\n\n\n\n\n\nCan quantum-mechanical description of physical reality be considered complete?\n\n\nPhysical Review\n\n\n\npaper\n\n\n\nOne is thus led to conclude that the description of reality as given by a wave function is not complete.\n\n\n\n\n\nMay 15, 1935\n\n\nAlbert Einstein, Boris Podolsky, Nathan Rosen\n\n\n\n\n\n\n\n\n\n\n\n\nbalalalalala\n\n\nPhysical Review\n\n\n\nnews\n\n\n\nOne is thus led to conclude that the description of reality as given by a wave function is not complete.\n\n\n\n\n\nMay 15, 1935\n\n\nAlbert Einstein, Boris Podolsky, Nathan Rosen\n\n\n\n\n\n\nNo matching items"
+    "text": "This catalog collects opinion columns, short reports, and tutorial notes from Matías Deneken’s work in social data science. Use the filters to view News, Tutorials, Experience in Research, or other tags and explore the most recent reflections and resources."
+  },
+  {
+    "objectID": "posts.html#opinion-columns",
+    "href": "posts.html#opinion-columns",
+    "title": "What’s New & Updated",
+    "section": "",
+    "text": "This catalog collects opinion columns, short reports, and tutorial notes from Matías Deneken’s work in social data science. Use the filters to view News, Tutorials, Experience in Research, or other tags and explore the most recent reflections and resources."
   },
   {
     "objectID": "publications.html",
@@ -28,32 +63,81 @@
     "text": "Order By\n       Default\n         \n        \n         \n          Title\n        \n         \n          Team\n        \n         \n          Funder\n        \n         \n          Description\n        \n         \n          Start\n        \n         \n          End\n        \n         \n          Funding\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n \n\n\nTitle\n\n\nTeam\n\n\nFunder\n\n\nDescription\n\n\nFunding\n\n\nStart\n\n\nEnd\n\n\n\n\n\n\n\n\n\nExploring \n\n\nAcademic Website\n\n\nFunder\n\n\nThe goal of this project is to investigate .\n\n\n$0\n\n\n2024\n\n\n2025\n\n\n\n\n\nNo matching items"
   },
   {
-    "objectID": "posts/news-title/index.html",
-    "href": "posts/news-title/index.html",
-    "title": "News item",
+    "objectID": "posts/avance-socia/index.html",
+    "href": "posts/avance-socia/index.html",
+    "title": "Avance sobre datos sociales 2025",
     "section": "",
-    "text": "About the news"
+    "text": "Esta semana comparto una actualización sobre la recolección de datos sociales que hemos venido trabajando. Publicamos nuevos scripts de limpieza, añadimos anotaciones de calidad y generamos una primera serie de visualizaciones para el equipo, lo que nos permite comunicar mejor los patrones emergentes."
   },
   {
-    "objectID": "posts/news-title/index.html#summary",
-    "href": "posts/news-title/index.html#summary",
-    "title": "News item",
+    "objectID": "posts/avance-socia/index.html#resumen",
+    "href": "posts/avance-socia/index.html#resumen",
+    "title": "Avance sobre datos sociales 2025",
     "section": "",
-    "text": "About the news"
+    "text": "Esta semana comparto una actualización sobre la recolección de datos sociales que hemos venido trabajando. Publicamos nuevos scripts de limpieza, añadimos anotaciones de calidad y generamos una primera serie de visualizaciones para el equipo, lo que nos permite comunicar mejor los patrones emergentes."
   },
   {
-    "objectID": "posts/paper-title/index.html#abstract",
-    "href": "posts/paper-title/index.html#abstract",
-    "title": "Can quantum-mechanical description of physical reality be considered complete?",
-    "section": "Abstract",
-    "text": "Abstract\nIn a complete theory there is an element corresponding to each element of reality. A sufficient condition for the reality of a physical quantity is the possibility of predicting it with certainty, without disturbing the system. In quantum mechanics in the case of two physical quantities described by non-commuting operators, the knowledge of one precludes the knowledge of the other. Then either (1) the description of reality given by the wave function in quantum mechanics is not complete or (2) these two quantities cannot have simultaneous reality. Consideration of the problem of making predictions concerning a system on the basis of measurements made on another system that had previously interacted with it leads to the result that if (1) is false then (2) is also false. One is thus led to conclude that the description of reality as given by a wave function is not complete."
+    "objectID": "posts/avance-socia/index.html#qué-sigue",
+    "href": "posts/avance-socia/index.html#qué-sigue",
+    "title": "Avance sobre datos sociales 2025",
+    "section": "Qué sigue",
+    "text": "Qué sigue\n\nDocumentar el proceso de verificación y sincronizarlo con el repositorio principal para que otros puedan reproducirlo.\nCompartir un breve cuaderno con los resultados preliminares en la sección de posts del sitio.\nPlanificar un taller interno para discutir cómo integrarlo a la próxima cátedra."
   },
   {
-    "objectID": "posts/paper-title/index.html#links",
-    "href": "posts/paper-title/index.html#links",
-    "title": "Can quantum-mechanical description of physical reality be considered complete?",
-    "section": "Links",
-    "text": "Links\nPublished paper"
+    "objectID": "posts/programming-in-social-science/quickstart/index.html",
+    "href": "posts/programming-in-social-science/quickstart/index.html",
+    "title": "Programming in Social Science: Quickstart",
+    "section": "",
+    "text": "Prepara un entorno con las librerías que usas con mayor frecuencia (por ejemplo: tidyverse, quarto, janitor). Guarda los paquetes en deps.R para que cualquier colaborador pueda instalar con renv::restore()."
+  },
+  {
+    "objectID": "posts/programming-in-social-science/quickstart/index.html#paso-1-ambiente-mínimo",
+    "href": "posts/programming-in-social-science/quickstart/index.html#paso-1-ambiente-mínimo",
+    "title": "Programming in Social Science: Quickstart",
+    "section": "",
+    "text": "Prepara un entorno con las librerías que usas con mayor frecuencia (por ejemplo: tidyverse, quarto, janitor). Guarda los paquetes en deps.R para que cualquier colaborador pueda instalar con renv::restore()."
+  },
+  {
+    "objectID": "posts/programming-in-social-science/quickstart/index.html#paso-2-datos-con-trazabilidad",
+    "href": "posts/programming-in-social-science/quickstart/index.html#paso-2-datos-con-trazabilidad",
+    "title": "Programming in Social Science: Quickstart",
+    "section": "Paso 2: datos con trazabilidad",
+    "text": "Paso 2: datos con trazabilidad\nLee los datos desde files/data/, limpia columnas clave y guarda versiones intermedias. Añade glue::glue(\"data/cleaned-{today()}.csv\") para evitar sobrescribir resultados previos."
+  },
+  {
+    "objectID": "posts/programming-in-social-science/quickstart/index.html#paso-3-blog-al-final",
+    "href": "posts/programming-in-social-science/quickstart/index.html#paso-3-blog-al-final",
+    "title": "Programming in Social Science: Quickstart",
+    "section": "Paso 3: blog al final",
+    "text": "Paso 3: blog al final\nEste tutorial forma parte del blog “Programming in Social Science”: cada entrada breve ayuda a documentar procesos compartidos y a inspirar nuevos scripts para el equipo."
+  },
+  {
+    "objectID": "posts/experience-in-research/colaboraciones/index.html",
+    "href": "posts/experience-in-research/colaboraciones/index.html",
+    "title": "Alianzas e instrumentos de colaboración",
+    "section": "",
+    "text": "Se registran aquí los acuerdos operativos con equipos externos, mesadas de trabajo y protocolos que facilitan la colaboración sostenida en proyectos de datos sociales."
+  },
+  {
+    "objectID": "posts/experience-in-research/colaboraciones/index.html#mesa-de-trabajo-y-acuerdos",
+    "href": "posts/experience-in-research/colaboraciones/index.html#mesa-de-trabajo-y-acuerdos",
+    "title": "Alianzas e instrumentos de colaboración",
+    "section": "",
+    "text": "Se registran aquí los acuerdos operativos con equipos externos, mesadas de trabajo y protocolos que facilitan la colaboración sostenida en proyectos de datos sociales."
+  },
+  {
+    "objectID": "posts/experience-in-research/colaboraciones/index.html#documentación-rápida",
+    "href": "posts/experience-in-research/colaboraciones/index.html#documentación-rápida",
+    "title": "Alianzas e instrumentos de colaboración",
+    "section": "Documentación rápida",
+    "text": "Documentación rápida\n\nCarta de intención compartida con aliados académicos.\nProtocolos de entrevistas y consentimiento digital.\nBitácoras de reuniones semanales y chequeos de avance."
+  },
+  {
+    "objectID": "contact.html",
+    "href": "contact.html",
+    "title": "Contact",
+    "section": "",
+    "text": "E-mail: m.deneken[at].cl"
   },
   {
     "objectID": "teaching.html",
@@ -84,18 +168,81 @@
     "text": "Class 3\n\n\n\n\n\nSpring 2025,   Spring 2024\nClass 3 introduction."
   },
   {
-    "objectID": "contact.html",
-    "href": "contact.html",
-    "title": "Contact",
+    "objectID": "posts/experience-in-research/roles/index.html",
+    "href": "posts/experience-in-research/roles/index.html",
+    "title": "Experience in Research: Field Coordination",
     "section": "",
-    "text": "E-mail: m.deneken[at].cl"
+    "text": "En este espacio documentaré tareas de coordinación (equipos, cronogramas, validaciones) para que cada experiencia quede registrada dentro del blog. Puedo agregar fotos o enlaces a reportes cuando sea útil."
+  },
+  {
+    "objectID": "posts/experience-in-research/roles/index.html#coordinación-y-operación-en-terreno",
+    "href": "posts/experience-in-research/roles/index.html#coordinación-y-operación-en-terreno",
+    "title": "Experience in Research: Field Coordination",
+    "section": "",
+    "text": "En este espacio documentaré tareas de coordinación (equipos, cronogramas, validaciones) para que cada experiencia quede registrada dentro del blog. Puedo agregar fotos o enlaces a reportes cuando sea útil."
+  },
+  {
+    "objectID": "posts/experience-in-research/roles/index.html#cómo-mantener-estas-notas",
+    "href": "posts/experience-in-research/roles/index.html#cómo-mantener-estas-notas",
+    "title": "Experience in Research: Field Coordination",
+    "section": "Cómo mantener estas notas",
+    "text": "Cómo mantener estas notas\n\nDuplica esta entrada o crea otra en posts/experience-in-research/.\nActualiza el título, la fecha y la descripción con el proyecto específico.\nDescribe brevemente qué pasó y qué aprendiste; adjunta enlaces o archivos si es relevante.\nLa categoría experience-in-research mantiene todas estas notas agrupadas dentro del menú “Research”."
+  },
+  {
+    "objectID": "posts/experience-in-research/fondecyt/index.html",
+    "href": "posts/experience-in-research/fondecyt/index.html",
+    "title": "Derechas FONDECYT, Interculturales, OLES, etc.",
+    "section": "",
+    "text": "FONDECYT Derechas: coordinación con becarios y alianzas con investigadores de campo, revisión de avances trimestrales.\nInterculturales: sesiones con comunidades, validación de metodologías y ajustes de protocolo para respeto cultural.\nOLES y redes: encuentros virtuales para compartir aprendizajes y difundir resultados en español e inglés."
+  },
+  {
+    "objectID": "posts/experience-in-research/fondecyt/index.html#notas-rápidas-de-colaboración",
+    "href": "posts/experience-in-research/fondecyt/index.html#notas-rápidas-de-colaboración",
+    "title": "Derechas FONDECYT, Interculturales, OLES, etc.",
+    "section": "",
+    "text": "FONDECYT Derechas: coordinación con becarios y alianzas con investigadores de campo, revisión de avances trimestrales.\nInterculturales: sesiones con comunidades, validación de metodologías y ajustes de protocolo para respeto cultural.\nOLES y redes: encuentros virtuales para compartir aprendizajes y difundir resultados en español e inglés."
+  },
+  {
+    "objectID": "posts/experience-in-research/fondecyt/index.html#próximos-pasos",
+    "href": "posts/experience-in-research/fondecyt/index.html#próximos-pasos",
+    "title": "Derechas FONDECYT, Interculturales, OLES, etc.",
+    "section": "Próximos pasos",
+    "text": "Próximos pasos\n\nConsolidar material audiovisual y referencias para los informes internos.\nRegistrar quién se sumó a cada iniciativa para facilitar nuevas convocatorias de fondos.\nCompartir estos apuntes con los equipos a través de posts.qmd para que queden visibles como parte del blog “Experience in Research”."
+  },
+  {
+    "objectID": "posts/programming-in-social-science/data-pipelines/index.html",
+    "href": "posts/programming-in-social-science/data-pipelines/index.html",
+    "title": "Programming in Social Science: Data Pipelines",
+    "section": "",
+    "text": "Usa targets o drake para encadenar la limpieza, el análisis y la generación de reportes. Define tar_make() en un script que solo haga falta ejecutar cuando cambian los datos base."
+  },
+  {
+    "objectID": "posts/programming-in-social-science/data-pipelines/index.html#coordinación-entre-scripts",
+    "href": "posts/programming-in-social-science/data-pipelines/index.html#coordinación-entre-scripts",
+    "title": "Programming in Social Science: Data Pipelines",
+    "section": "",
+    "text": "Usa targets o drake para encadenar la limpieza, el análisis y la generación de reportes. Define tar_make() en un script que solo haga falta ejecutar cuando cambian los datos base."
+  },
+  {
+    "objectID": "posts/programming-in-social-science/data-pipelines/index.html#publicar-en-el-blog",
+    "href": "posts/programming-in-social-science/data-pipelines/index.html#publicar-en-el-blog",
+    "title": "Programming in Social Science: Data Pipelines",
+    "section": "Publicar en el blog",
+    "text": "Publicar en el blog\nLos artefactos resultantes se esconden dentro de posts/programming-in-social-science/; cuando todo esté listo, solo queda ejecutar quarto render posts.qmd para que la lista del blog muestre automáticamente las entradas más recientes."
   },
   {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Matías Deneken",
     "section": "",
-    "text": "GitHub\n  \n  \n    \n     E-mail\n  \n  \n    \n     LinkedIn\n  \n  \n      ORCID\n  \n  \n      Google Scholar\n  \n\n  \n  \n\n\nMatías Deneken is a Chilean sociologist and data scientist. His research bridges social data science, violence, and computational methods to study how ——– . He has collaborated on large-scale longitudinal studies such as the Estudio Longitudinal de Relaciones Interculturales (ELRI) and the Estudio Panel de Percepciones de Seguridad y Policías (EPSEP)\nBeyond research, Matías is passionate about photography, travel, and visual storytelling, which often inspire his analytical and creative work.\n\n\n\n–\n\n\n\n\nMSc in Sociology, Pontificia Universidad Católica de Chile\n\nBA in Sociology, Universidad de Concepción"
+    "text": "GitHub\n  \n  \n    \n     E-mail\n  \n  \n    \n     LinkedIn\n  \n  \n      ORCID\n  \n  \n      Google Scholar\n  \n\n  \n  \n\n\nMatías Deneken is a Chilean sociologist and data scientist. His research bridges social data science, violence, and computational methods to study how ——– . He has collaborated on large-scale longitudinal studies such as the Estudio Longitudinal de Relaciones Interculturales (ELRI) and the Estudio Panel de Percepciones de Seguridad y Policías (EPSEP)\nBeyond research, Matías is passionate about photography, travel, and visual storytelling, which often inspire his analytical and creative work.\n\n\n\n–\n\n\n\n\nMSc in Sociology, Pontificia Universidad Católica de Chile\n\nBA in Sociology, Universidad de Concepción\n\n–"
+  },
+  {
+    "objectID": "index.html#introduction",
+    "href": "index.html#introduction",
+    "title": "Matías Deneken",
+    "section": "",
+    "text": "Matías Deneken is a Chilean sociologist and data scientist. His research bridges social data science, violence, and computational methods to study how ——– . He has collaborated on large-scale longitudinal studies such as the Estudio Longitudinal de Relaciones Interculturales (ELRI) and the Estudio Panel de Percepciones de Seguridad y Policías (EPSEP)\nBeyond research, Matías is passionate about photography, travel, and visual storytelling, which often inspire his analytical and creative work."
   },
   {
     "objectID": "index.html#experience",
@@ -109,14 +256,14 @@
     "href": "index.html#education",
     "title": "Matías Deneken",
     "section": "",
-    "text": "MSc in Sociology, Pontificia Universidad Católica de Chile\n\nBA in Sociology, Universidad de Concepción"
+    "text": "MSc in Sociology, Pontificia Universidad Católica de Chile\n\nBA in Sociology, Universidad de Concepción\n\n–"
   },
   {
     "objectID": "index.html#recent-posts",
     "href": "index.html#recent-posts",
     "title": "Matías Deneken",
     "section": "Recent Posts",
-    "text": "Recent Posts\nCheck out the latest  Papers ,  News ,  Events , and  More »\n\n\n\n\n\n\n\n\n\n\nAvance sobre datos sociales 2025\n\n\n\nNov 26, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nxd\n\n\n\nJun 24, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nEvent item\n\n\n\nSep 3, 2024\n\n\n\n\n\n\n\n\nNo matching items\n\n\n\nAll Posts »"
+    "text": "Recent Posts\nCheck out the latest  Papers ,  News ,  Events , and  More »\n\n\n\n\n\n\n\n\n\n\nAlianzas e instrumentos de colaboración\n\n\n\nNov 27, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDerechas FONDECYT, Interculturales, OLES, etc.\n\n\n\nNov 27, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nExperience in Research: Field Coordination\n\n\n\nNov 27, 2025\n\n\n\n\n\n\n\n\nNo matching items\n\n\n\nAll Posts »"
   },
   {
     "objectID": "people.html",
@@ -140,157 +287,24 @@
     "text": "Alumni\n\n\n   \n     \n     \n       Order By\n       Default\n         \n        \n         \n          Name\n        \n         \n          Role\n        \n         \n          Started\n        \n         \n          Ended\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n \n\n\nName\n\n\nRole\n\n\nStarted\n\n\nEnded\n\n\n\n\n\n\n\n\n\nAlumni A\n\n\nPhD Alumni\n\n\n2024\n\n\n2025\n\n\n\n\n\n\n\nAlumni B\n\n\nMasters Alumni\n\n\n2024\n\n\n2025\n\n\n\n\n\n\n\nAlumni C\n\n\nUndergraduate Alumni\n\n\n2024\n\n\n2025\n\n\n\n\n\nNo matching items"
   },
   {
-    "objectID": "posts/cueck/index.html#abstract",
-    "href": "posts/cueck/index.html#abstract",
-    "title": "balalalalala",
-    "section": "Abstract",
-    "text": "Abstract\nIn a complete theory there is an element corresponding to each element of reality. A sufficient condition for the reality of a physical quantity is the possibility of predicting it with certainty, without disturbing the system. In quantum mechanics in the case of two physical quantities described by non-commuting operators, the knowledge of one precludes the knowledge of the other. Then either (1) the description of reality given by the wave function in quantum mechanics is not complete or (2) these two quantities cannot have simultaneous reality. Consideration of the problem of making predictions concerning a system on the basis of measurements made on another system that had previously interacted with it leads to the result that if (1) is false then (2) is also false. One is thus led to conclude that the description of reality as given by a wave function is not complete."
-  },
-  {
-    "objectID": "posts/cueck/index.html#links",
-    "href": "posts/cueck/index.html#links",
-    "title": "balalalalala",
-    "section": "Links",
-    "text": "Links\nPublished paper"
-  },
-  {
-    "objectID": "posts/cueck/bla.html#abstract",
-    "href": "posts/cueck/bla.html#abstract",
-    "title": "balalalalala",
-    "section": "Abstract",
-    "text": "Abstract\nIn a complete theory there is an element corresponding to each element of reality. A sufficient condition for the reality of a physical quantity is the possibility of predicting it with certainty, without disturbing the system. In quantum mechanics in the case of two physical quantities described by non-commuting operators, the knowledge of one precludes the knowledge of the other. Then either (1) the description of reality given by the wave function in quantum mechanics is not complete or (2) these two quantities cannot have simultaneous reality. Consideration of the problem of making predictions concerning a system on the basis of measurements made on another system that had previously interacted with it leads to the result that if (1) is false then (2) is also false. One is thus led to conclude that the description of reality as given by a wave function is not complete."
-  },
-  {
-    "objectID": "posts/cueck/bla.html#links",
-    "href": "posts/cueck/bla.html#links",
-    "title": "balalalalala",
-    "section": "Links",
-    "text": "Links\nPublished paper"
-  },
-  {
-    "objectID": "posts/lalalal/bla.html#abstract",
-    "href": "posts/lalalal/bla.html#abstract",
-    "title": "balalalalala",
-    "section": "Abstract",
-    "text": "Abstract\nIn a complete theory there is an element corresponding to each element of reality. A sufficient condition for the reality of a physical quantity is the possibility of predicting it with certainty, without disturbing the system. In quantum mechanics in the case of two physical quantities described by non-commuting operators, the knowledge of one precludes the knowledge of the other. Then either (1) the description of reality given by the wave function in quantum mechanics is not complete or (2) these two quantities cannot have simultaneous reality. Consideration of the problem of making predictions concerning a system on the basis of measurements made on another system that had previously interacted with it leads to the result that if (1) is false then (2) is also false. One is thus led to conclude that the description of reality as given by a wave function is not complete."
-  },
-  {
-    "objectID": "posts/lalalal/bla.html#links",
-    "href": "posts/lalalal/bla.html#links",
-    "title": "balalalalala",
-    "section": "Links",
-    "text": "Links\nPublished paper"
-  },
-  {
-    "objectID": "posts/lalalal/index.html#abstract",
-    "href": "posts/lalalal/index.html#abstract",
-    "title": "balalalalala",
-    "section": "Abstract",
-    "text": "Abstract\nIn a complete theory there is an element corresponding to each element of reality. A sufficient condition for the reality of a physical quantity is the possibility of predicting it with certainty, without disturbing the system. In quantum mechanics in the case of two physical quantities described by non-commuting operators, the knowledge of one precludes the knowledge of the other. Then either (1) the description of reality given by the wave function in quantum mechanics is not complete or (2) these two quantities cannot have simultaneous reality. Consideration of the problem of making predictions concerning a system on the basis of measurements made on another system that had previously interacted with it leads to the result that if (1) is false then (2) is also false. One is thus led to conclude that the description of reality as given by a wave function is not complete."
-  },
-  {
-    "objectID": "posts/lalalal/index.html#links",
-    "href": "posts/lalalal/index.html#links",
-    "title": "balalalalala",
-    "section": "Links",
-    "text": "Links\nPublished paper"
-  },
-  {
-    "objectID": "posts/noticias1.html#abstract",
-    "href": "posts/noticias1.html#abstract",
-    "title": "balalalalala",
-    "section": "Abstract",
-    "text": "Abstract\nIn a complete theory there is an element corresponding to each element of reality. A sufficient condition for the reality of a physical quantity is the possibility of predicting it with certainty, without disturbing the system. In quantum mechanics in the case of two physical quantities described by non-commuting operators, the knowledge of one precludes the knowledge of the other. Then either (1) the description of reality given by the wave function in quantum mechanics is not complete or (2) these two quantities cannot have simultaneous reality. Consideration of the problem of making predictions concerning a system on the basis of measurements made on another system that had previously interacted with it leads to the result that if (1) is false then (2) is also false. One is thus led to conclude that the description of reality as given by a wave function is not complete."
-  },
-  {
-    "objectID": "posts/noticias1.html#links",
-    "href": "posts/noticias1.html#links",
-    "title": "balalalalala",
-    "section": "Links",
-    "text": "Links\nPublished paper"
-  },
-  {
-    "objectID": "posts/news-title/bla.html#abstract",
-    "href": "posts/news-title/bla.html#abstract",
-    "title": "balalalalala",
-    "section": "Abstract",
-    "text": "Abstract\nIn a complete theory there is an element corresponding to each element of reality. A sufficient condition for the reality of a physical quantity is the possibility of predicting it with certainty, without disturbing the system. In quantum mechanics in the case of two physical quantities described by non-commuting operators, the knowledge of one precludes the knowledge of the other. Then either (1) the description of reality given by the wave function in quantum mechanics is not complete or (2) these two quantities cannot have simultaneous reality. Consideration of the problem of making predictions concerning a system on the basis of measurements made on another system that had previously interacted with it leads to the result that if (1) is false then (2) is also false. One is thus led to conclude that the description of reality as given by a wave function is not complete."
-  },
-  {
-    "objectID": "posts/news-title/bla.html#links",
-    "href": "posts/news-title/bla.html#links",
-    "title": "balalalalala",
-    "section": "Links",
-    "text": "Links\nPublished paper"
-  },
-  {
-    "objectID": "posts/news-prueba/noticias1.html#abstract",
-    "href": "posts/news-prueba/noticias1.html#abstract",
-    "title": "balalalalala",
-    "section": "Abstract",
-    "text": "Abstract\nIn a complete theory there is an element corresponding to each element of reality. A sufficient condition for the reality of a physical quantity is the possibility of predicting it with certainty, without disturbing the system. In quantum mechanics in the case of two physical quantities described by non-commuting operators, the knowledge of one precludes the knowledge of the other. Then either (1) the description of reality given by the wave function in quantum mechanics is not complete or (2) these two quantities cannot have simultaneous reality. Consideration of the problem of making predictions concerning a system on the basis of measurements made on another system that had previously interacted with it leads to the result that if (1) is false then (2) is also false. One is thus led to conclude that the description of reality as given by a wave function is not complete."
-  },
-  {
-    "objectID": "posts/news-prueba/noticias1.html#links",
-    "href": "posts/news-prueba/noticias1.html#links",
-    "title": "balalalalala",
-    "section": "Links",
-    "text": "Links\nPublished paper"
-  },
-  {
-    "objectID": "posts/news-prueba/noticias1.html",
-    "href": "posts/news-prueba/noticias1.html",
-    "title": "xd",
+    "objectID": "photos.html",
+    "href": "photos.html",
+    "title": "Photos",
     "section": "",
-    "text": "About the news"
+    "text": "Compartimos aquí capturas representativas de talleres, reuniones de análisis y visualizaciones. Haz click en cualquier imagen para verla en mayor tamaño dentro de la ventana modal, donde también aparece una breve nota descriptiva."
   },
   {
-    "objectID": "posts/news-prueba/noticias1.html#summary",
-    "href": "posts/news-prueba/noticias1.html#summary",
-    "title": "xd",
+    "objectID": "photos.html#galería-de-fotos",
+    "href": "photos.html#galería-de-fotos",
+    "title": "Photos",
     "section": "",
-    "text": "About the news"
+    "text": "Compartimos aquí capturas representativas de talleres, reuniones de análisis y visualizaciones. Haz click en cualquier imagen para verla en mayor tamaño dentro de la ventana modal, donde también aparece una breve nota descriptiva."
   },
   {
-    "objectID": "posts/news-prueba/index.html",
-    "href": "posts/news-prueba/index.html",
-    "title": "xd",
-    "section": "",
-    "text": "About the news"
-  },
-  {
-    "objectID": "posts/news-prueba/index.html#summary",
-    "href": "posts/news-prueba/index.html#summary",
-    "title": "xd",
-    "section": "",
-    "text": "About the news"
-  },
-  {
-    "objectID": "index.html#introduction",
-    "href": "index.html#introduction",
-    "title": "Matías Deneken",
-    "section": "",
-    "text": "Matías Deneken is a Chilean sociologist and data scientist. His research bridges social data science, violence, and computational methods to study how ——– . He has collaborated on large-scale longitudinal studies such as the Estudio Longitudinal de Relaciones Interculturales (ELRI) and the Estudio Panel de Percepciones de Seguridad y Policías (EPSEP)\nBeyond research, Matías is passionate about photography, travel, and visual storytelling, which often inspire his analytical and creative work."
-  },
-  {
-    "objectID": "posts/avance-socia/index.html",
-    "href": "posts/avance-socia/index.html",
-    "title": "Avance sobre datos sociales 2025",
-    "section": "",
-    "text": "Esta semana comparto una actualización sobre la recolección de datos sociales que hemos venido trabajando. Publicamos nuevos scripts de limpieza, añadimos anotaciones de calidad y generamos una primera serie de visualizaciones para el equipo, lo que nos permite comunicar mejor los patrones emergentes."
-  },
-  {
-    "objectID": "posts/avance-socia/index.html#resumen",
-    "href": "posts/avance-socia/index.html#resumen",
-    "title": "Avance sobre datos sociales 2025",
-    "section": "",
-    "text": "Esta semana comparto una actualización sobre la recolección de datos sociales que hemos venido trabajando. Publicamos nuevos scripts de limpieza, añadimos anotaciones de calidad y generamos una primera serie de visualizaciones para el equipo, lo que nos permite comunicar mejor los patrones emergentes."
-  },
-  {
-    "objectID": "posts/avance-socia/index.html#qué-sigue",
-    "href": "posts/avance-socia/index.html#qué-sigue",
-    "title": "Avance sobre datos sociales 2025",
-    "section": "Qué sigue",
-    "text": "Qué sigue\n\nDocumentar el proceso de verificación y sincronizarlo con el repositorio principal para que otros puedan reproducirlo.\nCompartir un breve cuaderno con los resultados preliminares en la sección de posts del sitio.\nPlanificar un taller interno para discutir cómo integrarlo a la próxima cátedra."
+    "objectID": "photos.html#cómo-agregar-nuevas-fotos",
+    "href": "photos.html#cómo-agregar-nuevas-fotos",
+    "title": "Photos",
+    "section": "Cómo agregar nuevas fotos",
+    "text": "Cómo agregar nuevas fotos\n\nCopia tus imágenes a files/images/photos/ y nómbralas de forma descriptiva.\nDuplica uno de los bloques :::: anteriores y actualiza la ruta del archivo. Agrega data-photo y data-caption (máximo 50 palabras) con la descripción breve.\nHaz git add y commit, o sube los archivos si usas la interfaz web.\nCada vez que actualices el repositorio, las fotos estarán disponibles en esta galería sin tocar nada más.\n\n\n\n\n&lt;div class=\"modal-content bg-dark border-0\"&gt;\n  &lt;div class=\"modal-body text-center p-0 position-relative\"&gt;\n    &lt;img id=\"photoModalImg\" class=\"img-fluid rounded\" src=\"\" alt=\"Foto ampliada\" /&gt;\n    &lt;div id=\"photoModalCaption\" class=\"photo-modal-caption text-white small\"&gt;&lt;/div&gt;\n  &lt;/div&gt;\n  &lt;div class=\"modal-footer border-0 justify-content-center\"&gt;\n    &lt;button type=\"button\" class=\"btn btn-outline-light\" data-bs-dismiss=\"modal\"&gt;Close&lt;/button&gt;\n  &lt;/div&gt;\n&lt;/div&gt;"
   }
 ]
