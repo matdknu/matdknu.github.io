@@ -306,5 +306,19 @@
     "title": "Photos",
     "section": "Cómo agregar nuevas fotos",
     "text": "Cómo agregar nuevas fotos\n\nCopia tus imágenes a files/images/photos/ y nómbralas de forma descriptiva.\nDuplica uno de los bloques :::: anteriores y actualiza la ruta del archivo. Agrega data-photo y data-caption (máximo 50 palabras) con la descripción breve.\nHaz git add y commit, o sube los archivos si usas la interfaz web.\nCada vez que actualices el repositorio, las fotos estarán disponibles en esta galería sin tocar nada más.\n\n\n\n\n&lt;div class=\"modal-content bg-dark border-0\"&gt;\n  &lt;div class=\"modal-body text-center p-0 position-relative\"&gt;\n    &lt;img id=\"photoModalImg\" class=\"img-fluid rounded\" src=\"\" alt=\"Foto ampliada\" /&gt;\n    &lt;div id=\"photoModalCaption\" class=\"photo-modal-caption text-white small\"&gt;&lt;/div&gt;\n  &lt;/div&gt;\n  &lt;div class=\"modal-footer border-0 justify-content-center\"&gt;\n    &lt;button type=\"button\" class=\"btn btn-outline-light\" data-bs-dismiss=\"modal\"&gt;Close&lt;/button&gt;\n  &lt;/div&gt;\n&lt;/div&gt;"
+  },
+  {
+    "objectID": "dreams.html",
+    "href": "dreams.html",
+    "title": "Dreams",
+    "section": "",
+    "text": "These entries capture more experimental, speculative, or aspirational directions—think of them as dream notes that remind the team what we are aiming for. Add a short reflection whenever a new idea, collaboration, or curiosity emerges.\n\nDocument unexpected insights from field visits.\nKeep a “wishlist” of tools or datasets that would unlock new stories.\nCelebrate small breakthroughs by describing how they might scale into larger projects."
+  },
+  {
+    "objectID": "dreams.html#on-the-horizon",
+    "href": "dreams.html#on-the-horizon",
+    "title": "Dreams",
+    "section": "",
+    "text": "These entries capture more experimental, speculative, or aspirational directions—think of them as dream notes that remind the team what we are aiming for. Add a short reflection whenever a new idea, collaboration, or curiosity emerges.\n\nDocument unexpected insights from field visits.\nKeep a “wishlist” of tools or datasets that would unlock new stories.\nCelebrate small breakthroughs by describing how they might scale into larger projects."
   }
 ]
