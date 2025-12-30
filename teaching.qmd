@@ -1,67 +1,162 @@
 ---
 title: "Teaching"
-subtitle: "I teach."
-title-block-banner: false
+page-navigation: true
+toc: false
 ---
 
+```{=html}
+<div id="language-switcher">
+  <button id="lang-en" onclick="switchLanguage('en')" class="lang-btn active">🇬🇧 EN</button>
+  <button id="lang-es" onclick="switchLanguage('es')" class="lang-btn">🇪🇸 ES</button>
+</div>
 
-## Class 1
+<style>
+#language-switcher {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+  display: flex;
+  gap: 8px;
+  background: white;
+  padding: 4px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
 
-::: {.grid}
+.lang-btn {
+  background: white;
+  border: 2px solid #ddd;
+  padding: 8px 14px;
+  cursor: pointer;
+  border-radius: 6px;
+  font-size: 14px;
+  transition: all 0.3s ease;
+  font-weight: normal;
+  color: #333;
+}
 
-::: {.g-col-12 .g-col-md-2}
-![](files/images/placeholder1.jpg)
+.lang-btn:hover {
+  background: #f5f5f5;
+  border-color: #999;
+}
 
-:::
+.lang-btn.active {
+  background: #0066cc;
+  color: white;
+  border-color: #0066cc;
+  font-weight: bold;
+}
+</style>
 
-::: {.g-col-12 .g-col-md-10}
+<script>
+let currentLang = 'en';
 
-[Fall 2024](https://www.google.com), &nbsp; [Fall 2023](https://www.google.com)
+function switchLanguage(lang) {
+  currentLang = lang;
+  document.querySelectorAll('[data-lang]').forEach(el => {
+    if (el.getAttribute('data-lang') === lang) {
+      el.style.display = '';
+    } else {
+      el.style.display = 'none';
+    }
+  });
+  document.getElementById('lang-en').classList.toggle('active', lang === 'en');
+  document.getElementById('lang-es').classList.toggle('active', lang === 'es');
+}
 
-Class 1 introduction.
+document.addEventListener('DOMContentLoaded', function() {
+  switchLanguage('en');
+});
+</script>
+```
 
-:::
+<div data-lang="en">
 
-:::
+## Instructor
 
+**Centro de Estudios Interculturales e Indígenas** – Santiago, Chile | 2025  
+- Continuing education: InteRcultural: Computational techniques in social sciences applied to intercultural relationship
 
-## Class 2
+## Teaching Assistant – Institute of Sociology
 
-::: {.grid}
+**Pontificia Universidad Católica de Chile** – Santiago, Chile | 2022 – 2024
 
-::: {.g-col-12 .g-col-md-2}
-![](files/images/placeholder2.JPG)
+**Graduate level:**
+- Advanced Data Processing in R [SOL4001] (2S 2022, 2S 2023)
 
-:::
+**Undergraduate level:**
+- Qualitative Research Techniques [SOL133] (1S 2022)
+- Formation and Development of Latin American Culture [SOL127] (2S 2022)
+- Data Analysis II [SOL114] (2S 2022)
 
-::: {.g-col-12 .g-col-md-10}
+## Teaching Assistant – Department of Sociology
 
-[Spring 2025](https://www.google.com), &nbsp; [Fall 2023](https://www.google.com)
+**University of Concepción** – Concepción, Chile | 2018 – 2021
 
-Class 2 introduction.
+**Undergraduate level:**
+- Research Methodology (1S 2018, 1S 2019, 1S 2020)
+- Latin American Sociology (1S 2020, 1S 2021)
+- Numerical Data Analysis I (1S 2020, 1S 2021)
+- Methods and Techniques of Qualitative Research (1S 2020, 1S 2021)
 
-:::
+## Teaching Assistant – Department of Psychology
 
-:::
+**University of Concepción** – Concepción, Chile | 2020 – 2021
 
+**Undergraduate level:**
+- Social Bases of Human Behavior (2020, 2021)
 
-## Class 3
+## Teaching Assistant – Department of Political Science
 
-::: {.grid}
+**University of Concepción** – Concepción, Chile | 2021
 
-::: {.g-col-12 .g-col-md-2}
-![](files/images/placeholder3.JPG)
+**Undergraduate level:**
+- Foundations of Social Theory (1S 2021)
 
-:::
+</div>
 
-::: {.g-col-12 .g-col-md-10}
+<div data-lang="es" style="display: none;">
 
-[Spring 2025](https://www.google.com), &nbsp; [Spring 2024](https://www.google.com)
+## Instructor
 
-Class 3 introduction. 
+**Centro de Estudios Interculturales e Indígenas** – Santiago, Chile | 2025  
+- Educación continua: InteRcultural: Técnicas computacionales en ciencias sociales aplicadas a la relación intercultural
 
-:::
+## Asistente de Docencia – Instituto de Sociología
 
-:::
+**Pontificia Universidad Católica de Chile** – Santiago, Chile | 2022 – 2024
 
+**Nivel de postgrado:**
+- Procesamiento Avanzado de Datos en R [SOL4001] (2S 2022, 2S 2023)
 
+**Nivel de pregrado:**
+- Técnicas de Investigación Cualitativa [SOL133] (1S 2022)
+- Formación y Desarrollo de la Cultura Latinoamericana [SOL127] (2S 2022)
+- Análisis de Datos II [SOL114] (2S 2022)
+
+## Asistente de Docencia – Departamento de Sociología
+
+**Universidad de Concepción** – Concepción, Chile | 2018 – 2021
+
+**Nivel de pregrado:**
+- Metodología de Investigación (1S 2018, 1S 2019, 1S 2020)
+- Sociología Latinoamericana (1S 2020, 1S 2021)
+- Análisis de Datos Numéricos I (1S 2020, 1S 2021)
+- Métodos y Técnicas de Investigación Cualitativa (1S 2020, 1S 2021)
+
+## Asistente de Docencia – Departamento de Psicología
+
+**Universidad de Concepción** – Concepción, Chile | 2020 – 2021
+
+**Nivel de pregrado:**
+- Bases Sociales del Comportamiento Humano (2020, 2021)
+
+## Asistente de Docencia – Departamento de Ciencia Política
+
+**Universidad de Concepción** – Concepción, Chile | 2021
+
+**Nivel de pregrado:**
+- Fundamentos de la Teoría Social (1S 2021)
+
+</div>

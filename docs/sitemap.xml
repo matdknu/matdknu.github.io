@@ -2,31 +2,39 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://matdknu.github.io/advising.html</loc>
-    <lastmod>2025-11-26T02:17:38.571Z</lastmod>
+    <lastmod>2025-11-26T12:37:08.620Z</lastmod>
   </url>
   <url>
     <loc>https://matdknu.github.io/posts.html</loc>
-    <lastmod>2025-11-26T02:10:25.599Z</lastmod>
+    <lastmod>2025-11-27T22:45:24.699Z</lastmod>
   </url>
   <url>
     <loc>https://matdknu.github.io/publications.html</loc>
-    <lastmod>2025-11-06T23:04:55.824Z</lastmod>
+    <lastmod>2025-12-30T16:00:08.482Z</lastmod>
   </url>
   <url>
-    <loc>https://matdknu.github.io/projects.html</loc>
-    <lastmod>2025-11-06T23:04:55.824Z</lastmod>
+    <loc>https://matdknu.github.io/index.html</loc>
+    <lastmod>2025-12-30T16:17:02.372Z</lastmod>
+  </url>
+  <url>
+    <loc>https://matdknu.github.io/conferences.html</loc>
+    <lastmod>2025-12-30T16:00:34.763Z</lastmod>
   </url>
   <url>
     <loc>https://matdknu.github.io/posts/avance-socia/index.html</loc>
-    <lastmod>2025-11-26T01:53:50.867Z</lastmod>
+    <lastmod>2025-11-27T22:45:24.674Z</lastmod>
   </url>
   <url>
-    <loc>https://matdknu.github.io/posts/programming-in-social-science/quickstart/index.html</loc>
-    <lastmod>2025-11-26T01:58:13.601Z</lastmod>
+    <loc>https://matdknu.github.io/posts/programming-in-social-science/data-pipelines/index.html</loc>
+    <lastmod>2025-11-27T22:45:24.674Z</lastmod>
+  </url>
+  <url>
+    <loc>https://matdknu.github.io/posts/programming-in-social-science/tutorial_tidyverse_pandas/index.html</loc>
+    <lastmod>2025-12-05T00:32:34.231Z</lastmod>
   </url>
   <url>
     <loc>https://matdknu.github.io/posts/experience-in-research/colaboraciones/index.html</loc>
-    <lastmod>2025-11-26T02:06:42.136Z</lastmod>
+    <lastmod>2025-11-27T22:45:24.693Z</lastmod>
   </url>
   <url>
     <loc>https://matdknu.github.io/contact.html</loc>
@@ -34,23 +42,31 @@
   </url>
   <url>
     <loc>https://matdknu.github.io/teaching.html</loc>
-    <lastmod>2025-11-06T23:04:55.825Z</lastmod>
+    <lastmod>2025-12-30T16:01:34.358Z</lastmod>
   </url>
   <url>
     <loc>https://matdknu.github.io/posts/experience-in-research/roles/index.html</loc>
-    <lastmod>2025-11-26T02:04:37.066Z</lastmod>
+    <lastmod>2025-11-27T22:45:24.680Z</lastmod>
   </url>
   <url>
     <loc>https://matdknu.github.io/posts/experience-in-research/fondecyt/index.html</loc>
-    <lastmod>2025-11-26T02:05:30.102Z</lastmod>
+    <lastmod>2025-11-27T22:45:24.690Z</lastmod>
   </url>
   <url>
-    <loc>https://matdknu.github.io/posts/programming-in-social-science/data-pipelines/index.html</loc>
-    <lastmod>2025-11-26T01:58:13.601Z</lastmod>
+    <loc>https://matdknu.github.io/posts/programming-in-social-science/quickstart/index.html</loc>
+    <lastmod>2025-11-27T22:45:24.674Z</lastmod>
   </url>
   <url>
-    <loc>https://matdknu.github.io/index.html</loc>
-    <lastmod>2025-11-26T02:25:50.998Z</lastmod>
+    <loc>https://matdknu.github.io/posts/datos-electorales/servel-2025/index.html</loc>
+    <lastmod>2025-12-30T15:52:55.511Z</lastmod>
+  </url>
+  <url>
+    <loc>https://matdknu.github.io/projects.html</loc>
+    <lastmod>2025-11-06T23:04:55.824Z</lastmod>
+  </url>
+  <url>
+    <loc>https://matdknu.github.io/experience.html</loc>
+    <lastmod>2025-12-30T16:07:22.452Z</lastmod>
   </url>
   <url>
     <loc>https://matdknu.github.io/people.html</loc>
@@ -58,10 +74,6 @@
   </url>
   <url>
     <loc>https://matdknu.github.io/photos.html</loc>
-    <lastmod>2025-11-26T02:14:10.928Z</lastmod>
-  </url>
-  <url>
-    <loc>https://matdknu.github.io/dreams.html</loc>
-    <lastmod>2025-11-26T02:30:14.049Z</lastmod>
+    <lastmod>2025-11-27T22:45:24.699Z</lastmod>
   </url>
 </urlset>

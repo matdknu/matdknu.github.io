@@ -9,52 +9,26 @@ author-meta: "Matías Deneken"
 website:
   title: "Matías Deneken"
   image: "/files/images/my-face.JPG"
-  description: "Investigación, tutoriales y avances en datos sociales desde el laboratorio de Matías Deneken."
+  description: "Sociologist and Data Scientist | Research in Computational Social Science"
   navbar:
-    background: light  # You can change the background color here
-
-    left:   # You can comment out all navigation items here if you just like to keep the index page only
-#      - text: Home
-#        href: index.qmd
-      - text: About
-        menu:
-          - text: News
-            href: posts.qmd#category=news
-          - text: Posts
-            href: posts.qmd
-          - text: Tutorials
-            href: posts.qmd#category=tutorial
-          - text: Contact
-            href: contact.qmd             
-      - text: Research
-        menu:
-          - text: List of Publications
-            href: publications.qmd
-          - text: Experience in Research
-            href: posts.qmd#category=experience-in-research
-      - text: Advising
-        href: advising.qmd
-      - text: Teaching # Comment the Teaching part out to remove the Teaching page
+    background: light
+    left:
+      - text: Publications
+        href: publications.qmd
+      - text: Conferences
+        href: conferences.qmd
+      - text: Teaching
         href: teaching.qmd
-      - text: Outreach
-        menu:        
-        - text: Presentations
-          href: posts.qmd#category=presentation                   
-      - text: Photos
-        href: photos.qmd
-
+      - text: Experience
+        href: experience.qmd
     right: 
       - text: CV
         href: files/nsf-biosketch.pdf
       - icon: github
         href: https://github.com/matdknu
         target: _blank
-      - text: "{{< fa brands bluesky >}}"
-        href: https://bsky.app
-        target: _blank      
-      - icon: rss
-        href: posts.xml
-        target: _blank
+      - icon: envelope
+        href: mailto:m.deneken@alumni.uc.cl
   
   page-navigation: true
   

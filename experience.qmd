@@ -1,0 +1,297 @@
+---
+title: "Experience"
+page-navigation: true
+toc: false
+---
+
+```{=html}
+<div id="language-switcher">
+  <button id="lang-en" onclick="switchLanguage('en')" class="lang-btn active">🇬🇧 EN</button>
+  <button id="lang-es" onclick="switchLanguage('es')" class="lang-btn">🇪🇸 ES</button>
+</div>
+
+<style>
+#language-switcher {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+  display: flex;
+  gap: 8px;
+  background: white;
+  padding: 4px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.lang-btn {
+  background: white;
+  border: 2px solid #ddd;
+  padding: 8px 14px;
+  cursor: pointer;
+  border-radius: 6px;
+  font-size: 14px;
+  transition: all 0.3s ease;
+  font-weight: normal;
+  color: #333;
+}
+
+.lang-btn:hover {
+  background: #f5f5f5;
+  border-color: #999;
+}
+
+.lang-btn.active {
+  background: #0066cc;
+  color: white;
+  border-color: #0066cc;
+  font-weight: bold;
+}
+</style>
+
+<script>
+let currentLang = 'en';
+
+function switchLanguage(lang) {
+  currentLang = lang;
+  document.querySelectorAll('[data-lang]').forEach(el => {
+    if (el.getAttribute('data-lang') === lang) {
+      el.style.display = '';
+    } else {
+      el.style.display = 'none';
+    }
+  });
+  document.getElementById('lang-en').classList.toggle('active', lang === 'en');
+  document.getElementById('lang-es').classList.toggle('active', lang === 'es');
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+  switchLanguage('en');
+});
+</script>
+```
+
+<div data-lang="en">
+
+## Current Affiliations
+
+**Research Assistant**  
+Government School - Pontificia Universidad Católica de Chile | Jan. 2024 – Present | Santiago, Chile  
+Affiliated through the **Observatory of Violence and Social Legitimacy** ([www.oles.cl](https://www.oles.cl))  
+- Designed and maintained large-scale databases for research.
+- Conducted automated web scraping of national newspapers to build longitudinal datasets.
+- Performed institutional document analysis for policy-oriented reports.
+
+## Previous Positions
+
+**Quantitative Studies Researcher**  
+Center for Intercultural and Indigenous Studies (CIIR) | Dec. 2022 – Present | Santiago, Chile  
+[www.ciir.cl](https://www.ciir.cl)  
+- Technical coordination of the Longitudinal Survey on Intercultural Relations – Wave 4 (ELRI).
+- Collaborated with UNDP–CIIR on policy briefs regarding the Constitutional Council.
+- Coordinated and co-edited the book *(RE) Configuraciones Interculturales* (Editorial Catalonia, 2025).
+
+## Research Projects
+
+**Research Assistant**  
+FONDECYT Project: *The Right Wing in Dispute: Ideology and Tactics in Contemporary Chile* | Nov. 2024 – Sept. 2025 | Santiago, Chile  
+- Implemented large-scale web scraping of online newspapers in Chile (2016–2024).
+- Applied natural language processing techniques to analyze political discourse.
+- Examined varieties of radical right discourse in contemporary Chilean politics.
+
+## Research Experience
+
+**Methodological Advisor**  
+PREATI – FONDEF IDeA I+D (21I10037), Santiago & Villarrica, Chile | Jan. 2023 – Sept. 2024  
+- Co-developed measurement indicators for assessing Indigenous tourism activity.
+- Facilitated focus groups with Indigenous communities in multiple territories.
+- Coordinated the implementation of the PREATI national survey.
+- Designed visual analytics for stakeholder reports.
+
+**Research Assistant**  
+Fondecyt Project Nº 11200900: Refounding Sociology in Chile – Santiago & Valparaíso, Chile | Mar. 2021 – Oct. 2023  
+- Conducted in-depth interviews with key sociological actors.
+- Collected and systematized archival materials.
+- Contributed to the writing of peer-reviewed journal articles.
+
+**Principal Investigator**  
+VRID-UDEC Project 220.172.027: Trends in Suicide Mortality in Chile – Concepción, Chile | Oct. 2020 – May. 2021  
+- Cleaned and prepared DEIS mortality database for statistical analysis.
+- Performed advanced statistical modeling of suicide trends.
+- Produced data visualizations using ggplot2 for dissemination.
+
+**Research Assistant**  
+VRID-UDEC Project 218.058.009: Discussion on Education in Chile (2017–2018) – Concepción, Chile | Dec. 2018 – Dec. 2020  
+- Conducted archival research on educational policy debates.
+- Interviewed key stakeholders in the Chilean higher education system.
+
+## Education & Training
+
+**Pontificia Universidad Católica de Chile**  
+Master of Arts in Sociology  
+2022 - 2023 | Santiago, Chile  
+Grade: 6.5/7
+
+**Data and Artificial Intelligence Center - Universidad de Concepción**  
+Master in Data Science and Innovation  
+March 2024 - Dec. 2025 | Concepción, Chile  
+GPA: In course
+
+**Universidad de Concepción**  
+Bachelor in Sociology  
+2017 - 2021 | Concepción, Chile  
+GPA: 6.3/7
+
+## Diplomas, Courses, and Internships
+
+**Internship at the Institute for Applied Computational Science (IACS)**  
+Harvard University | Jan. 2024  
+- Research internship focused on computational methods applied to social science problems.
+- Developed skills in high-performance computing, data analysis, and applied machine learning.
+
+**Mixed Methods Summer School (EVMM)**  
+Pontificia Universidad Católica de Chile | Jan. 2024  
+- Advanced training in integrating qualitative and quantitative research designs.
+- Applied mixed methods to projects on political attitudes and social behavior.
+
+**Postgraduate Certificate in Advanced Data Processing and Analysis in R (96 hours)**  
+Pontificia Universidad Católica de Chile | Mar. – Dec. 2021  
+- In-depth coursework on statistical programming, data cleaning, and visualization in R.
+- Completed applied projects involving large-scale social survey datasets.
+
+## Honors and Awards
+
+**Equal Opportunity Scholarship – Fulbright**  
+2024 – 2027 | Fulbright Commission and Ministry of Science, Chile  
+- Scholarship awarded to pursue a fully funded PhD in the United States.
+- Granted in recognition of outstanding academic performance and research potential.
+
+**ANID Scholarship – National Master's No. 22220115**  
+2022 – 2024 | National Agency for Research and Development (ANID), Chile  
+- Competitive national scholarship to pursue a fully funded Master's degree in Chile.
+- Awarded based on academic record, research trajectory, and future potential.
+
+**University of Concepción Award**  
+2022 | University of Concepción  
+- Institutional award recognizing outstanding academic excellence in the Sociology program.
+- Includes formal university recognition and support to continue postgraduate studies.
+
+**Best Sociology Student – University of Concepción**  
+2021 | University of Concepción  
+- Awarded to the top-performing student in the Sociology program (Cohort 2017–2021).
+- Recognizes sustained academic excellence throughout the undergraduate degree.
+
+</div>
+
+<div data-lang="es" style="display: none;">
+
+## Afiliaciones Actuales
+
+**Asistente de Investigación**  
+Escuela de Gobierno - Pontificia Universidad Católica de Chile | Ene. 2024 – Presente | Santiago, Chile  
+Afiliado mediante el **Observatorio de Violencia y Legitimidad Social** ([www.oles.cl](https://www.oles.cl))  
+- Diseñé y mantuve bases de datos a gran escala para investigación.
+- Realicé scraping web automatizado de periódicos nacionales para construir conjuntos de datos longitudinales.
+- Realicé análisis de documentos institucionales para informes orientados a políticas.
+
+## Posiciones Anteriores
+
+**Investigador en Estudios Cuantitativos**  
+Centro de Estudios Interculturales e Indígenas (CIIR) | Dic. 2022 – Presente | Santiago, Chile  
+[www.ciir.cl](https://www.ciir.cl)  
+- Coordinación técnica de la Encuesta Longitudinal de Relaciones Interculturales – Ola 4 (ELRI).
+- Colaboré con PNUD–CIIR en informes de políticas sobre el Consejo Constitucional.
+- Coordiné y co-edité el libro *(RE) Configuraciones Interculturales* (Editorial Catalonia, 2025).
+
+## Proyectos de Investigación
+
+**Asistente de Investigación**  
+Proyecto FONDECYT: *La Derecha en Disputa: Ideología y Tácticas en el Chile Contemporáneo* | Nov. 2024 – Sept. 2025 | Santiago, Chile  
+- Implementé scraping web a gran escala de periódicos en línea en Chile (2016–2024).
+- Apliqué técnicas de procesamiento de lenguaje natural para analizar discurso político.
+- Examiné variedades de discurso de derecha radical en la política chilena contemporánea.
+
+## Experiencia en Investigación
+
+**Asesor Metodológico**  
+PREATI – FONDEF IDeA I+D (21I10037), Santiago & Villarrica, Chile | Ene. 2023 – Sept. 2024  
+- Co-desarrollé indicadores de medición para evaluar la actividad turística indígena.
+- Facilité grupos focales con comunidades indígenas en múltiples territorios.
+- Coordiné la implementación de la encuesta nacional PREATI.
+- Diseñé análisis visuales para informes de partes interesadas.
+
+**Asistente de Investigación**  
+Proyecto Fondecyt Nº 11200900: Refundación de la Sociología en Chile – Santiago & Valparaíso, Chile | Mar. 2021 – Oct. 2023  
+- Realicé entrevistas en profundidad con actores sociológicos clave.
+- Recopilé y sistematicé materiales de archivo.
+- Contribuí a la redacción de artículos de revistas revisadas por pares.
+
+**Investigador Principal**  
+Proyecto VRID-UDEC 220.172.027: Tendencias en la Mortalidad por Suicidio en Chile – Concepción, Chile | Oct. 2020 – May. 2021  
+- Limpié y preparé la base de datos de mortalidad DEIS para análisis estadístico.
+- Realicé modelado estadístico avanzado de tendencias de suicidio.
+- Produje visualizaciones de datos usando ggplot2 para difusión.
+
+**Asistente de Investigación**  
+Proyecto VRID-UDEC 218.058.009: Discusión sobre Educación en Chile (2017–2018) – Concepción, Chile | Dic. 2018 – Dic. 2020  
+- Realicé investigación de archivo sobre debates de políticas educativas.
+- Entrevisté a partes interesadas clave en el sistema de educación superior chileno.
+
+## Educación y Formación
+
+**Pontificia Universidad Católica de Chile**  
+Master of Arts in Sociology  
+2022 - 2023 | Santiago, Chile  
+Nota: 6.5/7
+
+**Centro de Datos e Inteligencia Artificial - Universidad de Concepción**  
+Master en Ciencia de Datos e Innovación  
+Marzo 2024 - Dic. 2025 | Concepción, Chile  
+GPA: En curso
+
+**Universidad de Concepción**  
+Licenciatura en Sociología  
+2017 - 2021 | Concepción, Chile  
+GPA: 6.3/7
+
+## Diplomas, Cursos e Internados
+
+**Internado en el Institute for Applied Computational Science (IACS)**  
+Harvard University | Ene. 2024  
+- Internado de investigación enfocado en métodos computacionales aplicados a problemas de ciencias sociales.
+- Desarrollé habilidades en computación de alto rendimiento, análisis de datos y aprendizaje automático aplicado.
+
+**Escuela de Verano de Métodos Mixtos (EVMM)**  
+Pontificia Universidad Católica de Chile | Ene. 2024  
+- Capacitación avanzada en integración de diseños de investigación cualitativos y cuantitativos.
+- Apliqué métodos mixtos a proyectos sobre actitudes políticas y comportamiento social.
+
+**Certificado de Postgrado en Procesamiento y Análisis Avanzado de Datos en R (96 horas)**  
+Pontificia Universidad Católica de Chile | Mar. – Dic. 2021  
+- Curso en profundidad sobre programación estadística, limpieza de datos y visualización en R.
+- Completé proyectos aplicados que involucraban conjuntos de datos de encuestas sociales a gran escala.
+
+## Honores y Premios
+
+**Beca Igualdad de Oportunidades – Fulbright**  
+2024 – 2027 | Comisión Fulbright y Ministerio de Ciencia, Chile  
+- Beca otorgada para realizar un doctorado completamente financiado en Estados Unidos.
+- Concedida en reconocimiento al rendimiento académico excepcional y potencial de investigación.
+
+**Beca ANID – Magíster Nacional No. 22220115**  
+2022 – 2024 | Agencia Nacional de Investigación y Desarrollo (ANID), Chile  
+- Beca nacional competitiva para realizar un magíster completamente financiado en Chile.
+- Otorgada en base al récord académico, trayectoria de investigación y potencial futuro.
+
+**Premio Universidad de Concepción**  
+2022 | Universidad de Concepción  
+- Premio institucional que reconoce la excelencia académica excepcional en el programa de Sociología.
+- Incluye reconocimiento formal de la universidad y apoyo para continuar estudios de postgrado.
+
+**Mejor Estudiante de Sociología – Universidad de Concepción**  
+2021 | Universidad de Concepción  
+- Otorgado al estudiante con mejor rendimiento en el programa de Sociología (Cohort 2017–2021).
+- Reconoce la excelencia académica sostenida durante toda la carrera de pregrado.
+
+</div>
+

@@ -5,15 +5,10 @@ description: "Personalized guidance for teams combining social research with dat
 
 ## Offerings
 
-- Strategic advising on study design, data governance, and reproducible workflows for social research teams.
-- Reviews of notebooks, scripts, and visual narratives to keep analysis transparent and maintainable.
-- Short workshops (virtual or on-site) that translate methods into actionable practices for researchers, NGOs, or teams in transition.
 
 ## How we work together
 
-1. Send a short email (`m.deneken@uc.cl`) or LinkedIn message describing the project scope or questions.
-2. We schedule a kickoff chat, define goals, and agree on deliverables (notes, reviewed code, workshop plan).
-3. Insights from each engagement feed back into the “Experience in Research” blog so teams see how knowledge spreads.
+
 
 ## Contact
 

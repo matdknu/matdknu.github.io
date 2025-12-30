@@ -32,8 +32,6 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -72,36 +70,6 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-recent-posts .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-image','listing-date','listing-title','listing-subtitle',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      page: 3,
-    pagination: { item: "<li class='page-item'><a class='page page-link' href='#'></a></li>" },
-      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-recent-posts'] = new List('listing-recent-posts', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
 <script async="" src="https://www.googletagmanager.com/gtag/js?id="></script>
 
 <script type="text/javascript">
@@ -132,43 +100,12 @@ https://badge.dimensions.ai/
 
 <script type="text/javascript" src="//cdn.plu.mx/widget-popup.js"></script>
 
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 <link rel="stylesheet" href="styles.css">
 <meta property="og:title" content="Matías Deneken">
-<meta property="og:description" content="Investigación, tutoriales y avances en datos sociales desde el laboratorio de Matías Deneken.">
 <meta property="og:image" content="https://matdknu.github.io/files/images/my-face.JPG">
 <meta property="og:site_name" content="Matías Deneken">
 <meta name="twitter:title" content="Matías Deneken">
-<meta name="twitter:description" content="Investigación, tutoriales y avances en datos sociales desde el laboratorio de Matías Deneken.">
 <meta name="twitter:image" content="https://matdknu.github.io/files/images/my-face.JPG">
 <meta name="twitter:card" content="summary_large_image">
 </head>
@@ -190,66 +127,21 @@ window.Quarto = {
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
-  <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-about" role="link" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text">About</span>
-    </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-about">    
-        <li>
-    <a class="dropdown-item" href="./posts.html#category=news">
- <span class="dropdown-text">News</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="./posts.html">
- <span class="dropdown-text">Posts</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="./posts.html#category=tutorial">
- <span class="dropdown-text">Tutorials</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="./contact.html">
- <span class="dropdown-text">Contact</span></a>
-  </li>  
-    </ul>
-  </li>
-  <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-research" role="link" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text">Research</span>
-    </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-research">    
-        <li>
-    <a class="dropdown-item" href="./publications.html">
- <span class="dropdown-text">List of Publications</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="./posts.html#category=experience-in-research">
- <span class="dropdown-text">Experience in Research</span></a>
-  </li>  
-    </ul>
-  </li>
   <li class="nav-item">
-    <a class="nav-link" href="./advising.html"> 
-<span class="menu-text">Advising</span></a>
+    <a class="nav-link" href="./publications.html"> 
+<span class="menu-text">Publications</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./conferences.html"> 
+<span class="menu-text">Conferences</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./teaching.html"> 
 <span class="menu-text">Teaching</span></a>
   </li>  
-  <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-outreach" role="link" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text">Outreach</span>
-    </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-outreach">    
-        <li>
-    <a class="dropdown-item" href="./posts.html#category=presentation">
- <span class="dropdown-text">Presentations</span></a>
-  </li>  
-    </ul>
-  </li>
   <li class="nav-item">
-    <a class="nav-link" href="./photos.html"> 
-<span class="menu-text">Photos</span></a>
+    <a class="nav-link" href="./experience.html"> 
+<span class="menu-text">Experience</span></a>
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
@@ -262,12 +154,8 @@ window.Quarto = {
 </i> 
 <span class="menu-text"></span></a>
   </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="https://bsky.app" target="_blank"> 
-<span class="menu-text"><i class="fa-brands fa-bluesky" aria-label="bluesky"></i></span></a>
-  </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="./posts.xml" target="_blank"> <i class="bi bi-rss" role="img">
+    <a class="nav-link" href="mailto:m.deneken@alumni.uc.cl"> <i class="bi bi-envelope" role="img">
 </i> 
 <span class="menu-text"></span></a>
   </li>  
@@ -294,6 +182,162 @@ window.Quarto = {
 
 
 
+<div id="language-switcher">
+  <button id="lang-en" onclick="switchLanguage('en')" class="lang-btn active">🇬🇧 EN</button>
+  <button id="lang-es" onclick="switchLanguage('es')" class="lang-btn">🇪🇸 ES</button>
+</div>
+
+<style>
+#language-switcher {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+  display: flex;
+  gap: 8px;
+  background: white;
+  padding: 4px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.lang-btn {
+  background: white;
+  border: 2px solid #ddd;
+  padding: 8px 14px;
+  cursor: pointer;
+  border-radius: 6px;
+  font-size: 14px;
+  transition: all 0.3s ease;
+  font-weight: normal;
+  color: #333;
+}
+
+.lang-btn:hover {
+  background: #f5f5f5;
+  border-color: #999;
+}
+
+.lang-btn.active {
+  background: #0066cc;
+  color: white;
+  border-color: #0066cc;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  #language-switcher {
+    top: 10px;
+    right: 10px;
+    gap: 4px;
+    padding: 2px;
+  }
+  
+  .lang-btn {
+    padding: 6px 10px;
+    font-size: 12px;
+  }
+}
+</style>
+
+<script>
+let currentLang = 'en';
+
+function switchLanguage(lang) {
+  currentLang = lang;
+  document.querySelectorAll('[data-lang]').forEach(el => {
+    if (el.getAttribute('data-lang') === lang) {
+      el.style.display = '';
+    } else {
+      el.style.display = 'none';
+    }
+  });
+  document.getElementById('lang-en').classList.toggle('active', lang === 'en');
+  document.getElementById('lang-es').classList.toggle('active', lang === 'es');
+  
+  // Also handle book sections
+  document.querySelectorAll('.about-book-section').forEach(el => {
+    if (el.getAttribute('data-lang') === lang) {
+      el.style.display = '';
+    } else {
+      el.style.display = 'none';
+    }
+  });
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+  switchLanguage('en');
+  
+  // Move book section to left sidebar (after links)
+  const bookSection = document.querySelector('.about-book-section');
+  const aboutLinks = document.querySelector('.about-links');
+  
+  if (bookSection && aboutLinks) {
+    aboutLinks.parentNode.insertBefore(bookSection, aboutLinks.nextSibling);
+  }
+});
+</script>
+<div class="about-book-section" data-lang="en" style="display: none;">
+<h3>Recent Book</h3>
+<a href="https://books.google.co.uk/books/about/RE_Configuraciones_Interculturales.html?id=nM6YEQAAQBAJ&amp;redir_esc=y" target="_blank">
+  <img src="https://books.google.co.uk/books/content?id=nM6YEQAAQBAJ&amp;printsec=frontcover&amp;img=1&amp;zoom=1&amp;edge=curl&amp;source=gbs_api" alt="(RE) Configuraciones Interculturales">
+</a>
+<p><strong><a href="https://books.google.co.uk/books/about/RE_Configuraciones_Interculturales.html?id=nM6YEQAAQBAJ&amp;redir_esc=y">(RE) Configuraciones Interculturales: Un estudio longitudinal de las relaciones entre indígenas y no indígenas en Chile (2016-2024)</a></strong></p>
+<p>Co-edited with Eduardo Valenzuela. Editorial Catalonia, 2025.</p>
+</div>
+
+<div class="about-book-section" data-lang="es" style="display: none;">
+<h3>Libro Reciente</h3>
+<a href="https://books.google.co.uk/books/about/RE_Configuraciones_Interculturales.html?id=nM6YEQAAQBAJ&amp;redir_esc=y" target="_blank">
+  <img src="https://books.google.co.uk/books/content?id=nM6YEQAAQBAJ&amp;printsec=frontcover&amp;img=1&amp;zoom=1&amp;edge=curl&amp;source=gbs_api" alt="(RE) Configuraciones Interculturales">
+</a>
+<p><strong><a href="https://books.google.co.uk/books/about/RE_Configuraciones_Interculturales.html?id=nM6YEQAAQBAJ&amp;redir_esc=y">(RE) Configuraciones Interculturales: Un estudio longitudinal de las relaciones entre indígenas y no indígenas en Chile (2016-2024)</a></strong></p>
+<p>Co-editado con Eduardo Valenzuela. Editorial Catalonia, 2025.</p>
+</div>
+
+<style>
+.about-book-section {
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 1px solid #e0e0e0;
+}
+
+.about-book-section img {
+  max-width: 150px;
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.about-book-section h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  color: #333;
+  font-weight: 600;
+}
+
+.about-book-section p {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  margin-bottom: 0.5rem;
+}
+
+.about-book-section a {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+.about-book-section a:hover {
+  text-decoration: underline;
+}
+
+.about-book-section strong a {
+  font-weight: 600;
+}
+</style>
 <div class="quarto-about-trestles column-page">
   <div class="about-entity">
     <img src="files/images/my-face.JPG" class="about-image
@@ -310,7 +354,7 @@ window.Quarto = {
     <i class="bi bi-github"></i>
      <span class="about-link-text">GitHub</span>
   </a>
-  <a href="/m.deneken@uc.cl" class="about-link" rel="" target="">
+  <a href="/m.deneken@alumni.uc.cl" class="about-link" rel="" target="">
     <i class="bi bi-envelope"></i>
      <span class="about-link-text">E-mail</span>
   </a>
@@ -327,103 +371,100 @@ window.Quarto = {
 </div>
   </div>
   <div class="about-contents"><div id="hero-heading">
+<div data-lang="en">
 <section id="introduction" class="level2">
 <h2 data-anchor-id="introduction">Introduction</h2>
-<p>Matías Deneken is a Chilean sociologist and data scientist. His research bridges social data science, violence, and computational methods to study how ——– . He has collaborated on large-scale longitudinal studies such as the <em>Estudio Longitudinal de Relaciones Interculturales (ELRI)</em> and the <em>Estudio Panel de Percepciones de Seguridad y Policías (EPSEP)</em></p>
+<p>Matías Deneken is a Chilean sociologist and data scientist. His research bridges social data science, violence, and computational methods to study how social processes unfold in contemporary societies. He has collaborated on large-scale longitudinal studies such as the <em>Estudio Longitudinal de Relaciones Interculturales (ELRI)</em> and the <em>Estudio Panel de Percepciones de Seguridad y Policías (EPSEP)</em>.</p>
+<p>Matías is a recipient of the <strong>Equal Opportunity Scholarship – Fulbright</strong> (2024-2027), awarded to pursue a fully funded PhD in the United States, and the <strong>University of Concepción Award</strong> (2022), recognizing outstanding academic excellence in the Sociology program. He was also named <strong>Best Sociology Student</strong> at the University of Concepción (2021).</p>
 <p>Beyond research, Matías is passionate about photography, travel, and visual storytelling, which often inspire his analytical and creative work.</p>
+<section id="current-projects" class="level3">
+<h3 data-anchor-id="current-projects">Current Projects</h3>
+<p>I am currently developing <strong><a href="https://www.methodolab.com">MethodoLab</a></strong> — an innovative data science initiative focused on computational methods in social research.</p>
+<div style="text-align: center; margin: 1.5rem 0;">
+  <a href="https://www.methodolab.com" target="_blank" style="display: inline-block; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 15px 30px; border-radius: 8px; text-decoration: none; font-weight: bold; font-size: 16px; transition: transform 0.3s ease, box-shadow 0.3s ease; box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);">
+    🚀 Visit MethodoLab →
+  </a>
+</div>
+<style>
+a[href*="methodolab.com"]:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(102, 126, 234, 0.6);
+}
+</style>
+</section>
 </section>
 <section id="experience" class="level2">
 <h2 data-anchor-id="experience">Experience</h2>
-<p>–</p>
+<p>Matías is currently affiliated with the <strong>Government School at Pontificia Universidad Católica de Chile</strong> through the <strong>Observatory of Violence and Social Legitimacy</strong> (<a href="https://oles2.netlify.app/">www.oles.cl</a>), where he works as a Research Assistant designing and maintaining large-scale databases and conducting automated web scraping of national newspapers.</p>
+<p>He has been a <strong>Quantitative Studies Researcher</strong> at the <strong>Center for Intercultural and Indigenous Studies (CIIR)</strong> (<a href="https://www.ciir.cl">www.ciir.cl</a>) since December 2022, where he coordinates the Longitudinal Survey on Intercultural Relations (ELRI) and co-edited the book <em>(RE) Configuraciones Interculturales</em>.</p>
+<p>Matías is also a Research Assistant on the <strong>FONDECYT Project: The Right Wing in Dispute: Ideology and Tactics in Contemporary Chile</strong>, where he implements large-scale web scraping and applies natural language processing techniques to analyze political discourse.</p>
 </section>
 <section id="education" class="level2">
 <h2 data-anchor-id="education">Education</h2>
 <ul>
-<li>MSc in Sociology, Pontificia Universidad Católica de Chile<br>
-</li>
-<li>BA in Sociology, Universidad de Concepción</li>
+<li><strong>Master of Arts in Sociology</strong>, Pontificia Universidad Católica de Chile (2022-2023) | Grade: 6.5/7</li>
+<li><strong>Master in Data Science and Innovation</strong>, Data and Artificial Intelligence Center - Universidad de Concepción (2024-2025) | In course</li>
+<li><strong>Bachelor in Sociology</strong>, Universidad de Concepción (2017-2021) | GPA: 6.3/7</li>
 </ul>
-<p>–</p>
 </section>
+<section id="technical-skills" class="level2">
+<h2 data-anchor-id="technical-skills">Technical Skills</h2>
+<p><strong>Data Processing:</strong> R, Python, Stata, SQL<br>
+<strong>Information Management:</strong> ATLAS.ti, Mendeley, Zotero<br>
+<strong>Text Processing:</strong> Microsoft Office, LaTeX</p>
+<p><strong>Languages:</strong> Spanish (Native), English (B2)</p>
+</section>
+</div>
+<div data-lang="es" style="display: none;">
+<section id="introducción" class="level2">
+<h2 data-anchor-id="introducción">Introducción</h2>
+<p>Matías Deneken es un sociólogo y científico de datos chileno. Su investigación conecta ciencia de datos sociales, violencia y métodos computacionales para estudiar cómo se desarrollan los procesos sociales en las sociedades contemporáneas. Ha colaborado en estudios longitudinales a gran escala como el <em>Estudio Longitudinal de Relaciones Interculturales (ELRI)</em> y el <em>Estudio Panel de Percepciones de Seguridad y Policías (EPSEP)</em>.</p>
+<p>Matías es receptor de la <strong>Beca Igualdad de Oportunidades – Fulbright</strong> (2024-2027), otorgada para realizar un doctorado completamente financiado en Estados Unidos, y del <strong>Premio Universidad de Concepción</strong> (2022), que reconoce la excelencia académica excepcional en el programa de Sociología. También fue nombrado <strong>Mejor Estudiante de Sociología</strong> en la Universidad de Concepción (2021).</p>
+<p>Más allá de la investigación, Matías es apasionado por la fotografía, los viajes y la narrativa visual, lo que a menudo inspira su trabajo analítico y creativo.</p>
+<section id="proyectos-actuales" class="level3">
+<h3 data-anchor-id="proyectos-actuales">Proyectos Actuales</h3>
+<p>Actualmente estoy desarrollando <strong><a href="https://www.methodolab.com">MethodoLab</a></strong> — una iniciativa innovadora de ciencia de datos enfocada en métodos computacionales en investigación social.</p>
+<div style="text-align: center; margin: 1.5rem 0;">
+  <a href="https://www.methodolab.com" target="_blank" style="display: inline-block; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 15px 30px; border-radius: 8px; text-decoration: none; font-weight: bold; font-size: 16px; transition: transform 0.3s ease, box-shadow 0.3s ease; box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);">
+    🚀 Visitar MethodoLab →
+  </a>
+</div>
+<style>
+a[href*="methodolab.com"]:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(102, 126, 234, 0.6);
+}
+</style>
+</section>
+</section>
+<section id="experiencia" class="level2">
+<h2 data-anchor-id="experiencia">Experiencia</h2>
+<p>Matías está actualmente afiliado a la <strong>Escuela de Gobierno de la Pontificia Universidad Católica de Chile</strong> mediante el <strong>Observatorio de Violencia y Legitimidad Social</strong> (<a href="https://www.oles.cl">www.oles.cl</a>), donde trabaja como Asistente de Investigación diseñando y manteniendo bases de datos a gran escala y realizando scraping web automatizado de periódicos nacionales.</p>
+<p>Ha sido <strong>Investigador en Estudios Cuantitativos</strong> en el <strong>Centro de Estudios Interculturales e Indígenas (CIIR)</strong> (<a href="https://www.ciir.cl">www.ciir.cl</a>) desde diciembre de 2022, donde coordina la Encuesta Longitudinal de Relaciones Interculturales (ELRI) y co-editó el libro <em>(RE) Configuraciones Interculturales</em>.</p>
+<p>Matías también es Asistente de Investigación en el <strong>Proyecto FONDECYT: La Derecha en Disputa: Ideología y Tácticas en el Chile Contemporáneo</strong>, donde implementa scraping web a gran escala y aplica técnicas de procesamiento de lenguaje natural para analizar discurso político.</p>
+</section>
+<section id="educación" class="level2">
+<h2 data-anchor-id="educación">Educación</h2>
+<ul>
+<li><strong>Master of Arts in Sociology</strong>, Pontificia Universidad Católica de Chile (2022-2023) | Nota: 6.5/7</li>
+<li><strong>Master en Ciencia de Datos e Innovación</strong>, Centro de Datos e Inteligencia Artificial - Universidad de Concepción (2024-2025) | En curso</li>
+<li><strong>Licenciatura en Sociología</strong>, Universidad de Concepción (2017-2021) | GPA: 6.3/7</li>
+</ul>
+</section>
+<section id="habilidades-técnicas" class="level2">
+<h2 data-anchor-id="habilidades-técnicas">Habilidades Técnicas</h2>
+<p><strong>Procesamiento de Datos:</strong> R, Python, Stata, SQL<br>
+<strong>Gestión de Información:</strong> ATLAS.ti, Mendeley, Zotero<br>
+<strong>Procesamiento de Texto:</strong> Microsoft Office, LaTeX</p>
+<p><strong>Idiomas:</strong> Español (Nativo), Inglés (B2)</p>
+</section>
+</div>
 </div></div>
 </div>
 
-<!-- Delete the following section and delete corresponding lines in the yaml part to remove the recent posts -->
-<section id="recent-posts" class="level2">
-<h2 data-anchor-id="recent-posts">Recent Posts</h2>
-<p>Check out the latest &nbsp;<a href="./posts.html#category=paper">Papers</a>&nbsp;, &nbsp;<a href="./posts.html#category=news">News</a>&nbsp;, &nbsp;<a href="./posts.html#category=event">Events</a>&nbsp;, and &nbsp;<a href="./posts.html">More »</a></p>
-<div id="listing-recent-posts" class="quarto-listing quarto-listing-container-grid">
-<div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="experience-in-research" data-listing-date-sort="1764212400000" data-listing-file-modified-sort="1764122802136" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="53">
-<a href="./posts/experience-in-research/colaboraciones/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="./files/images/placeholder1.jpg" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Alianzas e instrumentos de colaboración
-</h5>
-<div class="card-attribution card-text-small end">
-<div class="listing-date">
-Nov 27, 2025
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="1" data-categories="experience-in-research" data-listing-date-sort="1764212400000" data-listing-file-modified-sort="1764122730102" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="96">
-<a href="./posts/experience-in-research/fondecyt/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="./files/images/placeholder4.jpg" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Derechas FONDECYT, Interculturales, OLES, etc.
-</h5>
-<div class="card-attribution card-text-small end">
-<div class="listing-date">
-Nov 27, 2025
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="2" data-categories="experience-in-research" data-listing-date-sort="1764212400000" data-listing-file-modified-sort="1764122677066" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="85">
-<a href="./posts/experience-in-research/roles/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="./files/images/placeholder4.jpg" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Experience in Research: Field Coordination
-</h5>
-<div class="card-attribution card-text-small end">
-<div class="listing-date">
-Nov 27, 2025
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-</div>
-<div class="listing-no-matching d-none">
-No matching items
-</div>
-</div>
-<p align="right">
-<a href="./posts.html">All Posts »</a>
-</p>
 
 
 
-
-</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

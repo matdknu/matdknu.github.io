@@ -4,7 +4,6 @@ description-meta: "Web page Matias "
 image: "files/images/my-face.JPG"
 page-navigation: false
 toc: false
-#sidebar: false
 page-layout: full
 
 about:
@@ -18,66 +17,285 @@ about:
       target: _blank
     - icon: envelope
       text: E-mail
-      href: m.deneken@uc.cl  
+      href: m.deneken@alumni.uc.cl  
     - icon: linkedin
       text: LinkedIn
       href: https://linkedin.com/deneken
       target: _blank
-    - text: "{{< ai orcid >}} ORCID"   # use academic icons, "" are needed, you also need to install the fontawesome extension
+    - text: "{{< ai orcid >}} ORCID"
       href: https://orcid.org
       target: _blank
     - text: "{{< ai google-scholar >}} Google Scholar"
       href: https://scholar.google.com
       target: _blank
-#    - text: "{{< ai researchgate >}} Research Gate"
-#      href: https://www.researchgate.net
-#      target: _blank
-
-listing:   # Comment the listing section and delete corresponding lines in the index.qmd file to remove the recent posts
-  - id: recent-posts
-    contents: 
-      - posts
-      - posts/post-links.yml
-    exclude:
-      title: ""
-    type: grid
-    max-items: 3
-#    image-height: 150px
-    page-size: 3 #set same as max-times to remove the page number setting
-    fields: [image, date, title, subtitle]
-    max-description-length: 75
-    sort: 
-      - "date desc"
-      - "title asc"
 ---
+
+```{=html}
+<div id="language-switcher">
+  <button id="lang-en" onclick="switchLanguage('en')" class="lang-btn active">🇬🇧 EN</button>
+  <button id="lang-es" onclick="switchLanguage('es')" class="lang-btn">🇪🇸 ES</button>
+</div>
+
+<style>
+#language-switcher {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+  display: flex;
+  gap: 8px;
+  background: white;
+  padding: 4px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.lang-btn {
+  background: white;
+  border: 2px solid #ddd;
+  padding: 8px 14px;
+  cursor: pointer;
+  border-radius: 6px;
+  font-size: 14px;
+  transition: all 0.3s ease;
+  font-weight: normal;
+  color: #333;
+}
+
+.lang-btn:hover {
+  background: #f5f5f5;
+  border-color: #999;
+}
+
+.lang-btn.active {
+  background: #0066cc;
+  color: white;
+  border-color: #0066cc;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  #language-switcher {
+    top: 10px;
+    right: 10px;
+    gap: 4px;
+    padding: 2px;
+  }
+  
+  .lang-btn {
+    padding: 6px 10px;
+    font-size: 12px;
+  }
+}
+</style>
+
+<script>
+let currentLang = 'en';
+
+function switchLanguage(lang) {
+  currentLang = lang;
+  document.querySelectorAll('[data-lang]').forEach(el => {
+    if (el.getAttribute('data-lang') === lang) {
+      el.style.display = '';
+    } else {
+      el.style.display = 'none';
+    }
+  });
+  document.getElementById('lang-en').classList.toggle('active', lang === 'en');
+  document.getElementById('lang-es').classList.toggle('active', lang === 'es');
+  
+  // Also handle book sections
+  document.querySelectorAll('.about-book-section').forEach(el => {
+    if (el.getAttribute('data-lang') === lang) {
+      el.style.display = '';
+    } else {
+      el.style.display = 'none';
+    }
+  });
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+  switchLanguage('en');
+  
+  // Move book section to left sidebar (after links)
+  const bookSection = document.querySelector('.about-book-section');
+  const aboutLinks = document.querySelector('.about-links');
+  
+  if (bookSection && aboutLinks) {
+    aboutLinks.parentNode.insertBefore(bookSection, aboutLinks.nextSibling);
+  }
+});
+</script>
+```
+
+```{=html}
+<div class="about-book-section" data-lang="en" style="display: none;">
+<h3>Recent Book</h3>
+<a href="https://books.google.co.uk/books/about/RE_Configuraciones_Interculturales.html?id=nM6YEQAAQBAJ&redir_esc=y" target="_blank">
+  <img src="https://books.google.co.uk/books/content?id=nM6YEQAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api" alt="(RE) Configuraciones Interculturales">
+</a>
+<p><strong><a href="https://books.google.co.uk/books/about/RE_Configuraciones_Interculturales.html?id=nM6YEQAAQBAJ&redir_esc=y">(RE) Configuraciones Interculturales: Un estudio longitudinal de las relaciones entre indígenas y no indígenas en Chile (2016-2024)</a></strong></p>
+<p>Co-edited with Eduardo Valenzuela. Editorial Catalonia, 2025.</p>
+</div>
+
+<div class="about-book-section" data-lang="es" style="display: none;">
+<h3>Libro Reciente</h3>
+<a href="https://books.google.co.uk/books/about/RE_Configuraciones_Interculturales.html?id=nM6YEQAAQBAJ&redir_esc=y" target="_blank">
+  <img src="https://books.google.co.uk/books/content?id=nM6YEQAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api" alt="(RE) Configuraciones Interculturales">
+</a>
+<p><strong><a href="https://books.google.co.uk/books/about/RE_Configuraciones_Interculturales.html?id=nM6YEQAAQBAJ&redir_esc=y">(RE) Configuraciones Interculturales: Un estudio longitudinal de las relaciones entre indígenas y no indígenas en Chile (2016-2024)</a></strong></p>
+<p>Co-editado con Eduardo Valenzuela. Editorial Catalonia, 2025.</p>
+</div>
+
+<style>
+.about-book-section {
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 1px solid #e0e0e0;
+}
+
+.about-book-section img {
+  max-width: 150px;
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.about-book-section h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  color: #333;
+  font-weight: 600;
+}
+
+.about-book-section p {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  margin-bottom: 0.5rem;
+}
+
+.about-book-section a {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+.about-book-section a:hover {
+  text-decoration: underline;
+}
+
+.about-book-section strong a {
+  font-weight: 600;
+}
+</style>
+```
 
 :::{#hero-heading}
 
+<div data-lang="en">
 ## Introduction
 
-Matías Deneken is a Chilean sociologist and data scientist. His research bridges social data science, violence, and computational methods to study how -------- . He has collaborated on large-scale longitudinal studies such as the *Estudio Longitudinal de Relaciones Interculturales (ELRI)* and the *Estudio Panel de Percepciones de Seguridad y Policías (EPSEP)* 
+Matías Deneken is a Chilean sociologist and data scientist. His research bridges social data science, violence, and computational methods to study how social processes unfold in contemporary societies. He has collaborated on large-scale longitudinal studies such as the *Estudio Longitudinal de Relaciones Interculturales (ELRI)* and the *Estudio Panel de Percepciones de Seguridad y Policías (EPSEP)*.
+
+Matías is a recipient of the **Equal Opportunity Scholarship – Fulbright** (2024-2027), awarded to pursue a fully funded PhD in the United States, and the **University of Concepción Award** (2022), recognizing outstanding academic excellence in the Sociology program. He was also named **Best Sociology Student** at the University of Concepción (2021).
 
 Beyond research, Matías is passionate about photography, travel, and visual storytelling, which often inspire his analytical and creative work.
 
+### Current Projects
+
+I am currently developing **[MethodoLab](https://www.methodolab.com)** — an innovative data science initiative focused on computational methods in social research.
+
+```{=html}
+<div style="text-align: center; margin: 1.5rem 0;">
+  <a href="https://www.methodolab.com" target="_blank" style="display: inline-block; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 15px 30px; border-radius: 8px; text-decoration: none; font-weight: bold; font-size: 16px; transition: transform 0.3s ease, box-shadow 0.3s ease; box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);">
+    🚀 Visit MethodoLab →
+  </a>
+</div>
+
+<style>
+a[href*="methodolab.com"]:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(102, 126, 234, 0.6);
+}
+</style>
+```
+
 ## Experience
 
---
+Matías is currently affiliated with the **Government School at Pontificia Universidad Católica de Chile** through the **Observatory of Violence and Social Legitimacy** ([www.oles.cl](https://oles2.netlify.app/)), where he works as a Research Assistant designing and maintaining large-scale databases and conducting automated web scraping of national newspapers.
+
+He has been a **Quantitative Studies Researcher** at the **Center for Intercultural and Indigenous Studies (CIIR)** ([www.ciir.cl](https://www.ciir.cl)) since December 2022, where he coordinates the Longitudinal Survey on Intercultural Relations (ELRI) and co-edited the book *(RE) Configuraciones Interculturales*.
+
+Matías is also a Research Assistant on the **FONDECYT Project: The Right Wing in Dispute: Ideology and Tactics in Contemporary Chile**, where he implements large-scale web scraping and applies natural language processing techniques to analyze political discourse.
 
 ## Education
 
-- MSc in Sociology, Pontificia Universidad Católica de Chile  
-- BA in Sociology, Universidad de Concepción 
+- **Master of Arts in Sociology**, Pontificia Universidad Católica de Chile (2022-2023) | Grade: 6.5/7
+- **Master in Data Science and Innovation**, Data and Artificial Intelligence Center - Universidad de Concepción (2024-2025) | In course
+- **Bachelor in Sociology**, Universidad de Concepción (2017-2021) | GPA: 6.3/7
 
---
+## Technical Skills
+
+**Data Processing:** R, Python, Stata, SQL  
+**Information Management:** ATLAS.ti, Mendeley, Zotero  
+**Text Processing:** Microsoft Office, LaTeX
+
+**Languages:** Spanish (Native), English (B2)
+
+</div>
+
+<div data-lang="es" style="display: none;">
+## Introducción
+
+Matías Deneken es un sociólogo y científico de datos chileno. Su investigación conecta ciencia de datos sociales, violencia y métodos computacionales para estudiar cómo se desarrollan los procesos sociales en las sociedades contemporáneas. Ha colaborado en estudios longitudinales a gran escala como el *Estudio Longitudinal de Relaciones Interculturales (ELRI)* y el *Estudio Panel de Percepciones de Seguridad y Policías (EPSEP)*.
+
+Matías es receptor de la **Beca Igualdad de Oportunidades – Fulbright** (2024-2027), otorgada para realizar un doctorado completamente financiado en Estados Unidos, y del **Premio Universidad de Concepción** (2022), que reconoce la excelencia académica excepcional en el programa de Sociología. También fue nombrado **Mejor Estudiante de Sociología** en la Universidad de Concepción (2021).
+
+Más allá de la investigación, Matías es apasionado por la fotografía, los viajes y la narrativa visual, lo que a menudo inspira su trabajo analítico y creativo.
+
+### Proyectos Actuales
+
+Actualmente estoy desarrollando **[MethodoLab](https://www.methodolab.com)** — una iniciativa innovadora de ciencia de datos enfocada en métodos computacionales en investigación social.
+
+```{=html}
+<div style="text-align: center; margin: 1.5rem 0;">
+  <a href="https://www.methodolab.com" target="_blank" style="display: inline-block; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 15px 30px; border-radius: 8px; text-decoration: none; font-weight: bold; font-size: 16px; transition: transform 0.3s ease, box-shadow 0.3s ease; box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);">
+    🚀 Visitar MethodoLab →
+  </a>
+</div>
+
+<style>
+a[href*="methodolab.com"]:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(102, 126, 234, 0.6);
+}
+</style>
+```
+
+## Experiencia
+
+Matías está actualmente afiliado a la **Escuela de Gobierno de la Pontificia Universidad Católica de Chile** mediante el **Observatorio de Violencia y Legitimidad Social** ([www.oles.cl](https://www.oles.cl)), donde trabaja como Asistente de Investigación diseñando y manteniendo bases de datos a gran escala y realizando scraping web automatizado de periódicos nacionales.
+
+Ha sido **Investigador en Estudios Cuantitativos** en el **Centro de Estudios Interculturales e Indígenas (CIIR)** ([www.ciir.cl](https://www.ciir.cl)) desde diciembre de 2022, donde coordina la Encuesta Longitudinal de Relaciones Interculturales (ELRI) y co-editó el libro *(RE) Configuraciones Interculturales*.
+
+Matías también es Asistente de Investigación en el **Proyecto FONDECYT: La Derecha en Disputa: Ideología y Tácticas en el Chile Contemporáneo**, donde implementa scraping web a gran escala y aplica técnicas de procesamiento de lenguaje natural para analizar discurso político.
+
+## Educación
+
+- **Master of Arts in Sociology**, Pontificia Universidad Católica de Chile (2022-2023) | Nota: 6.5/7
+- **Master en Ciencia de Datos e Innovación**, Centro de Datos e Inteligencia Artificial - Universidad de Concepción (2024-2025) | En curso
+- **Licenciatura en Sociología**, Universidad de Concepción (2017-2021) | GPA: 6.3/7
+
+## Habilidades Técnicas
+
+**Procesamiento de Datos:** R, Python, Stata, SQL  
+**Gestión de Información:** ATLAS.ti, Mendeley, Zotero  
+**Procesamiento de Texto:** Microsoft Office, LaTeX
+
+**Idiomas:** Español (Nativo), Inglés (B2)
+
+</div>
 
 :::
-
-
-<!-- Delete the following section and delete corresponding lines in the yaml part to remove the recent posts -->
-## Recent Posts
-Check out the latest &nbsp;[Papers](posts.qmd#category=paper)&nbsp;, &nbsp;[News](posts.qmd#category=news)&nbsp;, &nbsp;[Events](posts.qmd#category=event)&nbsp;, and &nbsp;[More »](/posts.qmd)
-
-:::{#recent-posts}
-:::
-
-<p align="right">[All Posts »](/posts.qmd)</p>

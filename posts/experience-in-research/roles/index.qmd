@@ -22,3 +22,4 @@ En este espacio documentaré tareas de coordinación (equipos, cronogramas, vali
 
 {{< include /files/includes/_socialshare.qmd >}}
 
+

@@ -2,6 +2,8 @@
   {
     "listing": "/posts.html",
     "items": [
+      "/posts/programming-in-social-science/tutorial_tidyverse_pandas/index.html",
+      "/posts/datos-electorales/servel-2025/index.html",
       "/posts/experience-in-research/roles/index.html",
       "/posts/experience-in-research/colaboraciones/index.html",
       "/posts/experience-in-research/fondecyt/index.html",
@@ -13,17 +15,6 @@
   {
     "listing": "/projects.html",
     "items": []
-  },
-  {
-    "listing": "/index.html",
-    "items": [
-      "/posts/experience-in-research/colaboraciones/index.html",
-      "/posts/experience-in-research/fondecyt/index.html",
-      "/posts/experience-in-research/roles/index.html",
-      "/posts/programming-in-social-science/data-pipelines/index.html",
-      "/posts/programming-in-social-science/quickstart/index.html",
-      "/posts/avance-socia/index.html"
-    ]
   },
   {
     "listing": "/people.html",

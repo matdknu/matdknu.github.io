@@ -1,34 +1,124 @@
 ---
 title: "Publications"
-description-meta: "Information, pdfs, and social metrics of papers"
-#page-layout: full
-#back-to-top-navigation: true
-title-block-banner: false
-css: custom.css
+page-navigation: true
+toc: false
 ---
 
+```{=html}
+<div id="language-switcher">
+  <button id="lang-en" onclick="switchLanguage('en')" class="lang-btn active">🇬🇧 EN</button>
+  <button id="lang-es" onclick="switchLanguage('es')" class="lang-btn">🇪🇸 ES</button>
+</div>
 
-<!--Include academic icons or buttons-->
-{{< include /files/includes/_academic.qmd >}}
+<style>
+#language-switcher {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+  display: flex;
+  gap: 8px;
+  background: white;
+  padding: 4px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
 
-Notes: \* corresponding author; <sup>GS</sup> graduate student advisee; <sup>VS</sup> visiting scholar; ![](https://drganghe.github.io/files/images/highly-cited-paper-badge.png "ESI Highly Cited Paper"){width=20 fig-alt="Highly cited paper"} ESI [Highly Cited Paper](https://webofscience.help.clarivate.com/en-us/Content/esi-highly-cited-papers.html) (top 1%); ![](https://drganghe.github.io/files/images/hot-paper-badge.png "ESI Hot Paper"){width=20 fig-alt="Hot paper"} ESI [Hot Paper](https://webofscience.help.clarivate.com/en-us/Content/esi-hot-papers.html) (top 0.1%) 
+.lang-btn {
+  background: white;
+  border: 2px solid #ddd;
+  padding: 8px 14px;
+  cursor: pointer;
+  border-radius: 6px;
+  font-size: 14px;
+  transition: all 0.3s ease;
+  font-weight: normal;
+  color: #333;
+}
 
-Total citations as of January 2025:
+.lang-btn:hover {
+  background: #f5f5f5;
+  border-color: #999;
+}
 
-- [Web of Science](https://www.webofscience.com): 100,000 (h-index = 100)   
-- [Google Scholar](https://scholar.google.com/citations?user=qc6CJjYAAAAJ&hl=en): 179,000 (h-index = 127, i10-index = 377) 
+.lang-btn.active {
+  background: #0066cc;
+  color: white;
+  border-color: #0066cc;
+  font-weight: bold;
+}
+</style>
 
-## Selected Work
+<script>
+let currentLang = 'en';
 
-Einstein, A., Podolsky, B., & Rosen, N. (1935). [Can quantum-mechanical description of physical reality be considered complete?](posts/paper-title/index.qmd). *Physical review*, 47(10), 777. \[[pdf](https://scholar.google.com/)\] \[[code and data](https://doi.org)\] ![](https://drganghe.github.io/files/images/highly-cited-paper-badge.png "ESI Highly Cited Paper"){width=20 fig-alt="Highly cited paper"} ![](https://drganghe.github.io/files/images/hot-paper-badge.png "ESI Hot Paper"){width=20 fig-alt="Hot paper"} <span class="__dimensions_badge_embed__" data-doi="10.1103/PhysRev.47.777" data-style="large_rectangle"></span> <div data-badge-popover="right" data-badge-type="1" data-doi="10.1103/PhysRev.47.777" data-hide-no-mentions="true" class="altmetric-embed"></div>     
+function switchLanguage(lang) {
+  currentLang = lang;
+  document.querySelectorAll('[data-lang]').forEach(el => {
+    if (el.getAttribute('data-lang') === lang) {
+      el.style.display = '';
+    } else {
+      el.style.display = 'none';
+    }
+  });
+  document.getElementById('lang-en').classList.toggle('active', lang === 'en');
+  document.getElementById('lang-es').classList.toggle('active', lang === 'es');
+}
 
+document.addEventListener('DOMContentLoaded', function() {
+  switchLanguage('en');
+});
+</script>
+```
 
-<center><hr style="width:50%"></center>
+<div data-lang="en">
 
-Einstein, A. (1965). Concerning an heuristic point of view toward the emission and transformation of light. *American Journal of Physics*, 33(5), 367. [[pdf](https://icg.isy.liu.se/en/phd-courses/quantum_foundations/references/Einstein1905b.pdf)] <span class="__dimensions_badge_embed__" data-doi="10.1038/s41560-023-01304-w" data-style="large_rectangle"></span> <div data-badge-popover="right" data-badge-type="1" data-doi="10.1038/s41560-023-01304-w" data-hide-no-mentions="true" class="altmetric-embed"></div>
+## Papers
 
+- Gerber, M. M., Castelo Branco, F., Cubas, V., Sáez-Fuentealba, L., de Oliveira, A. R., Deneken, M., & Jackson, J. (accepted). *Fear of the police and the fragility of legitimacy: Insights from Chile and Brazil*. International Journal of Social Psychology.
 
+- Alenda, S., Sandoval, C., Somma, N. & Deneken, M. (under review). *Varieties of Radical Right Discourse in Chile: A Comparative Analysis of José Antonio Kast and Johannes Kaiser*. Latin American Research Review.
 
-<!--Include social share buttons-->
+- Deneken, M. (2025). *The Brief History of the Center for the Study of National Reality, CEREN (1968–1973)*. Revista Temas Sociológicos, 37. [Spanish]
 
-{{< include /files/includes/_socialshare.qmd >}}
+- Maltrain, V., Cárdenas, J. C., Iglesias, M., Deneken, M. (2023). *"Camouflaged Sociology" at ARCIS (1984–1991): Critique, Commitment, and Militancy*. Revista Izquierdas, 52. [Spanish]
+
+## Books
+
+- Deneken, M. & Valenzuela, E. (2025). *Radiografía del cambio intercultural en Chile: Dinámicas contemporáneas entre población indígena y no indígena*. Editorial Catalonia.
+
+## Book Chapters
+
+- Valenzuela, E., & Deneken, M. (2025). *El problema de la identificación indígena: Un análisis longitudinal*. En Deneken, M. & E. Valenzuela (Eds.), *(Re)configuraciones interculturales*. Editorial Catalonia.
+
+- Deneken, M. (2025). *Descifrando el voto de indígenas y no indígenas en Chile en el referéndum constitucional del 4 de septiembre de 2022: Un enfoque psicosocial*. En Deneken, M. & E. Valenzuela (Eds.), *(Re)configuraciones interculturales*. Editorial Catalonia.
+
+- Deneken, M. (2023). *An Exonerated Story: The Center for the Study of National Reality (1968–1973)*. In Karle, C. (Ed.), *CEREN, an Unfinished Project. 50 Years Later* (pp. 23–33). Ediciones FEUC.
+
+</div>
+
+<div data-lang="es" style="display: none;">
+
+## Artículos
+
+- Gerber, M. M., Castelo Branco, F., Cubas, V., Sáez-Fuentealba, L., de Oliveira, A. R., Deneken, M., & Jackson, J. (aceptado). *Fear of the police and the fragility of legitimacy: Insights from Chile and Brazil*. International Journal of Social Psychology.
+
+- Alenda, S., Sandoval, C., Somma, N. & Deneken, M. (en revisión). *Varieties of Radical Right Discourse in Chile: A Comparative Analysis of José Antonio Kast and Johannes Kaiser*. Latin American Research Review.
+
+- Deneken, M. (2025). *The Brief History of the Center for the Study of National Reality, CEREN (1968–1973)*. Revista Temas Sociológicos, 37.
+
+- Maltrain, V., Cárdenas, J. C., Iglesias, M., Deneken, M. (2023). *"Sociología Camuflada" en ARCIS (1984–1991): Crítica, Compromiso y Militancia*. Revista Izquierdas, 52.
+
+## Libros
+
+- Deneken, M. & Valenzuela, E. (2025). *Radiografía del cambio intercultural en Chile: Dinámicas contemporáneas entre población indígena y no indígena*. Editorial Catalonia.
+
+## Capítulos de Libros
+
+- Valenzuela, E., & Deneken, M. (2025). *El problema de la identificación indígena: Un análisis longitudinal*. En Deneken, M. & E. Valenzuela (Eds.), *(Re)configuraciones interculturales*. Editorial Catalonia.
+
+- Deneken, M. (2025). *Descifrando el voto de indígenas y no indígenas en Chile en el referéndum constitucional del 4 de septiembre de 2022: Un enfoque psicosocial*. En Deneken, M. & E. Valenzuela (Eds.), *(Re)configuraciones interculturales*. Editorial Catalonia.
+
+- Deneken, M. (2023). *An Exonerated Story: The Center for the Study of National Reality (1968–1973)*. In Karle, C. (Ed.), *CEREN, an Unfinished Project. 50 Years Later* (pp. 23–33). Ediciones FEUC.
+
+</div>
