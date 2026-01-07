@@ -228,8 +228,6 @@ Matías is currently affiliated with the **Government School at Pontificia Unive
 
 He has been a **Quantitative Studies Researcher** at the **Center for Intercultural and Indigenous Studies (CIIR)** ([www.ciir.cl](https://www.ciir.cl)) since December 2022, where he coordinates the Longitudinal Survey on Intercultural Relations (ELRI) and co-edited the book *(RE) Configuraciones Interculturales*.
 
-Matías is also a Research Assistant on the **FONDECYT Project: The Right Wing in Dispute: Ideology and Tactics in Contemporary Chile**, where he implements large-scale web scraping and applies natural language processing techniques to analyze political discourse.
-
 ## Education
 
 - **Master of Arts in Sociology**, Pontificia Universidad Católica de Chile (2022-2023) | Grade: 6.5/7
