@@ -116,21 +116,42 @@ function switchLanguage(lang) {
 
 document.addEventListener('DOMContentLoaded', function() {
   // Move ALL book sections to left sidebar (after links)
-  const bookSections = document.querySelectorAll('.about-book-section');
+  const bookSectionEn = document.querySelector('.about-book-section[data-lang="en"]');
+  const bookSectionEs = document.querySelector('.about-book-section[data-lang="es"]');
   const aboutLinks = document.querySelector('.about-links');
   
-  if (bookSections.length > 0 && aboutLinks) {
-    // Move all book sections (both EN and ES) to the left sidebar
-    bookSections.forEach(function(section) {
-      // Mark as moved to allow CSS to show it
-      section.classList.add('moved-to-sidebar');
-      // Remove from current location
-      if (section.parentNode) {
-        section.parentNode.removeChild(section);
+  if (aboutLinks && (bookSectionEn || bookSectionEs)) {
+    const sidebarContainer = aboutLinks.parentNode;
+    
+    // Helper function to insert after a reference node
+    function insertAfter(newNode, referenceNode) {
+      if (referenceNode && referenceNode.parentNode) {
+        referenceNode.parentNode.insertBefore(newNode, referenceNode.nextSibling);
+      } else {
+        sidebarContainer.appendChild(newNode);
       }
-      // Insert after links in sidebar
-      aboutLinks.parentNode.insertBefore(section, aboutLinks.nextSibling);
-    });
+    }
+    
+    // Remove book sections from their current location and mark as moved
+    if (bookSectionEn && bookSectionEn.parentNode) {
+      bookSectionEn.parentNode.removeChild(bookSectionEn);
+      bookSectionEn.classList.add('moved-to-sidebar');
+    }
+    if (bookSectionEs && bookSectionEs.parentNode) {
+      bookSectionEs.parentNode.removeChild(bookSectionEs);
+      bookSectionEs.classList.add('moved-to-sidebar');
+    }
+    
+    // Insert English first after the about-links container
+    // This ensures English appears first in the DOM
+    if (bookSectionEn) {
+      insertAfter(bookSectionEn, aboutLinks);
+    }
+    
+    // Then insert Spanish after English, so Spanish appears below English
+    if (bookSectionEs) {
+      insertAfter(bookSectionEs, bookSectionEn || aboutLinks);
+    }
   }
   
   // Now set the initial language (this will show/hide correctly)

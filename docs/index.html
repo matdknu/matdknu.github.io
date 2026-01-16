@@ -266,15 +266,35 @@ function switchLanguage(lang) {
 }
 
 document.addEventListener('DOMContentLoaded', function() {
-  switchLanguage('en');
-  
-  // Move book section to left sidebar (after links)
-  const bookSection = document.querySelector('.about-book-section');
+  // Move ALL book sections to left sidebar (after links)
+  const bookSectionEn = document.querySelector('.about-book-section[data-lang="en"]');
+  const bookSectionEs = document.querySelector('.about-book-section[data-lang="es"]');
   const aboutLinks = document.querySelector('.about-links');
   
-  if (bookSection && aboutLinks) {
-    aboutLinks.parentNode.insertBefore(bookSection, aboutLinks.nextSibling);
+  if (aboutLinks && (bookSectionEn || bookSectionEs)) {
+    const sidebarContainer = aboutLinks.parentNode;
+    
+    // Remove book sections from their current location
+    [bookSectionEn, bookSectionEs].forEach(function(section) {
+      if (section && section.parentNode) {
+        section.parentNode.removeChild(section);
+        // Mark as moved to allow CSS to show it
+        section.classList.add('moved-to-sidebar');
+      }
+    });
+    
+    // Insert both sections at the end of sidebar (after all links)
+    // Insert English first, then Spanish, so Spanish appears below
+    if (bookSectionEn) {
+      sidebarContainer.appendChild(bookSectionEn);
+    }
+    if (bookSectionEs) {
+      sidebarContainer.appendChild(bookSectionEs);
+    }
   }
+  
+  // Now set the initial language (this will show/hide correctly)
+  switchLanguage('en');
 });
 </script>
 <div class="about-book-section" data-lang="en" style="display: none;">
@@ -300,6 +320,12 @@ document.addEventListener('DOMContentLoaded', function() {
   margin-top: 2rem;
   padding-top: 2rem;
   border-top: 1px solid #e0e0e0;
+  position: relative;
+}
+
+/* Hide book sections until they are moved to sidebar */
+.about-book-section:not(.moved-to-sidebar) {
+  display: none !important;
 }
 
 .about-book-section img {
