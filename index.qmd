@@ -115,15 +115,26 @@ function switchLanguage(lang) {
 }
 
 document.addEventListener('DOMContentLoaded', function() {
-  switchLanguage('en');
-  
-  // Move book section to left sidebar (after links)
-  const bookSection = document.querySelector('.about-book-section');
+  // Move ALL book sections to left sidebar (after links)
+  const bookSections = document.querySelectorAll('.about-book-section');
   const aboutLinks = document.querySelector('.about-links');
   
-  if (bookSection && aboutLinks) {
-    aboutLinks.parentNode.insertBefore(bookSection, aboutLinks.nextSibling);
+  if (bookSections.length > 0 && aboutLinks) {
+    // Move all book sections (both EN and ES) to the left sidebar
+    bookSections.forEach(function(section) {
+      // Mark as moved to allow CSS to show it
+      section.classList.add('moved-to-sidebar');
+      // Remove from current location
+      if (section.parentNode) {
+        section.parentNode.removeChild(section);
+      }
+      // Insert after links in sidebar
+      aboutLinks.parentNode.insertBefore(section, aboutLinks.nextSibling);
+    });
   }
+  
+  // Now set the initial language (this will show/hide correctly)
+  switchLanguage('en');
 });
 </script>
 ```
@@ -152,6 +163,12 @@ document.addEventListener('DOMContentLoaded', function() {
   margin-top: 2rem;
   padding-top: 2rem;
   border-top: 1px solid #e0e0e0;
+  position: relative;
+}
+
+/* Hide book sections until they are moved to sidebar */
+.about-book-section:not(.moved-to-sidebar) {
+  display: none !important;
 }
 
 .about-book-section img {
