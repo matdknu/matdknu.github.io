@@ -1,0 +1,171 @@
+---
+title: "Matías Deneken"
+description-meta: "Web page Matias "
+image: "files/images/my-face.JPG"
+page-navigation: false
+toc: false
+page-layout: full
+
+about:
+  id: hero-heading
+  template: trestles
+  image-width: 90%
+  links:
+    - icon: github
+      text: GitHub
+      href: https://www.github.com/matdknu
+      target: _blank
+    - icon: envelope
+      text: E-mail
+      href: m.deneken@uc.cl  
+    - icon: linkedin
+      text: LinkedIn
+      href: https://linkedin.com/deneken
+      target: _blank
+    - text: "{{< ai orcid >}} ORCID"
+      href: https://orcid.org
+      target: _blank
+    - text: "{{< ai google-scholar >}} Google Scholar"
+      href: https://scholar.google.com
+      target: _blank
+---
+
+```{=html}
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+
+  // Move ALL book sections to left sidebar (after links)
+  const bookSectionEn = document.querySelector('.about-book-section[data-lang="en"]');
+  const bookSectionEs = document.querySelector('.about-book-section[data-lang="es"]');
+  const aboutLinks = document.querySelector('.about-links');
+  
+  if (aboutLinks && (bookSectionEn || bookSectionEs)) {
+    const sidebarContainer = aboutLinks.parentNode;
+    
+    // Helper function to insert after a reference node
+    function insertAfter(newNode, referenceNode) {
+      if (referenceNode && referenceNode.parentNode) {
+        referenceNode.parentNode.insertBefore(newNode, referenceNode.nextSibling);
+      } else {
+        sidebarContainer.appendChild(newNode);
+      }
+    }
+    
+    // Remove book sections from their current location and mark as moved
+    if (bookSectionEn && bookSectionEn.parentNode) {
+      bookSectionEn.parentNode.removeChild(bookSectionEn);
+      bookSectionEn.classList.add('moved-to-sidebar');
+    }
+    if (bookSectionEs && bookSectionEs.parentNode) {
+      bookSectionEs.parentNode.removeChild(bookSectionEs);
+      bookSectionEs.classList.add('moved-to-sidebar');
+    }
+    
+    // Insert English first after the about-links container
+    // This ensures English appears first in the DOM
+    if (bookSectionEn) {
+      insertAfter(bookSectionEn, aboutLinks);
+    }
+    
+    // Then insert Spanish after English, so Spanish appears below English
+    if (bookSectionEs) {
+      insertAfter(bookSectionEs, bookSectionEn || aboutLinks);
+    }
+  }
+  
+});
+</script>
+```
+```{=html}
+<div class="about-book-section" data-lang="en">
+<h3>Recent Book</h3>
+<a href="https://books.google.co.uk/books/about/RE_Configuraciones_Interculturales.html?id=nM6YEQAAQBAJ&redir_esc=y" target="_blank">
+  <img src="https://books.google.co.uk/books/content?id=nM6YEQAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api" alt="(RE) Configuraciones Interculturales">
+</a>
+<p><strong><a href="https://books.google.co.uk/books/about/RE_Configuraciones_Interculturales.html?id=nM6YEQAAQBAJ&redir_esc=y">(RE) Configuraciones Interculturales: Un estudio longitudinal de las relaciones entre indígenas y no indígenas en Chile (2016-2024)</a></strong></p>
+<p>Co-edited with Eduardo Valenzuela. Editorial Catalonia, 2025.</p>
+</div>
+
+<div class="about-book-section" data-lang="es">
+<h3>Libro Reciente</h3>
+<a href="https://books.google.co.uk/books/about/RE_Configuraciones_Interculturales.html?id=nM6YEQAAQBAJ&redir_esc=y" target="_blank">
+  <img src="https://books.google.co.uk/books/content?id=nM6YEQAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api" alt="(RE) Configuraciones Interculturales">
+</a>
+<p><strong><a href="https://books.google.co.uk/books/about/RE_Configuraciones_Interculturales.html?id=nM6YEQAAQBAJ&redir_esc=y">(RE) Configuraciones Interculturales: Un estudio longitudinal de las relaciones entre indígenas y no indígenas en Chile (2016-2024)</a></strong></p>
+<p>Co-editado con Eduardo Valenzuela. Editorial Catalonia, 2025.</p>
+</div>
+
+```
+::: {#hero-heading}
+::: {data-lang="en"}
+## Introduction
+
+Matías Deneken is a Chilean sociologist and data scientist. His research bridges social data science, violence, and computational methods to study how social processes unfold in contemporary societies. He has collaborated on large-scale longitudinal studies such as the *Estudio Longitudinal de Relaciones Interculturales (ELRI)* and the *Estudio Panel de Percepciones de Seguridad y Policías (EPSEP)*.
+
+### Current Projects
+
+I am currently developing [**MethodoLab**](https://www.methodolab.com) — an innovative data science initiative focused on computational methods in social research.
+
+```{=html}
+<div class="methodolab-cta-wrap">
+  <a href="https://www.methodolab.com" target="_blank" class="cta-button">
+    🚀 Visit MethodoLab →
+  </a>
+</div>
+```
+
+See the interactive [**Current Agenda**](agenda.qmd) for literature reviews, methods notes, and upcoming posts.
+
+## Experience
+
+Matías is currently affiliated with the **Government School at Pontificia Universidad Católica de Chile** through the **Observatory of Violence and Social Legitimacy** ([www.oles.cl](https://oles2.netlify.app/)), where he works as a Research Assistant designing and maintaining large-scale databases and conducting automated web scraping of national newspapers.
+
+He has been a **Quantitative Studies Researcher** at the **Center for Intercultural and Indigenous Studies (CIIR)** ([www.ciir.cl](https://www.ciir.cl)) since December 2022, where he coordinates the Longitudinal Survey on Intercultural Relations (ELRI) and co-edited the book *(RE) Configuraciones Interculturales*.
+
+## Technical Skills
+
+**Data Processing:** R, Python, Stata, SQL\
+**Information Management:** ATLAS.ti, Mendeley, Zotero\
+**Text Processing:** Microsoft Office, LaTeX
+
+**Languages:** Spanish (Native), English (B2)
+:::
+
+::: {data-lang="es" style="display: none;"}
+## Introducción
+
+Matías Deneken es un sociólogo y científico de datos chileno. Su investigación conecta ciencia de datos sociales, violencia y métodos computacionales para estudiar cómo se desarrollan los procesos sociales en las sociedades contemporáneas. Ha colaborado en estudios longitudinales a gran escala como el *Estudio Longitudinal de Relaciones Interculturales (ELRI)* y el *Estudio Panel de Percepciones de Seguridad y Policías (EPSEP)*.
+
+Más allá de la investigación, Matías es apasionado por la fotografía, los viajes y la narrativa visual, lo que a menudo inspira su trabajo analítico y creativo.
+
+### Proyectos Actuales
+
+Actualmente estoy desarrollando [**MethodoLab**](https://www.methodolab.com) — una iniciativa innovadora de ciencia de datos enfocada en métodos computacionales en investigación social.
+
+```{=html}
+<div class="methodolab-cta-wrap">
+  <a href="https://www.methodolab.com" target="_blank" class="cta-button">
+    🚀 Visitar MethodoLab →
+  </a>
+</div>
+```
+
+La [**agenda actual**](agenda.qmd) reúne de forma interactiva revisiones de literatura, notas de métodos y próximos posts.
+
+## Experiencia
+
+Matías está actualmente afiliado a la **Escuela de Gobierno de la Pontificia Universidad Católica de Chile** mediante el **Observatorio de Violencia y Legitimidad Social** ([www.oles.cl](https://www.oles.cl)), donde trabaja como Asistente de Investigación diseñando y manteniendo bases de datos a gran escala y realizando scraping web automatizado de periódicos nacionales.
+
+Ha sido **Investigador en Estudios Cuantitativos** en el **Centro de Estudios Interculturales e Indígenas (CIIR)** ([www.ciir.cl](https://www.ciir.cl)) desde diciembre de 2022, donde coordina la Encuesta Longitudinal de Relaciones Interculturales (ELRI) y co-editó el libro *(RE) Configuraciones Interculturales*.
+
+Matías también es Asistente de Investigación en el **Proyecto FONDECYT: La Derecha en Disputa: Ideología y Tácticas en el Chile Contemporáneo**, donde implementa scraping web a gran escala y aplica técnicas de procesamiento de lenguaje natural para analizar discurso político.
+
+## Habilidades Técnicas
+
+**Procesamiento de Datos:** R, Python, Stata, SQL\
+**Gestión de Información:** ATLAS.ti, Mendeley, Zotero\
+**Procesamiento de Texto:** Microsoft Office, LaTeX
+
+**Idiomas:** Español (Nativo), Inglés (B2)
+:::
+:::

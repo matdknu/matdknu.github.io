@@ -1,0 +1,175 @@
+---
+title: "Conferences"
+page-navigation: true
+toc: false
+---
+
+```{=html}
+<div id="language-switcher">
+  <button id="lang-en" onclick="switchLanguage('en')" class="lang-btn active">🇬🇧 EN</button>
+  <button id="lang-es" onclick="switchLanguage('es')" class="lang-btn">🇪🇸 ES</button>
+</div>
+
+<style>
+#language-switcher {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+  display: flex;
+  gap: 8px;
+  background: white;
+  padding: 4px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.lang-btn {
+  background: white;
+  border: 2px solid #ddd;
+  padding: 8px 14px;
+  cursor: pointer;
+  border-radius: 6px;
+  font-size: 14px;
+  transition: all 0.3s ease;
+  font-weight: normal;
+  color: #333;
+}
+
+.lang-btn:hover {
+  background: #f5f5f5;
+  border-color: #999;
+}
+
+.lang-btn.active {
+  background: #0066cc;
+  color: white;
+  border-color: #0066cc;
+  font-weight: bold;
+}
+</style>
+
+<script>
+let currentLang = 'en';
+
+function switchLanguage(lang) {
+  currentLang = lang;
+  document.querySelectorAll('[data-lang]').forEach(el => {
+    if (el.getAttribute('data-lang') === lang) {
+      el.style.display = '';
+    } else {
+      el.style.display = 'none';
+    }
+  });
+  document.getElementById('lang-en').classList.toggle('active', lang === 'en');
+  document.getElementById('lang-es').classList.toggle('active', lang === 'es');
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+  switchLanguage('en');
+});
+</script>
+```
+
+<div data-lang="en">
+
+### 2026
+
+- Deneken, M. (2025). *(Re)configuraciones interculturales: A longitudinal analysis of Indigenous–non-Indigenous dynamics in Chile (2016–2023)*. Book presentation at LASA 2025 – Latin American Studies Association Congress.
+
+### 2025
+
+- Gerber, M. M., Figuereido, A., Deneken, M., & Bahamondes, J. (2025). *State violence and resistance: Police violence, human rights and anti-repression measures*. International Society of Political Psychology Annual Meeting.
+
+- Deneken, M., Díaz, F., González, R., & Fuenzalida, D. (2025). *A longitudinal examination of factors facilitating and hindering intergroup trust: Dynamics between Indigenous and non-Indigenous people in Chile (2016–2023)*. International Society of Political Psychology Annual Meeting.
+
+- Deneken, M. (2025). *A radiography of media coverage of the police in Chile: A longitudinal analysis of online press (2000–2024)*. Paper presented at the panel *Police Legitimacy and the Democratic Process in Chile* (Panel VIO–668), LASA 2025 – Latin American Studies Association Congress.
+
+### 2024
+
+- Deneken, M., Díaz, F., González, R., & Fuenzalida, D. (2024). *A Longitudinal Examination of Factors Facilitating and Hindering Intergroup Trust: Dynamics between Indigenous and Non-Indigenous People in Chile (2016–2023)*. La Triada Conference – Latin American Congress of Social Sciences and Government.
+
+- Cárdenas, J.C., Deneken, M., & Maltrain, V. (2024). *Sociology in Post-Dictatorship Chile*. XII Chilean Sociology Congress – Universidad Diego Portales.
+
+### 2023
+
+- Cárdenas, J.C., Deneken, M., & Maltrain, V. (2023). *Refounding Sociology in Chile: Camp Disputes, Shifts, and Continuities in Sociological Knowledge Production and Use in the Post-Dictatorship Era (1990–2020)*. Seminar on Chilean Sociology in Post-Dictatorship – Universidad de Valparaíso.
+
+### 2022
+
+- Deneken, M. (2022). *Social Sciences at Pontificia Universidad Católica in the Times of Salvador Allende: The Case of CEREN (1968–1973)*. Intellectual History Workshop in Chile – USACH.
+
+- Deneken, M. (2022). *A Radiography of Aging in Chile: An Analysis from the CASEN Surveys (1990–2020)*. XXXII Congress of the Latin American Sociology Association – UNAM, Mexico.
+
+- Jara, R. & Deneken, M. (2022). *Pedro Morandé: An Approach to His Thought and Work*. XXXII Congress of the Latin American Sociology Association – UNAM, Mexico.
+
+- Deneken, M. (2022). *Masonry, MAPU, and MIR: The Refoundation and Deployment of Sociology at Universidad de Concepción (1991–2000)*. XXXII Congress of the Latin American Sociology Association – UNAM, Mexico.
+
+- Deneken, M. (2022). *Train to the South: The Refoundation of Sociology at Universidad de Concepción*. Chilean Sociology Congress – Universidad de Concepción.
+
+### 2021
+
+- Deneken, M. & Cárdenas, J. (2021). *The Refoundation of Sociology at Universidad de Concepción*. XIV Sociology Workshop – UBA, Argentina.
+
+- Montero, V., Santibáñez, C., Ortiz, C., & Deneken, M. (2021). *Disagreement and Polarization in Higher Education: Free Tuition and Profit in Perspective*. Research Colloquium – Universidad de Concepción.
+
+### 2019
+
+- Montero, V. & Deneken, M. (2019). *The Tension between Free Tuition and Profit in the 2018 Educational Reform*. XXXII Congress of the Latin American Sociology Association – Universidad Nacional Mayor de San Marcos, Peru.
+
+- Deneken, M. (2019). *The Chilean Right in the Post-Transition: The Case of José Antonio Kast*. XXXII Congress of the Latin American Sociology Association – Universidad Nacional Mayor de San Marcos, Peru.
+
+</div>
+
+<div data-lang="es" style="display: none;">
+
+### 2026
+
+- Deneken, M. (2025). *(Re)configuraciones interculturales: A longitudinal analysis of Indigenous–non-Indigenous dynamics in Chile (2016–2023)*. Presentación de libro en LASA 2025 – Congreso de la Asociación de Estudios Latinoamericanos.
+
+### 2025
+
+- Gerber, M. M., Figuereido, A., Deneken, M., & Bahamondes, J. (2025). *State violence and resistance: Police violence, human rights and anti-repression measures*. Reunión Anual de la Sociedad Internacional de Psicología Política.
+
+- Deneken, M., Díaz, F., González, R., & Fuenzalida, D. (2025). *A longitudinal examination of factors facilitating and hindering intergroup trust: Dynamics between Indigenous and non-Indigenous people in Chile (2016–2023)*. Reunión Anual de la Sociedad Internacional de Psicología Política.
+
+- Deneken, M. (2025). *A radiography of media coverage of the police in Chile: A longitudinal analysis of online press (2000–2024)*. Ponencia presentada en el panel *Police Legitimacy and the Democratic Process in Chile* (Panel VIO–668), LASA 2025 – Congreso de la Asociación de Estudios Latinoamericanos.
+
+### 2024
+
+- Deneken, M., Díaz, F., González, R., & Fuenzalida, D. (2024). *A Longitudinal Examination of Factors Facilitating and Hindering Intergroup Trust: Dynamics between Indigenous and Non-Indigenous People in Chile (2016–2023)*. Conferencia La Triada – Congreso Latinoamericano de Ciencias Sociales y Gobierno.
+
+- Cárdenas, J.C., Deneken, M., & Maltrain, V. (2024). *Sociología en el Chile Post-Dictadura*. XII Congreso Chileno de Sociología – Universidad Diego Portales.
+
+### 2023
+
+- Cárdenas, J.C., Deneken, M., & Maltrain, V. (2023). *Refundación de la Sociología en Chile: Disputas de Campo, Cambios y Continuidades en la Producción y Uso del Conocimiento Sociológico en la Era Post-Dictadura (1990–2020)*. Seminario sobre Sociología Chilena en Post-Dictadura – Universidad de Valparaíso.
+
+### 2022
+
+- Deneken, M. (2022). *Ciencias Sociales en la Pontificia Universidad Católica en los Tiempos de Salvador Allende: El Caso de CEREN (1968–1973)*. Taller de Historia Intelectual en Chile – USACH.
+
+- Deneken, M. (2022). *Una Radiografía del Envejecimiento en Chile: Un Análisis desde las Encuestas CASEN (1990–2020)*. XXXII Congreso de la Asociación Latinoamericana de Sociología – UNAM, México.
+
+- Jara, R. & Deneken, M. (2022). *Pedro Morandé: Una Aproximación a Su Pensamiento y Obra*. XXXII Congreso de la Asociación Latinoamericana de Sociología – UNAM, México.
+
+- Deneken, M. (2022). *Masonería, MAPU y MIR: La Refundación y Despliegue de la Sociología en la Universidad de Concepción (1991–2000)*. XXXII Congreso de la Asociación Latinoamericana de Sociología – UNAM, México.
+
+- Deneken, M. (2022). *Tren al Sur: La Refundación de la Sociología en la Universidad de Concepción*. Congreso Chileno de Sociología – Universidad de Concepción.
+
+### 2021
+
+- Deneken, M. & Cárdenas, J. (2021). *La Refundación de la Sociología en la Universidad de Concepción*. XIV Taller de Sociología – UBA, Argentina.
+
+- Montero, V., Santibáñez, C., Ortiz, C., & Deneken, M. (2021). *Desacuerdo y Polarización en la Educación Superior: Gratuidad y Lucro en Perspectiva*. Coloquio de Investigación – Universidad de Concepción.
+
+### 2019
+
+- Montero, V. & Deneken, M. (2019). *La Tensión entre Gratuidad y Lucro en la Reforma Educacional de 2018*. XXXII Congreso de la Asociación Latinoamericana de Sociología – Universidad Nacional Mayor de San Marcos, Perú.
+
+- Deneken, M. (2019). *La Derecha Chilena en la Post-Transición: El Caso de José Antonio Kast*. XXXII Congreso de la Asociación Latinoamericana de Sociología – Universidad Nacional Mayor de San Marcos, Perú.
+
+</div>
+
+
+

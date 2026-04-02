@@ -1,0 +1,695 @@
+[
+  {
+    "objectID": "advising.html#how-we-work-together",
+    "href": "advising.html#how-we-work-together",
+    "title": "Advising",
+    "section": "How we work together",
+    "text": "How we work together"
+  },
+  {
+    "objectID": "advising.html#contact",
+    "href": "advising.html#contact",
+    "title": "Advising",
+    "section": "Contact",
+    "text": "Contact\n\nEmail: m.deneken@uc.cl\nLinkedIn: https://linkedin.com/deneken\nBsky: https://bsky.app"
+  },
+  {
+    "objectID": "education-awards.html",
+    "href": "education-awards.html",
+    "title": "Education, Training & Awards",
+    "section": "",
+    "text": "🇬🇧 EN\n  🇪🇸 ES"
+  },
+  {
+    "objectID": "education-awards.html#education",
+    "href": "education-awards.html#education",
+    "title": "Education, Training & Awards",
+    "section": "Education",
+    "text": "Education\n\nMaster of Arts in Sociology, Pontificia Universidad Católica de Chile (2022-2023) | Grade: 6.5/7\nMaster in Data Science and Innovation, Data and Artificial Intelligence Center - Universidad de Concepción (2024-2025) | In course\nBachelor in Sociology, Universidad de Concepción (2017-2021) | GPA: 6.3/7"
+  },
+  {
+    "objectID": "education-awards.html#training",
+    "href": "education-awards.html#training",
+    "title": "Education, Training & Awards",
+    "section": "Training",
+    "text": "Training\nInternship at the Institute for Applied Computational Science (IACS)\nHarvard University | Jan. 2024\n- Research internship focused on computational methods applied to social science problems. - Developed skills in high-performance computing, data analysis, and applied machine learning.\nMixed Methods Summer School (EVMM)\nPontificia Universidad Católica de Chile | Jan. 2024\n- Advanced training in integrating qualitative and quantitative research designs. - Applied mixed methods to projects on political attitudes and social behavior.\nPostgraduate Certificate in Advanced Data Processing and Analysis in R (96 hours)\nPontificia Universidad Católica de Chile | Mar. - Dec. 2021\n- In-depth coursework on statistical programming, data cleaning, and visualization in R. - Completed applied projects involving large-scale social survey datasets."
+  },
+  {
+    "objectID": "education-awards.html#honors-and-awards",
+    "href": "education-awards.html#honors-and-awards",
+    "title": "Education, Training & Awards",
+    "section": "Honors and Awards",
+    "text": "Honors and Awards\nEqual Opportunity Scholarship - Fulbright (2024-2027) [Now SUSPENDED]\n- Scholarship awarded to pursue a fully funded PhD in the United States.\nANID Scholarship - National Master’s No. 22220115 (2022-2024)\n- Competitive national scholarship to pursue a fully funded Master’s degree in Chile.\nUniversity of Concepción Award (2022)\n- Institutional award recognizing outstanding academic excellence in the Sociology program.\nBest Sociology Student - University of Concepción (2021)\n- Awarded to the top-performing student in the Sociology program (Cohort 2017-2021)."
+  },
+  {
+    "objectID": "education-awards.html#educación",
+    "href": "education-awards.html#educación",
+    "title": "Education, Training & Awards",
+    "section": "Educación",
+    "text": "Educación\n\nMaster of Arts in Sociology, Pontificia Universidad Católica de Chile (2022-2023) | Nota: 6.5/7\nMaster en Ciencia de Datos e Innovación, Centro de Datos e Inteligencia Artificial - Universidad de Concepción (2024-2025) | En curso\nLicenciatura en Sociología, Universidad de Concepción (2017-2021) | GPA: 6.3/7"
+  },
+  {
+    "objectID": "education-awards.html#formación",
+    "href": "education-awards.html#formación",
+    "title": "Education, Training & Awards",
+    "section": "Formación",
+    "text": "Formación\nInternado en el Institute for Applied Computational Science (IACS)\nHarvard University | Ene. 2024\n- Internado de investigación enfocado en métodos computacionales aplicados a problemas de ciencias sociales. - Desarrollo de habilidades en computación de alto rendimiento, análisis de datos y aprendizaje automático aplicado.\nEscuela de Verano de Métodos Mixtos (EVMM)\nPontificia Universidad Católica de Chile | Ene. 2024\n- Capacitación avanzada en integración de diseños de investigación cualitativos y cuantitativos. - Aplicación de métodos mixtos a proyectos sobre actitudes políticas y comportamiento social.\nCertificado de Postgrado en Procesamiento y Análisis Avanzado de Datos en R (96 horas)\nPontificia Universidad Católica de Chile | Mar. - Dic. 2021\n- Curso en profundidad sobre programación estadística, limpieza de datos y visualización en R. - Proyectos aplicados con bases de encuestas sociales a gran escala."
+  },
+  {
+    "objectID": "education-awards.html#honores-y-premios",
+    "href": "education-awards.html#honores-y-premios",
+    "title": "Education, Training & Awards",
+    "section": "Honores y Premios",
+    "text": "Honores y Premios\nBeca de Igualdad de Oportunidades - Fulbright (2024-2027) [Actualmente SUSPENDIDA]\n- Beca otorgada para realizar un doctorado completamente financiado en Estados Unidos.\nBeca ANID - Magíster Nacional No. 22220115 (2022-2024)\n- Beca nacional competitiva para realizar un magíster completamente financiado en Chile.\nPremio Universidad de Concepción (2022)\n- Premio institucional que reconoce la excelencia académica sobresaliente en Sociología.\nMejor Estudiante de Sociología - Universidad de Concepción (2021)\n- Otorgado al mejor rendimiento del programa (cohorte 2017-2021)."
+  },
+  {
+    "objectID": "agenda.html",
+    "href": "agenda.html",
+    "title": "My Current Agenda",
+    "section": "",
+    "text": "Live board\n    My Current Agenda\n    Track what I am reading, writing, and shipping — literature, methods, and short outputs from ELRI, OLES, and FONDECYT work.\n  \n\n  \n    All\n    Literature\n    Methods\n    Posts & notes\n  \n\n  \n    \n      In progress\n      Political discourse & legitimacy\n      Literature reviews threading political discourse, police legitimacy, and computational text approaches (Chile & comparative).\n      \n        ELRI / survey–text bridges\n        Radical right discourse (Kast / Kaiser comparative frame)\n      \n    \n\n    \n      Ongoing\n      Pipelines & reproducibility\n      Notes on scraping, NLP workflows, tidy analysis, and keeping longitudinal corpora documented (targets, renv, Dataverse).\n      \n        R + Quarto for analysis memos\n        Versioned scraping for press corpora\n      \n    \n\n    \n      Next\n      Short posts & project updates\n      Commentaries and empirical snapshots from active collaborations — ELRI, OLES, FONDECYT “Right Wing in Dispute”.\n      Browse all posts →\n    \n  \n\n\n\n\n  \n    Tablero en vivo\n    Mi agenda actual\n    Seguimiento de lectura, notas de métodos y entregas breves — ciencia social computacional en proyectos ELRI, OLES y FONDECYT.\n  \n\n  \n    Todo\n    Literatura\n    Métodos\n    Posts y notas\n  \n\n  \n    \n      En curso\n      Discurso político y legitimidad\n      Revisiones de literatura que conectan discurso político, legitimidad policial y enfoques de texto computacional (Chile y comparado).\n      \n        ELRI / vínculos encuesta–texto\n        Discurso de derecha radical (marco comparativo Kast / Kaiser)\n      \n    \n\n    \n      En curso\n      Pipelines y reproducibilidad\n      Notas sobre scraping, flujos de NLP, análisis ordenado y documentación de corpus longitudinales (targets, renv, Dataverse).\n      \n        R + Quarto para memorias de análisis\n        Scraping versionado de prensa\n      \n    \n\n    \n      Próximo\n      Posts y actualizaciones\n      Comentarios y instantáneas empíricas desde colaboraciones activas — ELRI, OLES, FONDECYT «La derecha en disputa».\n      Ver todos los posts →"
+  },
+  {
+    "objectID": "people.html",
+    "href": "people.html",
+    "title": "People",
+    "section": "",
+    "text": "PhD Student\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMasters Student\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nUndergraduate Student\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPI\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "people.html#team",
+    "href": "people.html#team",
+    "title": "People",
+    "section": "",
+    "text": "PhD Student\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMasters Student\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nUndergraduate Student\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPI\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "people.html#alumni",
+    "href": "people.html#alumni",
+    "title": "People",
+    "section": "Alumni",
+    "text": "Alumni\n\n\n   \n     \n     \n       Order By\n       Default\n         \n        \n         \n          Name\n        \n         \n          Role\n        \n         \n          Started\n        \n         \n          Ended\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n \n\n\nName\n\n\nRole\n\n\nStarted\n\n\nEnded\n\n\n\n\n\n\n\n\n\nAlumni A\n\n\nPhD Alumni\n\n\n2024\n\n\n2025\n\n\n\n\n\n\n\nAlumni B\n\n\nMasters Alumni\n\n\n2024\n\n\n2025\n\n\n\n\n\n\n\nAlumni C\n\n\nUndergraduate Alumni\n\n\n2024\n\n\n2025\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "experience.html",
+    "href": "experience.html",
+    "title": "Experience",
+    "section": "",
+    "text": "🇬🇧 EN\n  🇪🇸 ES"
+  },
+  {
+    "objectID": "experience.html#current-affiliations",
+    "href": "experience.html#current-affiliations",
+    "title": "Experience",
+    "section": "Current Affiliations",
+    "text": "Current Affiliations\nResearch Assistant\nGovernment School - Pontificia Universidad Católica de Chile | Jan. 2024 – Present | Santiago, Chile\nAffiliated through the Observatory of Violence and Social Legitimacy (www.oles.cl)\n- Designed and maintained large-scale databases for research. - Conducted automated web scraping of national newspapers to build longitudinal datasets. - Performed institutional document analysis for policy-oriented reports."
+  },
+  {
+    "objectID": "experience.html#previous-positions",
+    "href": "experience.html#previous-positions",
+    "title": "Experience",
+    "section": "Previous Positions",
+    "text": "Previous Positions\nQuantitative Studies Researcher\nCenter for Intercultural and Indigenous Studies (CIIR) | Dec. 2022 – Present | Santiago, Chile\nwww.ciir.cl\n- Technical coordination of the Longitudinal Survey on Intercultural Relations – Wave 4 (ELRI). - Collaborated with UNDP–CIIR on policy briefs regarding the Constitutional Council. - Coordinated and co-edited the book (RE) Configuraciones Interculturales (Editorial Catalonia, 2025)."
+  },
+  {
+    "objectID": "experience.html#research-projects",
+    "href": "experience.html#research-projects",
+    "title": "Experience",
+    "section": "Research Projects",
+    "text": "Research Projects\nResearch Assistant\nFONDECYT Project: The Right Wing in Dispute: Ideology and Tactics in Contemporary Chile | Nov. 2024 – Sept. 2025 | Santiago, Chile\n- Implemented large-scale web scraping of online newspapers in Chile (2016–2024). - Applied natural language processing techniques to analyze political discourse. - Examined varieties of radical right discourse in contemporary Chilean politics."
+  },
+  {
+    "objectID": "experience.html#research-experience",
+    "href": "experience.html#research-experience",
+    "title": "Experience",
+    "section": "Research Experience",
+    "text": "Research Experience\nMethodological Advisor\nPREATI – FONDEF IDeA I+D (21I10037), Santiago & Villarrica, Chile | Jan. 2023 – Sept. 2024\n- Co-developed measurement indicators for assessing Indigenous tourism activity. - Facilitated focus groups with Indigenous communities in multiple territories. - Coordinated the implementation of the PREATI national survey. - Designed visual analytics for stakeholder reports.\nResearch Assistant\nFondecyt Project Nº 11200900: Refounding Sociology in Chile – Santiago & Valparaíso, Chile | Mar. 2021 – Oct. 2023\n- Conducted in-depth interviews with key sociological actors. - Collected and systematized archival materials. - Contributed to the writing of peer-reviewed journal articles.\nPrincipal Investigator\nVRID-UDEC Project 220.172.027: Trends in Suicide Mortality in Chile – Concepción, Chile | Oct. 2020 – May. 2021\n- Cleaned and prepared DEIS mortality database for statistical analysis. - Performed advanced statistical modeling of suicide trends. - Produced data visualizations using ggplot2 for dissemination.\nResearch Assistant\nVRID-UDEC Project 218.058.009: Discussion on Education in Chile (2017–2018) – Concepción, Chile | Dec. 2018 – Dec. 2020\n- Conducted archival research on educational policy debates. - Interviewed key stakeholders in the Chilean higher education system."
+  },
+  {
+    "objectID": "experience.html#afiliaciones-actuales",
+    "href": "experience.html#afiliaciones-actuales",
+    "title": "Experience",
+    "section": "Afiliaciones Actuales",
+    "text": "Afiliaciones Actuales\nAsistente de Investigación\nEscuela de Gobierno - Pontificia Universidad Católica de Chile | Ene. 2024 – Presente | Santiago, Chile\nAfiliado mediante el Observatorio de Violencia y Legitimidad Social (www.oles.cl)\n- Diseñé y mantuve bases de datos a gran escala para investigación. - Realicé scraping web automatizado de periódicos nacionales para construir conjuntos de datos longitudinales. - Realicé análisis de documentos institucionales para informes orientados a políticas."
+  },
+  {
+    "objectID": "experience.html#posiciones-anteriores",
+    "href": "experience.html#posiciones-anteriores",
+    "title": "Experience",
+    "section": "Posiciones Anteriores",
+    "text": "Posiciones Anteriores\nInvestigador en Estudios Cuantitativos\nCentro de Estudios Interculturales e Indígenas (CIIR) | Dic. 2022 – Presente | Santiago, Chile\nwww.ciir.cl\n- Coordinación técnica de la Encuesta Longitudinal de Relaciones Interculturales – Ola 4 (ELRI). - Colaboré con PNUD–CIIR en informes de políticas sobre el Consejo Constitucional. - Coordiné y co-edité el libro (RE) Configuraciones Interculturales (Editorial Catalonia, 2025)."
+  },
+  {
+    "objectID": "experience.html#proyectos-de-investigación",
+    "href": "experience.html#proyectos-de-investigación",
+    "title": "Experience",
+    "section": "Proyectos de Investigación",
+    "text": "Proyectos de Investigación\nAsistente de Investigación\nProyecto FONDECYT: La Derecha en Disputa: Ideología y Tácticas en el Chile Contemporáneo | Nov. 2024 – Sept. 2025 | Santiago, Chile\n- Implementé scraping web a gran escala de periódicos en línea en Chile (2016–2024). - Apliqué técnicas de procesamiento de lenguaje natural para analizar discurso político. - Examiné variedades de discurso de derecha radical en la política chilena contemporánea."
+  },
+  {
+    "objectID": "experience.html#experiencia-en-investigación",
+    "href": "experience.html#experiencia-en-investigación",
+    "title": "Experience",
+    "section": "Experiencia en Investigación",
+    "text": "Experiencia en Investigación\nAsesor Metodológico\nPREATI – FONDEF IDeA I+D (21I10037), Santiago & Villarrica, Chile | Ene. 2023 – Sept. 2024\n- Co-desarrollé indicadores de medición para evaluar la actividad turística indígena. - Facilité grupos focales con comunidades indígenas en múltiples territorios. - Coordiné la implementación de la encuesta nacional PREATI. - Diseñé análisis visuales para informes de partes interesadas.\nAsistente de Investigación\nProyecto Fondecyt Nº 11200900: Refundación de la Sociología en Chile – Santiago & Valparaíso, Chile | Mar. 2021 – Oct. 2023\n- Realicé entrevistas en profundidad con actores sociológicos clave. - Recopilé y sistematicé materiales de archivo. - Contribuí a la redacción de artículos de revistas revisadas por pares.\nInvestigador Principal\nProyecto VRID-UDEC 220.172.027: Tendencias en la Mortalidad por Suicidio en Chile – Concepción, Chile | Oct. 2020 – May. 2021\n- Limpié y preparé la base de datos de mortalidad DEIS para análisis estadístico. - Realicé modelado estadístico avanzado de tendencias de suicidio. - Produje visualizaciones de datos usando ggplot2 para difusión.\nAsistente de Investigación\nProyecto VRID-UDEC 218.058.009: Discusión sobre Educación en Chile (2017–2018) – Concepción, Chile | Dic. 2018 – Dic. 2020\n- Realicé investigación de archivo sobre debates de políticas educativas. - Entrevisté a partes interesadas clave en el sistema de educación superior chileno."
+  },
+  {
+    "objectID": "projects.html",
+    "href": "projects.html",
+    "title": "Projects",
+    "section": "",
+    "text": "Order By\n       Default\n         \n        \n         \n          Title\n        \n         \n          Team\n        \n         \n          Funder\n        \n         \n          Description\n        \n         \n          Start\n        \n         \n          End\n        \n         \n          Funding\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n \n\n\nTitle\n\n\nTeam\n\n\nFunder\n\n\nDescription\n\n\nFunding\n\n\nStart\n\n\nEnd\n\n\n\n\n\n\n\n\n\nExploring \n\n\nAcademic Website\n\n\nFunder\n\n\nThe goal of this project is to investigate .\n\n\n$0\n\n\n2024\n\n\n2025\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "posts/datos-electorales/servel-2025/index.html#datos-disponibles",
+    "href": "posts/datos-electorales/servel-2025/index.html#datos-disponibles",
+    "title": "Datos Servel: Elecciones Presidenciales 2025",
+    "section": "Datos disponibles",
+    "text": "Datos disponibles\nEl dataset contiene resultados de las elecciones presidenciales 2025 del Servel con 2,905 registros organizados en tres niveles de agregación:\n\n\nNacional: Resultados totales por candidato\n\nRegional: Resultados desagregados por región\n\nComunal: Resultados desagregados por comuna y distrito\n\nEstructura de los datos\nLas variables incluyen: - candidato: Nombre del candidato presidencial - votos: Número absoluto de votos - porcentaje: Porcentaje de votos obtenidos - nivel: Nivel de agregación (nacional, region, comuna) - region: Nombre de la región (NA para nivel nacional) - distrito: Distrito electoral (NA para niveles superiores) - comuna: Nombre de la comuna (NA para niveles superiores)\nCandidatos presidenciales\nLos datos incluyen resultados para 8 candidatos: - Franco Parisi Fernández - Jeannette Jara Román - Marco Antonio Enríquez-Ominami Gumucio - Johannes Kaiser Barents-von Hohenhagen - José Antonio Kast Rist - Eduardo Antonio Artes Brichetti - Evelyn Matthei Fornet - Harold Mayne-Nicholls Secul"
+  },
+  {
+    "objectID": "posts/datos-electorales/servel-2025/index.html#análisis-disponibles",
+    "href": "posts/datos-electorales/servel-2025/index.html#análisis-disponibles",
+    "title": "Datos Servel: Elecciones Presidenciales 2025",
+    "section": "Análisis disponibles",
+    "text": "Análisis disponibles\nEn el directorio datos/servel/ se encuentra el script 01_maps.R que incluye:\n\n\nLimpieza y estandarización: Normalización de nombres de comunas para facilitar el cruce con datos geográficos\n\nMapas de ganadores: Visualización del candidato ganador por comuna a nivel nacional\n\nAnálisis regional: Mapas desagregados por región\n\nIntegración con chilemapas: Uso del paquete chilemapas para visualización geográfica\n\nResultados nacionales preliminares\nA nivel nacional, los resultados muestran una distribución competitiva entre los principales candidatos, con variaciones significativas a nivel regional y comunal que reflejan patrones geográficos de preferencias electorales."
+  },
+  {
+    "objectID": "posts/datos-electorales/servel-2025/index.html#explorador-interactivo-de-resultados",
+    "href": "posts/datos-electorales/servel-2025/index.html#explorador-interactivo-de-resultados",
+    "title": "Datos Servel: Elecciones Presidenciales 2025",
+    "section": "Explorador interactivo de resultados",
+    "text": "Explorador interactivo de resultados\nUsa la tabla a continuación para buscar comunas y ver qué candidato ganó en cada una, junto con el porcentaje de votos obtenido.\n\n\n\n\n\n\nResumen por candidato"
+  },
+  {
+    "objectID": "posts/datos-electorales/servel-2025/index.html#próximos-pasos",
+    "href": "posts/datos-electorales/servel-2025/index.html#próximos-pasos",
+    "title": "Datos Servel: Elecciones Presidenciales 2025",
+    "section": "Próximos pasos",
+    "text": "Próximos pasos\n\nAnálisis de patrones geográficos de votación\nComparación con elecciones anteriores\nVisualizaciones interactivas de resultados\nAnálisis de correlaciones con variables socioeconómicas"
+  },
+  {
+    "objectID": "posts/programming-in-social-science/quickstart/index.html",
+    "href": "posts/programming-in-social-science/quickstart/index.html",
+    "title": "Programming in Social Science: Quickstart",
+    "section": "",
+    "text": "Prepara un entorno con las librerías que usas con mayor frecuencia (por ejemplo: tidyverse, quarto, janitor). Guarda los paquetes en deps.R para que cualquier colaborador pueda instalar con renv::restore()."
+  },
+  {
+    "objectID": "posts/programming-in-social-science/quickstart/index.html#paso-1-ambiente-mínimo",
+    "href": "posts/programming-in-social-science/quickstart/index.html#paso-1-ambiente-mínimo",
+    "title": "Programming in Social Science: Quickstart",
+    "section": "",
+    "text": "Prepara un entorno con las librerías que usas con mayor frecuencia (por ejemplo: tidyverse, quarto, janitor). Guarda los paquetes en deps.R para que cualquier colaborador pueda instalar con renv::restore()."
+  },
+  {
+    "objectID": "posts/programming-in-social-science/quickstart/index.html#paso-2-datos-con-trazabilidad",
+    "href": "posts/programming-in-social-science/quickstart/index.html#paso-2-datos-con-trazabilidad",
+    "title": "Programming in Social Science: Quickstart",
+    "section": "Paso 2: datos con trazabilidad",
+    "text": "Paso 2: datos con trazabilidad\nLee los datos desde files/data/, limpia columnas clave y guarda versiones intermedias. Añade glue::glue(\"data/cleaned-{today()}.csv\") para evitar sobrescribir resultados previos."
+  },
+  {
+    "objectID": "posts/programming-in-social-science/quickstart/index.html#paso-3-blog-al-final",
+    "href": "posts/programming-in-social-science/quickstart/index.html#paso-3-blog-al-final",
+    "title": "Programming in Social Science: Quickstart",
+    "section": "Paso 3: blog al final",
+    "text": "Paso 3: blog al final\nEste tutorial forma parte del blog “Programming in Social Science”: cada entrada breve ayuda a documentar procesos compartidos y a inspirar nuevos scripts para el equipo."
+  },
+  {
+    "objectID": "posts/experience-in-research/fondecyt/index.html",
+    "href": "posts/experience-in-research/fondecyt/index.html",
+    "title": "Derechas FONDECYT, Interculturales, OLES, etc.",
+    "section": "",
+    "text": "FONDECYT Derechas: coordinación con becarios y alianzas con investigadores de campo, revisión de avances trimestrales.\nInterculturales: sesiones con comunidades, validación de metodologías y ajustes de protocolo para respeto cultural.\nOLES y redes: encuentros virtuales para compartir aprendizajes y difundir resultados en español e inglés."
+  },
+  {
+    "objectID": "posts/experience-in-research/fondecyt/index.html#notas-rápidas-de-colaboración",
+    "href": "posts/experience-in-research/fondecyt/index.html#notas-rápidas-de-colaboración",
+    "title": "Derechas FONDECYT, Interculturales, OLES, etc.",
+    "section": "",
+    "text": "FONDECYT Derechas: coordinación con becarios y alianzas con investigadores de campo, revisión de avances trimestrales.\nInterculturales: sesiones con comunidades, validación de metodologías y ajustes de protocolo para respeto cultural.\nOLES y redes: encuentros virtuales para compartir aprendizajes y difundir resultados en español e inglés."
+  },
+  {
+    "objectID": "posts/experience-in-research/fondecyt/index.html#próximos-pasos",
+    "href": "posts/experience-in-research/fondecyt/index.html#próximos-pasos",
+    "title": "Derechas FONDECYT, Interculturales, OLES, etc.",
+    "section": "Próximos pasos",
+    "text": "Próximos pasos\n\nConsolidar material audiovisual y referencias para los informes internos.\nRegistrar quién se sumó a cada iniciativa para facilitar nuevas convocatorias de fondos.\nCompartir estos apuntes con los equipos a través de posts.qmd para que queden visibles como parte del blog “Experience in Research”."
+  },
+  {
+    "objectID": "posts/experience-in-research/roles/index.html",
+    "href": "posts/experience-in-research/roles/index.html",
+    "title": "Experience in Research: Field Coordination",
+    "section": "",
+    "text": "En este espacio documentaré tareas de coordinación (equipos, cronogramas, validaciones) para que cada experiencia quede registrada dentro del blog. Puedo agregar fotos o enlaces a reportes cuando sea útil."
+  },
+  {
+    "objectID": "posts/experience-in-research/roles/index.html#coordinación-y-operación-en-terreno",
+    "href": "posts/experience-in-research/roles/index.html#coordinación-y-operación-en-terreno",
+    "title": "Experience in Research: Field Coordination",
+    "section": "",
+    "text": "En este espacio documentaré tareas de coordinación (equipos, cronogramas, validaciones) para que cada experiencia quede registrada dentro del blog. Puedo agregar fotos o enlaces a reportes cuando sea útil."
+  },
+  {
+    "objectID": "posts/experience-in-research/roles/index.html#cómo-mantener-estas-notas",
+    "href": "posts/experience-in-research/roles/index.html#cómo-mantener-estas-notas",
+    "title": "Experience in Research: Field Coordination",
+    "section": "Cómo mantener estas notas",
+    "text": "Cómo mantener estas notas\n\nDuplica esta entrada o crea otra en posts/experience-in-research/.\nActualiza el título, la fecha y la descripción con el proyecto específico.\nDescribe brevemente qué pasó y qué aprendiste; adjunta enlaces o archivos si es relevante.\nLa categoría experience-in-research mantiene todas estas notas agrupadas dentro del menú “Research”."
+  },
+  {
+    "objectID": "teaching.html",
+    "href": "teaching.html",
+    "title": "Teaching",
+    "section": "",
+    "text": "🇬🇧 EN\n  🇪🇸 ES"
+  },
+  {
+    "objectID": "teaching.html#instructor",
+    "href": "teaching.html#instructor",
+    "title": "Teaching",
+    "section": "Instructor",
+    "text": "Instructor\nCentro de Estudios Interculturales e Indígenas – Santiago, Chile | 2025\n- Continuing education: InteRcultural: Computational techniques in social sciences applied to intercultural relationship"
+  },
+  {
+    "objectID": "teaching.html#teaching-assistant-institute-of-sociology",
+    "href": "teaching.html#teaching-assistant-institute-of-sociology",
+    "title": "Teaching",
+    "section": "Teaching Assistant – Institute of Sociology",
+    "text": "Teaching Assistant – Institute of Sociology\nPontificia Universidad Católica de Chile – Santiago, Chile | 2022 – 2024\nGraduate level: - Advanced Data Processing in R [SOL4001] (2S 2022, 2S 2023)\nUndergraduate level: - Qualitative Research Techniques [SOL133] (1S 2022) - Formation and Development of Latin American Culture [SOL127] (2S 2022) - Data Analysis II [SOL114] (2S 2022)"
+  },
+  {
+    "objectID": "teaching.html#teaching-assistant-department-of-sociology",
+    "href": "teaching.html#teaching-assistant-department-of-sociology",
+    "title": "Teaching",
+    "section": "Teaching Assistant – Department of Sociology",
+    "text": "Teaching Assistant – Department of Sociology\nUniversity of Concepción – Concepción, Chile | 2018 – 2021\nUndergraduate level: - Research Methodology (1S 2018, 1S 2019, 1S 2020) - Latin American Sociology (1S 2020, 1S 2021) - Numerical Data Analysis I (1S 2020, 1S 2021) - Methods and Techniques of Qualitative Research (1S 2020, 1S 2021)"
+  },
+  {
+    "objectID": "teaching.html#teaching-assistant-department-of-psychology",
+    "href": "teaching.html#teaching-assistant-department-of-psychology",
+    "title": "Teaching",
+    "section": "Teaching Assistant – Department of Psychology",
+    "text": "Teaching Assistant – Department of Psychology\nUniversity of Concepción – Concepción, Chile | 2020 – 2021\nUndergraduate level: - Social Bases of Human Behavior (2020, 2021)"
+  },
+  {
+    "objectID": "teaching.html#teaching-assistant-department-of-political-science",
+    "href": "teaching.html#teaching-assistant-department-of-political-science",
+    "title": "Teaching",
+    "section": "Teaching Assistant – Department of Political Science",
+    "text": "Teaching Assistant – Department of Political Science\nUniversity of Concepción – Concepción, Chile | 2021\nUndergraduate level: - Foundations of Social Theory (1S 2021)"
+  },
+  {
+    "objectID": "teaching.html#instructor-1",
+    "href": "teaching.html#instructor-1",
+    "title": "Teaching",
+    "section": "Instructor",
+    "text": "Instructor\nCentro de Estudios Interculturales e Indígenas – Santiago, Chile | 2025\n- Educación continua: InteRcultural: Técnicas computacionales en ciencias sociales aplicadas a la relación intercultural"
+  },
+  {
+    "objectID": "teaching.html#asistente-de-docencia-instituto-de-sociología",
+    "href": "teaching.html#asistente-de-docencia-instituto-de-sociología",
+    "title": "Teaching",
+    "section": "Asistente de Docencia – Instituto de Sociología",
+    "text": "Asistente de Docencia – Instituto de Sociología\nPontificia Universidad Católica de Chile – Santiago, Chile | 2022 – 2024\nNivel de postgrado: - Procesamiento Avanzado de Datos en R [SOL4001] (2S 2022, 2S 2023)\nNivel de pregrado: - Técnicas de Investigación Cualitativa [SOL133] (1S 2022) - Formación y Desarrollo de la Cultura Latinoamericana [SOL127] (2S 2022) - Análisis de Datos II [SOL114] (2S 2022)"
+  },
+  {
+    "objectID": "teaching.html#asistente-de-docencia-departamento-de-sociología",
+    "href": "teaching.html#asistente-de-docencia-departamento-de-sociología",
+    "title": "Teaching",
+    "section": "Asistente de Docencia – Departamento de Sociología",
+    "text": "Asistente de Docencia – Departamento de Sociología\nUniversidad de Concepción – Concepción, Chile | 2018 – 2021\nNivel de pregrado: - Metodología de Investigación (1S 2018, 1S 2019, 1S 2020) - Sociología Latinoamericana (1S 2020, 1S 2021) - Análisis de Datos Numéricos I (1S 2020, 1S 2021) - Métodos y Técnicas de Investigación Cualitativa (1S 2020, 1S 2021)"
+  },
+  {
+    "objectID": "teaching.html#asistente-de-docencia-departamento-de-psicología",
+    "href": "teaching.html#asistente-de-docencia-departamento-de-psicología",
+    "title": "Teaching",
+    "section": "Asistente de Docencia – Departamento de Psicología",
+    "text": "Asistente de Docencia – Departamento de Psicología\nUniversidad de Concepción – Concepción, Chile | 2020 – 2021\nNivel de pregrado: - Bases Sociales del Comportamiento Humano (2020, 2021)"
+  },
+  {
+    "objectID": "teaching.html#asistente-de-docencia-departamento-de-ciencia-política",
+    "href": "teaching.html#asistente-de-docencia-departamento-de-ciencia-política",
+    "title": "Teaching",
+    "section": "Asistente de Docencia – Departamento de Ciencia Política",
+    "text": "Asistente de Docencia – Departamento de Ciencia Política\nUniversidad de Concepción – Concepción, Chile | 2021\nNivel de pregrado: - Fundamentos de la Teoría Social (1S 2021)"
+  },
+  {
+    "objectID": "contact.html",
+    "href": "contact.html",
+    "title": "Contact",
+    "section": "",
+    "text": "E-mail: m.deneken[at].cl"
+  },
+  {
+    "objectID": "posts/experience-in-research/colaboraciones/index.html",
+    "href": "posts/experience-in-research/colaboraciones/index.html",
+    "title": "Alianzas e instrumentos de colaboración",
+    "section": "",
+    "text": "Se registran aquí los acuerdos operativos con equipos externos, mesadas de trabajo y protocolos que facilitan la colaboración sostenida en proyectos de datos sociales."
+  },
+  {
+    "objectID": "posts/experience-in-research/colaboraciones/index.html#mesa-de-trabajo-y-acuerdos",
+    "href": "posts/experience-in-research/colaboraciones/index.html#mesa-de-trabajo-y-acuerdos",
+    "title": "Alianzas e instrumentos de colaboración",
+    "section": "",
+    "text": "Se registran aquí los acuerdos operativos con equipos externos, mesadas de trabajo y protocolos que facilitan la colaboración sostenida en proyectos de datos sociales."
+  },
+  {
+    "objectID": "posts/experience-in-research/colaboraciones/index.html#documentación-rápida",
+    "href": "posts/experience-in-research/colaboraciones/index.html#documentación-rápida",
+    "title": "Alianzas e instrumentos de colaboración",
+    "section": "Documentación rápida",
+    "text": "Documentación rápida\n\nCarta de intención compartida con aliados académicos.\nProtocolos de entrevistas y consentimiento digital.\nBitácoras de reuniones semanales y chequeos de avance."
+  },
+  {
+    "objectID": "posts/programming-in-social-science/tutorial_tidyverse_pandas/index.html#paso-1-ambiente-mínimo",
+    "href": "posts/programming-in-social-science/tutorial_tidyverse_pandas/index.html#paso-1-ambiente-mínimo",
+    "title": "Uso de R y Pyhton",
+    "section": "Paso 1: ambiente mínimo",
+    "text": "Paso 1: ambiente mínimo\nPrepara un entorno con las librerías que usas con mayor frecuencia (por ejemplo: tidyverse, quarto, janitor). Guarda los paquetes en deps.R para que cualquier colaborador pueda instalar con renv::restore()."
+  },
+  {
+    "objectID": "posts/programming-in-social-science/tutorial_tidyverse_pandas/index.html#paso-2-datos-con-trazabilidad",
+    "href": "posts/programming-in-social-science/tutorial_tidyverse_pandas/index.html#paso-2-datos-con-trazabilidad",
+    "title": "Uso de R y Pyhton",
+    "section": "Paso 2: datos con trazabilidad",
+    "text": "Paso 2: datos con trazabilidad\nLee los datos desde files/data/, limpia columnas clave y guarda versiones intermedias. Añade glue::glue(\"data/cleaned-{today()}.csv\") para evitar sobrescribir resultados previos."
+  },
+  {
+    "objectID": "posts/programming-in-social-science/tutorial_tidyverse_pandas/index.html#paso-3-blog-al-final",
+    "href": "posts/programming-in-social-science/tutorial_tidyverse_pandas/index.html#paso-3-blog-al-final",
+    "title": "Uso de R y Pyhton",
+    "section": "Paso 3: blog al final",
+    "text": "Paso 3: blog al final\nEste tutorial forma parte del blog “Programming in Social Science”: cada entrada breve ayuda a documentar procesos compartidos y a inspirar nuevos scripts para el equipo."
+  },
+  {
+    "objectID": "posts/programming-in-social-science/data-pipelines/index.html",
+    "href": "posts/programming-in-social-science/data-pipelines/index.html",
+    "title": "Programming in Social Science: Data Pipelines",
+    "section": "",
+    "text": "Usa targets o drake para encadenar la limpieza, el análisis y la generación de reportes. Define tar_make() en un script que solo haga falta ejecutar cuando cambian los datos base."
+  },
+  {
+    "objectID": "posts/programming-in-social-science/data-pipelines/index.html#coordinación-entre-scripts",
+    "href": "posts/programming-in-social-science/data-pipelines/index.html#coordinación-entre-scripts",
+    "title": "Programming in Social Science: Data Pipelines",
+    "section": "",
+    "text": "Usa targets o drake para encadenar la limpieza, el análisis y la generación de reportes. Define tar_make() en un script que solo haga falta ejecutar cuando cambian los datos base."
+  },
+  {
+    "objectID": "posts/programming-in-social-science/data-pipelines/index.html#publicar-en-el-blog",
+    "href": "posts/programming-in-social-science/data-pipelines/index.html#publicar-en-el-blog",
+    "title": "Programming in Social Science: Data Pipelines",
+    "section": "Publicar en el blog",
+    "text": "Publicar en el blog\nLos artefactos resultantes se esconden dentro de posts/programming-in-social-science/; cuando todo esté listo, solo queda ejecutar quarto render posts.qmd para que la lista del blog muestre automáticamente las entradas más recientes."
+  },
+  {
+    "objectID": "posts/avance-socia/index.html",
+    "href": "posts/avance-socia/index.html",
+    "title": "Avance sobre datos sociales 2025",
+    "section": "",
+    "text": "Esta semana comparto una actualización sobre la recolección de datos sociales que hemos venido trabajando. Publicamos nuevos scripts de limpieza, añadimos anotaciones de calidad y generamos una primera serie de visualizaciones para el equipo, lo que nos permite comunicar mejor los patrones emergentes."
+  },
+  {
+    "objectID": "posts/avance-socia/index.html#resumen",
+    "href": "posts/avance-socia/index.html#resumen",
+    "title": "Avance sobre datos sociales 2025",
+    "section": "",
+    "text": "Esta semana comparto una actualización sobre la recolección de datos sociales que hemos venido trabajando. Publicamos nuevos scripts de limpieza, añadimos anotaciones de calidad y generamos una primera serie de visualizaciones para el equipo, lo que nos permite comunicar mejor los patrones emergentes."
+  },
+  {
+    "objectID": "posts/avance-socia/index.html#qué-sigue",
+    "href": "posts/avance-socia/index.html#qué-sigue",
+    "title": "Avance sobre datos sociales 2025",
+    "section": "Qué sigue",
+    "text": "Qué sigue\n\nDocumentar el proceso de verificación y sincronizarlo con el repositorio principal para que otros puedan reproducirlo.\nCompartir un breve cuaderno con los resultados preliminares en la sección de posts del sitio.\nPlanificar un taller interno para discutir cómo integrarlo a la próxima cátedra."
+  },
+  {
+    "objectID": "conferences.html",
+    "href": "conferences.html",
+    "title": "Conferences",
+    "section": "",
+    "text": "🇬🇧 EN\n  🇪🇸 ES\n\n\n\n\n\n\n\n2026\n\nDeneken, M. (2025). (Re)configuraciones interculturales: A longitudinal analysis of Indigenous–non-Indigenous dynamics in Chile (2016–2023). Book presentation at LASA 2025 – Latin American Studies Association Congress.\n\n\n\n2025\n\nGerber, M. M., Figuereido, A., Deneken, M., & Bahamondes, J. (2025). State violence and resistance: Police violence, human rights and anti-repression measures. International Society of Political Psychology Annual Meeting.\nDeneken, M., Díaz, F., González, R., & Fuenzalida, D. (2025). A longitudinal examination of factors facilitating and hindering intergroup trust: Dynamics between Indigenous and non-Indigenous people in Chile (2016–2023). International Society of Political Psychology Annual Meeting.\nDeneken, M. (2025). A radiography of media coverage of the police in Chile: A longitudinal analysis of online press (2000–2024). Paper presented at the panel Police Legitimacy and the Democratic Process in Chile (Panel VIO–668), LASA 2025 – Latin American Studies Association Congress.\n\n\n\n2024\n\nDeneken, M., Díaz, F., González, R., & Fuenzalida, D. (2024). A Longitudinal Examination of Factors Facilitating and Hindering Intergroup Trust: Dynamics between Indigenous and Non-Indigenous People in Chile (2016–2023). La Triada Conference – Latin American Congress of Social Sciences and Government.\nCárdenas, J.C., Deneken, M., & Maltrain, V. (2024). Sociology in Post-Dictatorship Chile. XII Chilean Sociology Congress – Universidad Diego Portales.\n\n\n\n2023\n\nCárdenas, J.C., Deneken, M., & Maltrain, V. (2023). Refounding Sociology in Chile: Camp Disputes, Shifts, and Continuities in Sociological Knowledge Production and Use in the Post-Dictatorship Era (1990–2020). Seminar on Chilean Sociology in Post-Dictatorship – Universidad de Valparaíso.\n\n\n\n2022\n\nDeneken, M. (2022). Social Sciences at Pontificia Universidad Católica in the Times of Salvador Allende: The Case of CEREN (1968–1973). Intellectual History Workshop in Chile – USACH.\nDeneken, M. (2022). A Radiography of Aging in Chile: An Analysis from the CASEN Surveys (1990–2020). XXXII Congress of the Latin American Sociology Association – UNAM, Mexico.\nJara, R. & Deneken, M. (2022). Pedro Morandé: An Approach to His Thought and Work. XXXII Congress of the Latin American Sociology Association – UNAM, Mexico.\nDeneken, M. (2022). Masonry, MAPU, and MIR: The Refoundation and Deployment of Sociology at Universidad de Concepción (1991–2000). XXXII Congress of the Latin American Sociology Association – UNAM, Mexico.\nDeneken, M. (2022). Train to the South: The Refoundation of Sociology at Universidad de Concepción. Chilean Sociology Congress – Universidad de Concepción.\n\n\n\n2021\n\nDeneken, M. & Cárdenas, J. (2021). The Refoundation of Sociology at Universidad de Concepción. XIV Sociology Workshop – UBA, Argentina.\nMontero, V., Santibáñez, C., Ortiz, C., & Deneken, M. (2021). Disagreement and Polarization in Higher Education: Free Tuition and Profit in Perspective. Research Colloquium – Universidad de Concepción.\n\n\n\n2019\n\nMontero, V. & Deneken, M. (2019). The Tension between Free Tuition and Profit in the 2018 Educational Reform. XXXII Congress of the Latin American Sociology Association – Universidad Nacional Mayor de San Marcos, Peru.\nDeneken, M. (2019). The Chilean Right in the Post-Transition: The Case of José Antonio Kast. XXXII Congress of the Latin American Sociology Association – Universidad Nacional Mayor de San Marcos, Peru.\n\n\n\n\n\n2026\n\nDeneken, M. (2025). (Re)configuraciones interculturales: A longitudinal analysis of Indigenous–non-Indigenous dynamics in Chile (2016–2023). Presentación de libro en LASA 2025 – Congreso de la Asociación de Estudios Latinoamericanos.\n\n\n\n2025\n\nGerber, M. M., Figuereido, A., Deneken, M., & Bahamondes, J. (2025). State violence and resistance: Police violence, human rights and anti-repression measures. Reunión Anual de la Sociedad Internacional de Psicología Política.\nDeneken, M., Díaz, F., González, R., & Fuenzalida, D. (2025). A longitudinal examination of factors facilitating and hindering intergroup trust: Dynamics between Indigenous and non-Indigenous people in Chile (2016–2023). Reunión Anual de la Sociedad Internacional de Psicología Política.\nDeneken, M. (2025). A radiography of media coverage of the police in Chile: A longitudinal analysis of online press (2000–2024). Ponencia presentada en el panel Police Legitimacy and the Democratic Process in Chile (Panel VIO–668), LASA 2025 – Congreso de la Asociación de Estudios Latinoamericanos.\n\n\n\n2024\n\nDeneken, M., Díaz, F., González, R., & Fuenzalida, D. (2024). A Longitudinal Examination of Factors Facilitating and Hindering Intergroup Trust: Dynamics between Indigenous and Non-Indigenous People in Chile (2016–2023). Conferencia La Triada – Congreso Latinoamericano de Ciencias Sociales y Gobierno.\nCárdenas, J.C., Deneken, M., & Maltrain, V. (2024). Sociología en el Chile Post-Dictadura. XII Congreso Chileno de Sociología – Universidad Diego Portales.\n\n\n\n2023\n\nCárdenas, J.C., Deneken, M., & Maltrain, V. (2023). Refundación de la Sociología en Chile: Disputas de Campo, Cambios y Continuidades en la Producción y Uso del Conocimiento Sociológico en la Era Post-Dictadura (1990–2020). Seminario sobre Sociología Chilena en Post-Dictadura – Universidad de Valparaíso.\n\n\n\n2022\n\nDeneken, M. (2022). Ciencias Sociales en la Pontificia Universidad Católica en los Tiempos de Salvador Allende: El Caso de CEREN (1968–1973). Taller de Historia Intelectual en Chile – USACH.\nDeneken, M. (2022). Una Radiografía del Envejecimiento en Chile: Un Análisis desde las Encuestas CASEN (1990–2020). XXXII Congreso de la Asociación Latinoamericana de Sociología – UNAM, México.\nJara, R. & Deneken, M. (2022). Pedro Morandé: Una Aproximación a Su Pensamiento y Obra. XXXII Congreso de la Asociación Latinoamericana de Sociología – UNAM, México.\nDeneken, M. (2022). Masonería, MAPU y MIR: La Refundación y Despliegue de la Sociología en la Universidad de Concepción (1991–2000). XXXII Congreso de la Asociación Latinoamericana de Sociología – UNAM, México.\nDeneken, M. (2022). Tren al Sur: La Refundación de la Sociología en la Universidad de Concepción. Congreso Chileno de Sociología – Universidad de Concepción.\n\n\n\n2021\n\nDeneken, M. & Cárdenas, J. (2021). La Refundación de la Sociología en la Universidad de Concepción. XIV Taller de Sociología – UBA, Argentina.\nMontero, V., Santibáñez, C., Ortiz, C., & Deneken, M. (2021). Desacuerdo y Polarización en la Educación Superior: Gratuidad y Lucro en Perspectiva. Coloquio de Investigación – Universidad de Concepción.\n\n\n\n2019\n\nMontero, V. & Deneken, M. (2019). La Tensión entre Gratuidad y Lucro en la Reforma Educacional de 2018. XXXII Congreso de la Asociación Latinoamericana de Sociología – Universidad Nacional Mayor de San Marcos, Perú.\nDeneken, M. (2019). La Derecha Chilena en la Post-Transición: El Caso de José Antonio Kast. XXXII Congreso de la Asociación Latinoamericana de Sociología – Universidad Nacional Mayor de San Marcos, Perú."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Matías Deneken",
+    "section": "",
+    "text": "(RE) Configuraciones Interculturales: Un estudio longitudinal de las relaciones entre indígenas y no indígenas en Chile (2016-2024)\nCo-edited with Eduardo Valenzuela. Editorial Catalonia, 2025."
+  },
+  {
+    "objectID": "index.html#introduction",
+    "href": "index.html#introduction",
+    "title": "Matías Deneken",
+    "section": "Introduction",
+    "text": "Introduction\nMatías Deneken is a Chilean sociologist and data scientist. His research bridges social data science, violence, and computational methods to study how social processes unfold in contemporary societies. He has collaborated on large-scale longitudinal studies such as the Estudio Longitudinal de Relaciones Interculturales (ELRI) and the Estudio Panel de Percepciones de Seguridad y Policías (EPSEP).\n\nCurrent Projects\nI am currently developing MethodoLab — an innovative data science initiative focused on computational methods in social research.\n\n  \n    🚀 Visit MethodoLab →\n  \n\nSee the interactive Current Agenda for literature reviews, methods notes, and upcoming posts."
+  },
+  {
+    "objectID": "index.html#experience",
+    "href": "index.html#experience",
+    "title": "Matías Deneken",
+    "section": "Experience",
+    "text": "Experience\nMatías is currently affiliated with the Government School at Pontificia Universidad Católica de Chile through the Observatory of Violence and Social Legitimacy (www.oles.cl), where he works as a Research Assistant designing and maintaining large-scale databases and conducting automated web scraping of national newspapers.\nHe has been a Quantitative Studies Researcher at the Center for Intercultural and Indigenous Studies (CIIR) (www.ciir.cl) since December 2022, where he coordinates the Longitudinal Survey on Intercultural Relations (ELRI) and co-edited the book (RE) Configuraciones Interculturales."
+  },
+  {
+    "objectID": "index.html#technical-skills",
+    "href": "index.html#technical-skills",
+    "title": "Matías Deneken",
+    "section": "Technical Skills",
+    "text": "Technical Skills\nData Processing: R, Python, Stata, SQL\nInformation Management: ATLAS.ti, Mendeley, Zotero\nText Processing: Microsoft Office, LaTeX\nLanguages: Spanish (Native), English (B2)"
+  },
+  {
+    "objectID": "index.html#introducción",
+    "href": "index.html#introducción",
+    "title": "Matías Deneken",
+    "section": "Introducción",
+    "text": "Introducción\nMatías Deneken es un sociólogo y científico de datos chileno. Su investigación conecta ciencia de datos sociales, violencia y métodos computacionales para estudiar cómo se desarrollan los procesos sociales en las sociedades contemporáneas. Ha colaborado en estudios longitudinales a gran escala como el Estudio Longitudinal de Relaciones Interculturales (ELRI) y el Estudio Panel de Percepciones de Seguridad y Policías (EPSEP).\nMás allá de la investigación, Matías es apasionado por la fotografía, los viajes y la narrativa visual, lo que a menudo inspira su trabajo analítico y creativo.\n\nProyectos Actuales\nActualmente estoy desarrollando MethodoLab — una iniciativa innovadora de ciencia de datos enfocada en métodos computacionales en investigación social.\n\n  \n    🚀 Visitar MethodoLab →\n  \n\nLa agenda actual reúne de forma interactiva revisiones de literatura, notas de métodos y próximos posts."
+  },
+  {
+    "objectID": "index.html#experiencia",
+    "href": "index.html#experiencia",
+    "title": "Matías Deneken",
+    "section": "Experiencia",
+    "text": "Experiencia\nMatías está actualmente afiliado a la Escuela de Gobierno de la Pontificia Universidad Católica de Chile mediante el Observatorio de Violencia y Legitimidad Social (www.oles.cl), donde trabaja como Asistente de Investigación diseñando y manteniendo bases de datos a gran escala y realizando scraping web automatizado de periódicos nacionales.\nHa sido Investigador en Estudios Cuantitativos en el Centro de Estudios Interculturales e Indígenas (CIIR) (www.ciir.cl) desde diciembre de 2022, donde coordina la Encuesta Longitudinal de Relaciones Interculturales (ELRI) y co-editó el libro (RE) Configuraciones Interculturales.\nMatías también es Asistente de Investigación en el Proyecto FONDECYT: La Derecha en Disputa: Ideología y Tácticas en el Chile Contemporáneo, donde implementa scraping web a gran escala y aplica técnicas de procesamiento de lenguaje natural para analizar discurso político."
+  },
+  {
+    "objectID": "index.html#habilidades-técnicas",
+    "href": "index.html#habilidades-técnicas",
+    "title": "Matías Deneken",
+    "section": "Habilidades Técnicas",
+    "text": "Habilidades Técnicas\nProcesamiento de Datos: R, Python, Stata, SQL\nGestión de Información: ATLAS.ti, Mendeley, Zotero\nProcesamiento de Texto: Microsoft Office, LaTeX\nIdiomas: Español (Nativo), Inglés (B2)"
+  },
+  {
+    "objectID": "publications.html",
+    "href": "publications.html",
+    "title": "Publications",
+    "section": "",
+    "text": "🇬🇧 EN\n  🇪🇸 ES"
+  },
+  {
+    "objectID": "publications.html#papers",
+    "href": "publications.html#papers",
+    "title": "Publications",
+    "section": "Papers",
+    "text": "Papers\n\nGerber, M. M., Castelo Branco, F., Cubas, V., Sáez-Fuentealba, L., de Oliveira, A. R., Deneken, M., & Jackson, J. (accepted). Fear of the police and the fragility of legitimacy: Insights from Chile and Brazil. International Journal of Social Psychology.\nAlenda, S., Sandoval, C., Somma, N. & Deneken, M. (under review). Varieties of Radical Right Discourse in Chile: A Comparative Analysis of José Antonio Kast and Johannes Kaiser. Latin American Research Review.\nDeneken, M. (2025). The Brief History of the Center for the Study of National Reality, CEREN (1968–1973). Revista Temas Sociológicos, 37. [Spanish]\nMaltrain, V., Cárdenas, J. C., Iglesias, M., Deneken, M. (2023). “Camouflaged Sociology” at ARCIS (1984–1991): Critique, Commitment, and Militancy. Revista Izquierdas, 52. [Spanish]"
+  },
+  {
+    "objectID": "publications.html#books",
+    "href": "publications.html#books",
+    "title": "Publications",
+    "section": "Books",
+    "text": "Books\n\nDeneken, M. & Valenzuela, E. (2025). Radiografía del cambio intercultural en Chile: Dinámicas contemporáneas entre población indígena y no indígena. Editorial Catalonia."
+  },
+  {
+    "objectID": "publications.html#book-chapters",
+    "href": "publications.html#book-chapters",
+    "title": "Publications",
+    "section": "Book Chapters",
+    "text": "Book Chapters\n\nValenzuela, E., & Deneken, M. (2025). El problema de la identificación indígena: Un análisis longitudinal. En Deneken, M. & E. Valenzuela (Eds.), (Re)configuraciones interculturales. Editorial Catalonia.\nDeneken, M. (2025). Descifrando el voto de indígenas y no indígenas en Chile en el referéndum constitucional del 4 de septiembre de 2022: Un enfoque psicosocial. En Deneken, M. & E. Valenzuela (Eds.), (Re)configuraciones interculturales. Editorial Catalonia.\nDeneken, M. (2023). An Exonerated Story: The Center for the Study of National Reality (1968–1973). In Karle, C. (Ed.), CEREN, an Unfinished Project. 50 Years Later (pp. 23–33). Ediciones FEUC."
+  },
+  {
+    "objectID": "publications.html#artículos",
+    "href": "publications.html#artículos",
+    "title": "Publications",
+    "section": "Artículos",
+    "text": "Artículos\n\nGerber, M. M., Castelo Branco, F., Cubas, V., Sáez-Fuentealba, L., de Oliveira, A. R., Deneken, M., & Jackson, J. (aceptado). Fear of the police and the fragility of legitimacy: Insights from Chile and Brazil. International Journal of Social Psychology.\nAlenda, S., Sandoval, C., Somma, N. & Deneken, M. (en revisión). Varieties of Radical Right Discourse in Chile: A Comparative Analysis of José Antonio Kast and Johannes Kaiser. Latin American Research Review.\nDeneken, M. (2025). The Brief History of the Center for the Study of National Reality, CEREN (1968–1973). Revista Temas Sociológicos, 37.\nMaltrain, V., Cárdenas, J. C., Iglesias, M., Deneken, M. (2023). “Sociología Camuflada” en ARCIS (1984–1991): Crítica, Compromiso y Militancia. Revista Izquierdas, 52."
+  },
+  {
+    "objectID": "publications.html#libros",
+    "href": "publications.html#libros",
+    "title": "Publications",
+    "section": "Libros",
+    "text": "Libros\n\nDeneken, M. & Valenzuela, E. (2025). Radiografía del cambio intercultural en Chile: Dinámicas contemporáneas entre población indígena y no indígena. Editorial Catalonia."
+  },
+  {
+    "objectID": "publications.html#capítulos-de-libros",
+    "href": "publications.html#capítulos-de-libros",
+    "title": "Publications",
+    "section": "Capítulos de Libros",
+    "text": "Capítulos de Libros\n\nValenzuela, E., & Deneken, M. (2025). El problema de la identificación indígena: Un análisis longitudinal. En Deneken, M. & E. Valenzuela (Eds.), (Re)configuraciones interculturales. Editorial Catalonia.\nDeneken, M. (2025). Descifrando el voto de indígenas y no indígenas en Chile en el referéndum constitucional del 4 de septiembre de 2022: Un enfoque psicosocial. En Deneken, M. & E. Valenzuela (Eds.), (Re)configuraciones interculturales. Editorial Catalonia.\nDeneken, M. (2023). An Exonerated Story: The Center for the Study of National Reality (1968–1973). In Karle, C. (Ed.), CEREN, an Unfinished Project. 50 Years Later (pp. 23–33). Ediciones FEUC."
+  },
+  {
+    "objectID": "posts.html",
+    "href": "posts.html",
+    "title": "What’s New & Updated",
+    "section": "",
+    "text": "This catalog collects opinion columns, short reports, and tutorial notes from Matías Deneken’s work in social data science. Use the filters to view News, Tutorials, Experience in Research, or other tags and explore the most recent reflections and resources."
+  },
+  {
+    "objectID": "posts.html#opinion-columns",
+    "href": "posts.html#opinion-columns",
+    "title": "What’s New & Updated",
+    "section": "",
+    "text": "This catalog collects opinion columns, short reports, and tutorial notes from Matías Deneken’s work in social data science. Use the filters to view News, Tutorials, Experience in Research, or other tags and explore the most recent reflections and resources."
+  },
+  {
+    "objectID": "photos.html",
+    "href": "photos.html",
+    "title": "Photos",
+    "section": "",
+    "text": "Compartimos aquí capturas representativas de talleres, reuniones de análisis y visualizaciones. Haz click en cualquier imagen para verla en mayor tamaño dentro de la ventana modal, donde también aparece una breve nota descriptiva."
+  },
+  {
+    "objectID": "photos.html#galería-de-fotos",
+    "href": "photos.html#galería-de-fotos",
+    "title": "Photos",
+    "section": "",
+    "text": "Compartimos aquí capturas representativas de talleres, reuniones de análisis y visualizaciones. Haz click en cualquier imagen para verla en mayor tamaño dentro de la ventana modal, donde también aparece una breve nota descriptiva."
+  },
+  {
+    "objectID": "photos.html#cómo-agregar-nuevas-fotos",
+    "href": "photos.html#cómo-agregar-nuevas-fotos",
+    "title": "Photos",
+    "section": "Cómo agregar nuevas fotos",
+    "text": "Cómo agregar nuevas fotos\n\nCopia tus imágenes a files/images/photos/ y nómbralas de forma descriptiva.\nDuplica uno de los bloques :::: anteriores y actualiza la ruta del archivo. Agrega data-photo y data-caption (máximo 50 palabras) con la descripción breve.\nHaz git add y commit, o sube los archivos si usas la interfaz web.\nCada vez que actualices el repositorio, las fotos estarán disponibles en esta galería sin tocar nada más.\n\n\n\n\n&lt;div class=\"modal-content bg-dark border-0\"&gt;\n  &lt;div class=\"modal-body text-center p-0 position-relative\"&gt;\n    &lt;img id=\"photoModalImg\" class=\"img-fluid rounded\" src=\"\" alt=\"Foto ampliada\" /&gt;\n    &lt;div id=\"photoModalCaption\" class=\"photo-modal-caption text-white small\"&gt;&lt;/div&gt;\n  &lt;/div&gt;\n  &lt;div class=\"modal-footer border-0 justify-content-center\"&gt;\n    &lt;button type=\"button\" class=\"btn btn-outline-light\" data-bs-dismiss=\"modal\"&gt;Close&lt;/button&gt;\n  &lt;/div&gt;\n&lt;/div&gt;"
+  },
+  {
+    "objectID": "AGENDA_TUTORIAL.html",
+    "href": "AGENDA_TUTORIAL.html",
+    "title": "Tutorial: Como trabajar la seccion My Current Agenda",
+    "section": "",
+    "text": "Este manual explica como editar y hacer crecer la pagina agenda.qmd, que hoy funciona como un tablero simple e interactivo para mostrar:\n\nlo que estas leyendo,\nlo que estas escribiendo,\nlo que estas produciendo,\ny lo que viene despues.\n\nLa idea es que esta seccion se mantenga viva y ligera: no reemplaza CV, publicaciones o posts, sino que muestra en que estas trabajando ahora.\n\n\nEl archivo principal es:\n\nagenda.qmd\n\nEl estilo visual vive sobre todo en:\n\nstyles.css\n\nEn agenda.qmd estan:\n\nla version en ingles,\nla version en espanol,\nlos botones de filtro,\nlas tarjetas,\ny el pequeno script que activa los filtros.\n\n\n\n\nLa pagina tiene cuatro partes:\n\nHero superior\nBarra de filtros\nGrilla de tarjetas\nScript de interaccion\n\nLa estructura general se ve asi:\n&lt;section class=\"agenda-page\"&gt;\n  &lt;header class=\"agenda-hero\"&gt;...&lt;/header&gt;\n  &lt;div class=\"agenda-toolbar\"&gt;...&lt;/div&gt;\n  &lt;div class=\"agenda-grid\" id=\"agenda-grid-en\"&gt;\n    &lt;article class=\"agenda-card\" data-category=\"literature\"&gt;...&lt;/article&gt;\n    &lt;article class=\"agenda-card\" data-category=\"methods\"&gt;...&lt;/article&gt;\n    &lt;article class=\"agenda-card\" data-category=\"outputs\"&gt;...&lt;/article&gt;\n  &lt;/div&gt;\n&lt;/section&gt;\nLuego aparece la misma estructura para espanol.\n\n\n\nSiempre que edites la agenda, actualiza ambos bloques:\n\ningles: data-lang=\"en\"\nespanol: data-lang=\"es\"\n\nSi cambias solo una version, el sitio va a quedar inconsistente al cambiar idioma.\n\n\n\nCada tarjeta tiene esta forma:\n&lt;article class=\"agenda-card\" data-category=\"literature\" style=\"--card-accent: #2563eb;\"&gt;\n  &lt;span class=\"agenda-chip agenda-chip--active\"&gt;In progress&lt;/span&gt;\n  &lt;h2 class=\"agenda-card-title\"&gt;Political discourse & legitimacy&lt;/h2&gt;\n  &lt;p class=\"agenda-card-body\"&gt;Literature reviews threading political discourse...&lt;/p&gt;\n  &lt;ul class=\"agenda-card-meta\"&gt;\n    &lt;li&gt;ELRI / survey-text bridges&lt;/li&gt;\n    &lt;li&gt;Radical right discourse&lt;/li&gt;\n  &lt;/ul&gt;\n&lt;/article&gt;\nPuedes editar:\n\ndata-category: categoria del filtro\n--card-accent: color lateral de la tarjeta\nagenda-chip: estado\nagenda-card-title: titulo\nagenda-card-body: descripcion breve\nagenda-card-meta: bullets concretos\n\n\n\n\nLas categorias que hoy existen son:\n\nliterature\nmethods\noutputs\n\nEstas categorias deben coincidir exactamente con los botones de filtro.\nEjemplo:\n&lt;button type=\"button\" class=\"agenda-filter\" data-filter=\"methods\"&gt;Methods&lt;/button&gt;\ny la tarjeta correspondiente:\n&lt;article class=\"agenda-card\" data-category=\"methods\"&gt;\nSi escribes una categoria distinta, el filtro no la va a reconocer bien.\n\n\n\nHoy ya usamos dos estilos:\n\nagenda-chip agenda-chip--active\nagenda-chip agenda-chip--queued\n\nRecomendacion de uso:\n\nagenda-chip--active: para cosas en curso\nagenda-chip--queued: para cosas siguientes o planificadas\n\nTexto sugerido para los chips:\n\ningles: In progress, Ongoing, Next, Drafting, Reading\nespanol: En curso, Activo, Proximo, Borrador, Lectura\n\nSi despues quieres mas estados, podemos agregar nuevas variantes en styles.css, por ejemplo:\n\nagenda-chip--published\nagenda-chip--paused\nagenda-chip--review\n\n\n\n\n\n\nElige en que bloque va:\n\nen ingles dentro de #agenda-grid-en\nen espanol dentro de #agenda-grid-es\n\n\n\n\nCopia una tarjeta existente y ajusta contenido.\nEjemplo en ingles:\n&lt;article class=\"agenda-card\" data-category=\"outputs\" style=\"--card-accent: #f59e0b;\"&gt;\n  &lt;span class=\"agenda-chip agenda-chip--queued\"&gt;Drafting&lt;/span&gt;\n  &lt;h2 class=\"agenda-card-title\"&gt;Short note on survey-text integration&lt;/h2&gt;\n  &lt;p class=\"agenda-card-body\"&gt;A brief methodological note connecting survey measures with newspaper corpora and NLP-based coding.&lt;/p&gt;\n  &lt;ul class=\"agenda-card-meta\"&gt;\n    &lt;li&gt;ELRI variables + press corpus&lt;/li&gt;\n    &lt;li&gt;Candidate post or methods memo&lt;/li&gt;\n  &lt;/ul&gt;\n&lt;/article&gt;\nY su equivalente en espanol:\n&lt;article class=\"agenda-card\" data-category=\"outputs\" style=\"--card-accent: #f59e0b;\"&gt;\n  &lt;span class=\"agenda-chip agenda-chip--queued\"&gt;Borrador&lt;/span&gt;\n  &lt;h2 class=\"agenda-card-title\"&gt;Nota breve sobre integracion encuesta-texto&lt;/h2&gt;\n  &lt;p class=\"agenda-card-body\"&gt;Una nota metodologica breve que conecta medidas de encuesta con corpus de prensa y codificacion basada en NLP.&lt;/p&gt;\n  &lt;ul class=\"agenda-card-meta\"&gt;\n    &lt;li&gt;Variables ELRI + corpus de prensa&lt;/li&gt;\n    &lt;li&gt;Posible post o memo metodologico&lt;/li&gt;\n  &lt;/ul&gt;\n&lt;/article&gt;\n\n\n\n\nSupongamos que quieres una categoria nueva: teaching.\nDebes hacer tres cosas:\n\nAgregar boton en ingles\nAgregar boton en espanol\nUsar data-category=\"teaching\" en las tarjetas\n\nEjemplo de botones:\n&lt;button type=\"button\" class=\"agenda-filter\" data-filter=\"teaching\"&gt;Teaching&lt;/button&gt;\n&lt;button type=\"button\" class=\"agenda-filter\" data-filter=\"teaching\"&gt;Docencia&lt;/button&gt;\nNo hace falta tocar el script si solo agregas una categoria nueva y usas bien data-filter.\n\n\n\nLa tercera tarjeta ya enlaza a posts.html, pero puedes enlazar a un post especifico.\nEjemplo:\n&lt;p class=\"agenda-card-link\"&gt;\n  &lt;a href=\"posts/datos-electorales/servel-2025/index.html\"&gt;Open current draft →&lt;/a&gt;\n&lt;/p&gt;\nConsejos:\n\nusa links relativos del sitio,\nevita enlazar a archivos temporales,\nsi el contenido aun no esta publico, mejor deja texto sin link o apunta a posts.html.\n\n\n\n\nUna buena tarjeta no debe parecer un parrafo largo. Lo ideal:\n\nun titulo corto,\nuna descripcion de 1 o 2 frases,\n2 bullets concretos,\ny, si aplica, un link.\n\nBuen formato:\n\nque estoy haciendo,\ncon que datos o enfoque,\nque podria salir de ahi.\n\nEjemplo:\n\ntema: discurso politico y legitimidad\nmetodo: NLP + prensa + encuestas\nsalida: paper, post o memo\n\n\n\n\nTe propongo este flujo simple:\n\n\n\nRevisar si alguna tarjeta cambio de estado\nMover lo que ya no es prioridad\nAgregar 1 o 2 lineas nuevas en bullets\nEliminar cosas demasiado viejas\n\n\n\n\n\nCambiar el estado de la tarjeta\nAgregar enlace al post o pagina\nSi ya no es agenda sino historial, moverlo a otra seccion del sitio\n\n\n\n\n\nCrear tarjeta nueva\nDuplicarla en EN y ES\nAsignar categoria\nElegir color de acento\n\n\n\n\n\nHoy cada tarjeta usa --card-accent inline.\nSugerencia de convencion:\n\nliteratura: #2563eb\nmetodos: #7c3aed\noutputs/posts: #0d9488\ndocencia: #f59e0b\ncolaboraciones: #ef4444\n\nEsto ayuda a que el tablero se lea rapido.\n\n\n\nEdita styles.css si quieres cambiar:\n\nforma de las tarjetas,\nsombras,\nanimaciones,\ncolores de chips,\nhero de Agenda,\ndistribucion de la grilla,\nestilo de filtros.\n\nNo hace falta tocar styles.css si solo vas a cambiar contenido.\n\n\n\nNo intentes meter demasiado en la agenda.\nLa agenda funciona mejor si muestra:\n\n3 a 6 tarjetas maximo,\nprioridades actuales,\nlenguaje breve,\nsalidas concretas.\n\nSi el contenido se vuelve muy largo, conviene derivarlo a:\n\nun post,\nuna pagina de proyecto,\no una seccion tipo notes / working papers.\n\n\n\n\nPara trabajar localmente:\nquarto preview\nLuego editar:\n\nagenda.qmd\nstyles.css\n\nY revisar en local el resultado.\nSi quieres render puntual:\nquarto render agenda.qmd\nSi cambias navbar, estilos globales o varias paginas:\nquarto render\n\n\n\nSi queremos hacer esta seccion aun mejor, los siguientes pasos naturales son:\n\nAgregar chips nuevos: Published, Paused, Review\nAñadir fecha de ultima actualizacion por tarjeta\nEnlazar tarjetas a posts reales\nAgregar una categoria Teaching o Fieldwork\nCargar tarjetas desde un archivo de datos (.yml o .json) en vez de escribir todo en HTML\n\n\n\n\nLa agenda debe responder siempre estas tres preguntas:\n\nQue estoy trabajando ahora\nCon que enfoque o metodo\nQue salida concreta podria producir\n\nSi una tarjeta no responde esas tres cosas, conviene reescribirla."
+  },
+  {
+    "objectID": "AGENDA_TUTORIAL.html#donde-se-edita",
+    "href": "AGENDA_TUTORIAL.html#donde-se-edita",
+    "title": "Tutorial: Como trabajar la seccion My Current Agenda",
+    "section": "",
+    "text": "El archivo principal es:\n\nagenda.qmd\n\nEl estilo visual vive sobre todo en:\n\nstyles.css\n\nEn agenda.qmd estan:\n\nla version en ingles,\nla version en espanol,\nlos botones de filtro,\nlas tarjetas,\ny el pequeno script que activa los filtros."
+  },
+  {
+    "objectID": "AGENDA_TUTORIAL.html#como-esta-organizada-la-pagina",
+    "href": "AGENDA_TUTORIAL.html#como-esta-organizada-la-pagina",
+    "title": "Tutorial: Como trabajar la seccion My Current Agenda",
+    "section": "",
+    "text": "La pagina tiene cuatro partes:\n\nHero superior\nBarra de filtros\nGrilla de tarjetas\nScript de interaccion\n\nLa estructura general se ve asi:\n&lt;section class=\"agenda-page\"&gt;\n  &lt;header class=\"agenda-hero\"&gt;...&lt;/header&gt;\n  &lt;div class=\"agenda-toolbar\"&gt;...&lt;/div&gt;\n  &lt;div class=\"agenda-grid\" id=\"agenda-grid-en\"&gt;\n    &lt;article class=\"agenda-card\" data-category=\"literature\"&gt;...&lt;/article&gt;\n    &lt;article class=\"agenda-card\" data-category=\"methods\"&gt;...&lt;/article&gt;\n    &lt;article class=\"agenda-card\" data-category=\"outputs\"&gt;...&lt;/article&gt;\n  &lt;/div&gt;\n&lt;/section&gt;\nLuego aparece la misma estructura para espanol."
+  },
+  {
+    "objectID": "AGENDA_TUTORIAL.html#regla-mas-importante",
+    "href": "AGENDA_TUTORIAL.html#regla-mas-importante",
+    "title": "Tutorial: Como trabajar la seccion My Current Agenda",
+    "section": "",
+    "text": "Siempre que edites la agenda, actualiza ambos bloques:\n\ningles: data-lang=\"en\"\nespanol: data-lang=\"es\"\n\nSi cambias solo una version, el sitio va a quedar inconsistente al cambiar idioma."
+  },
+  {
+    "objectID": "AGENDA_TUTORIAL.html#como-editar-una-tarjeta-existente",
+    "href": "AGENDA_TUTORIAL.html#como-editar-una-tarjeta-existente",
+    "title": "Tutorial: Como trabajar la seccion My Current Agenda",
+    "section": "",
+    "text": "Cada tarjeta tiene esta forma:\n&lt;article class=\"agenda-card\" data-category=\"literature\" style=\"--card-accent: #2563eb;\"&gt;\n  &lt;span class=\"agenda-chip agenda-chip--active\"&gt;In progress&lt;/span&gt;\n  &lt;h2 class=\"agenda-card-title\"&gt;Political discourse & legitimacy&lt;/h2&gt;\n  &lt;p class=\"agenda-card-body\"&gt;Literature reviews threading political discourse...&lt;/p&gt;\n  &lt;ul class=\"agenda-card-meta\"&gt;\n    &lt;li&gt;ELRI / survey-text bridges&lt;/li&gt;\n    &lt;li&gt;Radical right discourse&lt;/li&gt;\n  &lt;/ul&gt;\n&lt;/article&gt;\nPuedes editar:\n\ndata-category: categoria del filtro\n--card-accent: color lateral de la tarjeta\nagenda-chip: estado\nagenda-card-title: titulo\nagenda-card-body: descripcion breve\nagenda-card-meta: bullets concretos"
+  },
+  {
+    "objectID": "AGENDA_TUTORIAL.html#categorias-actuales",
+    "href": "AGENDA_TUTORIAL.html#categorias-actuales",
+    "title": "Tutorial: Como trabajar la seccion My Current Agenda",
+    "section": "",
+    "text": "Las categorias que hoy existen son:\n\nliterature\nmethods\noutputs\n\nEstas categorias deben coincidir exactamente con los botones de filtro.\nEjemplo:\n&lt;button type=\"button\" class=\"agenda-filter\" data-filter=\"methods\"&gt;Methods&lt;/button&gt;\ny la tarjeta correspondiente:\n&lt;article class=\"agenda-card\" data-category=\"methods\"&gt;\nSi escribes una categoria distinta, el filtro no la va a reconocer bien."
+  },
+  {
+    "objectID": "AGENDA_TUTORIAL.html#estados-sugeridos-para-las-tarjetas",
+    "href": "AGENDA_TUTORIAL.html#estados-sugeridos-para-las-tarjetas",
+    "title": "Tutorial: Como trabajar la seccion My Current Agenda",
+    "section": "",
+    "text": "Hoy ya usamos dos estilos:\n\nagenda-chip agenda-chip--active\nagenda-chip agenda-chip--queued\n\nRecomendacion de uso:\n\nagenda-chip--active: para cosas en curso\nagenda-chip--queued: para cosas siguientes o planificadas\n\nTexto sugerido para los chips:\n\ningles: In progress, Ongoing, Next, Drafting, Reading\nespanol: En curso, Activo, Proximo, Borrador, Lectura\n\nSi despues quieres mas estados, podemos agregar nuevas variantes en styles.css, por ejemplo:\n\nagenda-chip--published\nagenda-chip--paused\nagenda-chip--review"
+  },
+  {
+    "objectID": "AGENDA_TUTORIAL.html#como-agregar-una-nueva-tarjeta",
+    "href": "AGENDA_TUTORIAL.html#como-agregar-una-nueva-tarjeta",
+    "title": "Tutorial: Como trabajar la seccion My Current Agenda",
+    "section": "",
+    "text": "Elige en que bloque va:\n\nen ingles dentro de #agenda-grid-en\nen espanol dentro de #agenda-grid-es\n\n\n\n\nCopia una tarjeta existente y ajusta contenido.\nEjemplo en ingles:\n&lt;article class=\"agenda-card\" data-category=\"outputs\" style=\"--card-accent: #f59e0b;\"&gt;\n  &lt;span class=\"agenda-chip agenda-chip--queued\"&gt;Drafting&lt;/span&gt;\n  &lt;h2 class=\"agenda-card-title\"&gt;Short note on survey-text integration&lt;/h2&gt;\n  &lt;p class=\"agenda-card-body\"&gt;A brief methodological note connecting survey measures with newspaper corpora and NLP-based coding.&lt;/p&gt;\n  &lt;ul class=\"agenda-card-meta\"&gt;\n    &lt;li&gt;ELRI variables + press corpus&lt;/li&gt;\n    &lt;li&gt;Candidate post or methods memo&lt;/li&gt;\n  &lt;/ul&gt;\n&lt;/article&gt;\nY su equivalente en espanol:\n&lt;article class=\"agenda-card\" data-category=\"outputs\" style=\"--card-accent: #f59e0b;\"&gt;\n  &lt;span class=\"agenda-chip agenda-chip--queued\"&gt;Borrador&lt;/span&gt;\n  &lt;h2 class=\"agenda-card-title\"&gt;Nota breve sobre integracion encuesta-texto&lt;/h2&gt;\n  &lt;p class=\"agenda-card-body\"&gt;Una nota metodologica breve que conecta medidas de encuesta con corpus de prensa y codificacion basada en NLP.&lt;/p&gt;\n  &lt;ul class=\"agenda-card-meta\"&gt;\n    &lt;li&gt;Variables ELRI + corpus de prensa&lt;/li&gt;\n    &lt;li&gt;Posible post o memo metodologico&lt;/li&gt;\n  &lt;/ul&gt;\n&lt;/article&gt;"
+  },
+  {
+    "objectID": "AGENDA_TUTORIAL.html#como-agregar-una-nueva-categoria",
+    "href": "AGENDA_TUTORIAL.html#como-agregar-una-nueva-categoria",
+    "title": "Tutorial: Como trabajar la seccion My Current Agenda",
+    "section": "",
+    "text": "Supongamos que quieres una categoria nueva: teaching.\nDebes hacer tres cosas:\n\nAgregar boton en ingles\nAgregar boton en espanol\nUsar data-category=\"teaching\" en las tarjetas\n\nEjemplo de botones:\n&lt;button type=\"button\" class=\"agenda-filter\" data-filter=\"teaching\"&gt;Teaching&lt;/button&gt;\n&lt;button type=\"button\" class=\"agenda-filter\" data-filter=\"teaching\"&gt;Docencia&lt;/button&gt;\nNo hace falta tocar el script si solo agregas una categoria nueva y usas bien data-filter."
+  },
+  {
+    "objectID": "AGENDA_TUTORIAL.html#como-enlazar-posts-reales",
+    "href": "AGENDA_TUTORIAL.html#como-enlazar-posts-reales",
+    "title": "Tutorial: Como trabajar la seccion My Current Agenda",
+    "section": "",
+    "text": "La tercera tarjeta ya enlaza a posts.html, pero puedes enlazar a un post especifico.\nEjemplo:\n&lt;p class=\"agenda-card-link\"&gt;\n  &lt;a href=\"posts/datos-electorales/servel-2025/index.html\"&gt;Open current draft →&lt;/a&gt;\n&lt;/p&gt;\nConsejos:\n\nusa links relativos del sitio,\nevita enlazar a archivos temporales,\nsi el contenido aun no esta publico, mejor deja texto sin link o apunta a posts.html."
+  },
+  {
+    "objectID": "AGENDA_TUTORIAL.html#como-pensar-el-contenido",
+    "href": "AGENDA_TUTORIAL.html#como-pensar-el-contenido",
+    "title": "Tutorial: Como trabajar la seccion My Current Agenda",
+    "section": "",
+    "text": "Una buena tarjeta no debe parecer un parrafo largo. Lo ideal:\n\nun titulo corto,\nuna descripcion de 1 o 2 frases,\n2 bullets concretos,\ny, si aplica, un link.\n\nBuen formato:\n\nque estoy haciendo,\ncon que datos o enfoque,\nque podria salir de ahi.\n\nEjemplo:\n\ntema: discurso politico y legitimidad\nmetodo: NLP + prensa + encuestas\nsalida: paper, post o memo"
+  },
+  {
+    "objectID": "AGENDA_TUTORIAL.html#flujo-recomendado-de-actualizacion",
+    "href": "AGENDA_TUTORIAL.html#flujo-recomendado-de-actualizacion",
+    "title": "Tutorial: Como trabajar la seccion My Current Agenda",
+    "section": "",
+    "text": "Te propongo este flujo simple:\n\n\n\nRevisar si alguna tarjeta cambio de estado\nMover lo que ya no es prioridad\nAgregar 1 o 2 lineas nuevas en bullets\nEliminar cosas demasiado viejas\n\n\n\n\n\nCambiar el estado de la tarjeta\nAgregar enlace al post o pagina\nSi ya no es agenda sino historial, moverlo a otra seccion del sitio\n\n\n\n\n\nCrear tarjeta nueva\nDuplicarla en EN y ES\nAsignar categoria\nElegir color de acento"
+  },
+  {
+    "objectID": "AGENDA_TUTORIAL.html#colores-recomendados",
+    "href": "AGENDA_TUTORIAL.html#colores-recomendados",
+    "title": "Tutorial: Como trabajar la seccion My Current Agenda",
+    "section": "",
+    "text": "Hoy cada tarjeta usa --card-accent inline.\nSugerencia de convencion:\n\nliteratura: #2563eb\nmetodos: #7c3aed\noutputs/posts: #0d9488\ndocencia: #f59e0b\ncolaboraciones: #ef4444\n\nEsto ayuda a que el tablero se lea rapido."
+  },
+  {
+    "objectID": "AGENDA_TUTORIAL.html#cuando-conviene-editar-styles.css",
+    "href": "AGENDA_TUTORIAL.html#cuando-conviene-editar-styles.css",
+    "title": "Tutorial: Como trabajar la seccion My Current Agenda",
+    "section": "",
+    "text": "Edita styles.css si quieres cambiar:\n\nforma de las tarjetas,\nsombras,\nanimaciones,\ncolores de chips,\nhero de Agenda,\ndistribucion de la grilla,\nestilo de filtros.\n\nNo hace falta tocar styles.css si solo vas a cambiar contenido."
+  },
+  {
+    "objectID": "AGENDA_TUTORIAL.html#cuando-conviene-dejarlo-simple",
+    "href": "AGENDA_TUTORIAL.html#cuando-conviene-dejarlo-simple",
+    "title": "Tutorial: Como trabajar la seccion My Current Agenda",
+    "section": "",
+    "text": "No intentes meter demasiado en la agenda.\nLa agenda funciona mejor si muestra:\n\n3 a 6 tarjetas maximo,\nprioridades actuales,\nlenguaje breve,\nsalidas concretas.\n\nSi el contenido se vuelve muy largo, conviene derivarlo a:\n\nun post,\nuna pagina de proyecto,\no una seccion tipo notes / working papers."
+  },
+  {
+    "objectID": "AGENDA_TUTORIAL.html#flujo-tecnico-recomendado",
+    "href": "AGENDA_TUTORIAL.html#flujo-tecnico-recomendado",
+    "title": "Tutorial: Como trabajar la seccion My Current Agenda",
+    "section": "",
+    "text": "Para trabajar localmente:\nquarto preview\nLuego editar:\n\nagenda.qmd\nstyles.css\n\nY revisar en local el resultado.\nSi quieres render puntual:\nquarto render agenda.qmd\nSi cambias navbar, estilos globales o varias paginas:\nquarto render"
+  },
+  {
+    "objectID": "AGENDA_TUTORIAL.html#propuesta-de-evolucion-futura",
+    "href": "AGENDA_TUTORIAL.html#propuesta-de-evolucion-futura",
+    "title": "Tutorial: Como trabajar la seccion My Current Agenda",
+    "section": "",
+    "text": "Si queremos hacer esta seccion aun mejor, los siguientes pasos naturales son:\n\nAgregar chips nuevos: Published, Paused, Review\nAñadir fecha de ultima actualizacion por tarjeta\nEnlazar tarjetas a posts reales\nAgregar una categoria Teaching o Fieldwork\nCargar tarjetas desde un archivo de datos (.yml o .json) en vez de escribir todo en HTML"
+  },
+  {
+    "objectID": "AGENDA_TUTORIAL.html#regla-editorial-final",
+    "href": "AGENDA_TUTORIAL.html#regla-editorial-final",
+    "title": "Tutorial: Como trabajar la seccion My Current Agenda",
+    "section": "",
+    "text": "La agenda debe responder siempre estas tres preguntas:\n\nQue estoy trabajando ahora\nCon que enfoque o metodo\nQue salida concreta podria producir\n\nSi una tarjeta no responde esas tres cosas, conviene reescribirla."
+  }
+]

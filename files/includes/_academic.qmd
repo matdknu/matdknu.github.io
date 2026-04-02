@@ -1,0 +1,66 @@
+
+<!-- 
+Load Academicons v1: https://jpswalsh.github.io/academicons/
+-->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+
+<!---
+The following code are needed to show dimension citation and altmetrics.
+https://api.altmetric.com/embeds.html
+https://badge.dimensions.ai/
+--->
+
+<script type='text/javascript' src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script>
+
+<script async src="https://badge.dimensions.ai/badge.js" charset="utf-8"></script>
+
+<script type="text/javascript" src="//cdn.plu.mx/widget-popup.js"></script>
+
+<script>
+window.switchLanguage = function(lang) {
+  localStorage.setItem("site-lang", lang);
+  document.querySelectorAll("[data-lang]").forEach((el) => {
+    el.style.display = el.getAttribute("data-lang") === lang ? "" : "none";
+  });
+  const enBtn = document.getElementById("lang-en");
+  const esBtn = document.getElementById("lang-es");
+  if (enBtn && esBtn) {
+    enBtn.classList.toggle("active", lang === "en");
+    esBtn.classList.toggle("active", lang === "es");
+  }
+};
+
+document.addEventListener("DOMContentLoaded", function () {
+  const savedLang = localStorage.getItem("site-lang") || "en";
+  const cvLink = document.querySelector('.navbar a.nav-link[href*="Deneken_CV"]');
+  const cvLi = cvLink ? cvLink.closest("li") : null;
+
+  let switcher = document.getElementById("language-switcher");
+  if (!switcher) {
+    switcher = document.createElement("div");
+    switcher.id = "language-switcher";
+    switcher.innerHTML =
+      '<button id="lang-en" class="lang-btn">🇬🇧 EN</button>' +
+      '<button id="lang-es" class="lang-btn">🇪🇸 ES</button>';
+  }
+
+  if (cvLi && switcher.parentNode !== cvLi.parentNode) {
+    const wrapper = document.createElement("li");
+    wrapper.className = "nav-item";
+    wrapper.appendChild(switcher);
+    cvLi.parentNode.insertBefore(wrapper, cvLi.nextSibling);
+  }
+
+  const enBtn = document.getElementById("lang-en");
+  const esBtn = document.getElementById("lang-es");
+  if (enBtn && esBtn) {
+    enBtn.onclick = () => window.switchLanguage("en");
+    esBtn.onclick = () => window.switchLanguage("es");
+  }
+
+  window.switchLanguage(savedLang);
+});
+</script>

@@ -1,0 +1,138 @@
+---
+title: "My Current Agenda"
+description-meta: "Ongoing literature reviews, methods notes, and posts — computational social science."
+page-navigation: true
+toc: false
+format:
+  html:
+    title-block: false
+---
+
+::: {data-lang="en"}
+
+```{=html}
+<section class="agenda-page" aria-label="Current agenda">
+  <header class="agenda-hero">
+    <p class="agenda-kicker">Live board</p>
+    <h1 class="agenda-title">My Current Agenda</h1>
+    <p class="agenda-lead">Track what I am reading, writing, and shipping — literature, methods, and short outputs from ELRI, OLES, and FONDECYT work.</p>
+  </header>
+
+  <div class="agenda-toolbar" role="toolbar" aria-label="Filter agenda items">
+    <button type="button" class="agenda-filter is-active" data-filter="all">All</button>
+    <button type="button" class="agenda-filter" data-filter="literature">Literature</button>
+    <button type="button" class="agenda-filter" data-filter="methods">Methods</button>
+    <button type="button" class="agenda-filter" data-filter="outputs">Posts &amp; notes</button>
+  </div>
+
+  <div class="agenda-grid" id="agenda-grid-en">
+    <article class="agenda-card" data-category="literature" style="--card-accent: #2563eb;">
+      <span class="agenda-chip agenda-chip--active">In progress</span>
+      <h2 class="agenda-card-title">Political discourse &amp; legitimacy</h2>
+      <p class="agenda-card-body">Literature reviews threading political discourse, police legitimacy, and computational text approaches (Chile &amp; comparative).</p>
+      <ul class="agenda-card-meta">
+        <li>ELRI / survey–text bridges</li>
+        <li>Radical right discourse (Kast / Kaiser comparative frame)</li>
+      </ul>
+    </article>
+
+    <article class="agenda-card" data-category="methods" style="--card-accent: #7c3aed;">
+      <span class="agenda-chip agenda-chip--active">Ongoing</span>
+      <h2 class="agenda-card-title">Pipelines &amp; reproducibility</h2>
+      <p class="agenda-card-body">Notes on scraping, NLP workflows, tidy analysis, and keeping longitudinal corpora documented (targets, renv, Dataverse).</p>
+      <ul class="agenda-card-meta">
+        <li>R + Quarto for analysis memos</li>
+        <li>Versioned scraping for press corpora</li>
+      </ul>
+    </article>
+
+    <article class="agenda-card" data-category="outputs" style="--card-accent: #0d9488;">
+      <span class="agenda-chip agenda-chip--queued">Next</span>
+      <h2 class="agenda-card-title">Short posts &amp; project updates</h2>
+      <p class="agenda-card-body">Commentaries and empirical snapshots from active collaborations — ELRI, OLES, FONDECYT “Right Wing in Dispute”.</p>
+      <p class="agenda-card-link"><a href="posts.html">Browse all posts →</a></p>
+    </article>
+  </div>
+</section>
+```
+
+:::
+
+::: {data-lang="es" style="display: none;"}
+
+```{=html}
+<section class="agenda-page" aria-label="Agenda actual">
+  <header class="agenda-hero">
+    <p class="agenda-kicker">Tablero en vivo</p>
+    <h1 class="agenda-title">Mi agenda actual</h1>
+    <p class="agenda-lead">Seguimiento de lectura, notas de métodos y entregas breves — ciencia social computacional en proyectos ELRI, OLES y FONDECYT.</p>
+  </header>
+
+  <div class="agenda-toolbar" role="toolbar" aria-label="Filtrar ítems">
+    <button type="button" class="agenda-filter is-active" data-filter="all">Todo</button>
+    <button type="button" class="agenda-filter" data-filter="literature">Literatura</button>
+    <button type="button" class="agenda-filter" data-filter="methods">Métodos</button>
+    <button type="button" class="agenda-filter" data-filter="outputs">Posts y notas</button>
+  </div>
+
+  <div class="agenda-grid" id="agenda-grid-es">
+    <article class="agenda-card" data-category="literature" style="--card-accent: #2563eb;">
+      <span class="agenda-chip agenda-chip--active">En curso</span>
+      <h2 class="agenda-card-title">Discurso político y legitimidad</h2>
+      <p class="agenda-card-body">Revisiones de literatura que conectan discurso político, legitimidad policial y enfoques de texto computacional (Chile y comparado).</p>
+      <ul class="agenda-card-meta">
+        <li>ELRI / vínculos encuesta–texto</li>
+        <li>Discurso de derecha radical (marco comparativo Kast / Kaiser)</li>
+      </ul>
+    </article>
+
+    <article class="agenda-card" data-category="methods" style="--card-accent: #7c3aed;">
+      <span class="agenda-chip agenda-chip--active">En curso</span>
+      <h2 class="agenda-card-title">Pipelines y reproducibilidad</h2>
+      <p class="agenda-card-body">Notas sobre scraping, flujos de NLP, análisis ordenado y documentación de corpus longitudinales (targets, renv, Dataverse).</p>
+      <ul class="agenda-card-meta">
+        <li>R + Quarto para memorias de análisis</li>
+        <li>Scraping versionado de prensa</li>
+      </ul>
+    </article>
+
+    <article class="agenda-card" data-category="outputs" style="--card-accent: #0d9488;">
+      <span class="agenda-chip agenda-chip--queued">Próximo</span>
+      <h2 class="agenda-card-title">Posts y actualizaciones</h2>
+      <p class="agenda-card-body">Comentarios y instantáneas empíricas desde colaboraciones activas — ELRI, OLES, FONDECYT «La derecha en disputa».</p>
+      <p class="agenda-card-link"><a href="posts.html">Ver todos los posts →</a></p>
+    </article>
+  </div>
+</section>
+```
+
+:::
+
+```{=html}
+<script>
+(function () {
+  function wireGrid(grid) {
+    if (!grid) return;
+    var section = grid.closest(".agenda-page");
+    if (!section) return;
+    var buttons = section.querySelectorAll(".agenda-filter");
+    buttons.forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        var f = btn.getAttribute("data-filter") || "all";
+        buttons.forEach(function (b) { b.classList.toggle("is-active", b === btn); });
+        grid.querySelectorAll(".agenda-card").forEach(function (card) {
+          var cat = card.getAttribute("data-category") || "";
+          var show = f === "all" || cat === f;
+          card.style.display = show ? "" : "none";
+          card.classList.toggle("agenda-card--hidden", !show);
+        });
+      });
+    });
+  }
+  document.addEventListener("DOMContentLoaded", function () {
+    wireGrid(document.getElementById("agenda-grid-en"));
+    wireGrid(document.getElementById("agenda-grid-es"));
+  });
+})();
+</script>
+```

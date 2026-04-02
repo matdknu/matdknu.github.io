@@ -1,0 +1,141 @@
+---
+title: "Education, Training & Awards"
+page-navigation: true
+toc: false
+---
+
+```{=html}
+<div id="language-switcher">
+  <button id="lang-en" onclick="switchLanguage('en')" class="lang-btn active">🇬🇧 EN</button>
+  <button id="lang-es" onclick="switchLanguage('es')" class="lang-btn">🇪🇸 ES</button>
+</div>
+
+<style>
+#language-switcher {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+  display: flex;
+  gap: 8px;
+  background: white;
+  padding: 4px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.lang-btn {
+  background: white;
+  border: 2px solid #ddd;
+  padding: 8px 14px;
+  cursor: pointer;
+  border-radius: 6px;
+  font-size: 14px;
+  transition: all 0.3s ease;
+  color: #333;
+}
+
+.lang-btn.active {
+  background: #0066cc;
+  color: white;
+  border-color: #0066cc;
+  font-weight: bold;
+}
+</style>
+
+<script>
+function switchLanguage(lang) {
+  document.querySelectorAll('[data-lang]').forEach(el => {
+    el.style.display = el.getAttribute('data-lang') === lang ? '' : 'none';
+  });
+  document.getElementById('lang-en').classList.toggle('active', lang === 'en');
+  document.getElementById('lang-es').classList.toggle('active', lang === 'es');
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+  switchLanguage('en');
+});
+</script>
+```
+
+<div data-lang="en">
+
+## Education
+
+- **Master of Arts in Sociology**, Pontificia Universidad Católica de Chile (2022-2023) | Grade: 6.5/7
+- **Master in Data Science and Innovation**, Data and Artificial Intelligence Center - Universidad de Concepción (2024-2025) | In course
+- **Bachelor in Sociology**, Universidad de Concepción (2017-2021) | GPA: 6.3/7
+
+## Training
+
+**Internship at the Institute for Applied Computational Science (IACS)**  
+Harvard University | Jan. 2024  
+- Research internship focused on computational methods applied to social science problems.
+- Developed skills in high-performance computing, data analysis, and applied machine learning.
+
+**Mixed Methods Summer School (EVMM)**  
+Pontificia Universidad Católica de Chile | Jan. 2024  
+- Advanced training in integrating qualitative and quantitative research designs.
+- Applied mixed methods to projects on political attitudes and social behavior.
+
+**Postgraduate Certificate in Advanced Data Processing and Analysis in R (96 hours)**  
+Pontificia Universidad Católica de Chile | Mar. - Dec. 2021  
+- In-depth coursework on statistical programming, data cleaning, and visualization in R.
+- Completed applied projects involving large-scale social survey datasets.
+
+## Honors and Awards
+
+**Equal Opportunity Scholarship - Fulbright** (2024-2027) [*Now SUSPENDED*]  
+- Scholarship awarded to pursue a fully funded PhD in the United States.
+
+**ANID Scholarship - National Master's No. 22220115** (2022-2024)  
+- Competitive national scholarship to pursue a fully funded Master's degree in Chile.
+
+**University of Concepción Award** (2022)  
+- Institutional award recognizing outstanding academic excellence in the Sociology program.
+
+**Best Sociology Student - University of Concepción** (2021)  
+- Awarded to the top-performing student in the Sociology program (Cohort 2017-2021).
+
+</div>
+
+<div data-lang="es" style="display: none;">
+
+## Educación
+
+- **Master of Arts in Sociology**, Pontificia Universidad Católica de Chile (2022-2023) | Nota: 6.5/7
+- **Master en Ciencia de Datos e Innovación**, Centro de Datos e Inteligencia Artificial - Universidad de Concepción (2024-2025) | En curso
+- **Licenciatura en Sociología**, Universidad de Concepción (2017-2021) | GPA: 6.3/7
+
+## Formación
+
+**Internado en el Institute for Applied Computational Science (IACS)**  
+Harvard University | Ene. 2024  
+- Internado de investigación enfocado en métodos computacionales aplicados a problemas de ciencias sociales.
+- Desarrollo de habilidades en computación de alto rendimiento, análisis de datos y aprendizaje automático aplicado.
+
+**Escuela de Verano de Métodos Mixtos (EVMM)**  
+Pontificia Universidad Católica de Chile | Ene. 2024  
+- Capacitación avanzada en integración de diseños de investigación cualitativos y cuantitativos.
+- Aplicación de métodos mixtos a proyectos sobre actitudes políticas y comportamiento social.
+
+**Certificado de Postgrado en Procesamiento y Análisis Avanzado de Datos en R (96 horas)**  
+Pontificia Universidad Católica de Chile | Mar. - Dic. 2021  
+- Curso en profundidad sobre programación estadística, limpieza de datos y visualización en R.
+- Proyectos aplicados con bases de encuestas sociales a gran escala.
+
+## Honores y Premios
+
+**Beca de Igualdad de Oportunidades - Fulbright** (2024-2027) [*Actualmente SUSPENDIDA*]  
+- Beca otorgada para realizar un doctorado completamente financiado en Estados Unidos.
+
+**Beca ANID - Magíster Nacional No. 22220115** (2022-2024)  
+- Beca nacional competitiva para realizar un magíster completamente financiado en Chile.
+
+**Premio Universidad de Concepción** (2022)  
+- Premio institucional que reconoce la excelencia académica sobresaliente en Sociología.
+
+**Mejor Estudiante de Sociología - Universidad de Concepción** (2021)  
+- Otorgado al mejor rendimiento del programa (cohorte 2017-2021).
+
+</div>

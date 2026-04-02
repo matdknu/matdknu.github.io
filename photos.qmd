@@ -1,0 +1,68 @@
+---
+title: "Photos"
+description: "Galería de momentos compartidos en el equipo de datos sociales."
+---
+
+## Galería de fotos
+
+Compartimos aquí capturas representativas de talleres, reuniones de análisis y visualizaciones. Haz click en cualquier imagen para verla en mayor tamaño dentro de la ventana modal, donde también aparece una breve nota descriptiva.
+
+:::: {.grid}
+:::: {.g-col-12 .g-col-md-4}
+<a href="#" data-photo="/files/images/photos/placeholder1.JPG" data-caption="Workshop mapping and rapid prototyping of community dashboards.">
+![](files/images/photos/placeholder1.JPG){style="cursor:pointer;"}
+</a>
+::::
+:::: {.g-col-12 .g-col-md-4}
+<a href="#" data-photo="/files/images/photos/placeholder2.JPG" data-caption="Team calibrating visual narratives to communicate safety perceptions clearly.">
+![](files/images/photos/placeholder2.JPG){style="cursor:pointer;"}
+</a>
+::::
+:::: {.g-col-12 .g-col-md-4}
+<a href="#" data-photo="/files/images/photos/placeholder3.JPG" data-caption="Evening session reviewing sensor data and discussing potential stories.">
+![](files/images/photos/placeholder3.JPG){style="cursor:pointer;"}
+</a>
+::::
+::::
+
+## Cómo agregar nuevas fotos
+
+1. Copia tus imágenes a `files/images/photos/` y nómbralas de forma descriptiva.
+2. Duplica uno de los bloques `::::` anteriores y actualiza la ruta del archivo. Agrega `data-photo` y `data-caption` (máximo 50 palabras) con la descripción breve.
+3. Haz `git add` y `commit`, o sube los archivos si usas la interfaz web.
+4. Cada vez que actualices el repositorio, las fotos estarán disponibles en esta galería sin tocar nada más.
+
+<!-- modal -->
+<div class="modal fade" id="photoModal" tabindex="-1" aria-labelledby="photoModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-xl">
+    <div class="modal-content bg-dark border-0">
+      <div class="modal-body text-center p-0 position-relative">
+        <img id="photoModalImg" class="img-fluid rounded" src="" alt="Foto ampliada" />
+        <div id="photoModalCaption" class="photo-modal-caption text-white small"></div>
+      </div>
+      <div class="modal-footer border-0 justify-content-center">
+        <button type="button" class="btn btn-outline-light" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+(() => {
+  const modalEl = document.getElementById('photoModal');
+  if (!modalEl) return;
+  const modalImg = document.getElementById('photoModalImg');
+  const modalCaption = document.getElementById('photoModalCaption');
+  const modal = new bootstrap.Modal(modalEl);
+  document.querySelectorAll('[data-photo]').forEach(anchor => {
+    anchor.addEventListener('click', event => {
+      event.preventDefault();
+      const target = anchor.getAttribute('data-photo');
+      if (!target) return;
+      modalImg.src = target;
+      modalCaption.textContent = anchor.getAttribute('data-caption') || '';
+      modal.show();
+    });
+  });
+})();
+</script>
