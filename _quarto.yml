@@ -1,6 +1,10 @@
 project:
   type: website
   output-dir: docs
+  render:
+    - index.qmd
+    - agenda.qmd
+    - 404.qmd
 
 # Meta
 description-meta: "Matías Deneken — actualizaciones y recursos en ciencia de datos sociales."
@@ -13,18 +17,10 @@ website:
   navbar:
     background: light
     left:
-      - text: Education & Awards
-        href: education-awards.qmd
+      - text: Home
+        href: index.qmd
       - text: Agenda
         href: agenda.qmd
-      - text: Publications
-        href: publications.qmd
-      - text: Conferences
-        href: conferences.qmd
-      - text: Teaching
-        href: teaching.qmd
-      - text: Experience
-        href: experience.qmd
     right: 
       - text: CV
         href: files/Deneken_CV.pdf
@@ -77,6 +73,8 @@ bibliography: references.bib  # Add references.bib to the root folder to enable 
 format:
   html:
     theme: cosmo
+    mainfont: Inter
+    monofont: JetBrains Mono
     css: styles.css
     toc: true
     footnotes-hover: true

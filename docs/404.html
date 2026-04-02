@@ -78,6 +78,75 @@ function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
 gtag('config', '', { 'anonymize_ip': true});
 </script>
+<!-- Load Academicons -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+<!-- Altmetric and Dimensions embeds -->
+<script type="text/javascript" src="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js"></script>
+<script async="" src="https://badge.dimensions.ai/badge.js" charset="utf-8"></script>
+<script type="text/javascript" src="//cdn.plu.mx/widget-popup.js"></script>
+
+<script>
+window.switchLanguage = function (lang) {
+  localStorage.setItem("site-lang", lang);
+  document.querySelectorAll("[data-lang]").forEach(function (el) {
+    el.style.display = el.getAttribute("data-lang") === lang ? "" : "none";
+  });
+
+  var enBtn = document.getElementById("lang-en");
+  var esBtn = document.getElementById("lang-es");
+  if (enBtn && esBtn) {
+    enBtn.classList.toggle("active", lang === "en");
+    esBtn.classList.toggle("active", lang === "es");
+  }
+};
+
+document.addEventListener("DOMContentLoaded", function () {
+  var savedLang = localStorage.getItem("site-lang") || "en";
+  var navbar = document.querySelector(".navbar");
+  var cvLink = document.querySelector('.navbar a.nav-link[href*="Deneken_CV"]');
+  var cvLi = cvLink ? cvLink.closest("li") : null;
+  var switcher = document.getElementById("language-switcher");
+
+  if (!switcher) {
+    switcher = document.createElement("div");
+    switcher.id = "language-switcher";
+    switcher.innerHTML =
+      '<button id="lang-en" class="lang-btn" type="button">EN</button>' +
+      '<button id="lang-es" class="lang-btn" type="button">ES</button>';
+  }
+
+  if (cvLi && !switcher.closest("li")) {
+    var wrapper = document.createElement("li");
+    wrapper.className = "nav-item";
+    wrapper.appendChild(switcher);
+    cvLi.parentNode.insertBefore(wrapper, cvLi.nextSibling);
+  }
+
+  var enBtn = document.getElementById("lang-en");
+  var esBtn = document.getElementById("lang-es");
+  if (enBtn && esBtn) {
+    enBtn.onclick = function () { window.switchLanguage("en"); };
+    esBtn.onclick = function () { window.switchLanguage("es"); };
+  }
+
+  function updateNavbarState() {
+    if (!navbar) return;
+    if (window.scrollY > 20) {
+      navbar.style.background = "rgba(255,255,255,0.97)";
+      navbar.style.boxShadow = "0 1px 0 rgba(0,0,0,0.06)";
+    } else {
+      navbar.style.background = "rgba(255,255,255,0.96)";
+      navbar.style.boxShadow = "none";
+    }
+  }
+
+  updateNavbarState();
+  window.addEventListener("scroll", updateNavbarState, { passive: true });
+  window.switchLanguage(savedLang);
+});
+</script>
 
 <!-- 
 Load Academicons v1: https://jpswalsh.github.io/academicons/
@@ -145,6 +214,51 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 </script>
 
+<style>
+#language-switcher {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  margin-left: 0.35rem;
+  white-space: nowrap;
+}
+
+#language-switcher .lang-btn {
+  border: 1px solid #d0d7de;
+  border-radius: 999px;
+  background: #ffffff;
+  color: #333333;
+  font-size: 0.8rem;
+  line-height: 1;
+  padding: 0.35rem 0.6rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+}
+
+#language-switcher .lang-btn:hover {
+  border-color: #0d6efd;
+  color: #0d6efd;
+}
+
+#language-switcher .lang-btn.active {
+  background: #0d6efd;
+  border-color: #0d6efd;
+  color: #ffffff;
+}
+
+.navbar .nav-item:has(#language-switcher) {
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 991px) {
+  #language-switcher {
+    margin-left: 0;
+    margin-top: 0.35rem;
+  }
+}
+</style>
+
 
 <link rel="stylesheet" href="/styles.css">
 <meta property="og:title" content="Page Unplugged – Matías Deneken">
@@ -175,28 +289,12 @@ document.addEventListener("DOMContentLoaded", function () {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="/education-awards.html"> 
-<span class="menu-text">Education &amp; Awards</span></a>
+    <a class="nav-link" href="/index.html"> 
+<span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="/agenda.html"> 
 <span class="menu-text">Agenda</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="/publications.html"> 
-<span class="menu-text">Publications</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="/conferences.html"> 
-<span class="menu-text">Conferences</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="/teaching.html"> 
-<span class="menu-text">Teaching</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="/experience.html"> 
-<span class="menu-text">Experience</span></a>
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">

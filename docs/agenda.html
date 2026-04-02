@@ -7,9 +7,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Matías Deneken">
-<meta name="description" content="Ongoing literature reviews, methods notes, and posts — computational social science.">
+<meta name="description" content="Theoretical map and editorial agenda for computational social research.">
 
-<title>My Current Agenda – Matías Deneken</title>
+<title>Research Agenda – Matías Deneken</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -78,6 +78,75 @@ function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
 gtag('config', '', { 'anonymize_ip': true});
 </script>
+<!-- Load Academicons -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+<!-- Altmetric and Dimensions embeds -->
+<script type="text/javascript" src="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js"></script>
+<script async="" src="https://badge.dimensions.ai/badge.js" charset="utf-8"></script>
+<script type="text/javascript" src="//cdn.plu.mx/widget-popup.js"></script>
+
+<script>
+window.switchLanguage = function (lang) {
+  localStorage.setItem("site-lang", lang);
+  document.querySelectorAll("[data-lang]").forEach(function (el) {
+    el.style.display = el.getAttribute("data-lang") === lang ? "" : "none";
+  });
+
+  var enBtn = document.getElementById("lang-en");
+  var esBtn = document.getElementById("lang-es");
+  if (enBtn && esBtn) {
+    enBtn.classList.toggle("active", lang === "en");
+    esBtn.classList.toggle("active", lang === "es");
+  }
+};
+
+document.addEventListener("DOMContentLoaded", function () {
+  var savedLang = localStorage.getItem("site-lang") || "en";
+  var navbar = document.querySelector(".navbar");
+  var cvLink = document.querySelector('.navbar a.nav-link[href*="Deneken_CV"]');
+  var cvLi = cvLink ? cvLink.closest("li") : null;
+  var switcher = document.getElementById("language-switcher");
+
+  if (!switcher) {
+    switcher = document.createElement("div");
+    switcher.id = "language-switcher";
+    switcher.innerHTML =
+      '<button id="lang-en" class="lang-btn" type="button">EN</button>' +
+      '<button id="lang-es" class="lang-btn" type="button">ES</button>';
+  }
+
+  if (cvLi && !switcher.closest("li")) {
+    var wrapper = document.createElement("li");
+    wrapper.className = "nav-item";
+    wrapper.appendChild(switcher);
+    cvLi.parentNode.insertBefore(wrapper, cvLi.nextSibling);
+  }
+
+  var enBtn = document.getElementById("lang-en");
+  var esBtn = document.getElementById("lang-es");
+  if (enBtn && esBtn) {
+    enBtn.onclick = function () { window.switchLanguage("en"); };
+    esBtn.onclick = function () { window.switchLanguage("es"); };
+  }
+
+  function updateNavbarState() {
+    if (!navbar) return;
+    if (window.scrollY > 20) {
+      navbar.style.background = "rgba(255,255,255,0.97)";
+      navbar.style.boxShadow = "0 1px 0 rgba(0,0,0,0.06)";
+    } else {
+      navbar.style.background = "rgba(255,255,255,0.96)";
+      navbar.style.boxShadow = "none";
+    }
+  }
+
+  updateNavbarState();
+  window.addEventListener("scroll", updateNavbarState, { passive: true });
+  window.switchLanguage(savedLang);
+});
+</script>
 
 <!-- 
 Load Academicons v1: https://jpswalsh.github.io/academicons/
@@ -145,17 +214,62 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 </script>
 
+<style>
+#language-switcher {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  margin-left: 0.35rem;
+  white-space: nowrap;
+}
+
+#language-switcher .lang-btn {
+  border: 1px solid #d0d7de;
+  border-radius: 999px;
+  background: #ffffff;
+  color: #333333;
+  font-size: 0.8rem;
+  line-height: 1;
+  padding: 0.35rem 0.6rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+}
+
+#language-switcher .lang-btn:hover {
+  border-color: #0d6efd;
+  color: #0d6efd;
+}
+
+#language-switcher .lang-btn.active {
+  background: #0d6efd;
+  border-color: #0d6efd;
+  color: #ffffff;
+}
+
+.navbar .nav-item:has(#language-switcher) {
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 991px) {
+  #language-switcher {
+    margin-left: 0;
+    margin-top: 0.35rem;
+  }
+}
+</style>
+
 
 <link rel="stylesheet" href="styles.css">
-<meta property="og:title" content="My Current Agenda – Matías Deneken">
+<meta property="og:title" content="Research Agenda – Matías Deneken">
 <meta property="og:image" content="https://matdknu.github.io/files/images/my-face.JPG">
 <meta property="og:site_name" content="Matías Deneken">
-<meta name="twitter:title" content="My Current Agenda – Matías Deneken">
+<meta name="twitter:title" content="Research Agenda – Matías Deneken">
 <meta name="twitter:image" content="https://matdknu.github.io/files/images/my-face.JPG">
 <meta name="twitter:card" content="summary_large_image">
 </head>
 
-<body class="nav-fixed fullcontent">
+<body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -173,28 +287,12 @@ document.addEventListener("DOMContentLoaded", function () {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./education-awards.html"> 
-<span class="menu-text">Education &amp; Awards</span></a>
+    <a class="nav-link" href="./index.html"> 
+<span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link active" href="./agenda.html" aria-current="page"> 
 <span class="menu-text">Agenda</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./publications.html"> 
-<span class="menu-text">Publications</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./conferences.html"> 
-<span class="menu-text">Conferences</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./teaching.html"> 
-<span class="menu-text">Teaching</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./experience.html"> 
-<span class="menu-text">Experience</span></a>
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
@@ -225,21 +323,21 @@ document.addEventListener("DOMContentLoaded", function () {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content column-page" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">My Current Agenda</h1>
+<h1 class="title">Research Agenda</h1>
 </div>
 
 
 
-<div class="quarto-title-meta">
+<div class="quarto-title-meta column-page">
 
     
   
@@ -251,119 +349,587 @@ document.addEventListener("DOMContentLoaded", function () {
 </header>
 
 
-<div data-lang="en">
-<section class="agenda-page" aria-label="Current agenda">
-  <header class="agenda-hero">
-    <p class="agenda-kicker">Live board</p>
-    <h1 class="agenda-title">My Current Agenda</h1>
-    <p class="agenda-lead">Track what I am reading, writing, and shipping — literature, methods, and short outputs from ELRI, OLES, and FONDECYT work.</p>
-  </header>
+<div class="agenda-shell">
+  <section class="agenda-page-hero" data-lang="en">
+    <div class="page-eyebrow">Research Agenda</div>
+    <h1 class="page-title" style="color:#ffffff; border-bottom:none; padding-bottom:0; margin-bottom:0.75rem;">Conceptual network and research pipeline</h1>
+    <p class="page-subtitle" style="color:rgba(255,255,255,0.68); max-width:760px;">
+      A live map of the ideas, methods, and publication pathways that currently organize my work in computational social science.
+    </p>
+  </section>
 
-  <div class="agenda-toolbar" role="toolbar" aria-label="Filter agenda items">
-    <button type="button" class="agenda-filter is-active" data-filter="all">All</button>
-    <button type="button" class="agenda-filter" data-filter="literature">Literature</button>
-    <button type="button" class="agenda-filter" data-filter="methods">Methods</button>
-    <button type="button" class="agenda-filter" data-filter="outputs">Posts &amp; notes</button>
-  </div>
+  <section class="agenda-page-hero" data-lang="es" style="display:none;">
+    <div class="page-eyebrow">Agenda de investigacion</div>
+    <h1 class="page-title" style="color:#ffffff; border-bottom:none; padding-bottom:0; margin-bottom:0.75rem;">Red conceptual y pipeline de investigacion</h1>
+    <p class="page-subtitle" style="color:rgba(255,255,255,0.68); max-width:760px;">
+      Un mapa vivo de ideas, metodos y posibles salidas editoriales que hoy organizan mi trabajo en ciencia social computacional.
+    </p>
+  </section>
 
-  <div class="agenda-grid" id="agenda-grid-en">
-    <article class="agenda-card" data-category="literature" style="--card-accent: #2563eb;">
-      <span class="agenda-chip agenda-chip--active">In progress</span>
-      <h2 class="agenda-card-title anchored">Political discourse &amp; legitimacy</h2>
-      <p class="agenda-card-body">Literature reviews threading political discourse, police legitimacy, and computational text approaches (Chile &amp; comparative).</p>
-      <ul class="agenda-card-meta">
-        <li>ELRI / survey–text bridges</li>
-        <li>Radical right discourse (Kast / Kaiser comparative frame)</li>
-      </ul>
-    </article>
+  <section class="page-wrap" data-lang="en">
+    <div class="page-hero">
+      <div class="page-eyebrow">Theoretical Approach</div>
+      <h2 class="page-title anchored">Dynamic conceptual network</h2>
+      <p class="page-subtitle">This is the live version of the map. Nodes and links can be edited directly in <code>agenda.qmd</code> through the <code>NODES</code> and <code>EDGES</code> arrays below.</p>
+    </div>
+    <div class="page-content">
+      <div class="agenda-network-wrap">
+        <div class="network-canvas" id="theoretical-network">
+          <canvas aria-label="Interactive theoretical network"></canvas>
+          <div class="network-tooltip" id="network-tooltip"></div>
+        </div>
+        <div class="network-legend">
+          <span><i style="background:#8b7cf8;"></i>Computational</span>
+          <span><i style="background:#fb923c;"></i>Methods</span>
+          <span><i style="background:#2dd4bf;"></i>Political</span>
+          <span><i style="background:#f472b6;"></i>Social</span>
+        </div>
+      </div>
+      <p class="network-note">Keep only this live plot: add or remove concepts by editing <code>NODES</code> and <code>EDGES</code> in <code>agenda.qmd</code>.</p>
+    </div>
+  </section>
 
-    <article class="agenda-card" data-category="methods" style="--card-accent: #7c3aed;">
-      <span class="agenda-chip agenda-chip--active">Ongoing</span>
-      <h2 class="agenda-card-title anchored">Pipelines &amp; reproducibility</h2>
-      <p class="agenda-card-body">Notes on scraping, NLP workflows, tidy analysis, and keeping longitudinal corpora documented (targets, renv, Dataverse).</p>
-      <ul class="agenda-card-meta">
-        <li>R + Quarto for analysis memos</li>
-        <li>Versioned scraping for press corpora</li>
-      </ul>
-    </article>
+  <section class="page-wrap" data-lang="es" style="display:none;">
+    <div class="page-hero">
+      <div class="page-eyebrow">Aproximacion teorica</div>
+      <h2 class="page-title anchored">Red conceptual dinamica</h2>
+      <p class="page-subtitle">Esta es la version viva del mapa. Los nodos y enlaces se editan directamente en <code>agenda.qmd</code>, dentro de los arreglos <code>NODES</code> y <code>EDGES</code>.</p>
+    </div>
+    <div class="page-content">
+      <div class="agenda-network-wrap">
+        <div class="network-canvas" id="theoretical-network-es">
+          <canvas aria-label="Red teorica interactiva"></canvas>
+          <div class="network-tooltip" id="network-tooltip-es"></div>
+        </div>
+        <div class="network-legend">
+          <span><i style="background:#8b7cf8;"></i>Computacional</span>
+          <span><i style="background:#fb923c;"></i>Metodos</span>
+          <span><i style="background:#2dd4bf;"></i>Politico</span>
+          <span><i style="background:#f472b6;"></i>Social</span>
+        </div>
+      </div>
+      <p class="network-note">Nos quedamos solo con este plot vivo: agrega o elimina conceptos editando <code>NODES</code> y <code>EDGES</code> en <code>agenda.qmd</code>.</p>
+    </div>
+  </section>
 
-    <article class="agenda-card" data-category="outputs" style="--card-accent: #0d9488;">
-      <span class="agenda-chip agenda-chip--queued">Next</span>
-      <h2 class="agenda-card-title anchored">Short posts &amp; project updates</h2>
-      <p class="agenda-card-body">Commentaries and empirical snapshots from active collaborations — ELRI, OLES, FONDECYT “Right Wing in Dispute”.</p>
-      <p class="agenda-card-link"><a href="posts.html">Browse all posts →</a></p>
-    </article>
-  </div>
-</section>
-</div>
-<div data-lang="es" style="display: none;">
-<section class="agenda-page" aria-label="Agenda actual">
-  <header class="agenda-hero">
-    <p class="agenda-kicker">Tablero en vivo</p>
-    <h1 class="agenda-title">Mi agenda actual</h1>
-    <p class="agenda-lead">Seguimiento de lectura, notas de métodos y entregas breves — ciencia social computacional en proyectos ELRI, OLES y FONDECYT.</p>
-  </header>
+  <section class="page-wrap agenda-entry-module" data-lang="en">
+    <div class="page-hero">
+      <div class="page-eyebrow">Research Pipeline</div>
+      <h2 class="page-title anchored">Literature review and smart agenda</h2>
+      <p class="page-subtitle">Each entry now tracks a clear research question, the empirical or conceptual material behind it, and the most plausible output.</p>
+    </div>
+    <div class="page-content">
+      <p class="agenda-entry-intro">Think of this section as a working intelligence board: not a blog archive, but a compact log of what is being clarified, with what materials, and toward which deliverable.</p>
+      <div class="agenda-filter-row" role="toolbar" aria-label="Filter agenda entries">
+        <button class="agenda-filter-btn is-active" type="button" data-filter="all">All</button>
+        <button class="agenda-filter-btn" type="button" data-filter="literature">Literature Review</button>
+        <button class="agenda-filter-btn" type="button" data-filter="methods">Methods Note</button>
+        <button class="agenda-filter-btn" type="button" data-filter="post">Upcoming Post</button>
+      </div>
+      <div class="agenda-entry-list">
+        <article class="agenda-entry" data-entry-type="literature">
+          <div class="agenda-entry-meta">
+            <span class="agenda-badge agenda-badge--lit">Literature Review</span>
+            <span class="agenda-date">April 2026</span>
+          </div>
+          <h3 class="anchored">How is democratic legitimacy narrated in digital public arenas?</h3>
+          <p>A review focused on how legitimacy, state authority, and contestation are framed when political discourse moves across newspapers, platform traces, and institutional crises.</p>
+          <div class="agenda-intel-grid">
+            <div class="agenda-intel-item">
+              <span class="agenda-intel-label">Question</span>
+              <p>Which narrative patterns connect discourse, legitimacy, and democratic erosion?</p>
+            </div>
+            <div class="agenda-intel-item">
+              <span class="agenda-intel-label">Material</span>
+              <p>Press archives, legitimacy literature, radical-right discourse, and comparative work on democratic trust.</p>
+            </div>
+            <div class="agenda-intel-item">
+              <span class="agenda-intel-label">Output</span>
+              <p>Conceptual memo for a paper introduction and a sharper literature review section.</p>
+            </div>
+          </div>
+          <div class="agenda-tags">
+            <span class="agenda-tag">NLP</span>
+            <span class="agenda-tag">Legitimacy</span>
+            <span class="agenda-tag">Media archives</span>
+          </div>
+        </article>
 
-  <div class="agenda-toolbar" role="toolbar" aria-label="Filtrar ítems">
-    <button type="button" class="agenda-filter is-active" data-filter="all">Todo</button>
-    <button type="button" class="agenda-filter" data-filter="literature">Literatura</button>
-    <button type="button" class="agenda-filter" data-filter="methods">Métodos</button>
-    <button type="button" class="agenda-filter" data-filter="outputs">Posts y notas</button>
-  </div>
+        <article class="agenda-entry" data-entry-type="methods">
+          <div class="agenda-entry-meta">
+            <span class="agenda-badge agenda-badge--methods">Methods Note</span>
+            <span class="agenda-date">May 2026</span>
+          </div>
+          <h3 class="anchored">What makes a newspaper corpus analytically trustworthy over time?</h3>
+          <p>A methods note on the practical problem behind longitudinal press datasets: scraping consistency, metadata quality, version control, and the transition from raw text to reusable research objects.</p>
+          <div class="agenda-intel-grid">
+            <div class="agenda-intel-item">
+              <span class="agenda-intel-label">Question</span>
+              <p>How should a longitudinal text pipeline be documented so later inference remains auditable?</p>
+            </div>
+            <div class="agenda-intel-item">
+              <span class="agenda-intel-label">Material</span>
+              <p>Scraping scripts, corpus metadata, validation checks, and reproducible workflows in R.</p>
+            </div>
+            <div class="agenda-intel-item">
+              <span class="agenda-intel-label">Output</span>
+              <p>Short methods note for MethodoLab plus a reusable checklist for future corpus projects.</p>
+            </div>
+          </div>
+          <div class="agenda-tags">
+            <span class="agenda-tag">Web scraping</span>
+            <span class="agenda-tag">R workflows</span>
+            <span class="agenda-tag">Reproducibility</span>
+          </div>
+        </article>
 
-  <div class="agenda-grid" id="agenda-grid-es">
-    <article class="agenda-card" data-category="literature" style="--card-accent: #2563eb;">
-      <span class="agenda-chip agenda-chip--active">En curso</span>
-      <h2 class="agenda-card-title anchored">Discurso político y legitimidad</h2>
-      <p class="agenda-card-body">Revisiones de literatura que conectan discurso político, legitimidad policial y enfoques de texto computacional (Chile y comparado).</p>
-      <ul class="agenda-card-meta">
-        <li>ELRI / vínculos encuesta–texto</li>
-        <li>Discurso de derecha radical (marco comparativo Kast / Kaiser)</li>
-      </ul>
-    </article>
+        <article class="agenda-entry" data-entry-type="post">
+          <div class="agenda-entry-meta">
+            <span class="agenda-badge agenda-badge--post">Upcoming Post</span>
+            <span class="agenda-date">June 2026</span>
+          </div>
+          <h3 class="anchored">What exactly is lost when a panel loses respondents across waves?</h3>
+          <p>An editorial note designed to translate attrition into a substantive issue: not only a technical problem, but a challenge for inference, comparison, and interpretation in intercultural panel work.</p>
+          <div class="agenda-intel-grid">
+            <div class="agenda-intel-item">
+              <span class="agenda-intel-label">Question</span>
+              <p>When does attrition alter the story we think the ELRI panel is telling?</p>
+            </div>
+            <div class="agenda-intel-item">
+              <span class="agenda-intel-label">Material</span>
+              <p>Wave-to-wave continuity, nonresponse patterns, and substantive shifts in intercultural attitudes.</p>
+            </div>
+            <div class="agenda-intel-item">
+              <span class="agenda-intel-label">Output</span>
+              <p>Public-facing post that explains panel logic without flattening the methodological stakes.</p>
+            </div>
+          </div>
+          <div class="agenda-tags">
+            <span class="agenda-tag">Survey methods</span>
+            <span class="agenda-tag">ELRI</span>
+            <span class="agenda-tag">Panels</span>
+          </div>
+        </article>
 
-    <article class="agenda-card" data-category="methods" style="--card-accent: #7c3aed;">
-      <span class="agenda-chip agenda-chip--active">En curso</span>
-      <h2 class="agenda-card-title anchored">Pipelines y reproducibilidad</h2>
-      <p class="agenda-card-body">Notas sobre scraping, flujos de NLP, análisis ordenado y documentación de corpus longitudinales (targets, renv, Dataverse).</p>
-      <ul class="agenda-card-meta">
-        <li>R + Quarto para memorias de análisis</li>
-        <li>Scraping versionado de prensa</li>
-      </ul>
-    </article>
+        <article class="agenda-entry" data-entry-type="post">
+          <div class="agenda-entry-meta">
+            <span class="agenda-badge agenda-badge--post">Upcoming Post</span>
+            <span class="agenda-date">July 2026</span>
+          </div>
+          <h3 class="anchored">When does an agent-based model actually clarify a political mechanism?</h3>
+          <p>A short note aimed at separating fashionable simulation from explanatory usefulness, especially in discussions of polarization, trust breakdown, and democratic instability.</p>
+          <div class="agenda-intel-grid">
+            <div class="agenda-intel-item">
+              <span class="agenda-intel-label">Question</span>
+              <p>Which democratic processes are illuminated by simulation, and which are only redescribed?</p>
+            </div>
+            <div class="agenda-intel-item">
+              <span class="agenda-intel-label">Material</span>
+              <p>ABM literature, polarization research, and conceptual debates on mechanism-based explanation.</p>
+            </div>
+            <div class="agenda-intel-item">
+              <span class="agenda-intel-label">Output</span>
+              <p>Explainer post connecting theory, simulation, and empirical relevance for social scientists.</p>
+            </div>
+          </div>
+          <div class="agenda-tags">
+            <span class="agenda-tag">ABM</span>
+            <span class="agenda-tag">Democracy</span>
+            <span class="agenda-tag">Polarization</span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
 
-    <article class="agenda-card" data-category="outputs" style="--card-accent: #0d9488;">
-      <span class="agenda-chip agenda-chip--queued">Próximo</span>
-      <h2 class="agenda-card-title anchored">Posts y actualizaciones</h2>
-      <p class="agenda-card-body">Comentarios y instantáneas empíricas desde colaboraciones activas — ELRI, OLES, FONDECYT «La derecha en disputa».</p>
-      <p class="agenda-card-link"><a href="posts.html">Ver todos los posts →</a></p>
-    </article>
-  </div>
-</section>
+  <section class="page-wrap agenda-entry-module" data-lang="es" style="display:none;">
+    <div class="page-hero">
+      <div class="page-eyebrow">Pipeline de investigacion</div>
+      <h2 class="page-title anchored">Revision de literatura y agenda inteligente</h2>
+      <p class="page-subtitle">Cada entrada ahora deja explicita una pregunta de investigacion, el material empírico o conceptual que la sostiene y la salida mas probable.</p>
+    </div>
+    <div class="page-content">
+      <p class="agenda-entry-intro">Piensa esta seccion como un tablero de trabajo analitico: no como archivo de posts, sino como un registro compacto de que se esta aclarando, con que material, y hacia que entregable podria avanzar.</p>
+      <div class="agenda-filter-row" role="toolbar" aria-label="Filtrar entradas">
+        <button class="agenda-filter-btn is-active" type="button" data-filter="all">Todo</button>
+        <button class="agenda-filter-btn" type="button" data-filter="literature">Literature Review</button>
+        <button class="agenda-filter-btn" type="button" data-filter="methods">Methods Note</button>
+        <button class="agenda-filter-btn" type="button" data-filter="post">Upcoming Post</button>
+      </div>
+      <div class="agenda-entry-list">
+        <article class="agenda-entry" data-entry-type="literature">
+          <div class="agenda-entry-meta">
+            <span class="agenda-badge agenda-badge--lit">Literature Review</span>
+            <span class="agenda-date">Abril 2026</span>
+          </div>
+          <h3 class="anchored">Como se narra la legitimidad democratica en las arenas publicas digitales?</h3>
+          <p>Una revision centrada en como se encuadran legitimidad, autoridad estatal y disputa politica cuando el discurso circula entre prensa digital, trazas de plataformas y crisis institucionales.</p>
+          <div class="agenda-intel-grid">
+            <div class="agenda-intel-item">
+              <span class="agenda-intel-label">Pregunta</span>
+              <p>Que patrones narrativos conectan discurso, legitimidad y erosion democratica?</p>
+            </div>
+            <div class="agenda-intel-item">
+              <span class="agenda-intel-label">Material</span>
+              <p>Archivos de prensa, literatura sobre legitimidad, discurso de derecha radical y confianza democratica.</p>
+            </div>
+            <div class="agenda-intel-item">
+              <span class="agenda-intel-label">Salida</span>
+              <p>Memo conceptual para una introduccion de paper y una revision bibliografica mas precisa.</p>
+            </div>
+          </div>
+          <div class="agenda-tags">
+            <span class="agenda-tag">NLP</span>
+            <span class="agenda-tag">Legitimidad</span>
+            <span class="agenda-tag">Archivos de prensa</span>
+          </div>
+        </article>
+
+        <article class="agenda-entry" data-entry-type="methods">
+          <div class="agenda-entry-meta">
+            <span class="agenda-badge agenda-badge--methods">Methods Note</span>
+            <span class="agenda-date">Mayo 2026</span>
+          </div>
+          <h3 class="anchored">Que vuelve confiable a un corpus de prensa cuando se analiza en el tiempo?</h3>
+          <p>Una nota metodologica sobre el problema practico detras de los datasets longitudinales de prensa: consistencia del scraping, calidad de metadatos, versionado y paso de texto crudo a objeto reutilizable de investigacion.</p>
+          <div class="agenda-intel-grid">
+            <div class="agenda-intel-item">
+              <span class="agenda-intel-label">Pregunta</span>
+              <p>Como debe documentarse un pipeline longitudinal de texto para que la inferencia posterior siga siendo auditable?</p>
+            </div>
+            <div class="agenda-intel-item">
+              <span class="agenda-intel-label">Material</span>
+              <p>Scripts de scraping, metadatos del corpus, validaciones y flujos reproducibles en R.</p>
+            </div>
+            <div class="agenda-intel-item">
+              <span class="agenda-intel-label">Salida</span>
+              <p>Nota corta para MethodoLab y checklist reutilizable para futuros proyectos de corpus.</p>
+            </div>
+          </div>
+          <div class="agenda-tags">
+            <span class="agenda-tag">Web scraping</span>
+            <span class="agenda-tag">Flujos en R</span>
+            <span class="agenda-tag">Reproducibilidad</span>
+          </div>
+        </article>
+
+        <article class="agenda-entry" data-entry-type="post">
+          <div class="agenda-entry-meta">
+            <span class="agenda-badge agenda-badge--post">Upcoming Post</span>
+            <span class="agenda-date">Junio 2026</span>
+          </div>
+          <h3 class="anchored">Que se pierde exactamente cuando un panel pierde casos entre olas?</h3>
+          <p>Una nota editorial pensada para traducir la attricion en un problema sustantivo: no solo tecnico, sino interpretativo para la comparacion y la inferencia en trabajo panel intercultural.</p>
+          <div class="agenda-intel-grid">
+            <div class="agenda-intel-item">
+              <span class="agenda-intel-label">Pregunta</span>
+              <p>En que momento la attricion cambia la historia que creemos que cuenta el panel ELRI?</p>
+            </div>
+            <div class="agenda-intel-item">
+              <span class="agenda-intel-label">Material</span>
+              <p>Continuidad entre olas, patrones de no respuesta y cambios en actitudes interculturales.</p>
+            </div>
+            <div class="agenda-intel-item">
+              <span class="agenda-intel-label">Salida</span>
+              <p>Post publico que explique la logica panel sin simplificar demasiado las implicancias metodologicas.</p>
+            </div>
+          </div>
+          <div class="agenda-tags">
+            <span class="agenda-tag">Encuestas</span>
+            <span class="agenda-tag">ELRI</span>
+            <span class="agenda-tag">Paneles</span>
+          </div>
+        </article>
+
+        <article class="agenda-entry" data-entry-type="post">
+          <div class="agenda-entry-meta">
+            <span class="agenda-badge agenda-badge--post">Upcoming Post</span>
+            <span class="agenda-date">Julio 2026</span>
+          </div>
+          <h3 class="anchored">Cuando un modelo basado en agentes realmente aclara un mecanismo politico?</h3>
+          <p>Una nota breve orientada a separar simulacion de moda de utilidad explicativa, especialmente en discusiones sobre polarizacion, quiebre de confianza e inestabilidad democratica.</p>
+          <div class="agenda-intel-grid">
+            <div class="agenda-intel-item">
+              <span class="agenda-intel-label">Pregunta</span>
+              <p>Que procesos democraticos ilumina la simulacion y cuales solo vuelve a describir?</p>
+            </div>
+            <div class="agenda-intel-item">
+              <span class="agenda-intel-label">Material</span>
+              <p>Literatura ABM, investigacion sobre polarizacion y debates sobre explicacion basada en mecanismos.</p>
+            </div>
+            <div class="agenda-intel-item">
+              <span class="agenda-intel-label">Salida</span>
+              <p>Post explicativo que conecte teoria, simulacion y relevancia empirica para ciencias sociales.</p>
+            </div>
+          </div>
+          <div class="agenda-tags">
+            <span class="agenda-tag">ABM</span>
+            <span class="agenda-tag">Democracia</span>
+            <span class="agenda-tag">Polarizacion</span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
 </div>
 <script>
 (function () {
-  function wireGrid(grid) {
-    if (!grid) return;
-    var section = grid.closest(".agenda-page");
-    if (!section) return;
-    var buttons = section.querySelectorAll(".agenda-filter");
-    buttons.forEach(function (btn) {
-      btn.addEventListener("click", function () {
-        var f = btn.getAttribute("data-filter") || "all";
-        buttons.forEach(function (b) { b.classList.toggle("is-active", b === btn); });
-        grid.querySelectorAll(".agenda-card").forEach(function (card) {
-          var cat = card.getAttribute("data-category") || "";
-          var show = f === "all" || cat === f;
-          card.style.display = show ? "" : "none";
-          card.classList.toggle("agenda-card--hidden", !show);
+  // <- EDIT HERE TO ADD NODES
+  const NODES = [
+    { id: "nlp", label: "NLP", color: "#8b7cf8", size: 34, cat: "comp", desc: "Natural Language Processing - discourse analysis at scale" },
+    { id: "abm", label: "ABM", color: "#8b7cf8", size: 26, cat: "comp", desc: "Agent-Based Modelling - emergent social behavior" },
+    { id: "trace", label: "Digital Trace", color: "#fb923c", size: 24, cat: "meth", desc: "Behavioral footprints on platforms and news sites" },
+    { id: "demo", label: "Democracy", color: "#2dd4bf", size: 30, cat: "pol", desc: "Democratic erosion and legitimacy in Latin America" },
+    { id: "ai", label: "AI", color: "#8b7cf8", size: 28, cat: "comp", desc: "LLMs, embeddings, classification for social research" },
+    { id: "violence", label: "Violence", color: "#f472b6", size: 22, cat: "soc", desc: "Social legitimacy of violence - EPSEP study" },
+    { id: "inter", label: "Intercultural", color: "#f472b6", size: 22, cat: "soc", desc: "Indigenous relations in Chile - ELRI study" },
+    { id: "scraping", label: "Web Scraping", color: "#fb923c", size: 20, cat: "meth", desc: "Automated extraction of newspaper archives" },
+    { id: "survey", label: "Survey Methods", color: "#fb923c", size: 20, cat: "meth", desc: "Longitudinal design, panel attrition, multilevel models" },
+    { id: "polar", label: "Polarization", color: "#2dd4bf", size: 18, cat: "pol", desc: "Affective and ideological polarization via text + survey" }
+  ];
+
+  const EDGES = [
+    ["nlp", "abm"], ["nlp", "ai"], ["nlp", "polar"], ["nlp", "trace"], ["nlp", "scraping"],
+    ["abm", "demo"], ["abm", "violence"], ["abm", "polar"],
+    ["trace", "scraping"], ["trace", "ai"], ["trace", "polar"],
+    ["demo", "violence"], ["demo", "inter"], ["demo", "polar"],
+    ["ai", "scraping"], ["ai", "polar"], ["violence", "inter"],
+    ["survey", "nlp"], ["survey", "abm"]
+  ];
+
+  function bootNetwork(containerId, tooltipId) {
+    const container = document.getElementById(containerId);
+    if (!container) return;
+
+    const canvas = container.querySelector("canvas");
+    const tooltip = document.getElementById(tooltipId);
+    const ctx = canvas.getContext("2d");
+    const dpr = window.devicePixelRatio || 1;
+    const nodes = NODES.map(function (node, index) {
+      return Object.assign({}, node, {
+        x: 120 + (index % 5) * 120,
+        y: 90 + Math.floor(index / 5) * 110,
+        vx: 0,
+        vy: 0
+      });
+    });
+    const lookup = new Map(nodes.map(function (node) { return [node.id, node]; }));
+    const edges = EDGES.map(function (pair) {
+      return { source: lookup.get(pair[0]), target: lookup.get(pair[1]) };
+    }).filter(function (edge) {
+      return edge.source && edge.target;
+    });
+
+    let width = 0;
+    let height = 0;
+    let hovered = null;
+    let dragged = null;
+    let pointer = { x: 0, y: 0 };
+    let tick = 0;
+
+    function resize() {
+      width = container.clientWidth;
+      height = container.clientHeight;
+      canvas.width = width * dpr;
+      canvas.height = height * dpr;
+      canvas.style.width = width + "px";
+      canvas.style.height = height + "px";
+      ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+    }
+
+    function clamp(node) {
+      const radius = node.size * 0.7;
+      node.x = Math.max(radius, Math.min(width - radius, node.x));
+      node.y = Math.max(radius, Math.min(height - radius, node.y));
+    }
+
+    function applyPhysics() {
+      for (let i = 0; i < nodes.length; i += 1) {
+        for (let j = i + 1; j < nodes.length; j += 1) {
+          const a = nodes[i];
+          const b = nodes[j];
+          let dx = b.x - a.x;
+          let dy = b.y - a.y;
+          const distSq = Math.max(dx * dx + dy * dy, 36);
+          const force = 1800 / distSq;
+          const dist = Math.sqrt(distSq);
+          dx /= dist;
+          dy /= dist;
+          a.vx -= dx * force;
+          a.vy -= dy * force;
+          b.vx += dx * force;
+          b.vy += dy * force;
+        }
+      }
+
+      edges.forEach(function (edge) {
+        const dx = edge.target.x - edge.source.x;
+        const dy = edge.target.y - edge.source.y;
+        const dist = Math.max(Math.sqrt(dx * dx + dy * dy), 1);
+        const rest = 120;
+        const spring = (dist - rest) * 0.0025;
+        const ux = dx / dist;
+        const uy = dy / dist;
+        edge.source.vx += ux * spring;
+        edge.source.vy += uy * spring;
+        edge.target.vx -= ux * spring;
+        edge.target.vy -= uy * spring;
+      });
+
+      nodes.forEach(function (node) {
+        if (dragged === node) {
+          node.x = pointer.x;
+          node.y = pointer.y;
+          node.vx = 0;
+          node.vy = 0;
+        } else {
+          const pull = 0.0008;
+          node.vx += (width / 2 - node.x) * pull;
+          node.vy += (height / 2 - node.y) * pull;
+          node.vx *= 0.96;
+          node.vy *= 0.96;
+          node.x += node.vx;
+          node.y += node.vy;
+        }
+        clamp(node);
+      });
+    }
+
+    function drawParticles(edge, progress) {
+      const x = edge.source.x + (edge.target.x - edge.source.x) * progress;
+      const y = edge.source.y + (edge.target.y - edge.source.y) * progress;
+      ctx.beginPath();
+      ctx.fillStyle = "rgba(255,255,255,0.65)";
+      ctx.arc(x, y, 2.1, 0, Math.PI * 2);
+      ctx.fill();
+    }
+
+    function draw() {
+      ctx.clearRect(0, 0, width, height);
+
+      edges.forEach(function (edge, index) {
+        ctx.beginPath();
+        ctx.strokeStyle = hovered && (hovered === edge.source || hovered === edge.target) ? "rgba(255,255,255,0.45)" : "rgba(88,77,134,0.65)";
+        ctx.lineWidth = hovered && (hovered === edge.source || hovered === edge.target) ? 1.4 : 0.9;
+        ctx.moveTo(edge.source.x, edge.source.y);
+        ctx.lineTo(edge.target.x, edge.target.y);
+        ctx.stroke();
+
+        drawParticles(edge, ((tick * 0.007) + index * 0.15) % 1);
+      });
+
+      nodes.forEach(function (node) {
+        const pulse = Math.sin(tick * 0.04 + node.size) * 1.4;
+        const radius = node.size * 0.62 + pulse;
+        const isHot = hovered === node;
+
+        ctx.beginPath();
+        ctx.fillStyle = node.color;
+        ctx.shadowColor = isHot ? node.color : "rgba(0,0,0,0)";
+        ctx.shadowBlur = isHot ? 24 : 0;
+        ctx.arc(node.x, node.y, radius, 0, Math.PI * 2);
+        ctx.fill();
+
+        ctx.beginPath();
+        ctx.fillStyle = "rgba(255,255,255,0.92)";
+        ctx.font = "500 12px Inter, sans-serif";
+        ctx.textAlign = "center";
+        ctx.textBaseline = "middle";
+        ctx.fillText(node.label, node.x, node.y);
+      });
+      ctx.shadowBlur = 0;
+    }
+
+    function render() {
+      tick += 1;
+      applyPhysics();
+      draw();
+      requestAnimationFrame(render);
+    }
+
+    function setTooltip(node) {
+      if (!tooltip) return;
+      if (!node) {
+        tooltip.classList.remove("is-visible");
+        return;
+      }
+      tooltip.innerHTML = "<h4>" + node.label + "</h4><p>" + node.desc + "</p>";
+      tooltip.style.left = Math.min(node.x + 18, width - 220) + "px";
+      tooltip.style.top = Math.max(node.y - 10, 12) + "px";
+      tooltip.classList.add("is-visible");
+    }
+
+    function hitTest(x, y) {
+      return nodes.find(function (node) {
+        const dx = x - node.x;
+        const dy = y - node.y;
+        return Math.sqrt(dx * dx + dy * dy) < node.size * 0.68;
+      }) || null;
+    }
+
+    function pointerPos(evt) {
+      const rect = canvas.getBoundingClientRect();
+      return {
+        x: evt.clientX - rect.left,
+        y: evt.clientY - rect.top
+      };
+    }
+
+    canvas.addEventListener("mousemove", function (evt) {
+      pointer = pointerPos(evt);
+      hovered = hitTest(pointer.x, pointer.y);
+      setTooltip(hovered);
+      canvas.style.cursor = hovered ? "grab" : "default";
+    });
+
+    canvas.addEventListener("mousedown", function (evt) {
+      pointer = pointerPos(evt);
+      dragged = hitTest(pointer.x, pointer.y);
+      if (dragged) {
+        canvas.style.cursor = "grabbing";
+      }
+    });
+
+    window.addEventListener("mouseup", function () {
+      dragged = null;
+      canvas.style.cursor = hovered ? "grab" : "default";
+    });
+
+    canvas.addEventListener("mouseleave", function () {
+      hovered = null;
+      dragged = null;
+      setTooltip(null);
+      canvas.style.cursor = "default";
+    });
+
+    window.addEventListener("resize", resize);
+    resize();
+    render();
+  }
+
+  function wireAgendaFilters() {
+    document.querySelectorAll(".agenda-entry-module").forEach(function (module) {
+      const buttons = module.querySelectorAll(".agenda-filter-btn");
+      const entries = module.querySelectorAll(".agenda-entry");
+      buttons.forEach(function (button) {
+        button.addEventListener("click", function () {
+          const filter = button.getAttribute("data-filter");
+          buttons.forEach(function (candidate) {
+            candidate.classList.toggle("is-active", candidate === button);
+          });
+          entries.forEach(function (entry) {
+            const show = filter === "all" || entry.getAttribute("data-entry-type") === filter;
+            entry.style.display = show ? "" : "none";
+          });
         });
       });
     });
   }
+
   document.addEventListener("DOMContentLoaded", function () {
-    wireGrid(document.getElementById("agenda-grid-en"));
-    wireGrid(document.getElementById("agenda-grid-es"));
+    bootNetwork("theoretical-network", "network-tooltip");
+    bootNetwork("theoretical-network-es", "network-tooltip-es");
+    wireAgendaFilters();
   });
 })();
 </script>

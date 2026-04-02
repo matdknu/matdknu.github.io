@@ -77,22 +77,48 @@ document.addEventListener('DOMContentLoaded', function() {
 </script>
 ```
 ```{=html}
-<div class="about-book-section" data-lang="en">
-<h3>Recent Book</h3>
-<a href="https://books.google.co.uk/books/about/RE_Configuraciones_Interculturales.html?id=nM6YEQAAQBAJ&redir_esc=y" target="_blank">
-  <img src="https://books.google.co.uk/books/content?id=nM6YEQAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api" alt="(RE) Configuraciones Interculturales">
-</a>
-<p><strong><a href="https://books.google.co.uk/books/about/RE_Configuraciones_Interculturales.html?id=nM6YEQAAQBAJ&redir_esc=y">(RE) Configuraciones Interculturales: Un estudio longitudinal de las relaciones entre indígenas y no indígenas en Chile (2016-2024)</a></strong></p>
-<p>Co-edited with Eduardo Valenzuela. Editorial Catalonia, 2025.</p>
+<div class="about-book-section about-recent-work" data-lang="en">
+<h3 class="academic-news-heading">Academics news</h3>
+<div class="recent-work-item">
+  <h4 class="recent-work-subtitle">Recent paper</h4>
+  <p><strong><a href="https://www.crimrxiv.com/pub/3rl51qxc/release/1" target="_blank" rel="noopener">Fear of the police and the fragility of legitimacy: Insights from Chile and Brazil</a></strong></p>
+  <p class="recent-work-meta">CrimRxiv · preprint</p>
+</div>
+<div class="recent-work-item">
+  <h4 class="recent-work-subtitle">Recent book</h4>
+  <a href="https://books.google.co.uk/books/about/RE_Configuraciones_Interculturales.html?id=nM6YEQAAQBAJ&amp;redir_esc=y" target="_blank" rel="noopener">
+    <img src="https://books.google.co.uk/books/content?id=nM6YEQAAQBAJ&amp;printsec=frontcover&amp;img=1&amp;zoom=1&amp;edge=curl&amp;source=gbs_api" alt="(RE) Configuraciones Interculturales">
+  </a>
+  <p><strong><a href="https://books.google.co.uk/books/about/RE_Configuraciones_Interculturales.html?id=nM6YEQAAQBAJ&amp;redir_esc=y" target="_blank" rel="noopener">(RE) Configuraciones Interculturales: Un estudio longitudinal de las relaciones entre indígenas y no indígenas en Chile (2016-2024)</a></strong></p>
+  <p class="recent-work-meta">Co-edited with Eduardo Valenzuela. Editorial Catalonia, 2025.</p>
+</div>
+<div class="recent-work-item">
+  <h4 class="recent-work-subtitle">Recent conference</h4>
+  <p><strong><a href="https://matdknu.github.io/familiaR-wiki/presentation-comptext/presentation.html#/title-slide" target="_blank" rel="noopener">Elite Identification in Latin America</a></strong></p>
+  <p class="recent-work-meta"><a href="https://matdknu.github.io/familiaR-wiki/presentation-comptext/presentation.html#/title-slide" target="_blank" rel="noopener">Presentation</a> · COMPTEXT 2026</p>
+</div>
 </div>
 
-<div class="about-book-section" data-lang="es">
-<h3>Libro Reciente</h3>
-<a href="https://books.google.co.uk/books/about/RE_Configuraciones_Interculturales.html?id=nM6YEQAAQBAJ&redir_esc=y" target="_blank">
-  <img src="https://books.google.co.uk/books/content?id=nM6YEQAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api" alt="(RE) Configuraciones Interculturales">
-</a>
-<p><strong><a href="https://books.google.co.uk/books/about/RE_Configuraciones_Interculturales.html?id=nM6YEQAAQBAJ&redir_esc=y">(RE) Configuraciones Interculturales: Un estudio longitudinal de las relaciones entre indígenas y no indígenas en Chile (2016-2024)</a></strong></p>
-<p>Co-editado con Eduardo Valenzuela. Editorial Catalonia, 2025.</p>
+<div class="about-book-section about-recent-work" data-lang="es">
+<h3 class="academic-news-heading">Noticias académicas</h3>
+<div class="recent-work-item">
+  <h4 class="recent-work-subtitle">Artículo reciente</h4>
+  <p><strong><a href="https://www.crimrxiv.com/pub/3rl51qxc/release/1" target="_blank" rel="noopener">Fear of the police and the fragility of legitimacy: Insights from Chile and Brazil</a></strong></p>
+  <p class="recent-work-meta">CrimRxiv · preprint</p>
+</div>
+<div class="recent-work-item">
+  <h4 class="recent-work-subtitle">Libro reciente</h4>
+  <a href="https://books.google.co.uk/books/about/RE_Configuraciones_Interculturales.html?id=nM6YEQAAQBAJ&amp;redir_esc=y" target="_blank" rel="noopener">
+    <img src="https://books.google.co.uk/books/content?id=nM6YEQAAQBAJ&amp;printsec=frontcover&amp;img=1&amp;zoom=1&amp;edge=curl&amp;source=gbs_api" alt="(RE) Configuraciones Interculturales">
+  </a>
+  <p><strong><a href="https://books.google.co.uk/books/about/RE_Configuraciones_Interculturales.html?id=nM6YEQAAQBAJ&amp;redir_esc=y" target="_blank" rel="noopener">(RE) Configuraciones Interculturales: Un estudio longitudinal de las relaciones entre indígenas y no indígenas en Chile (2016-2024)</a></strong></p>
+  <p class="recent-work-meta">Co-editado con Eduardo Valenzuela. Editorial Catalonia, 2025.</p>
+</div>
+<div class="recent-work-item">
+  <h4 class="recent-work-subtitle">Conferencia reciente</h4>
+  <p><strong><a href="https://matdknu.github.io/familiaR-wiki/presentation-comptext/presentation.html#/title-slide" target="_blank" rel="noopener">Elite Identification in Latin America</a></strong></p>
+  <p class="recent-work-meta"><a href="https://matdknu.github.io/familiaR-wiki/presentation-comptext/presentation.html#/title-slide" target="_blank" rel="noopener">Presentación</a> · COMPTEXT 2026</p>
+</div>
 </div>
 
 ```

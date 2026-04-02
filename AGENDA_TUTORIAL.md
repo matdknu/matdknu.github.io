@@ -1,353 +1,347 @@
-# Tutorial: Como trabajar la seccion `My Current Agenda`
+# Tutorial: como hacer crecer `agenda.qmd`
 
-Este manual explica como editar y hacer crecer la pagina `agenda.qmd`, que hoy funciona como un tablero simple e interactivo para mostrar:
+Este manual explica como trabajar la pagina `agenda.qmd` tal como quedo ahora:
 
-- lo que estas leyendo,
-- lo que estas escribiendo,
-- lo que estas produciendo,
-- y lo que viene despues.
+- una red conceptual dinamica arriba,
+- y una agenda editorial abajo.
 
-La idea es que esta seccion se mantenga viva y ligera: no reemplaza CV, publicaciones o posts, sino que muestra en que estas trabajando ahora.
+La idea es que la pagina responda siempre dos preguntas:
 
-## 1. Donde se edita
+1. Cuales son hoy los conceptos y metodos que estructuran la investigacion.
+2. Que piezas concretas estan en desarrollo y hacia que salida pueden crecer.
+
+## 1. Que se edita
 
 El archivo principal es:
 
 - `agenda.qmd`
 
-El estilo visual vive sobre todo en:
+Los estilos visuales viven en:
 
 - `styles.css`
 
-En `agenda.qmd` estan:
-
-- la version en ingles,
-- la version en espanol,
-- los botones de filtro,
-- las tarjetas,
-- y el pequeno script que activa los filtros.
+Este tutorial no depende de `docs/`. La fuente de verdad es siempre `agenda.qmd`.
 
 ## 2. Como esta organizada la pagina
 
-La pagina tiene cuatro partes:
+La pagina tiene dos capas:
 
-1. Hero superior
-2. Barra de filtros
-3. Grilla de tarjetas
-4. Script de interaccion
+1. Red dinamica de conceptos
+2. Agenda editorial filtrable
 
-La estructura general se ve asi:
+La red se controla con JavaScript dentro del mismo `agenda.qmd`.
+La agenda editorial tambien vive ahi, en bloques HTML separados por idioma.
 
-```html
-<section class="agenda-page">
-  <header class="agenda-hero">...</header>
-  <div class="agenda-toolbar">...</div>
-  <div class="agenda-grid" id="agenda-grid-en">
-    <article class="agenda-card" data-category="literature">...</article>
-    <article class="agenda-card" data-category="methods">...</article>
-    <article class="agenda-card" data-category="outputs">...</article>
-  </div>
-</section>
+## 3. Red dinamica: donde agregar nodos
+
+Dentro de `agenda.qmd` vas a encontrar este comentario:
+
+```js
+// <- EDIT HERE TO ADD NODES
 ```
 
-Luego aparece la misma estructura para espanol.
+Justo debajo aparecen dos estructuras:
 
-## 3. Regla mas importante
-
-Siempre que edites la agenda, actualiza ambos bloques:
-
-- ingles: `data-lang="en"`
-- espanol: `data-lang="es"`
-
-Si cambias solo una version, el sitio va a quedar inconsistente al cambiar idioma.
-
-## 4. Como editar una tarjeta existente
-
-Cada tarjeta tiene esta forma:
-
-```html
-<article class="agenda-card" data-category="literature" style="--card-accent: #2563eb;">
-  <span class="agenda-chip agenda-chip--active">In progress</span>
-  <h2 class="agenda-card-title">Political discourse & legitimacy</h2>
-  <p class="agenda-card-body">Literature reviews threading political discourse...</p>
-  <ul class="agenda-card-meta">
-    <li>ELRI / survey-text bridges</li>
-    <li>Radical right discourse</li>
-  </ul>
-</article>
+```js
+const NODES = [ ... ];
+const EDGES = [ ... ];
 ```
 
-Puedes editar:
+## 4. Como leer `NODES`
 
-- `data-category`: categoria del filtro
-- `--card-accent`: color lateral de la tarjeta
-- `agenda-chip`: estado
-- `agenda-card-title`: titulo
-- `agenda-card-body`: descripcion breve
-- `agenda-card-meta`: bullets concretos
+Cada nodo tiene esta forma:
 
-## 5. Categorias actuales
-
-Las categorias que hoy existen son:
-
-- `literature`
-- `methods`
-- `outputs`
-
-Estas categorias deben coincidir exactamente con los botones de filtro.
-
-Ejemplo:
-
-```html
-<button type="button" class="agenda-filter" data-filter="methods">Methods</button>
+```js
+{
+  id: "nlp",
+  label: "NLP",
+  color: "#8b7cf8",
+  size: 34,
+  cat: "comp",
+  desc: "Natural Language Processing - discourse analysis at scale"
+}
 ```
 
-y la tarjeta correspondiente:
+### Que significa cada campo
 
-```html
-<article class="agenda-card" data-category="methods">
-```
+- `id`: identificador unico del nodo
+- `label`: texto visible en el canvas
+- `color`: color del nodo
+- `size`: tamano relativo
+- `cat`: categoria
+- `desc`: texto del tooltip al hacer hover
 
-Si escribes una categoria distinta, el filtro no la va a reconocer bien.
+## 5. Categorias actuales de la red
 
-## 6. Estados sugeridos para las tarjetas
+Las categorias usadas hoy son:
 
-Hoy ya usamos dos estilos:
+- `comp`
+- `meth`
+- `pol`
+- `soc`
 
-- `agenda-chip agenda-chip--active`
-- `agenda-chip agenda-chip--queued`
+Conviene mantenerlas porque ya coinciden con la leyenda visual.
 
-Recomendacion de uso:
+## 6. Como agregar un nodo nuevo
 
-- `agenda-chip--active`: para cosas en curso
-- `agenda-chip--queued`: para cosas siguientes o planificadas
-
-Texto sugerido para los chips:
-
-- ingles: `In progress`, `Ongoing`, `Next`, `Drafting`, `Reading`
-- espanol: `En curso`, `Activo`, `Proximo`, `Borrador`, `Lectura`
-
-Si despues quieres mas estados, podemos agregar nuevas variantes en `styles.css`, por ejemplo:
-
-- `agenda-chip--published`
-- `agenda-chip--paused`
-- `agenda-chip--review`
-
-## 7. Como agregar una nueva tarjeta
+Ejemplo: quieres agregar `Field Experiments`.
 
 ### Paso 1
 
-Elige en que bloque va:
+Agregar un nodo nuevo en `NODES`:
 
-- en ingles dentro de `#agenda-grid-en`
-- en espanol dentro de `#agenda-grid-es`
+```js
+{
+  id: "field",
+  label: "Field Experiments",
+  color: "#fb923c",
+  size: 18,
+  cat: "meth",
+  desc: "Experimental interventions and causal design in social settings"
+}
+```
 
 ### Paso 2
 
-Copia una tarjeta existente y ajusta contenido.
+Conectarlo en `EDGES`:
 
-Ejemplo en ingles:
+```js
+["field", "survey"],
+["field", "demo"]
+```
+
+### Regla practica
+
+Todo nodo nuevo debe conectarse al menos con un nodo existente.
+Si no, quedara flotando solo y la red se vera rara.
+
+## 7. Como borrar un nodo
+
+Para borrar un nodo:
+
+1. Eliminalo de `NODES`
+2. Elimina tambien sus conexiones en `EDGES`
+
+Si borras el nodo y dejas enlaces viejos, el script no los podra usar bien.
+
+## 8. Como cambiar solo el texto del tooltip
+
+No necesitas tocar nada del dibujo.
+Solo cambia `desc` dentro del nodo correspondiente.
+
+Eso actualiza el texto que aparece al pasar el mouse.
+
+## 9. Agenda editorial: como esta pensada ahora
+
+La seccion de abajo ya no funciona como una lista simple.
+Cada entrada intenta verse mas inteligente porque obliga a definir:
+
+- una pregunta,
+- el material con el que se trabaja,
+- y la salida esperable.
+
+Cada entrada tiene cuatro capas:
+
+1. Tipo de pieza
+2. Fecha
+3. Titulo
+4. Grilla analitica
+
+## 10. Estructura de una entrada
+
+Cada entrada usa esta forma:
 
 ```html
-<article class="agenda-card" data-category="outputs" style="--card-accent: #f59e0b;">
-  <span class="agenda-chip agenda-chip--queued">Drafting</span>
-  <h2 class="agenda-card-title">Short note on survey-text integration</h2>
-  <p class="agenda-card-body">A brief methodological note connecting survey measures with newspaper corpora and NLP-based coding.</p>
-  <ul class="agenda-card-meta">
-    <li>ELRI variables + press corpus</li>
-    <li>Candidate post or methods memo</li>
-  </ul>
+<article class="agenda-entry" data-entry-type="literature">
+  <div class="agenda-entry-meta">
+    <span class="agenda-badge agenda-badge--lit">Literature Review</span>
+    <span class="agenda-date">April 2026</span>
+  </div>
+  <h3>How is democratic legitimacy narrated in digital public arenas?</h3>
+  <p>Short synthesis of the issue.</p>
+  <div class="agenda-intel-grid">
+    <div class="agenda-intel-item">
+      <span class="agenda-intel-label">Question</span>
+      <p>What is the core problem?</p>
+    </div>
+    <div class="agenda-intel-item">
+      <span class="agenda-intel-label">Material</span>
+      <p>What data, corpus, or literature supports it?</p>
+    </div>
+    <div class="agenda-intel-item">
+      <span class="agenda-intel-label">Output</span>
+      <p>What will likely come out of this?</p>
+    </div>
+  </div>
+  <div class="agenda-tags">
+    <span class="agenda-tag">NLP</span>
+    <span class="agenda-tag">Legitimacy</span>
+  </div>
 </article>
 ```
 
-Y su equivalente en espanol:
+## 11. Regla editorial de oro
+
+Si quieres que la agenda se vea realmente buena, cada entrada debe responder tres preguntas:
+
+1. Que problema estoy tratando de aclarar.
+2. Con que material o metodo lo estoy trabajando.
+3. Que salida concreta podria producir.
+
+Si una entrada no responde eso, se vuelve decorativa y pierde fuerza.
+
+## 12. Tipos de entrada que ya existen
+
+Hoy los filtros trabajan con:
+
+- `literature`
+- `methods`
+- `post`
+
+Esos valores deben coincidir entre:
+
+- el boton de filtro
+- y `data-entry-type` de cada entrada
+
+## 13. Como agregar una entrada nueva
+
+### Paso 1
+
+Elegir el idioma:
+
+- bloque en ingles `data-lang="en"`
+- bloque en espanol `data-lang="es"`
+
+### Paso 2
+
+Copiar una entrada existente y cambiar:
+
+- fecha
+- titulo
+- parrafo corto
+- Question / Material / Output
+- tags
+
+### Paso 3
+
+Duplicar la misma entrada en el otro idioma.
+
+## 14. Plantilla recomendada para agregar muchas entradas
+
+Puedes usar siempre esta mini plantilla:
+
+```text
+Tipo:
+Fecha:
+Titulo:
+Parrafo corto:
+Question:
+Material:
+Output:
+Tags:
+```
+
+Eso ayuda mucho a sumar entradas rapido sin perder orden.
+
+## 15. Ejemplo de entrada nueva
+
+### Ingles
 
 ```html
-<article class="agenda-card" data-category="outputs" style="--card-accent: #f59e0b;">
-  <span class="agenda-chip agenda-chip--queued">Borrador</span>
-  <h2 class="agenda-card-title">Nota breve sobre integracion encuesta-texto</h2>
-  <p class="agenda-card-body">Una nota metodologica breve que conecta medidas de encuesta con corpus de prensa y codificacion basada en NLP.</p>
-  <ul class="agenda-card-meta">
-    <li>Variables ELRI + corpus de prensa</li>
-    <li>Posible post o memo metodologico</li>
-  </ul>
+<article class="agenda-entry" data-entry-type="methods">
+  <div class="agenda-entry-meta">
+    <span class="agenda-badge agenda-badge--methods">Methods Note</span>
+    <span class="agenda-date">August 2026</span>
+  </div>
+  <h3>How should newspapers be sampled before topic modelling?</h3>
+  <p>A note on sampling bias, temporal coverage, and interpretability before unsupervised text analysis.</p>
+  <div class="agenda-intel-grid">
+    <div class="agenda-intel-item">
+      <span class="agenda-intel-label">Question</span>
+      <p>What kind of sampling decision changes the substantive story?</p>
+    </div>
+    <div class="agenda-intel-item">
+      <span class="agenda-intel-label">Material</span>
+      <p>Archived newspapers, corpus diagnostics, and topic model sensitivity tests.</p>
+    </div>
+    <div class="agenda-intel-item">
+      <span class="agenda-intel-label">Output</span>
+      <p>Methods post or appendix note for future text papers.</p>
+    </div>
+  </div>
+  <div class="agenda-tags">
+    <span class="agenda-tag">Sampling</span>
+    <span class="agenda-tag">Topic models</span>
+    <span class="agenda-tag">Press data</span>
+  </div>
 </article>
 ```
 
-## 8. Como agregar una nueva categoria
+### Espanol
 
-Supongamos que quieres una categoria nueva: `teaching`.
+Haz la misma estructura, pero traducida.
 
-Debes hacer tres cosas:
+## 16. Como agregar un filtro nuevo
 
-1. Agregar boton en ingles
-2. Agregar boton en espanol
-3. Usar `data-category="teaching"` en las tarjetas
+Si algun dia quieres un filtro nuevo, por ejemplo `fieldwork`, necesitas:
 
-Ejemplo de botones:
+1. Agregar un boton nuevo
+2. Usar `data-entry-type="fieldwork"` en las entradas respectivas
 
-```html
-<button type="button" class="agenda-filter" data-filter="teaching">Teaching</button>
-```
+No hace falta tocar el script si mantienes la misma logica de nombres.
 
-```html
-<button type="button" class="agenda-filter" data-filter="teaching">Docencia</button>
-```
+## 17. Como evitar que la agenda se vuelva caotica
 
-No hace falta tocar el script si solo agregas una categoria nueva y usas bien `data-filter`.
+Recomendacion practica:
 
-## 9. Como enlazar posts reales
+- mantener entre 4 y 8 entradas activas
+- archivar o borrar lo que ya no importa
+- no escribir parrafos demasiado largos
+- usar tags cortos
+- mantener la grilla `Question / Material / Output`
 
-La tercera tarjeta ya enlaza a `posts.html`, pero puedes enlazar a un post especifico.
-
-Ejemplo:
-
-```html
-<p class="agenda-card-link">
-  <a href="posts/datos-electorales/servel-2025/index.html">Open current draft →</a>
-</p>
-```
-
-Consejos:
-
-- usa links relativos del sitio,
-- evita enlazar a archivos temporales,
-- si el contenido aun no esta publico, mejor deja texto sin link o apunta a `posts.html`.
-
-## 10. Como pensar el contenido
-
-Una buena tarjeta no debe parecer un parrafo largo. Lo ideal:
-
-- un titulo corto,
-- una descripcion de 1 o 2 frases,
-- 2 bullets concretos,
-- y, si aplica, un link.
-
-Buen formato:
-
-- que estoy haciendo,
-- con que datos o enfoque,
-- que podria salir de ahi.
-
-Ejemplo:
-
-- tema: discurso politico y legitimidad
-- metodo: NLP + prensa + encuestas
-- salida: paper, post o memo
-
-## 11. Flujo recomendado de actualizacion
-
-Te propongo este flujo simple:
+## 18. Flujo recomendado de actualizacion
 
 ### Cada semana
 
-1. Revisar si alguna tarjeta cambio de estado
-2. Mover lo que ya no es prioridad
-3. Agregar 1 o 2 lineas nuevas en bullets
-4. Eliminar cosas demasiado viejas
+1. Revisar si cambian prioridades
+2. Ajustar fechas
+3. Reescribir una o dos preguntas
+4. Eliminar lo que ya no represente la agenda actual
 
-### Cada vez que publiques algo
+### Cada vez que nace una linea nueva
 
-1. Cambiar el estado de la tarjeta
-2. Agregar enlace al post o pagina
-3. Si ya no es agenda sino historial, moverlo a otra seccion del sitio
+1. Agregar nodo en `NODES`
+2. Conectarlo en `EDGES`
+3. Crear una entrada editorial asociada
+4. Duplicarla en EN y ES
 
-### Cada vez que abras una nueva linea de trabajo
+### Cada vez que una idea madura
 
-1. Crear tarjeta nueva
-2. Duplicarla en EN y ES
-3. Asignar categoria
-4. Elegir color de acento
+1. Moverla de `literature` a `post`, o de `post` a salida publicada
+2. Cambiar la descripcion para reflejar mejor el avance
+3. Si deja de ser agenda, sacarla de aqui
 
-## 12. Colores recomendados
+## 19. Render y chequeo local
 
-Hoy cada tarjeta usa `--card-accent` inline.
-
-Sugerencia de convencion:
-
-- literatura: `#2563eb`
-- metodos: `#7c3aed`
-- outputs/posts: `#0d9488`
-- docencia: `#f59e0b`
-- colaboraciones: `#ef4444`
-
-Esto ayuda a que el tablero se lea rapido.
-
-## 13. Cuando conviene editar `styles.css`
-
-Edita `styles.css` si quieres cambiar:
-
-- forma de las tarjetas,
-- sombras,
-- animaciones,
-- colores de chips,
-- hero de Agenda,
-- distribucion de la grilla,
-- estilo de filtros.
-
-No hace falta tocar `styles.css` si solo vas a cambiar contenido.
-
-## 14. Cuando conviene dejarlo simple
-
-No intentes meter demasiado en la agenda.
-
-La agenda funciona mejor si muestra:
-
-- 3 a 6 tarjetas maximo,
-- prioridades actuales,
-- lenguaje breve,
-- salidas concretas.
-
-Si el contenido se vuelve muy largo, conviene derivarlo a:
-
-- un post,
-- una pagina de proyecto,
-- o una seccion tipo notes / working papers.
-
-## 15. Flujo tecnico recomendado
-
-Para trabajar localmente:
-
-```bash
-quarto preview
-```
-
-Luego editar:
-
-- `agenda.qmd`
-- `styles.css`
-
-Y revisar en local el resultado.
-
-Si quieres render puntual:
+Para revisar la pagina:
 
 ```bash
 quarto render agenda.qmd
 ```
 
-Si cambias navbar, estilos globales o varias paginas:
+O el sitio completo:
 
 ```bash
 quarto render
 ```
 
-## 16. Propuesta de evolucion futura
+## 20. Resumen final
 
-Si queremos hacer esta seccion aun mejor, los siguientes pasos naturales son:
+La pagina funciona mejor si:
 
-1. Agregar chips nuevos:
-   `Published`, `Paused`, `Review`
-2. Añadir fecha de ultima actualizacion por tarjeta
-3. Enlazar tarjetas a posts reales
-4. Agregar una categoria `Teaching` o `Fieldwork`
-5. Cargar tarjetas desde un archivo de datos (`.yml` o `.json`) en vez de escribir todo en HTML
+- la red muestra relaciones vivas entre conceptos,
+- la agenda muestra pocas piezas pero bien pensadas,
+- y cada entrada deja claro problema, material y salida.
 
-## 17. Regla editorial final
-
-La agenda debe responder siempre estas tres preguntas:
-
-1. Que estoy trabajando ahora
-2. Con que enfoque o metodo
-3. Que salida concreta podria producir
-
-Si una tarjeta no responde esas tres cosas, conviene reescribirla.
+Esa combinacion hace que la agenda se vea activa, legible y realmente inteligente.
