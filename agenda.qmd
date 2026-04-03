@@ -13,7 +13,7 @@ format:
 <div class="agenda-shell">
   <section class="agenda-page-hero" data-lang="en">
     <div class="page-eyebrow">Research Agenda</div>
-    <h1 class="page-title" style="color:#ffffff; border-bottom:none; padding-bottom:0; margin-bottom:0.75rem;">Conceptual network and research pipeline</h1>
+    <h1 class="page-title" style="color:#ffffff; border-bottom:none; padding-bottom:0; margin-bottom:0.75rem;">Conceptual network and research agenda</h1>
     <p class="page-subtitle" style="color:rgba(255,255,255,0.68); max-width:760px;">
       A live map of the ideas, methods, and publication pathways that currently organize my work in computational social science.
     </p>
@@ -31,7 +31,6 @@ format:
     <div class="page-hero">
       <div class="page-eyebrow">Theoretical Approach</div>
       <h2 class="page-title">Dynamic conceptual network</h2>
-      <p class="page-subtitle">This is the live version of the map. Nodes and links can be edited directly in <code>agenda.qmd</code> through the <code>NODES</code> and <code>EDGES</code> arrays below.</p>
     </div>
     <div class="page-content">
       <div class="agenda-network-wrap">
