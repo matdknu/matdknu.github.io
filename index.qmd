@@ -94,8 +94,8 @@ document.addEventListener('DOMContentLoaded', function() {
 </div>
 <div class="recent-work-item">
   <h4 class="recent-work-subtitle">Recent conference</h4>
-  <p><strong><a href="https://matdknu.github.io/familiaR-wiki/presentation-comptext/presentation.html#/title-slide" target="_blank" rel="noopener">Elite Identification in Latin America</a></strong></p>
-  <p class="recent-work-meta"><a href="https://matdknu.github.io/familiaR-wiki/presentation-comptext/presentation.html#/title-slide" target="_blank" rel="noopener">Presentation</a> · COMPTEXT 2026</p>
+  <p><strong><a href="https://matdknu.github.io/comp-text_2026/#/title-slide" target="_blank" rel="noopener">Elite Identification in Latin America</a></strong></p>
+  <p class="recent-work-meta"><a href="https://matdknu.github.io/comp-text_2026/#/title-slide" target="_blank" rel="noopener">Presentation</a> · COMPTEXT 2026</p>
 </div>
 </div>
 
@@ -116,8 +116,8 @@ document.addEventListener('DOMContentLoaded', function() {
 </div>
 <div class="recent-work-item">
   <h4 class="recent-work-subtitle">Conferencia reciente</h4>
-  <p><strong><a href="https://matdknu.github.io/familiaR-wiki/presentation-comptext/presentation.html#/title-slide" target="_blank" rel="noopener">Elite Identification in Latin America</a></strong></p>
-  <p class="recent-work-meta"><a href="https://matdknu.github.io/familiaR-wiki/presentation-comptext/presentation.html#/title-slide" target="_blank" rel="noopener">Presentación</a> · COMPTEXT 2026</p>
+  <p><strong><a href="https://matdknu.github.io/comp-text_2026/#/title-slide" target="_blank" rel="noopener">Elite Identification in Latin America</a></strong></p>
+  <p class="recent-work-meta"><a href="https://matdknu.github.io/comp-text_2026/#/title-slide" target="_blank" rel="noopener">Presentación</a> · COMPTEXT 2026</p>
 </div>
 </div>
 
