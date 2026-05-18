@@ -1465,6 +1465,41 @@ main.content:has(.photography-shell) {
   padding-right: clamp(1rem, 3vw, 2.5rem);
 }
 
+.photography-instagram {
+  margin: 0.7rem 0 0;
+}
+
+.photography-instagram__link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.95rem;
+  color: var(--ink-muted);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.photography-instagram__link:hover,
+.photography-instagram__link:focus-visible {
+  color: var(--ink);
+  text-decoration: none;
+  outline: none;
+}
+
+.photography-instagram__link strong {
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.photography-instagram__icon {
+  font-size: 1.2rem;
+  line-height: 1;
+  background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .photography-shell .photography-body,
 .photography-shell .photography-body.page-wrap {
   max-width: none;

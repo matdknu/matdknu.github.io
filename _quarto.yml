@@ -4,7 +4,10 @@ project:
   resources:
     - files/js/name-graph.js
     - files/js/nav-mini-charts.js
-    - files/images/photos/
+    - files/images/photos/torres_del_paine.JPG
+    - files/images/photos/atacama_desierto.JPG
+    - files/images/photos/puerto_natales.JPG
+    - files/images/photos/punta_arenas.JPG
   render:
     - index.qmd
     - agenda.qmd
