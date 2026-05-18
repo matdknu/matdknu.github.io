@@ -86,6 +86,21 @@ gtag('config', '', { 'anonymize_ip': true});
 <script async="" src="https://badge.dimensions.ai/badge.js" charset="utf-8"></script>
 <script type="text/javascript" src="//cdn.plu.mx/widget-popup.js"></script>
 
+<meta property="og:title" content="Vinculación – Matías Deneken">
+<meta property="og:image" content="https://matdknu.github.io/files/images/my-face.JPG">
+<meta property="og:site_name" content="Matías Deneken">
+<meta name="twitter:title" content="Vinculación – Matías Deneken">
+<meta name="twitter:image" content="https://matdknu.github.io/files/images/my-face.JPG">
+<meta name="twitter:card" content="summary_large_image">
+</head><body class="nav-fixed"><div id="welcome-splash" class="welcome-splash" hidden="" aria-hidden="true">
+  <div class="welcome-splash__backdrop"></div>
+  <div class="welcome-splash__glow" aria-hidden="true"></div>
+  <div class="welcome-splash__content">
+    <h1 class="welcome-splash__headline" data-headline-en="WELCOME" data-headline-es="BIENVENIDO">WELCOME</h1>
+    <p class="welcome-splash__tagline" data-tagline-en="to Matías Deneken's web profile" data-tagline-es="al sitio web y perfil de Matías Deneken"></p>
+  </div>
+</div>
+
 <script>
 (function () {
   function applyThemeClasses(theme) {
@@ -240,6 +255,78 @@ document.addEventListener("DOMContentLoaded", function () {
   window.switchTheme(savedTheme);
   window.updateThemeToggleButton(savedTheme);
   window.switchLanguage(savedLang);
+
+  function initWelcomeSplash() {
+    if (sessionStorage.getItem("welcome-seen")) return;
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+      sessionStorage.setItem("welcome-seen", "1");
+      return;
+    }
+
+    var splash = document.getElementById("welcome-splash");
+    if (!splash) return;
+
+    var lang = localStorage.getItem("site-lang") || "en";
+    var headlineEl = splash.querySelector(".welcome-splash__headline");
+    var taglineEl = splash.querySelector(".welcome-splash__tagline");
+
+    function animateLetters(el, text) {
+      el.innerHTML = text
+        .split("")
+        .map(function (ch, i) {
+          var display = ch === " " ? "\u00a0" : ch;
+          var extra =
+            ch === " " ? " welcome-splash__letter--space" : "";
+          return (
+            '<span class="welcome-splash__letter' +
+            extra +
+            '" style="animation-delay:' +
+            (0.06 + i * 0.052) +
+            's">' +
+            display +
+            "</span>"
+          );
+        })
+        .join("");
+    }
+
+    var headline =
+      lang === "es"
+        ? headlineEl.getAttribute("data-headline-es")
+        : headlineEl.getAttribute("data-headline-en");
+    var tagline =
+      lang === "es"
+        ? taglineEl.getAttribute("data-tagline-es")
+        : taglineEl.getAttribute("data-tagline-en");
+
+    animateLetters(headlineEl, headline);
+    taglineEl.textContent = tagline;
+
+    splash.hidden = false;
+    splash.setAttribute("aria-hidden", "false");
+    document.body.classList.add("welcome-active");
+
+    requestAnimationFrame(function () {
+      splash.classList.add("is-visible");
+      window.setTimeout(function () {
+        taglineEl.classList.add("is-visible");
+      }, 480);
+    });
+
+    window.setTimeout(function () {
+      splash.classList.add("is-exiting");
+    }, 2400);
+
+    window.setTimeout(function () {
+      splash.classList.remove("is-visible", "is-exiting");
+      splash.hidden = true;
+      splash.setAttribute("aria-hidden", "true");
+      document.body.classList.remove("welcome-active");
+      sessionStorage.setItem("welcome-seen", "1");
+    }, 3300);
+  }
+
+  initWelcomeSplash();
 });
 </script>
 
@@ -305,15 +392,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 <link rel="stylesheet" href="styles.css">
-<meta property="og:title" content="Vinculación – Matías Deneken">
-<meta property="og:image" content="https://matdknu.github.io/files/images/my-face.JPG">
-<meta property="og:site_name" content="Matías Deneken">
-<meta name="twitter:title" content="Vinculación – Matías Deneken">
-<meta name="twitter:image" content="https://matdknu.github.io/files/images/my-face.JPG">
-<meta name="twitter:card" content="summary_large_image">
-</head>
 
-<body class="nav-fixed">
+
+
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
