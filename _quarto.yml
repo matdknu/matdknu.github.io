@@ -1,9 +1,13 @@
 project:
   type: website
   output-dir: docs
+  resources:
+    - files/js/name-graph.js
   render:
     - index.qmd
     - agenda.qmd
+    - vinculacion.qmd
+    - blog.qmd
     - 404.qmd
 
 # Meta
@@ -21,6 +25,10 @@ website:
         href: index.qmd
       - text: Agenda
         href: agenda.qmd
+      - text: Vinculación
+        href: vinculacion.qmd
+      - text: Blog
+        href: blog.qmd
     right: 
       - text: CV
         href: files/Deneken_CV.pdf

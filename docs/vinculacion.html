@@ -7,9 +7,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Matías Deneken">
-<meta name="description" content="Web page Matias">
+<meta name="description" content="Extensión con lo social, medios y vinculación pública.">
 
-<title>Matías Deneken</title>
+<title>Vinculación – Matías Deneken</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -35,6 +35,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
@@ -42,8 +43,6 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <link href="site_libs/quarto-contrib/fontawesome6-1.2.0/all.min.css" rel="stylesheet">
 <link href="site_libs/quarto-contrib/fontawesome6-1.2.0/latex-fontsize.css" rel="stylesheet">
-<link href="site_libs/quarto-contrib/academicons-1.9.2/all.css" rel="stylesheet">
-<link href="site_libs/quarto-contrib/academicons-1.9.2/size.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -306,10 +305,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 <link rel="stylesheet" href="styles.css">
-<meta property="og:title" content="Matías Deneken">
+<meta property="og:title" content="Vinculación – Matías Deneken">
 <meta property="og:image" content="https://matdknu.github.io/files/images/my-face.JPG">
 <meta property="og:site_name" content="Matías Deneken">
-<meta name="twitter:title" content="Matías Deneken">
+<meta name="twitter:title" content="Vinculación – Matías Deneken">
 <meta name="twitter:image" content="https://matdknu.github.io/files/images/my-face.JPG">
 <meta name="twitter:card" content="summary_large_image">
 </head>
@@ -332,7 +331,7 @@ document.addEventListener("DOMContentLoaded", function () {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page"> 
+    <a class="nav-link" href="./index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
@@ -340,7 +339,7 @@ document.addEventListener("DOMContentLoaded", function () {
 <span class="menu-text">Agenda</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./vinculacion.html"> 
+    <a class="nav-link active" href="./vinculacion.html" aria-current="page"> 
 <span class="menu-text">Vinculación</span></a>
   </li>  
   <li class="nav-item">
@@ -383,191 +382,176 @@ document.addEventListener("DOMContentLoaded", function () {
 <!-- main -->
 <main class="content column-page" id="quarto-document-content">
 
-
-
-
-<div id="name-graph-mount" class="name-graph-wrap">
-  <canvas id="name-graph-canvas" aria-label="Token graph: Matías Deneken — NLP-style network"></canvas>
-  <p class="name-graph-title" aria-hidden="true">Matías Deneken</p>
-</div>
-<script src="files/js/name-graph.js"></script>
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-
-  // Move ALL book sections to left sidebar (after links)
-  const bookSectionEn = document.querySelector('.about-book-section[data-lang="en"]');
-  const bookSectionEs = document.querySelector('.about-book-section[data-lang="es"]');
-  const aboutLinks = document.querySelector('.about-links');
-  
-  if (aboutLinks && (bookSectionEn || bookSectionEs)) {
-    const sidebarContainer = aboutLinks.parentNode;
-    
-    // Helper function to insert after a reference node
-    function insertAfter(newNode, referenceNode) {
-      if (referenceNode && referenceNode.parentNode) {
-        referenceNode.parentNode.insertBefore(newNode, referenceNode.nextSibling);
-      } else {
-        sidebarContainer.appendChild(newNode);
-      }
-    }
-    
-    // Remove book sections from their current location and mark as moved
-    if (bookSectionEn && bookSectionEn.parentNode) {
-      bookSectionEn.parentNode.removeChild(bookSectionEn);
-      bookSectionEn.classList.add('moved-to-sidebar');
-    }
-    if (bookSectionEs && bookSectionEs.parentNode) {
-      bookSectionEs.parentNode.removeChild(bookSectionEs);
-      bookSectionEs.classList.add('moved-to-sidebar');
-    }
-    
-    // Insert English first after the about-links container
-    // This ensures English appears first in the DOM
-    if (bookSectionEn) {
-      insertAfter(bookSectionEn, aboutLinks);
-    }
-    
-    // Then insert Spanish after English, so Spanish appears below English
-    if (bookSectionEs) {
-      insertAfter(bookSectionEs, bookSectionEn || aboutLinks);
-    }
-  }
-  
-});
-</script>
-<div class="about-book-section about-recent-work" data-lang="en">
-<h3 class="academic-news-heading">Academics news</h3>
-<div class="recent-work-item">
-  <h4 class="recent-work-subtitle">Recent paper</h4>
-  <p><strong><a href="https://www.crimrxiv.com/pub/3rl51qxc/release/1" target="_blank" rel="noopener">Fear of the police and the fragility of legitimacy: Insights from Chile and Brazil</a></strong></p>
-  <p class="recent-work-meta">CrimRxiv · preprint</p>
-</div>
-<div class="recent-work-item">
-  <h4 class="recent-work-subtitle">Recent book</h4>
-  <a href="https://books.google.co.uk/books/about/RE_Configuraciones_Interculturales.html?id=nM6YEQAAQBAJ&amp;redir_esc=y" target="_blank" rel="noopener">
-    <img src="https://books.google.co.uk/books/content?id=nM6YEQAAQBAJ&amp;printsec=frontcover&amp;img=1&amp;zoom=1&amp;edge=curl&amp;source=gbs_api" alt="(RE) Configuraciones Interculturales">
-  </a>
-  <p><strong><a href="https://books.google.co.uk/books/about/RE_Configuraciones_Interculturales.html?id=nM6YEQAAQBAJ&amp;redir_esc=y" target="_blank" rel="noopener">(RE) Configuraciones Interculturales: Un estudio longitudinal de las relaciones entre indígenas y no indígenas en Chile (2016-2024)</a></strong></p>
-  <p class="recent-work-meta">Co-edited with Eduardo Valenzuela. Editorial Catalonia, 2025.</p>
-</div>
-<div class="recent-work-item">
-  <h4 class="recent-work-subtitle">Recent conference</h4>
-  <p><strong><a href="https://matdknu.github.io/comp-text_2026/#/title-slide" target="_blank" rel="noopener">Elite Identification in Latin America</a></strong></p>
-  <p class="recent-work-meta"><a href="https://matdknu.github.io/comp-text_2026/#/title-slide" target="_blank" rel="noopener">Presentation</a> · COMPTEXT 2026</p>
-</div>
-</div>
-
-<div class="about-book-section about-recent-work" data-lang="es">
-<h3 class="academic-news-heading">Noticias académicas</h3>
-<div class="recent-work-item">
-  <h4 class="recent-work-subtitle">Artículo reciente</h4>
-  <p><strong><a href="https://www.crimrxiv.com/pub/3rl51qxc/release/1" target="_blank" rel="noopener">Fear of the police and the fragility of legitimacy: Insights from Chile and Brazil</a></strong></p>
-  <p class="recent-work-meta">CrimRxiv · preprint</p>
-</div>
-<div class="recent-work-item">
-  <h4 class="recent-work-subtitle">Libro reciente</h4>
-  <a href="https://books.google.co.uk/books/about/RE_Configuraciones_Interculturales.html?id=nM6YEQAAQBAJ&amp;redir_esc=y" target="_blank" rel="noopener">
-    <img src="https://books.google.co.uk/books/content?id=nM6YEQAAQBAJ&amp;printsec=frontcover&amp;img=1&amp;zoom=1&amp;edge=curl&amp;source=gbs_api" alt="(RE) Configuraciones Interculturales">
-  </a>
-  <p><strong><a href="https://books.google.co.uk/books/about/RE_Configuraciones_Interculturales.html?id=nM6YEQAAQBAJ&amp;redir_esc=y" target="_blank" rel="noopener">(RE) Configuraciones Interculturales: Un estudio longitudinal de las relaciones entre indígenas y no indígenas en Chile (2016-2024)</a></strong></p>
-  <p class="recent-work-meta">Co-editado con Eduardo Valenzuela. Editorial Catalonia, 2025.</p>
-</div>
-<div class="recent-work-item">
-  <h4 class="recent-work-subtitle">Conferencia reciente</h4>
-  <p><strong><a href="https://matdknu.github.io/comp-text_2026/#/title-slide" target="_blank" rel="noopener">Elite Identification in Latin America</a></strong></p>
-  <p class="recent-work-meta"><a href="https://matdknu.github.io/comp-text_2026/#/title-slide" target="_blank" rel="noopener">Presentación</a> · COMPTEXT 2026</p>
-</div>
-</div>
-
-<div class="quarto-about-trestles column-page">
-  <div class="about-entity">
-    <img src="files/images/my-face.JPG" class="about-image
-  rounded " style="width: 90%;">
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Matías Deneken</h1>
+<h1 class="title">Vinculación</h1>
 </div>
+
+
+
 <div class="quarto-title-meta column-page">
+
+    
+  
+    
   </div>
+  
+
+
 </header>
-    <div class="about-links">
-  <a href="https://www.github.com/matdknu" class="about-link" rel="" target="_blank">
-    <i class="bi bi-github"></i>
-     <span class="about-link-text">GitHub</span>
-  </a>
-  <a href="/m.deneken@uc.cl" class="about-link" rel="" target="">
-    <i class="bi bi-envelope"></i>
-     <span class="about-link-text">E-mail</span>
-  </a>
-  <a href="https://linkedin.com/deneken" class="about-link" rel="" target="_blank">
-    <i class="bi bi-linkedin"></i>
-     <span class="about-link-text">LinkedIn</span>
-  </a>
-  <a href="https://orcid.org" class="about-link" rel="" target="_blank">
-     <span class="about-link-text"><i class="ai  ai-orcid"></i> ORCID</span>
-  </a>
-  <a href="https://scholar.google.com" class="about-link" rel="" target="_blank">
-     <span class="about-link-text"><i class="ai  ai-google-scholar"></i> Google Scholar</span>
-  </a>
-</div>
-  </div>
-  <div class="about-contents"><div id="hero-heading">
-<div data-lang="en">
-<section id="introduction" class="level2">
-<h2 data-anchor-id="introduction">Introduction</h2>
-<p>Matías Deneken is a Chilean <span style="color: #0C447C; font-weight: 500;">sociologist</span> and <span style="color: #0F6E56; font-weight: 500;">data scientist</span> whose work sits at the intersection of the <span style="color: #993C1D; font-weight: 500;">sociology of violence</span>, <span style="color: #7F77DD; font-weight: 500;">democracy</span> and <span style="color: #B85B0A; font-weight: 500;">computational social science</span>. His research examines how social processes unfold in contemporary societies through the rigorous application of quantitative and computational methods. He has contributed to major large-scale longitudinal projects, including the <em>Estudio Longitudinal de Relaciones Interculturales (ELRI)</em> and the <em>Estudio Panel de Percepciones de Seguridad y Policías (EPSEP)</em>.</p>
-<p>See the interactive <a href="./agenda.html"><strong>Current Agenda</strong></a> for literature reviews, methods notes, and upcoming posts.</p>
-</section>
-<section id="now" class="level2">
-<h2 data-anchor-id="now">Now</h2>
-<p>Today, Matías is fully committed to building <a href="https://www.methodolab.com"><strong>MethodoLab</strong></a> — a data science initiative he founded to push the frontier of computational methods in social research. He is also actively pursuing doctoral study opportunities <span style="color: #B85B0A; font-style: italic;"><em>(exciting news coming soon)</em></span>.</p>
-<div class="methodolab-cta-wrap">
-  <a href="https://www.methodolab.com" target="_blank" class="cta-button">
-    🚀 Visit MethodoLab →
-  </a>
-</div>
-</section>
-<section id="past-experience" class="level2">
-<h2 data-anchor-id="past-experience">Past Experience</h2>
-<p>Matías was affiliated with the <strong>Government School at Pontificia Universidad Católica de Chile</strong> through the <strong>Observatory of Violence and Social Legitimacy</strong> (<a href="https://oles2.netlify.app/">www.oles.cl</a>), where he worked as a Research Assistant designing and maintaining large-scale longitudinal databases and conducting automated web scraping pipelines for systematic monitoring of national newspapers.</p>
-<p>He has been a <strong>Quantitative Studies Researcher</strong> at the <strong>Center for Intercultural and Indigenous Studies (CIIR)</strong> (<a href="https://www.ciir.cl">www.ciir.cl</a>) since December 2022, where he coordinated the Longitudinal Survey on Intercultural Relations (ELRI) — one of the most ambitious longitudinal instruments in Chilean social science — and co-edited the book <em>(RE) Configuraciones Interculturales</em>.</p>
-</section>
-<section id="home" class="level2">
-<h2 data-anchor-id="home">Home</h2>
-<p>I was born and raised in the commune of Puente Alto. A bit of its history can be found <a href="https://www.memoriachilena.gob.cl/602/w3-article-582647.html#presentacion">here</a>.</p>
-<p><img src="files/images/casa.jpeg" class="img-fluid" style="width:70.0%" alt="A home in Puente Alto"></p>
-</section>
-</div>
-<div data-lang="es" style="display: none;">
-<section id="introducción" class="level2">
-<h2 data-anchor-id="introducción">Introducción</h2>
-<p>Matías Deneken es un <span style="color: #0C447C; font-weight: 500;">sociólogo</span> y <span style="color: #0F6E56; font-weight: 500;">científico de datos</span> chileno cuyo trabajo se sitúa en la intersección de la <span style="color: #993C1D; font-weight: 500;">sociología de la violencia</span>, la <span style="color: #7F77DD; font-weight: 500;">democracia</span> y la <span style="color: #B85B0A; font-weight: 500;">ciencia de datos computacional</span>. Su investigación examina cómo se desarrollan los procesos sociales en las sociedades contemporáneas mediante la aplicación rigurosa de métodos cuantitativos y computacionales. Ha colaborado en estudios longitudinales a gran escala como el <em>Estudio Longitudinal de Relaciones Interculturales (ELRI)</em> y el <em>Estudio Panel de Percepciones de Seguridad y Policías (EPSEP)</em>.</p>
-<section id="proyectos-actuales" class="level3">
-<h3 data-anchor-id="proyectos-actuales">Proyectos Actuales</h3>
-<p>Actualmente, Matías está plenamente comprometido con el desarrollo de <a href="https://www.methodolab.com"><strong>MethodoLab</strong></a> — una iniciativa de ciencia de datos que fundó para avanzar en los métodos computacionales aplicados a la investigación social. También se encuentra activamente en la búsqueda de oportunidades de estudio doctoral. <span style="color: #B85B0A; font-style: italic;"><em>(próximamente novedades)</em></span></p>
-<div class="methodolab-cta-wrap">
-  <a href="https://www.methodolab.com" target="_blank" class="cta-button">
-    🚀 Visitar MethodoLab →
-  </a>
-</div>
-<p>La <a href="./agenda.html"><strong>agenda actual</strong></a> reúne de forma interactiva revisiones de literatura, notas de métodos y próximos posts.</p>
-</section>
-</section>
-<section id="experiencia" class="level2">
-<h2 data-anchor-id="experiencia">Experiencia</h2>
-<p>Matías estuvo afiliado a la <strong>Escuela de Gobierno de la Pontificia Universidad Católica de Chile</strong> mediante el <strong>Observatorio de Violencia y Legitimidad Social</strong> (<a href="https://oles2.netlify.app/">www.oles.cl</a>), donde trabajó como Asistente de Investigación diseñando y manteniendo bases de datos longitudinales a gran escala y desarrollando pipelines de scraping web automatizado para el monitoreo sistemático de periódicos nacionales.</p>
-<p>Ha sido <strong>Investigador en Estudios Cuantitativos</strong> en el <strong>Centro de Estudios Interculturales e Indígenas (CIIR)</strong> (<a href="https://www.ciir.cl">www.ciir.cl</a>) desde diciembre de 2022, donde coordinó la Encuesta Longitudinal de Relaciones Interculturales (ELRI) — uno de los instrumentos longitudinales más ambiciosos de las ciencias sociales chilenas — y co-editó el libro <em>(RE) Configuraciones Interculturales</em>.</p>
-</section>
-<section id="hogar" class="level2">
-<h2 data-anchor-id="hogar">Hogar</h2>
-<p>Nací y me crié en la comuna de Puente Alto. Un poco de su historia puede leerse <a href="https://www.memoriachilena.gob.cl/602/w3-article-582647.html#presentacion">aquí</a>.</p>
-<p><img src="files/images/casa.jpeg" class="img-fluid" style="width:70.0%" alt="Una casa en Puente Alto"></p>
-</section>
-</div>
-</div></div>
-</div>
 
 
+<div class="vinculacion-shell">
+  <section class="vinculacion-page-hero" data-lang="en">
+    <div class="page-eyebrow">Outreach</div>
+    <h1 class="page-title" style="color:#ffffff; border-bottom:none; padding-bottom:0; margin-bottom:0.75rem;">Extension &amp; public engagement</h1>
+    <p class="page-subtitle" style="color:rgba(255,255,255,0.68); max-width:760px;">
+      Notes, media appearances, and collaborations that connect research with schools, communities, and public debate.
+    </p>
+  </section>
+
+  <section class="vinculacion-page-hero" data-lang="es" style="display:none;">
+    <div class="page-eyebrow">Vinculación</div>
+    <h1 class="page-title" style="color:#ffffff; border-bottom:none; padding-bottom:0; margin-bottom:0.75rem;">Extensión con lo social</h1>
+    <p class="page-subtitle" style="color:rgba(255,255,255,0.68); max-width:760px;">
+      Notas, apariciones en medios y colaboraciones que conectan la investigación con colegios, territorios y debate público.
+    </p>
+  </section>
+
+  <section class="page-wrap" data-lang="en">
+    <div class="page-hero">
+      <div class="page-eyebrow">News &amp; outreach</div>
+      <h2 class="page-title anchored">Recent items</h2>
+      <p class="page-subtitle">Media, public conversations, and extension activities linked to research and public debate.</p>
+    </div>
+    <div class="page-content">
+      <div class="vinculacion-entry-list" id="vinculacion-feed-en">
+
+        <article class="vinculacion-entry">
+          <a class="vinculacion-entry-thumb" href="https://terceradosis.cl/2025/10/05/indigenas-y-no-indigenas-frente-al-espejo/" target="_blank" rel="noopener">
+            <span class="vinculacion-thumb-label">Tercera Dosis</span>
+          </a>
+          <div class="vinculacion-entry-meta">
+            <span class="vinculacion-badge">Op-ed</span>
+            <span class="vinculacion-date">October 2025</span>
+          </div>
+          <h3 class="anchored"><a href="https://terceradosis.cl/2025/10/05/indigenas-y-no-indigenas-frente-al-espejo/" target="_blank" rel="noopener">Indigenous and non-indigenous Chileans face to face</a></h3>
+          <p>Column in <em>Tercera Dosis</em> on ELRI longitudinal findings: identity, trust, difference, and violence—co-authored with Eduardo Valenzuela and Marjorie Murray.</p>
+        </article>
+
+        <article class="vinculacion-entry">
+          <a class="vinculacion-entry-thumb" href="https://www.youtube.com/watch?v=4MXzYpal6Ho" target="_blank" rel="noopener">
+            <img src="https://i.ytimg.com/vi/4MXzYpal6Ho/hqdefault.jpg" alt="" loading="lazy">
+          </a>
+          <div class="vinculacion-entry-meta">
+            <span class="vinculacion-badge">Podcast</span>
+            <span class="vinculacion-date">December 2025</span>
+          </div>
+          <h3 class="anchored"><a href="https://www.youtube.com/watch?v=4MXzYpal6Ho" target="_blank" rel="noopener">Intermedio Podcast — Episode 14: Matías Deneken</a></h3>
+          <p>Conversation on <em>(RE) Configuraciones Interculturales</em> and eight years of ELRI, hosted by CIIR’s <em>Intermedio</em> series.</p>
+        </article>
+
+        <article class="vinculacion-entry">
+          <a class="vinculacion-entry-thumb" href="https://www.youtube.com/watch?v=V0bE2UAv4FA&amp;t=1433s" target="_blank" rel="noopener">
+            <img src="https://i.ytimg.com/vi/V0bE2UAv4FA/hqdefault.jpg" alt="" loading="lazy">
+          </a>
+          <div class="vinculacion-entry-meta">
+            <span class="vinculacion-badge">Presentation</span>
+            <span class="vinculacion-date">2025</span>
+          </div>
+          <h3 class="anchored"><a href="https://www.youtube.com/watch?v=V0bE2UAv4FA&amp;t=1433s" target="_blank" rel="noopener">Book launch: <em>(RE) Configuraciones Interculturales</em></a></h3>
+          <p>CIIR presentation of the longitudinal study on intercultural relations in Chile (link opens at the selected segment).</p>
+        </article>
+
+        <article class="vinculacion-entry">
+          <div class="vinculacion-entry-meta">
+            <span class="vinculacion-badge">Press</span>
+            <span class="vinculacion-date">May 2025</span>
+          </div>
+          <h3 class="anchored"><a href="https://www.latercera.com/politica/noticia/republicanos-y-nacionalistas-libertarios-en-que-se-parecen-y-diferencian-las-nuevas-derechas/" target="_blank" rel="noopener">Republicans and libertarian nationalists: how Chile’s new rights compare</a></h3>
+          <p>Mention in <em>La Tercera</em> on research comparing the Republican Party and the National Libertarian Party (Fondecyt project with Stéphanie Alenda and colleagues).</p>
+        </article>
+
+        <article class="vinculacion-entry">
+          <div class="vinculacion-entry-meta">
+            <span class="vinculacion-badge">Award</span>
+            <span class="vinculacion-date">June 2022</span>
+          </div>
+          <h3 class="anchored"><a href="https://socialesudec.cl/16564-2/" target="_blank" rel="noopener">Premio Universidad — Universidad de Concepción</a></h3>
+          <p>Faculty of Social Sciences recognition for outstanding undergraduate commitment (Sociology), awarded at Teatro Universidad de Concepción.</p>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="page-wrap" data-lang="es" style="display:none;">
+    <div class="page-hero">
+      <div class="page-eyebrow">Noticias y extensión</div>
+      <h2 class="page-title anchored">Novedades recientes</h2>
+      <p class="page-subtitle">Medios, conversaciones públicas y actividades de extensión vinculadas a la investigación y al debate público.</p>
+    </div>
+    <div class="page-content">
+      <div class="vinculacion-entry-list" id="vinculacion-feed-es">
+
+        <article class="vinculacion-entry">
+          <a class="vinculacion-entry-thumb vinculacion-entry-thumb--text" href="https://terceradosis.cl/2025/10/05/indigenas-y-no-indigenas-frente-al-espejo/" target="_blank" rel="noopener">
+            <span class="vinculacion-thumb-label">Tercera Dosis</span>
+          </a>
+          <div class="vinculacion-entry-meta">
+            <span class="vinculacion-badge">Columna</span>
+            <span class="vinculacion-date">Octubre 2025</span>
+          </div>
+          <h3 class="anchored"><a href="https://terceradosis.cl/2025/10/05/indigenas-y-no-indigenas-frente-al-espejo/" target="_blank" rel="noopener">Indígenas y no indígenas frente al espejo</a></h3>
+          <p>Columna en <em>Tercera Dosis</em> sobre hallazgos del ELRI: identidad, confianza, diferencia y violencia—con Eduardo Valenzuela y Marjorie Murray.</p>
+        </article>
+
+        <article class="vinculacion-entry">
+          <a class="vinculacion-entry-thumb" href="https://www.youtube.com/watch?v=4MXzYpal6Ho" target="_blank" rel="noopener">
+            <img src="https://i.ytimg.com/vi/4MXzYpal6Ho/hqdefault.jpg" alt="" loading="lazy">
+          </a>
+          <div class="vinculacion-entry-meta">
+            <span class="vinculacion-badge">Podcast</span>
+            <span class="vinculacion-date">Diciembre 2025</span>
+          </div>
+          <h3 class="anchored"><a href="https://www.youtube.com/watch?v=4MXzYpal6Ho" target="_blank" rel="noopener">Intermedio Podcast — Capítulo 14: Matías Deneken</a></h3>
+          <p>Conversación sobre <em>(RE) Configuraciones Interculturales</em> y ocho años del ELRI, en la serie <em>Intermedio</em> del CIIR.</p>
+        </article>
+
+        <article class="vinculacion-entry">
+          <a class="vinculacion-entry-thumb" href="https://www.youtube.com/watch?v=V0bE2UAv4FA&amp;t=1433s" target="_blank" rel="noopener">
+            <img src="https://i.ytimg.com/vi/V0bE2UAv4FA/hqdefault.jpg" alt="" loading="lazy">
+          </a>
+          <div class="vinculacion-entry-meta">
+            <span class="vinculacion-badge">Presentación</span>
+            <span class="vinculacion-date">2025</span>
+          </div>
+          <h3 class="anchored"><a href="https://www.youtube.com/watch?v=V0bE2UAv4FA&amp;t=1433s" target="_blank" rel="noopener">Presentación de libro: <em>(RE) Configuraciones Interculturales</em></a></h3>
+          <p>Presentación del CIIR sobre el estudio longitudinal de relaciones interculturales en Chile (enlace al segmento indicado).</p>
+        </article>
+
+        <article class="vinculacion-entry">
+          <div class="vinculacion-entry-meta">
+            <span class="vinculacion-badge">Prensa</span>
+            <span class="vinculacion-date">Mayo 2025</span>
+          </div>
+          <h3 class="anchored"><a href="https://www.latercera.com/politica/noticia/republicanos-y-nacionalistas-libertarios-en-que-se-parecen-y-diferencian-las-nuevas-derechas/" target="_blank" rel="noopener">Republicanos y nacionalistas libertarios: en qué se parecen y diferencian las nuevas derechas</a></h3>
+          <p>Mención en <em>La Tercera</em> por investigación que compara Republicanos y Nacional Libertario (proyecto Fondecyt con Stéphanie Alenda y colegas).</p>
+        </article>
+
+        <article class="vinculacion-entry">
+          <div class="vinculacion-entry-meta">
+            <span class="vinculacion-badge">Premio</span>
+            <span class="vinculacion-date">Junio 2022</span>
+          </div>
+          <h3 class="anchored"><a href="https://socialesudec.cl/16564-2/" target="_blank" rel="noopener">Premio Universidad de Concepción</a></h3>
+          <p>Distinción de la Facultad de Ciencias Sociales UdeC por compromiso destacado en pregrado (Sociología), Teatro Universidad de Concepción.</p>
+        </article>
+
+      </div>
+    </div>
+  </section>
+</div>
 
 
 
@@ -592,6 +576,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
   }
   toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
   const isCodeAnnotation = (el) => {
     for (const clz of el.classList) {
       if (clz.startsWith('code-annotation-')) {                     

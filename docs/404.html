@@ -78,16 +78,71 @@ function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
 gtag('config', '', { 'anonymize_ip': true});
 </script>
-<!-- Load Academicons -->
+<!-- Academicons + embeds -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
-<!-- Altmetric and Dimensions embeds -->
 <script type="text/javascript" src="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js"></script>
 <script async="" src="https://badge.dimensions.ai/badge.js" charset="utf-8"></script>
 <script type="text/javascript" src="//cdn.plu.mx/widget-popup.js"></script>
 
 <script>
+(function () {
+  function applyThemeClasses(theme) {
+    var isDark = theme === "dark";
+    var root = document.documentElement;
+    root.setAttribute("data-theme", theme);
+    root.setAttribute("data-bs-theme", theme);
+    root.classList.toggle("quarto-dark", isDark);
+    if (document.body) {
+      document.body.classList.toggle("quarto-dark", isDark);
+    }
+    var bsSheet = document.getElementById("quarto-bootstrap");
+    if (bsSheet) {
+      bsSheet.setAttribute("data-mode", theme);
+    }
+  }
+
+  try {
+    var saved = localStorage.getItem("site-theme");
+    var theme = saved === "dark" || saved === "light" ? saved : "light";
+    applyThemeClasses(theme);
+    document.addEventListener("DOMContentLoaded", function () {
+      applyThemeClasses(localStorage.getItem("site-theme") || "light");
+    });
+  } catch (e) {
+    applyThemeClasses("light");
+  }
+
+  window.applyThemeClasses = applyThemeClasses;
+})();
+</script>
+
+<script>
+window.switchTheme = function (theme) {
+  localStorage.setItem("site-theme", theme);
+  if (window.applyThemeClasses) {
+    window.applyThemeClasses(theme);
+  }
+  window.updateThemeToggleButton(theme);
+};
+
+window.toggleTheme = function () {
+  var current = document.documentElement.getAttribute("data-theme") || "light";
+  window.switchTheme(current === "dark" ? "light" : "dark");
+};
+
+window.updateThemeToggleButton = function (theme) {
+  var btn = document.getElementById("theme-toggle");
+  if (!btn) return;
+  var isDark = theme === "dark";
+  btn.textContent = isDark ? "☀" : "☾";
+  btn.setAttribute("aria-label", isDark ? "Activar modo día" : "Activar modo noche");
+  btn.setAttribute("title", isDark ? "Modo día" : "Modo noche");
+  btn.setAttribute("aria-pressed", isDark ? "true" : "false");
+  btn.classList.toggle("is-dark", isDark);
+};
+
 window.switchLanguage = function (lang) {
   localStorage.setItem("site-lang", lang);
   document.querySelectorAll("[data-lang]").forEach(function (el) {
@@ -100,121 +155,96 @@ window.switchLanguage = function (lang) {
     enBtn.classList.toggle("active", lang === "en");
     esBtn.classList.toggle("active", lang === "es");
   }
+
+  document.querySelectorAll("[data-nav-en]").forEach(function (el) {
+    var en = el.getAttribute("data-nav-en");
+    var es = el.getAttribute("data-nav-es");
+    if (en && es) {
+      el.textContent = lang === "es" ? es : en;
+    }
+  });
+
+  var vincLink = document.querySelector('.navbar a.nav-link[href*="vinculacion"]');
+  if (vincLink) {
+    var vincText = vincLink.querySelector(".menu-text");
+    if (vincText) {
+      vincText.textContent = lang === "es" ? "Vinculación" : "Outreach";
+    }
+  }
 };
 
 document.addEventListener("DOMContentLoaded", function () {
   var savedLang = localStorage.getItem("site-lang") || "en";
+  var savedTheme = localStorage.getItem("site-theme") || "light";
   var navbar = document.querySelector(".navbar");
   var cvLink = document.querySelector('.navbar a.nav-link[href*="Deneken_CV"]');
   var cvLi = cvLink ? cvLink.closest("li") : null;
-  var switcher = document.getElementById("language-switcher");
 
-  if (!switcher) {
-    switcher = document.createElement("div");
-    switcher.id = "language-switcher";
-    switcher.innerHTML =
+  var themeSwitcher = document.getElementById("theme-switcher");
+  if (!themeSwitcher) {
+    themeSwitcher = document.createElement("div");
+    themeSwitcher.id = "theme-switcher";
+    themeSwitcher.innerHTML =
+      '<button id="theme-toggle" class="theme-toggle-btn" type="button" aria-pressed="false" aria-label="Activar modo noche" title="Modo noche">☾</button>';
+  }
+
+  var langSwitcher = document.getElementById("language-switcher");
+  if (!langSwitcher) {
+    langSwitcher = document.createElement("div");
+    langSwitcher.id = "language-switcher";
+    langSwitcher.innerHTML =
       '<button id="lang-en" class="lang-btn" type="button">EN</button>' +
       '<button id="lang-es" class="lang-btn" type="button">ES</button>';
   }
 
-  if (cvLi && !switcher.closest("li")) {
-    var wrapper = document.createElement("li");
-    wrapper.className = "nav-item";
-    wrapper.appendChild(switcher);
-    cvLi.parentNode.insertBefore(wrapper, cvLi.nextSibling);
+  if (cvLi) {
+    if (!themeSwitcher.closest("li")) {
+      var themeWrap = document.createElement("li");
+      themeWrap.className = "nav-item";
+      themeWrap.appendChild(themeSwitcher);
+      cvLi.parentNode.insertBefore(themeWrap, cvLi.nextSibling);
+    }
+    if (!langSwitcher.closest("li")) {
+      var langWrap = document.createElement("li");
+      langWrap.className = "nav-item";
+      langWrap.appendChild(langSwitcher);
+      var themeLi = themeSwitcher.closest("li");
+      themeLi.parentNode.insertBefore(langWrap, themeLi.nextSibling);
+    }
   }
 
-  var enBtn = document.getElementById("lang-en");
-  var esBtn = document.getElementById("lang-es");
-  if (enBtn && esBtn) {
-    enBtn.onclick = function () { window.switchLanguage("en"); };
-    esBtn.onclick = function () { window.switchLanguage("es"); };
-  }
+  document.getElementById("theme-toggle").onclick = function () {
+    window.toggleTheme();
+  };
+  document.getElementById("lang-en").onclick = function () {
+    window.switchLanguage("en");
+  };
+  document.getElementById("lang-es").onclick = function () {
+    window.switchLanguage("es");
+  };
 
   function updateNavbarState() {
     if (!navbar) return;
+    var isDark = document.documentElement.getAttribute("data-theme") === "dark";
     if (window.scrollY > 20) {
-      navbar.style.background = "rgba(255,255,255,0.97)";
-      navbar.style.boxShadow = "0 1px 0 rgba(0,0,0,0.06)";
+      navbar.style.boxShadow = isDark
+        ? "0 1px 0 rgba(255,255,255,0.06)"
+        : "0 1px 0 rgba(0,0,0,0.06)";
     } else {
-      navbar.style.background = "rgba(255,255,255,0.96)";
       navbar.style.boxShadow = "none";
     }
   }
 
   updateNavbarState();
   window.addEventListener("scroll", updateNavbarState, { passive: true });
-  window.switchLanguage(savedLang);
-});
-</script>
-
-<!-- 
-Load Academicons v1: https://jpswalsh.github.io/academicons/
--->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
-
-<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-
-
-<!---
-The following code are needed to show dimension citation and altmetrics.
-https://api.altmetric.com/embeds.html
-https://badge.dimensions.ai/
---->
-
-<script type="text/javascript" src="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js"></script>
-
-<script async="" src="https://badge.dimensions.ai/badge.js" charset="utf-8"></script>
-
-<script type="text/javascript" src="//cdn.plu.mx/widget-popup.js"></script>
-
-<script>
-window.switchLanguage = function(lang) {
-  localStorage.setItem("site-lang", lang);
-  document.querySelectorAll("[data-lang]").forEach((el) => {
-    el.style.display = el.getAttribute("data-lang") === lang ? "" : "none";
-  });
-  const enBtn = document.getElementById("lang-en");
-  const esBtn = document.getElementById("lang-es");
-  if (enBtn && esBtn) {
-    enBtn.classList.toggle("active", lang === "en");
-    esBtn.classList.toggle("active", lang === "es");
-  }
-};
-
-document.addEventListener("DOMContentLoaded", function () {
-  const savedLang = localStorage.getItem("site-lang") || "en";
-  const cvLink = document.querySelector('.navbar a.nav-link[href*="Deneken_CV"]');
-  const cvLi = cvLink ? cvLink.closest("li") : null;
-
-  let switcher = document.getElementById("language-switcher");
-  if (!switcher) {
-    switcher = document.createElement("div");
-    switcher.id = "language-switcher";
-    switcher.innerHTML =
-      '<button id="lang-en" class="lang-btn">🇬🇧 EN</button>' +
-      '<button id="lang-es" class="lang-btn">🇪🇸 ES</button>';
-  }
-
-  if (cvLi && switcher.parentNode !== cvLi.parentNode) {
-    const wrapper = document.createElement("li");
-    wrapper.className = "nav-item";
-    wrapper.appendChild(switcher);
-    cvLi.parentNode.insertBefore(wrapper, cvLi.nextSibling);
-  }
-
-  const enBtn = document.getElementById("lang-en");
-  const esBtn = document.getElementById("lang-es");
-  if (enBtn && esBtn) {
-    enBtn.onclick = () => window.switchLanguage("en");
-    esBtn.onclick = () => window.switchLanguage("es");
-  }
-
+  window.switchTheme(savedTheme);
+  window.updateThemeToggleButton(savedTheme);
   window.switchLanguage(savedLang);
 });
 </script>
 
 <style>
+#theme-switcher,
 #language-switcher {
   display: inline-flex;
   align-items: center;
@@ -223,35 +253,49 @@ document.addEventListener("DOMContentLoaded", function () {
   white-space: nowrap;
 }
 
+#theme-switcher .theme-toggle-btn,
 #language-switcher .lang-btn {
-  border: 1px solid #d0d7de;
+  border: 1px solid var(--border-strong, #d0d7de);
   border-radius: 999px;
-  background: #ffffff;
-  color: #333333;
-  font-size: 0.8rem;
-  line-height: 1;
-  padding: 0.35rem 0.6rem;
+  background: transparent;
+  color: var(--ink-muted, #52526a);
+  font-family: var(--font-ui, Inter, system-ui, sans-serif);
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  min-width: 2.35rem;
+  padding: 0.42rem 0.62rem;
   cursor: pointer;
-  transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+  transition: background-color 0.15s ease, border-color 0.15s ease, color 0.15s ease;
 }
 
+#theme-switcher .theme-toggle-btn {
+  min-width: 2.5rem;
+  font-size: 14px;
+  line-height: 1;
+}
+
+#theme-switcher .theme-toggle-btn:hover,
 #language-switcher .lang-btn:hover {
-  border-color: #0d6efd;
-  color: #0d6efd;
+  color: var(--ink, #0f0f14);
+  border-color: var(--ink, #0f0f14);
 }
 
+#theme-switcher .theme-toggle-btn.is-dark,
 #language-switcher .lang-btn.active {
-  background: #0d6efd;
-  border-color: #0d6efd;
+  background: var(--ink, #0f0f14);
+  border-color: var(--ink, #0f0f14);
   color: #ffffff;
 }
 
+.navbar .nav-item:has(#theme-switcher),
 .navbar .nav-item:has(#language-switcher) {
   display: flex;
   align-items: center;
 }
 
 @media (max-width: 991px) {
+  #theme-switcher,
   #language-switcher {
     margin-left: 0;
     margin-top: 0.35rem;
@@ -295,6 +339,14 @@ document.addEventListener("DOMContentLoaded", function () {
   <li class="nav-item">
     <a class="nav-link" href="/agenda.html"> 
 <span class="menu-text">Agenda</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="/vinculacion.html"> 
+<span class="menu-text">Vinculación</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="/blog.html"> 
+<span class="menu-text">Blog</span></a>
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">

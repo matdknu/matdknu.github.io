@@ -979,4 +979,369 @@ div.quarto-about-trestles .about-entity .about-book-section img {
     margin-left: 0;
     margin-top: 0.35rem;
   }
+
+  #theme-switcher {
+    margin-left: 0;
+    margin-top: 0.35rem;
+  }
+}
+
+/* —— Theme: light / dark (inspired by data-theme toggle) —— */
+html[data-theme="dark"] {
+  --ink: #ececf4;
+  --ink-muted: #a8a8c0;
+  --ink-faint: #6e6e88;
+  --surface: #0a0a0f;
+  --surface-raised: #13131f;
+  --border: rgba(255, 255, 255, 0.08);
+  --border-strong: rgba(255, 255, 255, 0.16);
+  --shadow-soft: 0 8px 28px rgba(0, 0, 0, 0.35);
+  --shadow-strong: 0 18px 46px rgba(0, 0, 0, 0.45);
+}
+
+html[data-theme="dark"] body {
+  background: var(--surface);
+  color: var(--ink);
+}
+
+html[data-theme="dark"] .navbar {
+  background: rgba(10, 10, 15, 0.96) !important;
+  border-bottom-color: var(--border);
+}
+
+html[data-theme="dark"] .navbar .navbar-brand,
+html[data-theme="dark"] .navbar .navbar-title,
+html[data-theme="dark"] .navbar .nav-link {
+  color: var(--ink-muted);
+}
+
+html[data-theme="dark"] .navbar .nav-link:hover,
+html[data-theme="dark"] .navbar .nav-link.active {
+  color: var(--ink);
+}
+
+html[data-theme="dark"] h1,
+html[data-theme="dark"] h2 {
+  color: var(--ink);
+  border-bottom-color: var(--border);
+}
+
+html[data-theme="dark"] p,
+html[data-theme="dark"] li {
+  color: var(--ink);
+}
+
+html[data-theme="dark"] .about-entity .about-link {
+  border-color: var(--border);
+  color: var(--ink-muted);
+}
+
+html[data-theme="dark"] .about-recent-work .recent-work-item + .recent-work-item {
+  border-top-color: var(--border);
+}
+
+html[data-theme="dark"] pre,
+html[data-theme="dark"] .sourceCode {
+  background: var(--surface-raised);
+  border-color: var(--border);
+}
+
+html[data-theme="dark"] #quarto-footer {
+  border-top-color: var(--border);
+  color: var(--ink-faint);
+}
+
+html[data-theme="dark"] #quarto-content,
+html[data-theme="dark"] main.content,
+html[data-theme="dark"] .quarto-container,
+html[data-theme="dark"] .content {
+  background: var(--surface) !important;
+  color: var(--ink);
+}
+
+html[data-theme="dark"] .page-hero {
+  border-bottom-color: var(--border);
+}
+
+html[data-theme="dark"] .page-eyebrow {
+  color: var(--accent);
+}
+
+html[data-theme="dark"] .page-subtitle {
+  color: var(--ink-muted);
+}
+
+html[data-theme="dark"] .agenda-entry-list,
+html[data-theme="dark"] .agenda-entry,
+html[data-theme="dark"] .agenda-intel-item,
+html[data-theme="dark"] .vinculacion-entry,
+html[data-theme="dark"] .vinculacion-empty,
+html[data-theme="dark"] .agenda-filter-btn {
+  border-color: var(--border);
+  color: var(--ink);
+}
+
+html[data-theme="dark"] .agenda-intel-item,
+html[data-theme="dark"] .vinculacion-entry,
+html[data-theme="dark"] .vinculacion-empty {
+  background: var(--surface-raised);
+}
+
+html[data-theme="dark"] .agenda-filter-btn {
+  background: var(--surface-raised);
+  color: var(--ink-muted);
+}
+
+html[data-theme="dark"] .agenda-badge--lit {
+  background: rgba(108, 92, 231, 0.2);
+  color: #c4b8ff;
+}
+
+html[data-theme="dark"] .agenda-badge--methods {
+  background: rgba(0, 184, 148, 0.18);
+  color: #5eecc4;
+}
+
+html[data-theme="dark"] .agenda-badge--post {
+  background: rgba(225, 112, 85, 0.18);
+  color: #ffb199;
+}
+
+html[data-theme="dark"] .network-note,
+html[data-theme="dark"] .agenda-entry-intro {
+  color: var(--ink-muted);
+}
+
+html[data-theme="dark"] a {
+  color: #a89cf5;
+}
+
+html[data-theme="dark"] a:hover,
+html[data-theme="dark"] a:focus {
+  color: var(--ink);
+}
+
+html[data-theme="dark"] .quarto-search input {
+  background: var(--surface-raised);
+  border-color: var(--border);
+  color: var(--ink);
+}
+
+html[data-theme="dark"] .nav-footer,
+html[data-theme="dark"] .nav-footer a {
+  color: var(--ink-faint);
+}
+
+/* —— Name graph (homepage sidebar) —— */
+.name-graph-wrap {
+  position: relative;
+  width: 100%;
+  max-width: 408px;
+  height: 220px;
+  margin: 0 0 1rem;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border);
+  background:
+    radial-gradient(circle at 20% 20%, rgba(108, 92, 231, 0.12), transparent 45%),
+    var(--surface-raised);
+  overflow: hidden;
+  box-shadow: var(--shadow-soft);
+}
+
+.name-graph-title {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0.55rem;
+  margin: 0;
+  font-family: var(--font-editorial);
+  font-size: 1.15rem;
+  font-weight: 400;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: var(--ink);
+  pointer-events: none;
+  z-index: 2;
+}
+
+html[data-theme="dark"] .name-graph-title {
+  color: var(--ink);
+}
+
+html[data-theme="dark"] .name-graph-wrap {
+  background:
+    radial-gradient(circle at 20% 20%, rgba(108, 92, 231, 0.22), transparent 45%),
+    var(--dark-surface);
+  border-color: var(--dark-border);
+}
+
+.name-graph-wrap canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+/* —— Vinculación / outreach page —— */
+.vinculacion-shell {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 0 4rem;
+}
+
+.vinculacion-page-hero {
+  background:
+    radial-gradient(circle at top right, rgba(0, 184, 148, 0.22), transparent 34%),
+    linear-gradient(180deg, var(--dark-bg), #111820 100%);
+  color: #ffffff;
+  border-radius: 0 0 18px 18px;
+  padding: 3rem 2rem 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.vinculacion-empty {
+  border: 1px dashed var(--border-strong);
+  border-radius: var(--radius-md);
+  padding: 1.25rem 1.35rem;
+  margin-bottom: 1.5rem;
+  background: var(--surface-raised);
+  color: var(--ink-muted);
+}
+
+.vinculacion-shell .page-wrap {
+  max-width: 920px;
+}
+
+.vinculacion-entry-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.9rem;
+}
+
+@media (max-width: 720px) {
+  .vinculacion-entry-list {
+    grid-template-columns: 1fr;
+  }
+}
+
+.vinculacion-entry-thumb {
+  display: block;
+  margin: -0.85rem -0.95rem 0.65rem;
+  border-radius: var(--radius-md) var(--radius-md) 0 0;
+  overflow: hidden;
+  line-height: 0;
+  background: var(--surface-raised);
+}
+
+.vinculacion-entry-thumb img {
+  width: 100%;
+  height: 96px;
+  object-fit: cover;
+  transition: transform 0.2s ease;
+}
+
+.vinculacion-entry-thumb--text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 64px;
+  background: linear-gradient(135deg, rgba(108, 92, 231, 0.18), rgba(0, 184, 148, 0.14));
+}
+
+.vinculacion-thumb-label {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--ink-muted);
+}
+
+.vinculacion-entry:has(.vinculacion-entry-thumb):hover .vinculacion-entry-thumb img {
+  transform: scale(1.03);
+}
+
+.vinculacion-entry {
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 0.85rem 0.95rem;
+  background: var(--surface);
+  transition: border-color 0.2s ease, transform 0.15s ease;
+}
+
+.vinculacion-entry:hover {
+  border-color: var(--border-strong);
+  transform: translateY(-2px);
+}
+
+.vinculacion-entry-meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.55rem;
+  margin-bottom: 0.55rem;
+}
+
+.vinculacion-badge {
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent-teal);
+  border: 1px solid rgba(0, 184, 148, 0.35);
+  border-radius: 999px;
+  padding: 0.2rem 0.55rem;
+}
+
+.vinculacion-date {
+  font-size: 12px;
+  color: var(--ink-faint);
+}
+
+.vinculacion-entry h3 {
+  margin: 0 0 0.35rem;
+  font-family: var(--font-editorial);
+  font-size: 1.02rem;
+  font-weight: 400;
+  line-height: 1.25;
+  text-transform: none;
+  letter-spacing: -0.01em;
+  color: var(--ink);
+}
+
+.vinculacion-entry p {
+  margin: 0;
+  color: var(--ink-muted);
+  font-size: 13px;
+  line-height: 1.45;
+}
+
+/* —— Blog (coming soon) —— */
+.blog-shell {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 0 0 4rem;
+}
+
+.blog-page-hero {
+  background:
+    radial-gradient(circle at top left, rgba(108, 92, 231, 0.24), transparent 40%),
+    linear-gradient(180deg, var(--dark-bg), #12121c 100%);
+  color: #ffffff;
+  border-radius: 0 0 18px 18px;
+  padding: 3rem 2rem 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.blog-body {
+  text-align: center;
+  padding-top: 3rem;
+  padding-bottom: 4rem;
+}
+
+.blog-coming-soon {
+  margin: 0;
+  font-family: var(--font-editorial);
+  font-size: clamp(1.75rem, 4vw, 2.25rem);
+  font-style: italic;
+  letter-spacing: -0.02em;
+  color: var(--ink-muted);
 }
