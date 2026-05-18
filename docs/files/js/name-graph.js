@@ -2,31 +2,26 @@
   const TOKENS = [
     { id: "matias", label: "Matías", size: 30, role: "name", color: "#6c5ce7" },
     { id: "deneken", label: "Deneken", size: 30, role: "name", color: "#4834d4" },
-    { id: "nlp", label: "NLP", size: 17, role: "nlp", color: "#8b7cf8" },
-    { id: "tokens", label: "tokens", size: 14, role: "nlp", color: "#a78bfa" },
-    { id: "embed", label: "embeddings", size: 13, role: "nlp", color: "#c4b5fd" },
-    { id: "text", label: "text", size: 15, role: "nlp", color: "#fb923c" },
-    { id: "quanteda", label: "quanteda", size: 13, role: "nlp", color: "#fbbf24" },
-    { id: "scrape", label: "scraping", size: 13, role: "nlp", color: "#f97316" },
-    { id: "survey", label: "survey", size: 16, role: "soc", color: "#2dd4bf" },
-    { id: "violence", label: "violence", size: 13, role: "soc", color: "#f472b6" },
-    { id: "demo", label: "democracy", size: 13, role: "soc", color: "#7F77DD" },
+    { id: "nlp", label: "NLP", size: 17, role: "method", color: "#8b7cf8" },
+    { id: "llms", label: "LLMs", size: 16, role: "method", color: "#a78bfa" },
+    { id: "abm", label: "ABM", size: 16, role: "method", color: "#fb923c" },
+    { id: "survey", label: "Survey", size: 16, role: "method", color: "#2dd4bf" },
+    { id: "experiments", label: "Experiments", size: 14, role: "method", color: "#14b8a6" },
   ];
 
   const EDGES = [
     ["matias", "deneken", "seq"],
     ["matias", "nlp", "sem"],
     ["deneken", "nlp", "sem"],
-    ["nlp", "tokens", "sem"],
-    ["nlp", "embed", "sem"],
-    ["nlp", "text", "sem"],
-    ["text", "quanteda", "sem"],
-    ["text", "scrape", "sem"],
     ["matias", "survey", "sem"],
     ["deneken", "survey", "sem"],
-    ["survey", "violence", "sem"],
-    ["survey", "demo", "sem"],
-    ["violence", "demo", "sem"],
+    ["matias", "abm", "sem"],
+    ["deneken", "llms", "sem"],
+    ["nlp", "llms", "sem"],
+    ["nlp", "abm", "sem"],
+    ["llms", "experiments", "sem"],
+    ["survey", "experiments", "sem"],
+    ["abm", "experiments", "sem"],
   ];
 
   function initNameGraph(canvas) {
@@ -83,22 +78,13 @@
       nodeMap.deneken.anchorX = cx + width * 0.14 + Math.sin(t + 1.4) * 7;
       nodeMap.deneken.anchorY = cy + Math.cos(t * 0.92 + 0.6) * 6;
 
-      const nlpIds = ["nlp", "tokens", "embed", "text", "quanteda", "scrape"];
-      nlpIds.forEach(function (id, i) {
-        const base = Math.PI * 0.92 + (i / (nlpIds.length - 1)) * Math.PI * 0.55;
-        const angle = base + Math.sin(t * 0.85 + i * 1.1) * 0.14;
-        const r = rBase * (0.52 + Math.sin(t * 1.05 + i * 0.7) * 0.05);
+      const methodIds = ["nlp", "llms", "abm", "survey", "experiments"];
+      methodIds.forEach(function (id, i) {
+        const base = -Math.PI / 2 + (i / methodIds.length) * Math.PI * 2;
+        const angle = base + Math.sin(t * 0.85 + i * 1.1) * 0.1;
+        const r = rBase * (0.58 + Math.sin(t * 1.05 + i * 0.7) * 0.04);
         nodeMap[id].anchorX = cx + Math.cos(angle) * r;
-        nodeMap[id].anchorY = cy - Math.sin(angle) * r * 0.82 - height * 0.05;
-      });
-
-      const socIds = ["survey", "violence", "demo"];
-      socIds.forEach(function (id, i) {
-        const base = Math.PI * 0.08 + (i / (socIds.length - 1)) * Math.PI * 0.48;
-        const angle = base + Math.cos(t * 0.78 + i * 1.2) * 0.12;
-        const r = rBase * (0.52 + Math.cos(t * 0.95 + i * 0.8) * 0.05);
-        nodeMap[id].anchorX = cx + Math.cos(angle) * r;
-        nodeMap[id].anchorY = cy + Math.sin(angle) * r * 0.82 + height * 0.06;
+        nodeMap[id].anchorY = cy + Math.sin(angle) * r * 0.75;
       });
     }
 
@@ -189,7 +175,7 @@
           const pull = node.role === "name" ? 0.0028 : 0.0018;
           node.vx += (node.anchorX - node.x) * pull;
           node.vy += (node.anchorY - node.y) * pull;
-          if (node.role !== "name") {
+          if (node.role === "method") {
             const dx = node.x - width / 2;
             const dy = node.y - height * 0.44;
             const dist = Math.max(Math.sqrt(dx * dx + dy * dy), 1);
@@ -218,17 +204,6 @@
         if (dx * dx + dy * dy < hit * hit) return node;
       }
       return null;
-    }
-
-    function drawNameCaption(isDark) {
-      ctx.save();
-      ctx.font = '500 11px "JetBrains Mono", monospace';
-      ctx.fillStyle = isDark ? "rgba(255,255,255,0.45)" : "rgba(15,15,20,0.45)";
-      ctx.textAlign = "center";
-      ctx.textBaseline = "bottom";
-      ctx.fillText("NLP · token graph", 12, 14);
-      ctx.textAlign = "left";
-      ctx.restore();
     }
 
     function draw() {
@@ -304,8 +279,6 @@
         ctx.textBaseline = "middle";
         ctx.fillText(node.label, node.x, node.y);
       });
-
-      drawNameCaption(isDark);
     }
 
     function render() {

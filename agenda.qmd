@@ -45,7 +45,6 @@ format:
           <span><i style="background:#f472b6;"></i>Social</span>
         </div>
       </div>
-      <p class="network-note">Keep only this live plot: add or remove concepts by editing <code>NODES</code> and <code>EDGES</code> in <code>agenda.qmd</code>.</p>
     </div>
   </section>
 
@@ -53,7 +52,6 @@ format:
     <div class="page-hero">
       <div class="page-eyebrow">Aproximacion teorica</div>
       <h2 class="page-title">Red conceptual dinamica</h2>
-      <p class="page-subtitle">Esta es la version viva del mapa. Los nodos y enlaces se editan directamente en <code>agenda.qmd</code>, dentro de los arreglos <code>NODES</code> y <code>EDGES</code>.</p>
     </div>
     <div class="page-content">
       <div class="agenda-network-wrap">
@@ -68,7 +66,6 @@ format:
           <span><i style="background:#f472b6;"></i>Social</span>
         </div>
       </div>
-      <p class="network-note">Nos quedamos solo con este plot vivo: agrega o elimina conceptos editando <code>NODES</code> y <code>EDGES</code> en <code>agenda.qmd</code>.</p>
     </div>
   </section>
 
