@@ -3,11 +3,14 @@ project:
   output-dir: docs
   resources:
     - files/js/name-graph.js
+    - files/js/nav-mini-charts.js
+    - files/images/photos/
   render:
     - index.qmd
     - agenda.qmd
     - vinculacion.qmd
     - blog.qmd
+    - photography.qmd
     - 404.qmd
 
 # Meta
@@ -29,6 +32,8 @@ website:
         href: vinculacion.qmd
       - text: Blog
         href: blog.qmd
+      - text: Photography
+        href: photography.qmd
     right: 
       - text: CV
         href: files/Deneken_CV.pdf

@@ -11,21 +11,13 @@ format:
 
 ```{=html}
 <div class="blog-shell">
-  <section class="blog-page-hero" data-lang="en">
-    <div class="page-eyebrow">Blog</div>
-    <h1 class="page-title" style="color:#ffffff; border-bottom:none; padding-bottom:0; margin-bottom:0.75rem;">Writing &amp; notes</h1>
-    <p class="page-subtitle" style="color:rgba(255,255,255,0.68); max-width:560px;">
-      Short essays, methods notes, and reflections—in preparation.
-    </p>
-  </section>
+  <header class="page-header-minimal" data-lang="en">
+    <h1 class="page-title-minimal">Blog</h1>
+  </header>
 
-  <section class="blog-page-hero" data-lang="es" style="display:none;">
-    <div class="page-eyebrow">Blog</div>
-    <h1 class="page-title" style="color:#ffffff; border-bottom:none; padding-bottom:0; margin-bottom:0.75rem;">Escritos y notas</h1>
-    <p class="page-subtitle" style="color:rgba(255,255,255,0.68); max-width:560px;">
-      Ensayos breves, notas de métodos y reflexiones—en preparación.
-    </p>
-  </section>
+  <header class="page-header-minimal" data-lang="es" style="display:none;">
+    <h1 class="page-title-minimal">Blog</h1>
+  </header>
 
   <section class="page-wrap blog-body" data-lang="en">
     <p class="blog-coming-soon">*Coming soon*</p>

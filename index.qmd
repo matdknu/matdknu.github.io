@@ -31,14 +31,6 @@ about:
 ---
 
 ```{=html}
-<div id="name-graph-mount" class="name-graph-wrap">
-  <canvas id="name-graph-canvas" aria-label="Interactive network: Matías Deneken"></canvas>
-  <p class="name-graph-title" aria-hidden="true">Matías Deneken</p>
-</div>
-<script src="files/js/name-graph.js"></script>
-```
-
-```{=html}
 <script>
 document.addEventListener('DOMContentLoaded', function() {
 

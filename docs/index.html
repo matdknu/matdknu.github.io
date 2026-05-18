@@ -86,6 +86,8 @@ gtag('config', '', { 'anonymize_ip': true});
 <script type="text/javascript" src="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js"></script>
 <script async="" src="https://badge.dimensions.ai/badge.js" charset="utf-8"></script>
 <script type="text/javascript" src="//cdn.plu.mx/widget-popup.js"></script>
+<script src="files/js/name-graph.js"></script>
+<script src="files/js/nav-mini-charts.js"></script>
 
 <meta property="og:title" content="Matías Deneken">
 <meta property="og:image" content="https://matdknu.github.io/files/images/my-face.JPG">
@@ -95,6 +97,11 @@ gtag('config', '', { 'anonymize_ip': true});
 <meta name="twitter:card" content="summary_large_image">
 </head><body class="nav-fixed"><div id="welcome-splash" class="welcome-splash" hidden="" aria-hidden="true">
   <div class="welcome-splash__backdrop"></div>
+  <div class="welcome-splash__graph" aria-hidden="true">
+    <div class="welcome-splash__graph-inner">
+      <canvas id="welcome-name-graph-canvas" aria-hidden="true"></canvas>
+    </div>
+  </div>
   <div class="welcome-splash__glow" aria-hidden="true"></div>
   <div class="welcome-splash__flash welcome-splash__flash--a" aria-hidden="true"></div>
   <div class="welcome-splash__flash welcome-splash__flash--b" aria-hidden="true"></div>
@@ -189,6 +196,14 @@ window.switchLanguage = function (lang) {
       vincText.textContent = lang === "es" ? "Vinculación" : "Outreach";
     }
   }
+
+  var photoLink = document.querySelector('.navbar a.nav-link[href*="photography"]');
+  if (photoLink) {
+    var photoText = photoLink.querySelector(".menu-text");
+    if (photoText) {
+      photoText.textContent = lang === "es" ? "Fotografía" : "Photography";
+    }
+  }
 };
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -259,6 +274,52 @@ document.addEventListener("DOMContentLoaded", function () {
   window.updateThemeToggleButton(savedTheme);
   window.switchLanguage(savedLang);
 
+  function injectNavChartTabs() {
+    if (document.getElementById("nav-charts-strip")) return;
+
+    var anchorLink =
+      document.querySelector('.navbar a.nav-link[href*="photography"]') ||
+      document.querySelector('.navbar a.nav-link[href*="blog"]');
+    var anchorLi = anchorLink ? anchorLink.closest("li") : null;
+    if (!anchorLi || !anchorLi.parentNode) return;
+
+    var charts = [
+      { type: "density", title: "Density", mod: "density" },
+      { type: "bars", title: "Bar chart", mod: "bars" },
+      { type: "histogram", title: "Histogram", mod: "histogram" },
+      { type: "line", title: "Line chart", mod: "line" },
+      { type: "scatter", title: "Scatter plot", mod: "scatter" },
+      { type: "nested-pie", title: "Nested pie", mod: "nested-pie" },
+      { type: "boxplot", title: "Box plot", mod: "boxplot" },
+      { type: "heatmap", title: "Heatmap", mod: "heatmap" },
+    ];
+
+    var stripTab = document.createElement("li");
+    stripTab.id = "nav-charts-strip";
+    stripTab.className = "nav-item nav-charts-strip-wrap";
+
+    var strip = document.createElement("div");
+    strip.className = "nav-charts-strip";
+    strip.setAttribute("aria-hidden", "true");
+
+    charts.forEach(function (c, i) {
+      var icon = document.createElement("span");
+      icon.className = "nav-chart-icon nav-chart-icon--" + c.mod;
+      icon.title = c.title;
+      icon.style.animationDelay = -(i * 0.95) + "s";
+      icon.innerHTML =
+        '<canvas class="nav-chart-canvas" data-chart="' + c.type + '"></canvas>';
+      strip.appendChild(icon);
+    });
+
+    stripTab.appendChild(strip);
+    anchorLi.parentNode.insertBefore(stripTab, anchorLi.nextSibling);
+
+    if (window.initNavMiniCharts) window.initNavMiniCharts();
+  }
+
+  injectNavChartTabs();
+
   function initWelcomeSplash() {
     if (sessionStorage.getItem("welcome-seen")) return;
     if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
@@ -307,6 +368,12 @@ document.addEventListener("DOMContentLoaded", function () {
     animateLetters(headlineEl, headline);
     taglineEl.textContent = tagline;
 
+    var graphApi = null;
+    var graphCanvas = document.getElementById("welcome-name-graph-canvas");
+    if (graphCanvas && window.initNameGraph) {
+      graphApi = window.initNameGraph(graphCanvas, { interactive: false, mode: "welcome" });
+    }
+
     splash.hidden = false;
     splash.setAttribute("aria-hidden", "false");
     document.body.classList.add("welcome-active");
@@ -323,6 +390,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }, 3600);
 
     window.setTimeout(function () {
+      if (graphApi && graphApi.destroy) graphApi.destroy();
       splash.classList.remove("is-visible", "is-exiting");
       splash.hidden = true;
       splash.setAttribute("aria-hidden", "true");
@@ -432,6 +500,10 @@ document.addEventListener("DOMContentLoaded", function () {
     <a class="nav-link" href="./blog.html"> 
 <span class="menu-text">Blog</span></a>
   </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./photography.html"> 
+<span class="menu-text">Photography</span></a>
+  </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
@@ -471,11 +543,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-<div id="name-graph-mount" class="name-graph-wrap">
-  <canvas id="name-graph-canvas" aria-label="Interactive network: Matías Deneken"></canvas>
-  <p class="name-graph-title" aria-hidden="true">Matías Deneken</p>
-</div>
-<script src="files/js/name-graph.js"></script>
 <script>
 document.addEventListener('DOMContentLoaded', function() {
 

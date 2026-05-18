@@ -11,28 +11,16 @@ format:
 
 ```{=html}
 <div class="vinculacion-shell">
-  <section class="vinculacion-page-hero" data-lang="en">
-    <div class="page-eyebrow">Outreach</div>
-    <h1 class="page-title" style="color:#ffffff; border-bottom:none; padding-bottom:0; margin-bottom:0.75rem;">Extension &amp; public engagement</h1>
-    <p class="page-subtitle" style="color:rgba(255,255,255,0.68); max-width:760px;">
-      Notes, media appearances, and collaborations that connect research with schools, communities, and public debate.
-    </p>
-  </section>
+  <header class="page-header-minimal" data-lang="en">
+    <h1 class="page-title-minimal">Outreach</h1>
+  </header>
 
-  <section class="vinculacion-page-hero" data-lang="es" style="display:none;">
-    <div class="page-eyebrow">Vinculación</div>
-    <h1 class="page-title" style="color:#ffffff; border-bottom:none; padding-bottom:0; margin-bottom:0.75rem;">Extensión con lo social</h1>
-    <p class="page-subtitle" style="color:rgba(255,255,255,0.68); max-width:760px;">
-      Notas, apariciones en medios y colaboraciones que conectan la investigación con colegios, territorios y debate público.
-    </p>
-  </section>
+  <header class="page-header-minimal" data-lang="es" style="display:none;">
+    <h1 class="page-title-minimal">Vinculación</h1>
+  </header>
 
   <section class="page-wrap" data-lang="en">
-    <div class="page-hero">
-      <div class="page-eyebrow">News &amp; outreach</div>
-      <h2 class="page-title">Recent items</h2>
-      <p class="page-subtitle">Media, public conversations, and extension activities linked to research and public debate.</p>
-    </div>
+    <h2 class="section-title-minimal">Recent items</h2>
     <div class="page-content">
       <div class="vinculacion-entry-list" id="vinculacion-feed-en">
 
@@ -95,11 +83,7 @@ format:
   </section>
 
   <section class="page-wrap" data-lang="es" style="display:none;">
-    <div class="page-hero">
-      <div class="page-eyebrow">Noticias y extensión</div>
-      <h2 class="page-title">Novedades recientes</h2>
-      <p class="page-subtitle">Medios, conversaciones públicas y actividades de extensión vinculadas a la investigación y al debate público.</p>
-    </div>
+    <h2 class="section-title-minimal">Novedades recientes</h2>
     <div class="page-content">
       <div class="vinculacion-entry-list" id="vinculacion-feed-es">
 

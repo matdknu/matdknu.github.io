@@ -11,27 +11,16 @@ format:
 
 ```{=html}
 <div class="agenda-shell">
-  <section class="agenda-page-hero" data-lang="en">
-    <div class="page-eyebrow">Research Agenda</div>
-    <h1 class="page-title" style="color:#ffffff; border-bottom:none; padding-bottom:0; margin-bottom:0.75rem;">Conceptual network and research agenda</h1>
-    <p class="page-subtitle" style="color:rgba(255,255,255,0.68); max-width:760px;">
-      A live map of the ideas, methods, and publication pathways that currently organize my work in computational social science.
-    </p>
-  </section>
+  <header class="page-header-minimal" data-lang="en">
+    <h1 class="page-title-minimal">Research Agenda</h1>
+  </header>
 
-  <section class="agenda-page-hero" data-lang="es" style="display:none;">
-    <div class="page-eyebrow">Agenda de investigacion</div>
-    <h1 class="page-title" style="color:#ffffff; border-bottom:none; padding-bottom:0; margin-bottom:0.75rem;">Red conceptual y pipeline de investigacion</h1>
-    <p class="page-subtitle" style="color:rgba(255,255,255,0.68); max-width:760px;">
-      Un mapa vivo de ideas, metodos y posibles salidas editoriales que hoy organizan mi trabajo en ciencia social computacional.
-    </p>
-  </section>
+  <header class="page-header-minimal" data-lang="es" style="display:none;">
+    <h1 class="page-title-minimal">Agenda de investigación</h1>
+  </header>
 
   <section class="page-wrap" data-lang="en">
-    <div class="page-hero">
-      <div class="page-eyebrow">Theoretical Approach</div>
-      <h2 class="page-title">Dynamic conceptual network</h2>
-    </div>
+    <h2 class="section-title-minimal">Dynamic conceptual network</h2>
     <div class="page-content">
       <div class="agenda-network-wrap">
         <div class="network-canvas" id="theoretical-network">
@@ -49,10 +38,7 @@ format:
   </section>
 
   <section class="page-wrap" data-lang="es" style="display:none;">
-    <div class="page-hero">
-      <div class="page-eyebrow">Aproximacion teorica</div>
-      <h2 class="page-title">Red conceptual dinamica</h2>
-    </div>
+    <h2 class="section-title-minimal">Red conceptual dinámica</h2>
     <div class="page-content">
       <div class="agenda-network-wrap">
         <div class="network-canvas" id="theoretical-network-es">
@@ -70,11 +56,7 @@ format:
   </section>
 
   <section class="page-wrap agenda-entry-module" data-lang="en">
-    <div class="page-hero">
-      <div class="page-eyebrow">Research Pipeline</div>
-      <h2 class="page-title">Literature review and smart agenda</h2>
-      <p class="page-subtitle">Each entry now tracks a clear research question, the empirical or conceptual material behind it, and the most plausible output.</p>
-    </div>
+    <h2 class="section-title-minimal">Literature review and smart agenda</h2>
     <div class="page-content">
       <p class="agenda-entry-intro">Think of this section as a working intelligence board: not a blog archive, but a compact log of what is being clarified, with what materials, and toward which deliverable.</p>
       <div class="agenda-filter-row" role="toolbar" aria-label="Filter agenda entries">
@@ -200,11 +182,7 @@ format:
   </section>
 
   <section class="page-wrap agenda-entry-module" data-lang="es" style="display:none;">
-    <div class="page-hero">
-      <div class="page-eyebrow">Pipeline de investigacion</div>
-      <h2 class="page-title">Revision de literatura y agenda inteligente</h2>
-      <p class="page-subtitle">Cada entrada ahora deja explicita una pregunta de investigacion, el material empírico o conceptual que la sostiene y la salida mas probable.</p>
-    </div>
+    <h2 class="section-title-minimal">Revisión de literatura y agenda inteligente</h2>
     <div class="page-content">
       <p class="agenda-entry-intro">Piensa esta seccion como un tablero de trabajo analitico: no como archivo de posts, sino como un registro compacto de que se esta aclarando, con que material, y hacia que entregable podria avanzar.</p>
       <div class="agenda-filter-row" role="toolbar" aria-label="Filtrar entradas">

@@ -24,8 +24,12 @@
     ["abm", "experiments", "sem"],
   ];
 
-  function initNameGraph(canvas) {
-    if (!canvas || canvas.dataset.ready === "1") return;
+  function initNameGraph(canvas, options) {
+    options = options || {};
+    const interactive = options.interactive === true;
+    const isWelcome = options.mode === "welcome";
+
+    if (!canvas || canvas.dataset.ready === "1") return null;
     canvas.dataset.ready = "1";
 
     const ctx = canvas.getContext("2d");
@@ -65,17 +69,41 @@
     let tick = 0;
     let hovered = null;
     let dragged = null;
+    let rafId = null;
     const pointer = { x: 0, y: 0 };
 
     function updateAnchors() {
       const t = tick * 0.024;
       const cx = width / 2;
-      const cy = height * 0.44;
-      const rBase = Math.min(width, height) * 0.34;
+      const cy = height * (isWelcome ? 0.5 : 0.44);
 
-      nodeMap.matias.anchorX = cx - width * 0.14 + Math.sin(t) * 7;
+      if (isWelcome) {
+        const rx = width * 0.46;
+        const ry = height * 0.46;
+        const nameSpread = width * 0.14;
+
+        nodeMap.matias.anchorX = cx - nameSpread + Math.sin(t) * 10;
+        nodeMap.matias.anchorY = cy + Math.cos(t * 1.18) * 8;
+        nodeMap.deneken.anchorX = cx + nameSpread + Math.sin(t + 1.4) * 10;
+        nodeMap.deneken.anchorY = cy + Math.cos(t * 0.92 + 0.6) * 8;
+
+        const methodIds = ["nlp", "llms", "abm", "survey", "experiments"];
+        methodIds.forEach(function (id, i) {
+          const base = -Math.PI / 2 + (i / methodIds.length) * Math.PI * 2;
+          const angle = base + Math.sin(t * 0.85 + i * 1.1) * 0.08;
+          const wobble = 0.96 + Math.sin(t * 1.05 + i * 0.7) * 0.04;
+          nodeMap[id].anchorX = cx + Math.cos(angle) * rx * wobble;
+          nodeMap[id].anchorY = cy + Math.sin(angle) * ry * wobble;
+        });
+        return;
+      }
+
+      const rBase = Math.min(width, height) * 0.34;
+      const nameSpread = width * 0.14;
+
+      nodeMap.matias.anchorX = cx - nameSpread + Math.sin(t) * 7;
       nodeMap.matias.anchorY = cy + Math.cos(t * 1.18) * 6;
-      nodeMap.deneken.anchorX = cx + width * 0.14 + Math.sin(t + 1.4) * 7;
+      nodeMap.deneken.anchorX = cx + nameSpread + Math.sin(t + 1.4) * 7;
       nodeMap.deneken.anchorY = cy + Math.cos(t * 0.92 + 0.6) * 6;
 
       const methodIds = ["nlp", "llms", "abm", "survey", "experiments"];
@@ -91,8 +119,13 @@
     function resize() {
       if (!wrap) return;
       const rect = wrap.getBoundingClientRect();
-      width = Math.max(rect.width, 220);
-      height = Math.max(rect.height, 200);
+      if (isWelcome) {
+        width = Math.max(rect.width, window.innerWidth || 400);
+        height = Math.max(rect.height, window.innerHeight || 360);
+      } else {
+        width = Math.max(rect.width, 220);
+        height = Math.max(rect.height, 200);
+      }
       dpr = window.devicePixelRatio || 1;
       canvas.width = width * dpr;
       canvas.height = height * dpr;
@@ -110,9 +143,15 @@
     }
 
     function clamp(node) {
-      const pad = node.role === "name" ? node.size * 0.9 : node.size * 0.7;
+      const pad = isWelcome
+        ? (node.role === "name" ? 28 : 20)
+        : node.role === "name"
+          ? node.size * 0.9
+          : node.size * 0.7;
       node.x = Math.max(pad, Math.min(width - pad, node.x));
-      node.y = Math.max(pad + 8, Math.min(height - pad - 32, node.y));
+      const bottomInset = isWelcome ? pad : pad + 32;
+      const topInset = isWelcome ? pad : pad + 8;
+      node.y = Math.max(topInset, Math.min(height - bottomInset, node.y));
     }
 
     function applyPhysics() {
@@ -134,7 +173,13 @@
           let dx = b.x - a.x;
           let dy = b.y - a.y;
           const distSq = Math.max(dx * dx + dy * dy, 100);
-          const repulse = a.role === "name" || b.role === "name" ? 1650 : 1050;
+          const repulse = isWelcome
+            ? a.role === "name" || b.role === "name"
+              ? 4200
+              : 2800
+            : a.role === "name" || b.role === "name"
+              ? 1650
+              : 1050;
           const force = repulse / distSq;
           const dist = Math.sqrt(distSq);
           dx /= dist;
@@ -150,13 +195,19 @@
         const dx = edge.target.x - edge.source.x;
         const dy = edge.target.y - edge.source.y;
         const dist = Math.max(Math.sqrt(dx * dx + dy * dy), 1);
-        const rest =
-          edge.kind === "seq"
+        const span = Math.min(width, height);
+        const rest = isWelcome
+          ? edge.kind === "seq"
+            ? width * 0.16 + Math.sin(tick * 0.055) * 12
+            : edge.source.role === "name" || edge.target.role === "name"
+              ? span * 0.14 + Math.sin(tick * 0.04 + 1) * 10
+              : span * 0.11 + Math.cos(tick * 0.05) * 8
+          : edge.kind === "seq"
             ? width * 0.22 + Math.sin(tick * 0.055) * 10
             : edge.source.role === "name" || edge.target.role === "name"
               ? 68 + Math.sin(tick * 0.04 + 1) * 6
               : 52 + Math.cos(tick * 0.05) * 5;
-        const spring = (dist - rest) * (edge.kind === "seq" ? 0.0075 : 0.0042);
+        const spring = (dist - rest) * (edge.kind === "seq" ? (isWelcome ? 0.0055 : 0.0075) : isWelcome ? 0.003 : 0.0042);
         const ux = dx / dist;
         const uy = dy / dist;
         edge.source.vx += ux * spring;
@@ -172,12 +223,18 @@
           node.vx = 0;
           node.vy = 0;
         } else {
-          const pull = node.role === "name" ? 0.0028 : 0.0018;
+          const pull = isWelcome
+            ? node.role === "name"
+              ? 0.0022
+              : 0.0012
+            : node.role === "name"
+              ? 0.0028
+              : 0.0018;
           node.vx += (node.anchorX - node.x) * pull;
           node.vy += (node.anchorY - node.y) * pull;
           if (node.role === "method") {
             const dx = node.x - width / 2;
-            const dy = node.y - height * 0.44;
+            const dy = node.y - height * (isWelcome ? 0.5 : 0.44);
             const dist = Math.max(Math.sqrt(dx * dx + dy * dy), 1);
             const spin = 0.11 + Math.sin(tick * 0.03 + node.size) * 0.04;
             node.vx += (-dy / dist) * spin;
@@ -228,7 +285,17 @@
             : isDark
               ? "rgba(255,255,255,0.12)"
               : "rgba(108,92,231,0.2)";
-        ctx.lineWidth = isSeq ? 2 : hot ? 1.2 : 0.85;
+        ctx.lineWidth = isWelcome
+          ? isSeq
+            ? 3.5
+            : hot
+              ? 2.2
+              : 1.6
+          : isSeq
+            ? 2
+            : hot
+              ? 1.2
+              : 0.85;
         if (!isSeq) ctx.setLineDash([3, 4]);
         ctx.moveTo(edge.source.x, edge.source.y);
         ctx.lineTo(edge.target.x, edge.target.y);
@@ -248,8 +315,9 @@
 
       nodes.forEach(function (node) {
         const isName = node.role === "name";
+        const scale = isWelcome ? 2.1 : 1;
         const pulse = isName ? Math.sin(tick * 0.07) * 2.2 : Math.sin(tick * 0.05 + node.size) * 0.6;
-        const radius = node.size * (isName ? 0.62 : 0.5) + pulse;
+        const radius = node.size * (isName ? 0.62 : 0.5) * scale + pulse;
         const isHot = hovered === node;
 
         if (isName) {
@@ -270,11 +338,12 @@
         ctx.shadowBlur = 0;
 
         ctx.fillStyle = isDark ? "#ffffff" : "#0f0f14";
+        const labelSize = isWelcome ? (isName ? 26 : node.label.length > 8 ? 15 : 16) : (isName ? 15 : node.label.length > 8 ? 9 : 10);
         ctx.font = isName
-          ? "700 15px Inter, system-ui, sans-serif"
+          ? "700 " + labelSize + "px Inter, system-ui, sans-serif"
           : node.label.length > 8
-            ? "500 9px JetBrains Mono, monospace"
-            : "600 10px JetBrains Mono, monospace";
+            ? "500 " + labelSize + "px JetBrains Mono, monospace"
+            : "600 " + labelSize + "px JetBrains Mono, monospace";
         ctx.textAlign = "center";
         ctx.textBaseline = "middle";
         ctx.fillText(node.label, node.x, node.y);
@@ -285,7 +354,7 @@
       tick += 1;
       applyPhysics();
       draw();
-      requestAnimationFrame(render);
+      rafId = requestAnimationFrame(render);
     }
 
     function setPointer(evt) {
@@ -294,49 +363,57 @@
       pointer.y = evt.clientY - rect.top;
     }
 
-    canvas.addEventListener("pointermove", function (evt) {
+    function onPointerMove(evt) {
       setPointer(evt);
       hovered = pickNode(pointer.x, pointer.y);
       canvas.style.cursor = hovered ? "grab" : "default";
-    });
+    }
 
-    canvas.addEventListener("pointerdown", function (evt) {
+    function onPointerDown(evt) {
       setPointer(evt);
       dragged = pickNode(pointer.x, pointer.y);
       if (dragged) {
         canvas.setPointerCapture(evt.pointerId);
         canvas.style.cursor = "grabbing";
       }
-    });
+    }
 
-    canvas.addEventListener("pointerup", function () {
+    function onPointerUp() {
       dragged = null;
       canvas.style.cursor = hovered ? "grab" : "default";
-    });
+    }
 
-    canvas.addEventListener("pointerleave", function () {
+    function onPointerLeave() {
       hovered = null;
       dragged = null;
-    });
+    }
+
+    if (interactive) {
+      canvas.addEventListener("pointermove", onPointerMove);
+      canvas.addEventListener("pointerdown", onPointerDown);
+      canvas.addEventListener("pointerup", onPointerUp);
+      canvas.addEventListener("pointerleave", onPointerLeave);
+    }
 
     resize();
     window.addEventListener("resize", resize);
     render();
+
+    return {
+      destroy: function () {
+        if (rafId) cancelAnimationFrame(rafId);
+        rafId = null;
+        window.removeEventListener("resize", resize);
+        if (interactive) {
+          canvas.removeEventListener("pointermove", onPointerMove);
+          canvas.removeEventListener("pointerdown", onPointerDown);
+          canvas.removeEventListener("pointerup", onPointerUp);
+          canvas.removeEventListener("pointerleave", onPointerLeave);
+        }
+        canvas.dataset.ready = "";
+      },
+    };
   }
 
-  function mountNameGraph() {
-    const mount = document.getElementById("name-graph-mount");
-    const aboutEntity = document.querySelector(".about-entity");
-    if (!mount || !aboutEntity) return;
-
-    aboutEntity.insertBefore(mount, aboutEntity.firstChild);
-    const canvas = mount.querySelector("canvas");
-    if (canvas) initNameGraph(canvas);
-  }
-
-  if (document.readyState === "loading") {
-    document.addEventListener("DOMContentLoaded", mountNameGraph);
-  } else {
-    mountNameGraph();
-  }
+  window.initNameGraph = initNameGraph;
 })();
