@@ -95,6 +95,8 @@ gtag('config', '', { 'anonymize_ip': true});
 </head><body class="nav-fixed"><div id="welcome-splash" class="welcome-splash" hidden="" aria-hidden="true">
   <div class="welcome-splash__backdrop"></div>
   <div class="welcome-splash__glow" aria-hidden="true"></div>
+  <div class="welcome-splash__flash welcome-splash__flash--a" aria-hidden="true"></div>
+  <div class="welcome-splash__flash welcome-splash__flash--b" aria-hidden="true"></div>
   <div class="welcome-splash__content">
     <h1 class="welcome-splash__headline" data-headline-en="WELCOME" data-headline-es="BIENVENIDO">WELCOME</h1>
     <p class="welcome-splash__tagline" data-tagline-en="to Matías Deneken's web profile" data-tagline-es="al sitio web y perfil de Matías Deneken"></p>
@@ -281,7 +283,9 @@ document.addEventListener("DOMContentLoaded", function () {
             '<span class="welcome-splash__letter' +
             extra +
             '" style="animation-delay:' +
-            (0.06 + i * 0.052) +
+            (0.04 + i * 0.042) +
+            "s, " +
+            (0.55 + i * 0.04) +
             's">' +
             display +
             "</span>"
@@ -315,7 +319,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     window.setTimeout(function () {
       splash.classList.add("is-exiting");
-    }, 2400);
+    }, 3600);
 
     window.setTimeout(function () {
       splash.classList.remove("is-visible", "is-exiting");
@@ -323,7 +327,7 @@ document.addEventListener("DOMContentLoaded", function () {
       splash.setAttribute("aria-hidden", "true");
       document.body.classList.remove("welcome-active");
       sessionStorage.setItem("welcome-seen", "1");
-    }, 3300);
+    }, 4500);
   }
 
   initWelcomeSplash();
