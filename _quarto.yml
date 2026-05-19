@@ -43,8 +43,6 @@ website:
       - icon: github
         href: https://github.com/matdknu
         target: _blank
-      - icon: envelope
-        href: mailto:m.deneken@alumni.uc.cl
   
   page-navigation: true
   
@@ -62,11 +60,9 @@ website:
         href: posts.xml
         target: _blank  
   
-  search:
-    location: navbar
-    type: textbox
-  
-  reader-mode: true
+  reader-mode: false
+
+  search: false
 
   draft-mode: unlinked
   
