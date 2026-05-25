@@ -551,7 +551,7 @@ document.addEventListener("DOMContentLoaded", function () {
 </header>
 
 
-<div class="coming-soon-shell">
+<div class="wide-page-shell">
   <header class="page-header-minimal" data-lang="en">
     <h1 class="page-title-minimal">Presentations</h1>
   </header>
@@ -561,56 +561,41 @@ document.addEventListener("DOMContentLoaded", function () {
   </header>
 
   <section class="page-wrap">
-    <div class="page-content">
-      <div class="coming-soon-container">
-        <div class="coming-soon-box">
-          <p class="coming-soon-text" data-lang="en">Coming soon</p>
-          <p class="coming-soon-text" data-lang="es" style="display:none;">Próximamente</p>
-        </div>
-      </div>
+    <div class="page-content-wide">
+      <p class="coming-soon-simple" data-lang="en">Coming soon</p>
+      <p class="coming-soon-simple" data-lang="es" style="display:none;">Próximamente</p>
     </div>
   </section>
 </div>
 
 <style>
-.coming-soon-shell {
-  max-width: 1200px;
+.wide-page-shell {
+  max-width: 1400px;
   margin: 0 auto;
-  padding: 2rem 1rem;
+  padding: 2rem 3rem;
 }
 
-.coming-soon-container {
-  min-height: 400px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.page-content-wide {
+  min-height: 300px;
+  padding: 2rem 0;
 }
 
-.coming-soon-box {
-  background: linear-gradient(135deg, rgba(139, 124, 248, 0.08) 0%, rgba(244, 114, 182, 0.08) 100%);
-  border: 1px solid rgba(139, 124, 248, 0.2);
-  border-radius: 12px;
-  padding: 4rem 3rem;
-  text-align: center;
-  max-width: 500px;
-  width: 100%;
-}
-
-.coming-soon-text {
-  font-size: 2rem;
-  font-weight: 500;
+.coming-soon-simple {
+  font-size: 1.5rem;
+  font-weight: 400;
   color: var(--ink-muted, #52526a);
   margin: 0;
   font-style: italic;
+  line-height: 1.6;
 }
 
 @media (max-width: 768px) {
-  .coming-soon-box {
-    padding: 3rem 2rem;
+  .wide-page-shell {
+    padding: 1.5rem 1rem;
   }
 
-  .coming-soon-text {
-    font-size: 1.5rem;
+  .coming-soon-simple {
+    font-size: 1.25rem;
   }
 }
 </style>
