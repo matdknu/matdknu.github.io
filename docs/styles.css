@@ -135,6 +135,16 @@ pre,
   font-weight: 500;
 }
 
+/* Research dropdown: same width as Vinculación */
+.navbar .nav-item.dropdown .nav-link.dropdown-toggle {
+  min-width: 85px;
+  text-align: center;
+}
+
+.navbar .nav-item.dropdown .dropdown-menu {
+  min-width: 160px;
+}
+
 .navbar .nav-item.nav-charts-strip-wrap {
   display: flex;
   align-items: center;

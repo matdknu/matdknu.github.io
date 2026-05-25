@@ -11,7 +11,9 @@ project:
   render:
     - index.qmd
     - agenda.qmd
-    - research.qmd
+    - projects.qmd
+    - publications.qmd
+    - presentations.qmd
     - vinculacion.qmd
     - blog.qmd
     - photography.qmd
@@ -33,7 +35,13 @@ website:
       - text: Agenda
         href: agenda.qmd
       - text: Research
-        href: research.qmd
+        menu:
+          - text: Projects
+            href: projects.qmd
+          - text: Publications
+            href: publications.qmd
+          - text: Presentations
+            href: presentations.qmd
       - text: Vinculación
         href: vinculacion.qmd
       - text: Blog

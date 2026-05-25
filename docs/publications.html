@@ -7,9 +7,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Matías Deneken">
-<meta name="description" content="Research, projects and presentations by Matías Deneken.">
+<meta name="description" content="Research publications by Matías Deneken.">
 
-<title>Research – Matías Deneken</title>
+<title>Publications – Matías Deneken</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -73,10 +73,10 @@ gtag('config', '', { 'anonymize_ip': true});
 <script src="files/js/name-graph.js"></script>
 <script src="files/js/nav-mini-charts.js"></script>
 
-<meta property="og:title" content="Research – Matías Deneken">
+<meta property="og:title" content="Publications – Matías Deneken">
 <meta property="og:image" content="https://matdknu.github.io/files/images/my-face.JPG">
 <meta property="og:site_name" content="Matías Deneken">
-<meta name="twitter:title" content="Research – Matías Deneken">
+<meta name="twitter:title" content="Publications – Matías Deneken">
 <meta name="twitter:image" content="https://matdknu.github.io/files/images/my-face.JPG">
 <meta name="twitter:card" content="summary_large_image">
 </head><body class="nav-fixed"><div id="welcome-splash" class="welcome-splash" hidden="" aria-hidden="true">
@@ -475,10 +475,25 @@ document.addEventListener("DOMContentLoaded", function () {
     <a class="nav-link" href="./agenda.html"> 
 <span class="menu-text">Agenda</span></a>
   </li>  
-  <li class="nav-item">
-    <a class="nav-link active" href="./research.html" aria-current="page"> 
-<span class="menu-text">Research</span></a>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-research" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Research</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-research">    
+        <li>
+    <a class="dropdown-item" href="./projects.html">
+ <span class="dropdown-text">Projects</span></a>
   </li>  
+        <li>
+    <a class="dropdown-item" href="./publications.html">
+ <span class="dropdown-text">Publications</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./presentations.html">
+ <span class="dropdown-text">Presentations</span></a>
+  </li>  
+    </ul>
+  </li>
   <li class="nav-item">
     <a class="nav-link" href="./vinculacion.html"> 
 <span class="menu-text">Vinculación</span></a>
@@ -519,7 +534,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Research</h1>
+<h1 class="title">Publications</h1>
 </div>
 
 
@@ -536,60 +551,21 @@ document.addEventListener("DOMContentLoaded", function () {
 </header>
 
 
-<div class="research-shell">
+<div class="coming-soon-shell">
   <header class="page-header-minimal" data-lang="en">
-    <h1 class="page-title-minimal">Research</h1>
+    <h1 class="page-title-minimal">Publications</h1>
   </header>
 
   <header class="page-header-minimal" data-lang="es" style="display:none;">
-    <h1 class="page-title-minimal">Investigación</h1>
+    <h1 class="page-title-minimal">Publicaciones</h1>
   </header>
 
-  <section class="page-wrap" data-lang="en">
+  <section class="page-wrap">
     <div class="page-content">
-      <div class="research-section">
-        <h2 class="section-title-minimal anchored">Research</h2>
+      <div class="coming-soon-container">
         <div class="coming-soon-box">
-          <p class="coming-soon-text">Coming soon</p>
-        </div>
-      </div>
-
-      <div class="research-section">
-        <h2 class="section-title-minimal anchored">Projects</h2>
-        <div class="coming-soon-box">
-          <p class="coming-soon-text">Coming soon</p>
-        </div>
-      </div>
-
-      <div class="research-section">
-        <h2 class="section-title-minimal anchored">Presentations</h2>
-        <div class="coming-soon-box">
-          <p class="coming-soon-text">Coming soon</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="page-wrap" data-lang="es" style="display:none;">
-    <div class="page-content">
-      <div class="research-section">
-        <h2 class="section-title-minimal anchored">Investigación</h2>
-        <div class="coming-soon-box">
-          <p class="coming-soon-text">Próximamente</p>
-        </div>
-      </div>
-
-      <div class="research-section">
-        <h2 class="section-title-minimal anchored">Proyectos</h2>
-        <div class="coming-soon-box">
-          <p class="coming-soon-text">Próximamente</p>
-        </div>
-      </div>
-
-      <div class="research-section">
-        <h2 class="section-title-minimal anchored">Presentaciones</h2>
-        <div class="coming-soon-box">
-          <p class="coming-soon-text">Próximamente</p>
+          <p class="coming-soon-text" data-lang="en">Coming soon</p>
+          <p class="coming-soon-text" data-lang="es" style="display:none;">Próximamente</p>
         </div>
       </div>
     </div>
@@ -597,27 +573,31 @@ document.addEventListener("DOMContentLoaded", function () {
 </div>
 
 <style>
-.research-shell {
+.coming-soon-shell {
   max-width: 1200px;
   margin: 0 auto;
   padding: 2rem 1rem;
 }
 
-.research-section {
-  margin-bottom: 3rem;
+.coming-soon-container {
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .coming-soon-box {
   background: linear-gradient(135deg, rgba(139, 124, 248, 0.08) 0%, rgba(244, 114, 182, 0.08) 100%);
   border: 1px solid rgba(139, 124, 248, 0.2);
   border-radius: 12px;
-  padding: 3rem 2rem;
+  padding: 4rem 3rem;
   text-align: center;
-  margin-top: 1rem;
+  max-width: 500px;
+  width: 100%;
 }
 
 .coming-soon-text {
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: 500;
   color: var(--ink-muted, #52526a);
   margin: 0;
@@ -625,16 +605,12 @@ document.addEventListener("DOMContentLoaded", function () {
 }
 
 @media (max-width: 768px) {
-  .research-shell {
-    padding: 1.5rem 1rem;
-  }
-
   .coming-soon-box {
-    padding: 2rem 1rem;
+    padding: 3rem 2rem;
   }
 
   .coming-soon-text {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
   }
 }
 </style>

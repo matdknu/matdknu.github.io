@@ -1,0 +1,76 @@
+---
+title: "Presentations"
+description-meta: "Research presentations by Matías Deneken."
+page-navigation: true
+toc: false
+page-layout: full
+format:
+  html:
+    title-block: false
+---
+
+```{=html}
+<div class="coming-soon-shell">
+  <header class="page-header-minimal" data-lang="en">
+    <h1 class="page-title-minimal">Presentations</h1>
+  </header>
+
+  <header class="page-header-minimal" data-lang="es" style="display:none;">
+    <h1 class="page-title-minimal">Presentaciones</h1>
+  </header>
+
+  <section class="page-wrap">
+    <div class="page-content">
+      <div class="coming-soon-container">
+        <div class="coming-soon-box">
+          <p class="coming-soon-text" data-lang="en">Coming soon</p>
+          <p class="coming-soon-text" data-lang="es" style="display:none;">Próximamente</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<style>
+.coming-soon-shell {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.coming-soon-container {
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.coming-soon-box {
+  background: linear-gradient(135deg, rgba(139, 124, 248, 0.08) 0%, rgba(244, 114, 182, 0.08) 100%);
+  border: 1px solid rgba(139, 124, 248, 0.2);
+  border-radius: 12px;
+  padding: 4rem 3rem;
+  text-align: center;
+  max-width: 500px;
+  width: 100%;
+}
+
+.coming-soon-text {
+  font-size: 2rem;
+  font-weight: 500;
+  color: var(--ink-muted, #52526a);
+  margin: 0;
+  font-style: italic;
+}
+
+@media (max-width: 768px) {
+  .coming-soon-box {
+    padding: 3rem 2rem;
+  }
+
+  .coming-soon-text {
+    font-size: 1.5rem;
+  }
+}
+</style>
+```
