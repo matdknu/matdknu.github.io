@@ -1,0 +1,115 @@
+---
+title: "Research"
+description-meta: "Research, projects and presentations by Matías Deneken."
+page-navigation: true
+toc: false
+page-layout: full
+format:
+  html:
+    title-block: false
+---
+
+```{=html}
+<div class="research-shell">
+  <header class="page-header-minimal" data-lang="en">
+    <h1 class="page-title-minimal">Research</h1>
+  </header>
+
+  <header class="page-header-minimal" data-lang="es" style="display:none;">
+    <h1 class="page-title-minimal">Investigación</h1>
+  </header>
+
+  <section class="page-wrap" data-lang="en">
+    <div class="page-content">
+      <div class="research-section">
+        <h2 class="section-title-minimal">Research</h2>
+        <div class="coming-soon-box">
+          <p class="coming-soon-text">Coming soon</p>
+        </div>
+      </div>
+
+      <div class="research-section">
+        <h2 class="section-title-minimal">Projects</h2>
+        <div class="coming-soon-box">
+          <p class="coming-soon-text">Coming soon</p>
+        </div>
+      </div>
+
+      <div class="research-section">
+        <h2 class="section-title-minimal">Presentations</h2>
+        <div class="coming-soon-box">
+          <p class="coming-soon-text">Coming soon</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="page-wrap" data-lang="es" style="display:none;">
+    <div class="page-content">
+      <div class="research-section">
+        <h2 class="section-title-minimal">Investigación</h2>
+        <div class="coming-soon-box">
+          <p class="coming-soon-text">Próximamente</p>
+        </div>
+      </div>
+
+      <div class="research-section">
+        <h2 class="section-title-minimal">Proyectos</h2>
+        <div class="coming-soon-box">
+          <p class="coming-soon-text">Próximamente</p>
+        </div>
+      </div>
+
+      <div class="research-section">
+        <h2 class="section-title-minimal">Presentaciones</h2>
+        <div class="coming-soon-box">
+          <p class="coming-soon-text">Próximamente</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<style>
+.research-shell {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.research-section {
+  margin-bottom: 3rem;
+}
+
+.coming-soon-box {
+  background: linear-gradient(135deg, rgba(139, 124, 248, 0.08) 0%, rgba(244, 114, 182, 0.08) 100%);
+  border: 1px solid rgba(139, 124, 248, 0.2);
+  border-radius: 12px;
+  padding: 3rem 2rem;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.coming-soon-text {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--ink-muted, #52526a);
+  margin: 0;
+  font-style: italic;
+}
+
+@media (max-width: 768px) {
+  .research-shell {
+    padding: 1.5rem 1rem;
+  }
+
+  .coming-soon-box {
+    padding: 2rem 1rem;
+  }
+
+  .coming-soon-text {
+    font-size: 1.25rem;
+  }
+}
+</style>
+```
