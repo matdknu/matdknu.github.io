@@ -7,9 +7,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Matías Deneken">
-<meta name="description" content="Notas y escritos — próximamente.">
+<meta name="description" content="About Matías Deneken.">
 
-<title>Blog – Matías Deneken</title>
+<title>About me – Matías Deneken</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -73,10 +73,10 @@ gtag('config', '', { 'anonymize_ip': true});
 <script src="files/js/name-graph.js"></script>
 <script src="files/js/nav-mini-charts.js"></script>
 
-<meta property="og:title" content="Blog – Matías Deneken">
+<meta property="og:title" content="About me – Matías Deneken">
 <meta property="og:image" content="https://matdknu.github.io/files/images/my-face.JPG">
 <meta property="og:site_name" content="Matías Deneken">
-<meta name="twitter:title" content="Blog – Matías Deneken">
+<meta name="twitter:title" content="About me – Matías Deneken">
 <meta name="twitter:image" content="https://matdknu.github.io/files/images/my-face.JPG">
 <meta name="twitter:card" content="summary_large_image">
 </head><body class="nav-fixed"><div id="welcome-splash" class="welcome-splash" hidden="" aria-hidden="true">
@@ -188,6 +188,14 @@ window.switchLanguage = function (lang) {
       photoText.textContent = lang === "es" ? "Fotografía" : "Photography";
     }
   }
+
+  var aboutLink = document.querySelector('.navbar a.nav-link[href*="about-me"]');
+  if (aboutLink) {
+    var aboutText = aboutLink.querySelector(".menu-text");
+    if (aboutText) {
+      aboutText.textContent = lang === "es" ? "Sobre mí" : "About me";
+    }
+  }
 };
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -263,7 +271,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     var anchorLink =
       document.querySelector('.navbar a.nav-link[href*="photography"]') ||
-      document.querySelector('.navbar a.nav-link[href*="blog"]');
+      document.querySelector('.navbar a.nav-link[href*="about-me"]');
     var anchorLi = anchorLink ? anchorLink.closest("li") : null;
     if (!anchorLi || !anchorLi.parentNode) return;
 
@@ -499,8 +507,8 @@ document.addEventListener("DOMContentLoaded", function () {
 <span class="menu-text">Vinculación</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./blog.html" aria-current="page"> 
-<span class="menu-text">Blog</span></a>
+    <a class="nav-link active" href="./about-me.html" aria-current="page"> 
+<span class="menu-text">About me</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./photography.html"> 
@@ -534,7 +542,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Blog</h1>
+<h1 class="title">About me</h1>
 </div>
 
 
@@ -551,23 +559,92 @@ document.addEventListener("DOMContentLoaded", function () {
 </header>
 
 
-<div class="blog-shell">
+<div class="wide-page-shell about-me-shell">
   <header class="page-header-minimal" data-lang="en">
-    <h1 class="page-title-minimal">Blog</h1>
+    <h1 class="page-title-minimal">About me</h1>
   </header>
 
   <header class="page-header-minimal" data-lang="es" style="display:none;">
-    <h1 class="page-title-minimal">Blog</h1>
+    <h1 class="page-title-minimal">Sobre mí</h1>
   </header>
 
-  <section class="page-wrap blog-body" data-lang="en">
-    <p class="blog-coming-soon">*Coming soon*</p>
+  <section class="page-wrap about-me-body" data-lang="en">
+    <div class="about-me-content">
+      <h2 class="about-me-subtitle anchored">Intellectual Trajectory toward Computational Social Science <s>machine</s> marxist learning</h2>
+      <p>My current research agenda converges on Computational Social Science, although this path is not immediately apparent from my earlier work.</p>
+      <p>In my undergraduate thesis I examined the process of reopening the sociology department at the Universidad de Concepción, one of the institutions most severely affected by Augusto Pinochet's dictatorship, which overthrew the first democratically elected socialist government in the world. In my master's thesis I expanded that agenda to study the creation of the Sociology program at the Pontificia Universidad Católica de Chile and the subsequent founding of the Centro de Estudios de la Realidad Nacional (CEREN), which was shut down once the dictatorship began.</p>
+      <p>Although this trajectory might be read as belonging to a qualitative, Latin Americanist tradition, it in fact points to something more precise: the ruptures and continuities of thought in the social sciences. That underlying question is what led me to Computational Social Science.</p>
+      <p>The continuity is deeper than it appears. In both moments, the central object is the relationship between power, knowledge, and the public sphere. Previously, that relationship manifested in the closure of a university department or the shutdown of a research center. Today it manifests in algorithms that determine which political discourse circulates, in language models that shape public opinion, and in automated disinformation that erodes the epistemic conditions of democracy.</p>
+      <p>My training in textual analysis — rooted in the hermeneutic tradition of the social sciences and in systematic work with historical sources — now extends toward large-scale computational text processing, digital political discourse analysis, and the implications of artificial intelligence for democracy. What distinguishes me in that field is that I do not approach texts as raw data: I arrive with a deeply elaborated political and historical question about what it means for certain voices to be silenced or amplified.</p>
+      <p>It is precisely that articulation between Latin American intellectual history and contemporary computational tools that guides my doctoral formation.</p>
+    </div>
   </section>
 
-  <section class="page-wrap blog-body" data-lang="es" style="display:none;">
-    <p class="blog-coming-soon">*Coming soon*</p>
+  <section class="page-wrap about-me-body" data-lang="es" style="display:none;">
+    <div class="about-me-content">
+      <h2 class="about-me-subtitle anchored">Trayectoria intelectual hacia la Ciencia Social Computacional: El <s>machine</s> marxist learning</h2>
+      <p>Mi agenda de investigación actual converge en la Ciencia Social Computacional, aunque este derrotero no resulta evidente desde mis trabajos iniciales.</p>
+      <p>En mi tesis de pregrado indagué el proceso de reapertura de la sociología en la Universidad de Concepción, una de las instituciones más severamente afectadas por la dictadura de Augusto Pinochet, que derrocó al primer gobierno socialista elegido democráticamente en el mundo. En mi tesis de maestría expandí esa agenda hacia la creación de la carrera de Sociología en la Pontificia Universidad Católica de Chile y la posterior fundación del Centro de Estudios de la Realidad Nacional (CEREN), clausurado una vez iniciada la dictadura.</p>
+      <p>Aunque este recorrido podría leerse como perteneciente a una tradición cualitativa y latinoamericanista, en los hechos refiere a algo más preciso: las rupturas y continuidades del pensamiento en las ciencias sociales. Es esa pregunta de fondo la que me condujo a la Ciencia Social Computacional.</p>
+      <p>La continuidad es más profunda de lo que parece. En ambos momentos el objeto central es la relación entre poder, conocimiento y esfera pública. Antes esa relación se manifestaba en el cierre de una carrera universitaria o la clausura de un centro de estudios. Hoy se manifiesta en algoritmos que determinan qué discurso político circula, en modelos de lenguaje que moldean la opinión pública, y en la desinformación automatizada que erosiona las condiciones epistémicas de la democracia.</p>
+      <p>Mi formación en análisis textual —enraizada en la tradición hermenéutica de las ciencias sociales y en el trabajo sistemático con fuentes históricas— se proyecta hacia el procesamiento computacional de texto a gran escala, el análisis del discurso político digital y las implicancias de la inteligencia artificial para la democracia. Lo que me distingue en ese campo es que no llego a los textos como dato bruto: llego con una pregunta política e histórica profundamente elaborada sobre qué significa que ciertas voces sean silenciadas o amplificadas.</p>
+      <p>Es precisamente esa articulación entre historia intelectual latinoamericana y herramientas computacionales contemporáneas la que orienta mi formación doctoral.</p>
+    </div>
   </section>
 </div>
+
+<style>
+.wide-page-shell {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 2rem 3rem;
+}
+
+.about-me-shell .page-wrap {
+  max-width: none;
+  padding: 0;
+}
+
+.about-me-body {
+  padding: 0.5rem 0 2rem;
+}
+
+.about-me-content {
+  max-width: 52rem;
+  font-size: 1rem;
+  line-height: 1.75;
+  color: var(--ink, #0f0f14);
+}
+
+.about-me-content p {
+  margin: 0 0 1rem;
+}
+
+.about-me-content h2,
+.about-me-content .about-me-subtitle {
+  margin: 0 0 1.25rem;
+  font-family: var(--font-editorial, "Playfair Display", Georgia, serif);
+  font-size: clamp(1.2rem, 2.2vw, 1.45rem);
+  font-weight: 400;
+  line-height: 1.35;
+  letter-spacing: -0.01em;
+  text-transform: none;
+  color: var(--ink, #0f0f14);
+  border: none;
+  padding: 0;
+}
+
+.about-me-content s {
+  text-decoration: line-through;
+  opacity: 0.55;
+}
+
+@media (max-width: 768px) {
+  .wide-page-shell {
+    padding: 1.5rem 1rem;
+  }
+}
+</style>
 
 
 

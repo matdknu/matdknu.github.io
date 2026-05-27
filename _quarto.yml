@@ -15,7 +15,7 @@ project:
     - publications.qmd
     - presentations.qmd
     - vinculacion.qmd
-    - blog.qmd
+    - about-me.qmd
     - photography.qmd
     - 404.qmd
 
@@ -44,8 +44,8 @@ website:
             href: presentations.qmd
       - text: Vinculación
         href: vinculacion.qmd
-      - text: Blog
-        href: blog.qmd
+      - text: About me
+        href: about-me.qmd
       - text: Photography
         href: photography.qmd
     right: 

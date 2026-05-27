@@ -188,6 +188,14 @@ window.switchLanguage = function (lang) {
       photoText.textContent = lang === "es" ? "Fotografía" : "Photography";
     }
   }
+
+  var aboutLink = document.querySelector('.navbar a.nav-link[href*="about-me"]');
+  if (aboutLink) {
+    var aboutText = aboutLink.querySelector(".menu-text");
+    if (aboutText) {
+      aboutText.textContent = lang === "es" ? "Sobre mí" : "About me";
+    }
+  }
 };
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -263,7 +271,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     var anchorLink =
       document.querySelector('.navbar a.nav-link[href*="photography"]') ||
-      document.querySelector('.navbar a.nav-link[href*="blog"]');
+      document.querySelector('.navbar a.nav-link[href*="about-me"]');
     var anchorLi = anchorLink ? anchorLink.closest("li") : null;
     if (!anchorLi || !anchorLi.parentNode) return;
 
@@ -499,8 +507,8 @@ document.addEventListener("DOMContentLoaded", function () {
 <span class="menu-text">Vinculación</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./blog.html"> 
-<span class="menu-text">Blog</span></a>
+    <a class="nav-link" href="./about-me.html"> 
+<span class="menu-text">About me</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link active" href="./photography.html" aria-current="page"> 
