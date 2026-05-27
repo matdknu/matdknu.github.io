@@ -20,7 +20,7 @@ about:
       href: m.deneken@uc.cl  
     - icon: linkedin
       text: LinkedIn
-      href: https://linkedin.com/deneken
+      href: https://www.linkedin.com/in/deneken/
       target: _blank
     - text: "{{< ai orcid >}} ORCID"
       href: https://orcid.org
