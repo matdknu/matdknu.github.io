@@ -75,11 +75,11 @@ gtag('config', '', { 'anonymize_ip': true});
 
 <meta property="og:title" content="Page Unplugged – Matías Deneken">
 <meta property="og:description" content="Sociologist and Data Scientist | Research in Computational Social Science">
-<meta property="og:image" content="https://matdknu.github.io/files/images/my-face.JPG">
+<meta property="og:image" content="https://deneken.me/files/images/my-face.JPG">
 <meta property="og:site_name" content="Matías Deneken">
 <meta name="twitter:title" content="Page Unplugged – Matías Deneken">
 <meta name="twitter:description" content="Sociologist and Data Scientist | Research in Computational Social Science">
-<meta name="twitter:image" content="https://matdknu.github.io/files/images/my-face.JPG">
+<meta name="twitter:image" content="https://deneken.me/files/images/my-face.JPG">
 <meta name="twitter:card" content="summary_large_image">
 </head><body class="nav-fixed"><div id="welcome-splash" class="welcome-splash" hidden="" aria-hidden="true">
   <div class="welcome-splash__backdrop"></div>
@@ -272,8 +272,7 @@ document.addEventListener("DOMContentLoaded", function () {
     if (document.getElementById("nav-charts-strip")) return;
 
     var anchorLink =
-      document.querySelector('.navbar a.nav-link[href*="photography"]') ||
-      document.querySelector('.navbar a.nav-link[href*="about-me"]');
+      document.querySelector('.navbar a.nav-link[href*="photography"]');
     var anchorLi = anchorLink ? anchorLink.closest("li") : null;
     if (!anchorLi || !anchorLi.parentNode) return;
 
@@ -476,6 +475,10 @@ document.addEventListener("DOMContentLoaded", function () {
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
+    <a class="nav-link" href="/about-me.html"> 
+<span class="menu-text">About me</span></a>
+  </li>  
+  <li class="nav-item">
     <a class="nav-link" href="/agenda.html"> 
 <span class="menu-text">Agenda</span></a>
   </li>  
@@ -501,10 +504,6 @@ document.addEventListener("DOMContentLoaded", function () {
   <li class="nav-item">
     <a class="nav-link" href="/vinculacion.html"> 
 <span class="menu-text">Vinculación</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="/about-me.html"> 
-<span class="menu-text">About me</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="/photography.html"> 
@@ -992,7 +991,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left">
-<a href="https://matdknu.github.io">Matías Deneken</a> ©
+<a href="https://deneken.me">Matías Deneken</a> ©
 <script>document.write(new Date().getFullYear())</script>
 </div>   
     <div class="nav-footer-center">

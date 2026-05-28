@@ -207,8 +207,7 @@ document.addEventListener("DOMContentLoaded", function () {
     if (document.getElementById("nav-charts-strip")) return;
 
     var anchorLink =
-      document.querySelector('.navbar a.nav-link[href*="photography"]') ||
-      document.querySelector('.navbar a.nav-link[href*="about-me"]');
+      document.querySelector('.navbar a.nav-link[href*="photography"]');
     var anchorLi = anchorLink ? anchorLink.closest("li") : null;
     if (!anchorLi || !anchorLi.parentNode) return;
 

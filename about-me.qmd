@@ -21,7 +21,7 @@ format:
 
   <section class="page-wrap about-me-body" data-lang="en">
     <div class="about-me-content">
-      <h2 class="about-me-subtitle">Intellectual Trajectory toward Computational Social Science: The <s>machine</s> marxist learning</h2>
+      <h2 class="about-me-subtitle">Intellectual Trajectory toward Computational Social Science: The machine learning <s>marxists learning</s></h2>
       <p>My current research agenda converges on Computational Social Science, although this path is not immediately apparent from my earlier work.</p>
       <p>In my undergraduate thesis I examined the process of reopening the sociology department at the Universidad de Concepción, one of the institutions most severely affected by Augusto Pinochet's dictatorship, which overthrew the first democratically elected socialist government in the world. In my master's thesis I expanded that agenda to study the creation of the Sociology program at the Pontificia Universidad Católica de Chile and the subsequent founding of the Centro de Estudios de la Realidad Nacional (CEREN), which was shut down once the dictatorship began.</p>
       <p>Although this trajectory might be read as belonging to a qualitative, Latin Americanist tradition, it in fact points to something more precise: the ruptures and continuities of thought in the social sciences. That underlying question is what led me to Computational Social Science.</p>
@@ -33,7 +33,7 @@ format:
 
   <section class="page-wrap about-me-body" data-lang="es" style="display:none;">
     <div class="about-me-content">
-      <h2 class="about-me-subtitle">Trayectoria intelectual hacia la Ciencia Social Computacional: El <s>machine</s> marxist learning</h2>
+      <h2 class="about-me-subtitle">Trayectoria intelectual hacia la Ciencia Social Computacional: El machine learning <s>marxists learning</s></h2>
       <p>Mi agenda de investigación actual converge en la Ciencia Social Computacional, aunque este derrotero no resulta evidente desde mis trabajos iniciales.</p>
       <p>En mi tesis de pregrado indagué el proceso de reapertura de la sociología en la Universidad de Concepción, una de las instituciones más severamente afectadas por la dictadura de Augusto Pinochet, que derrocó al primer gobierno socialista elegido democráticamente en el mundo. En mi tesis de maestría expandí esa agenda hacia la creación de la carrera de Sociología en la Pontificia Universidad Católica de Chile y la posterior fundación del Centro de Estudios de la Realidad Nacional (CEREN), clausurado una vez iniciada la dictadura.</p>
       <p>Aunque este recorrido podría leerse como perteneciente a una tradición cualitativa y latinoamericanista, en los hechos refiere a algo más preciso: las rupturas y continuidades del pensamiento en las ciencias sociales. Es esa pregunta de fondo la que me condujo a la Ciencia Social Computacional.</p>

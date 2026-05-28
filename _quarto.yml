@@ -32,6 +32,8 @@ website:
     left:
       - text: Home
         href: index.qmd
+      - text: About me
+        href: about-me.qmd
       - text: Agenda
         href: agenda.qmd
       - text: Research
@@ -44,8 +46,6 @@ website:
             href: presentations.qmd
       - text: Vinculación
         href: vinculacion.qmd
-      - text: About me
-        href: about-me.qmd
       - text: Photography
         href: photography.qmd
     right: 
@@ -58,7 +58,7 @@ website:
   page-navigation: true
   
   page-footer: 
-    left: "[Matías Deneken](https://matdknu.github.io) &copy; <script>document.write(new Date().getFullYear())</script>" 
+    left: "[Matías Deneken](https://deneken.me) &copy; <script>document.write(new Date().getFullYear())</script>"
     center: "Updated in Quarto by Matías Deneken"
     right:  
       - icon: github
@@ -85,7 +85,7 @@ website:
   twitter-card: true 
 #  card-style: summary      
   
-  site-url: "https://matdknu.github.io"
+  site-url: "https://deneken.me"
   
   google-analytics:
     tracking-id: ""  # Please delete or replace with your own tracking ID
