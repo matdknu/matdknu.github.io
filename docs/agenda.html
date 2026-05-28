@@ -63,15 +63,6 @@ function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
 gtag('config', '', { 'anonymize_ip': true});
 </script>
-<script>
-(function () {
-  var h = location.hostname;
-  if (location.protocol === "http:" && (h === "deneken.me" || h === "www.deneken.me")) {
-    location.replace("https://" + h + location.pathname + location.search + location.hash);
-  }
-})();
-</script>
-
 <!-- Academicons + embeds -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">

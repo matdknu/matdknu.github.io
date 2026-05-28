@@ -1,13 +1,14 @@
 project:
   type: website
   output-dir: docs
+  post-render: bash _post-render.sh
   resources:
+    - styles.css
     - files/js/name-graph.js
     - files/js/nav-mini-charts.js
-    - files/images/photos/torres_del_paine.JPG
-    - files/images/photos/atacama_desierto.JPG
-    - files/images/photos/puerto_natales.JPG
-    - files/images/photos/punta_arenas.JPG
+    - files/images/my-face.jpg
+    - files/images/casa.jpeg
+    - files/images/photos/
   render:
     - index.qmd
     - agenda.qmd
