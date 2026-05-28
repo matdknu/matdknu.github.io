@@ -146,7 +146,7 @@ Today, Matías is fully committed to building [**MethodoLab**](https://www.metho
 
 ## Past Experience
 
-Matías was affiliated with the **Government School at Pontificia Universidad Católica de Chile** through the **Observatory of Violence and Social Legitimacy** ([www.oles.cl](https://oles2.netlify.app/)), where he worked as a Research Assistant designing and maintaining large-scale longitudinal databases and conducting automated web scraping pipelines for systematic monitoring of national newspapers.
+Matías was affiliated with the **Observatory of Violence and Social Legitimacy (OLES)** ([www.oles.cl](https://www.oles.cl/)), an institution that brings together different university consortia, where he worked as a Research Assistant designing and maintaining large-scale longitudinal databases and conducting automated web scraping pipelines for systematic monitoring of national newspapers.
 
 He has been a **Quantitative Studies Researcher** at the **Center for Intercultural and Indigenous Studies (CIIR)** ([www.ciir.cl](https://www.ciir.cl)) since December 2022, where he coordinated the Longitudinal Survey on Intercultural Relations (ELRI) — one of the most ambitious longitudinal instruments in Chilean social science — and co-edited the book *(RE) Configuraciones Interculturales*.
 
@@ -177,7 +177,7 @@ La [**agenda actual**](agenda.qmd) reúne de forma interactiva revisiones de lit
 
 ## Experiencia
 
-Matías estuvo afiliado a la **Escuela de Gobierno de la Pontificia Universidad Católica de Chile** mediante el **Observatorio de Violencia y Legitimidad Social** ([www.oles.cl](https://oles2.netlify.app/)), donde trabajó como Asistente de Investigación diseñando y manteniendo bases de datos longitudinales a gran escala y desarrollando pipelines de scraping web automatizado para el monitoreo sistemático de periódicos nacionales.
+Matías estuvo afiliado al **Observatorio de Violencia y Legitimidad Social (OLES)** ([www.oles.cl](https://www.oles.cl/)), institución que agrupa a diferentes consorcios universitarios, donde trabajó como Asistente de Investigación diseñando y manteniendo bases de datos longitudinales a gran escala y desarrollando pipelines de scraping web automatizado para el monitoreo sistemático de periódicos nacionales.
 
 Ha sido **Investigador en Estudios Cuantitativos** en el **Centro de Estudios Interculturales e Indígenas (CIIR)** ([www.ciir.cl](https://www.ciir.cl)) desde diciembre de 2022, donde coordinó la Encuesta Longitudinal de Relaciones Interculturales (ELRI) — uno de los instrumentos longitudinales más ambiciosos de las ciencias sociales chilenas — y co-editó el libro *(RE) Configuraciones Interculturales*.
 
