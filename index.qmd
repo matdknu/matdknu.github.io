@@ -5,6 +5,9 @@ image: "files/images/my-face.JPG"
 page-navigation: false
 toc: false
 page-layout: full
+format:
+  html:
+    include-in-header: files/includes/_welcome-splash.qmd
 
 about:
   id: hero-heading

@@ -1,0 +1,103 @@
+<div id="welcome-splash" class="welcome-splash" hidden aria-hidden="true">
+  <div class="welcome-splash__backdrop"></div>
+  <div class="welcome-splash__graph" aria-hidden="true">
+    <div class="welcome-splash__graph-inner">
+      <canvas id="welcome-name-graph-canvas" aria-hidden="true"></canvas>
+    </div>
+  </div>
+  <div class="welcome-splash__glow" aria-hidden="true"></div>
+  <div class="welcome-splash__flash welcome-splash__flash--a" aria-hidden="true"></div>
+  <div class="welcome-splash__flash welcome-splash__flash--b" aria-hidden="true"></div>
+  <div class="welcome-splash__content">
+    <h1
+      class="welcome-splash__headline"
+      data-headline-en="WELCOME"
+      data-headline-es="BIENVENIDO"
+    >WELCOME</h1>
+    <p
+      class="welcome-splash__tagline"
+      data-tagline-en="to Matías Deneken's web profile"
+      data-tagline-es="al sitio web y perfil de Matías Deneken"
+    ></p>
+  </div>
+</div>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  if (sessionStorage.getItem("welcome-seen")) return;
+  if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+    sessionStorage.setItem("welcome-seen", "1");
+    return;
+  }
+
+  var splash = document.getElementById("welcome-splash");
+  if (!splash) return;
+
+  var lang = localStorage.getItem("site-lang") || "en";
+  var headlineEl = splash.querySelector(".welcome-splash__headline");
+  var taglineEl = splash.querySelector(".welcome-splash__tagline");
+
+  function animateLetters(el, text) {
+    el.innerHTML = text
+      .split("")
+      .map(function (ch, i) {
+        var display = ch === " " ? "\u00a0" : ch;
+        var extra = ch === " " ? " welcome-splash__letter--space" : "";
+        return (
+          '<span class="welcome-splash__letter' +
+          extra +
+          '" style="animation-delay:' +
+          (0.04 + i * 0.042) +
+          "s, " +
+          (0.55 + i * 0.04) +
+          's">' +
+          display +
+          "</span>"
+        );
+      })
+      .join("");
+  }
+
+  var headline =
+    lang === "es"
+      ? headlineEl.getAttribute("data-headline-es")
+      : headlineEl.getAttribute("data-headline-en");
+  var tagline =
+    lang === "es"
+      ? taglineEl.getAttribute("data-tagline-es")
+      : taglineEl.getAttribute("data-tagline-en");
+
+  animateLetters(headlineEl, headline);
+  taglineEl.textContent = tagline;
+
+  var graphApi = null;
+  var graphCanvas = document.getElementById("welcome-name-graph-canvas");
+  if (graphCanvas && window.initNameGraph) {
+    graphApi = window.initNameGraph(graphCanvas, { interactive: false, mode: "welcome" });
+  }
+
+  splash.hidden = false;
+  splash.setAttribute("aria-hidden", "false");
+  document.body.classList.add("welcome-active");
+
+  requestAnimationFrame(function () {
+    splash.classList.add("is-visible");
+    window.setTimeout(function () {
+      taglineEl.classList.add("is-visible");
+    }, 480);
+  });
+
+  window.setTimeout(function () {
+    splash.classList.add("is-exiting");
+  }, 3600);
+
+  window.setTimeout(function () {
+    if (graphApi && graphApi.destroy) graphApi.destroy();
+    splash.classList.remove("is-visible", "is-exiting");
+    splash.hidden = true;
+    splash.setAttribute("aria-hidden", "true");
+    document.body.classList.remove("welcome-active");
+    sessionStorage.setItem("welcome-seen", "1");
+  }, 4500);
+});
+</script>
