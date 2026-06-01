@@ -2057,8 +2057,8 @@ main.content:has(.portafolio-detail-shell) #title-block-header {
 }
 
 .portafolio-detail-shell--immersive .portafolio-shiny-embed {
-  height: calc(100dvh - 7.25rem);
-  min-height: calc(100dvh - 7.25rem);
+  height: calc((100dvh - 7.25rem) * 0.5);
+  min-height: calc((100dvh - 7.25rem) * 0.5);
   max-height: none;
 }
 
@@ -2082,8 +2082,8 @@ main.content:has(.portafolio-detail-shell) #title-block-header {
   }
 
   .portafolio-detail-shell--immersive .portafolio-shiny-embed {
-    height: calc(100dvh - 8rem);
-    min-height: calc(100dvh - 8rem);
+    height: calc((100dvh - 8rem) * 0.5);
+    min-height: calc((100dvh - 8rem) * 0.5);
   }
 
   .portafolio-detail-shell--immersive .portafolio-detail-header {
