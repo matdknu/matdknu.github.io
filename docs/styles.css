@@ -1850,11 +1850,24 @@ html[data-theme="dark"] .photo-card {
 }
 
 /* Detail page: full width so the Shiny iframe can use the viewport */
+#quarto-content:has(.portafolio-detail-shell--immersive) {
+  padding-top: 0;
+}
+
 main.content:has(.portafolio-detail-shell) {
   max-width: none !important;
   width: 100%;
   padding-left: 0;
   padding-right: 0;
+}
+
+main.content:has(.portafolio-detail-shell--immersive) {
+  padding-top: 0.25rem;
+  padding-bottom: 0;
+}
+
+main.content:has(.portafolio-detail-shell) #title-block-header {
+  display: none !important;
 }
 
 .portafolio-detail-shell {
@@ -1973,6 +1986,86 @@ main.content:has(.portafolio-detail-shell) {
   background: #fff;
 }
 
+/* Immersive Shiny page: minimal chrome, iframe fills the viewport */
+.portafolio-detail-shell--immersive {
+  padding-bottom: 1rem;
+}
+
+.portafolio-detail-shell--immersive .portafolio-breadcrumb {
+  margin-bottom: 0.35rem;
+  font-size: 0.82rem;
+}
+
+.portafolio-detail-shell--immersive .portafolio-detail-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.35rem 1.25rem;
+  margin-bottom: 0.35rem;
+  padding-bottom: 0.35rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.portafolio-detail-shell--immersive .portafolio-detail-meta {
+  margin: 0;
+  width: 100%;
+}
+
+.portafolio-detail-shell--immersive .portafolio-detail-title {
+  margin: 0;
+  font-size: clamp(1.1rem, 2.2vw, 1.35rem);
+  flex: 1 1 auto;
+}
+
+.portafolio-detail-shell--immersive .portafolio-detail-more {
+  width: 100%;
+  margin: 0;
+  font-size: 0.88rem;
+}
+
+.portafolio-detail-shell--immersive .portafolio-detail-more summary {
+  cursor: pointer;
+  color: var(--ink-muted);
+  font-weight: 500;
+  list-style: none;
+}
+
+.portafolio-detail-shell--immersive .portafolio-detail-more summary::-webkit-details-marker {
+  display: none;
+}
+
+.portafolio-detail-shell--immersive .portafolio-detail-more summary::before {
+  content: "▸ ";
+}
+
+.portafolio-detail-shell--immersive .portafolio-detail-more[open] summary::before {
+  content: "▾ ";
+}
+
+.portafolio-detail-shell--immersive .portafolio-detail-more .portafolio-detail-lead {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.portafolio-detail-shell--immersive .portafolio-detail-links {
+  margin-left: auto;
+  gap: 0.65rem 1rem;
+}
+
+.portafolio-detail-shell--immersive .portafolio-shiny-section {
+  margin-bottom: 0.75rem;
+}
+
+.portafolio-detail-shell--immersive .portafolio-shiny-embed {
+  height: calc(100dvh - 7.25rem);
+  min-height: calc(100dvh - 7.25rem);
+  max-height: none;
+}
+
+.portafolio-detail-shell--immersive .portafolio-detail-about {
+  padding-top: 0.75rem;
+}
+
 .portafolio-detail-about .page-content {
   padding-top: 0;
   padding-bottom: 0;
@@ -1986,6 +2079,20 @@ main.content:has(.portafolio-detail-shell) {
   .portafolio-shiny-embed {
     min-height: 62dvh;
     height: calc(100dvh - 12rem);
+  }
+
+  .portafolio-detail-shell--immersive .portafolio-shiny-embed {
+    height: calc(100dvh - 8rem);
+    min-height: calc(100dvh - 8rem);
+  }
+
+  .portafolio-detail-shell--immersive .portafolio-detail-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .portafolio-detail-shell--immersive .portafolio-detail-links {
+    margin-left: 0;
   }
 }
 
