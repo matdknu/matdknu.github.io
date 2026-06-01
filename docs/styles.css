@@ -1849,10 +1849,31 @@ html[data-theme="dark"] .photo-card {
   color: #4834d4;
 }
 
+/* Detail page: full width so the Shiny iframe can use the viewport */
+main.content:has(.portafolio-detail-shell) {
+  max-width: none !important;
+  width: 100%;
+  padding-left: 0;
+  padding-right: 0;
+}
+
 .portafolio-detail-shell {
-  max-width: min(1200px, 100%);
-  margin: 0 auto;
-  padding: 0 0 3rem;
+  max-width: none;
+  width: 100%;
+  margin: 0;
+  padding: 0 0 2rem;
+}
+
+.portafolio-detail-shell .portafolio-breadcrumb,
+.portafolio-detail-shell .portafolio-detail-header,
+.portafolio-detail-shell .portafolio-shiny-section > .section-title-minimal,
+.portafolio-detail-shell .portafolio-shiny-note,
+.portafolio-detail-shell .portafolio-detail-about {
+  max-width: var(--max-page);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: clamp(1rem, 3vw, 2.5rem);
+  padding-right: clamp(1rem, 3vw, 2.5rem);
 }
 
 .portafolio-breadcrumb {
@@ -1871,8 +1892,8 @@ html[data-theme="dark"] .photo-card {
 }
 
 .portafolio-detail-header {
-  margin-bottom: 1.5rem;
-  padding-bottom: 1.25rem;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
   border-bottom: 1px solid var(--border);
 }
 
@@ -1916,31 +1937,38 @@ html[data-theme="dark"] .photo-card {
 }
 
 .portafolio-shiny-section {
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
+  width: 100%;
+  max-width: none;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .portafolio-shiny-note {
-  margin: 0 0 0.85rem;
+  margin: 0 0 0.65rem;
   font-size: 0.88rem;
   color: var(--ink-faint);
-  max-width: 42rem;
 }
 
 .portafolio-shiny-frame-wrap {
   position: relative;
   width: 100%;
-  border: 1px solid var(--border);
-  border-radius: 12px;
+  max-width: none;
+  margin: 0;
+  border: none;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  border-radius: 0;
   overflow: hidden;
   background: var(--surface-raised);
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+  box-shadow: none;
 }
 
 .portafolio-shiny-embed {
   display: block;
   width: 100%;
-  height: min(78vh, 900px);
-  min-height: 520px;
+  height: calc(100dvh - 10.5rem);
+  min-height: 820px;
   border: none;
   background: #fff;
 }
@@ -1956,8 +1984,8 @@ html[data-theme="dark"] .photo-card {
   }
 
   .portafolio-shiny-embed {
-    min-height: 420px;
-    height: 70vh;
+    min-height: 62dvh;
+    height: calc(100dvh - 12rem);
   }
 }
 
