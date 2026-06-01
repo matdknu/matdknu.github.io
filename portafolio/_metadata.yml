@@ -1,0 +1,5 @@
+page-navigation: true
+toc: false
+format:
+  html:
+    title-block: false

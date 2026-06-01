@@ -18,6 +18,8 @@ project:
     - vinculacion.qmd
     - about-me.qmd
     - photography.qmd
+    - portafolio/index.qmd
+    - portafolio/shiny_long/index.qmd
     - 404.qmd
 
 # Meta
@@ -33,6 +35,8 @@ website:
     left:
       - text: Home
         href: index.qmd
+      - text: Portafolio
+        href: portafolio/index.qmd
       - text: About me
         href: about-me.qmd
       - text: Agenda

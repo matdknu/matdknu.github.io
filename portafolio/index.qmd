@@ -1,0 +1,45 @@
+---
+title: "Portafolio"
+description-meta: "Proyectos interactivos y aplicaciones de datos — Matías Deneken."
+page-layout: full
+---
+
+```{=html}
+<div class="portafolio-shell">
+  <header class="page-header-minimal" data-lang="en">
+    <h1 class="page-title-minimal">Portfolio</h1>
+    <p class="portafolio-intro">Interactive data products, Shiny apps, and public-facing research tools.</p>
+  </header>
+
+  <header class="page-header-minimal" data-lang="es" style="display:none;">
+    <h1 class="page-title-minimal">Portafolio</h1>
+    <p class="portafolio-intro">Productos de datos interactivos, aplicaciones Shiny y herramientas de investigación orientadas al público.</p>
+  </header>
+
+  <section class="page-wrap portafolio-body">
+    <div class="portafolio-grid">
+
+      <a class="portafolio-card" href="shiny_long/">
+        <div class="portafolio-card__visual portafolio-card__visual--elri" aria-hidden="true">
+          <span class="portafolio-card__badge">R · Shiny</span>
+        </div>
+        <div class="portafolio-card__body">
+          <p class="portafolio-card__meta" data-lang="en">2024 · CIIR · Longitudinal survey</p>
+          <p class="portafolio-card__meta" data-lang="es" style="display:none;">2024 · CIIR · Encuesta longitudinal</p>
+          <h2 class="portafolio-card__title" data-lang="en">Shiny App — ELRI Longitudinal Survey</h2>
+          <h2 class="portafolio-card__title" data-lang="es" style="display:none;">Shiny App — Encuesta longitudinal ELRI</h2>
+          <p class="portafolio-card__excerpt" data-lang="en">
+            Interactive explorer for the Longitudinal Study of Intercultural Relations (2016–2023): identity, intergroup relations, conflict, public policy, and health modules with sample filters.
+          </p>
+          <p class="portafolio-card__excerpt" data-lang="es" style="display:none;">
+            Explorador interactivo del Estudio Longitudinal de Relaciones Interculturales (2016–2023): módulos de identidad, relaciones intergrupales, conflicto, políticas públicas y salud, con filtros muestrales.
+          </p>
+          <span class="portafolio-card__cta" data-lang="en">View project →</span>
+          <span class="portafolio-card__cta" data-lang="es" style="display:none;">Ver proyecto →</span>
+        </div>
+      </a>
+
+    </div>
+  </section>
+</div>
+```

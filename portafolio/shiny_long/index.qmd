@@ -1,0 +1,76 @@
+---
+title: "ELRI — Shiny App Longitudinal Survey"
+description-meta: "Interactive explorer for the Longitudinal Study of Intercultural Relations (ELRI)."
+date: 2024-06-01
+---
+
+```{=html}
+<div class="portafolio-detail-shell">
+  <nav class="portafolio-breadcrumb" aria-label="Breadcrumb">
+    <a href="../index.html" data-lang="en">← Portfolio</a>
+    <a href="../index.html" data-lang="es" style="display:none;">← Portafolio</a>
+  </nav>
+
+  <header class="portafolio-detail-header">
+    <p class="portafolio-detail-meta">R · Shiny · ELRI · 2016–2023</p>
+    <h1 class="portafolio-detail-title" data-lang="en">Shiny App — ELRI Longitudinal Survey</h1>
+    <h1 class="portafolio-detail-title" data-lang="es" style="display:none;">Shiny App — Encuesta longitudinal ELRI</h1>
+    <p class="portafolio-detail-lead" data-lang="en">
+      Public-facing dashboard to explore waves of the <strong>Estudio Longitudinal de Relaciones Interculturales (ELRI)</strong>:
+      ethnic identification, intergroup relations, social conflict, public policies, and physical and mental health— with indigenous self-identification filters and linked documentation.
+    </p>
+    <p class="portafolio-detail-lead" data-lang="es" style="display:none;">
+      Tablero público para explorar olas del <strong>Estudio Longitudinal de Relaciones Interculturales (ELRI)</strong>:
+      identificación étnica, relaciones intergrupales, conflicto social, políticas públicas y salud física y mental— con filtros de autoidentificación indígena y documentación vinculada.
+    </p>
+    <div class="portafolio-detail-links">
+      <a href="https://github.com/matdknu/shiny-elri" target="_blank" rel="noopener noreferrer">
+        <i class="bi bi-github" aria-hidden="true"></i> GitHub
+      </a>
+      <a href="https://matdknu.shinyapps.io/interculturales/" target="_blank" rel="noopener noreferrer">
+        <i class="bi bi-box-arrow-up-right" aria-hidden="true"></i>
+        <span data-lang="en">Open app in new tab</span>
+        <span data-lang="es" style="display:none;">Abrir app en nueva pestaña</span>
+      </a>
+    </div>
+  </header>
+
+  <section class="portafolio-shiny-section" aria-labelledby="shiny-embed-heading">
+    <h2 id="shiny-embed-heading" class="section-title-minimal" data-lang="en">Live app</h2>
+    <h2 id="shiny-embed-heading-es" class="section-title-minimal" data-lang="es" style="display:none;">App en vivo</h2>
+    <p class="portafolio-shiny-note" data-lang="en">
+      The explorer runs below without leaving this page. If it does not load, use the link above (some browsers block embedded apps).
+    </p>
+    <p class="portafolio-shiny-note" data-lang="es" style="display:none;">
+      El explorador se carga aquí sin salir de esta página. Si no aparece, use el enlace superior (algunos navegadores bloquean apps embebidas).
+    </p>
+    <div class="portafolio-shiny-frame-wrap">
+      <iframe
+        class="portafolio-shiny-embed"
+        src="https://matdknu.shinyapps.io/interculturales/"
+        title="Encuesta ELRI — explorador interactivo"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        allow="fullscreen"
+      ></iframe>
+    </div>
+  </section>
+
+  <section class="portafolio-detail-about page-wrap">
+    <h2 class="section-title-minimal" data-lang="en">About the project</h2>
+    <h2 class="section-title-minimal" data-lang="es" style="display:none;">Sobre el proyecto</h2>
+    <div class="page-content">
+      <p data-lang="en">
+        Built with the CIIR quantitative unit for the ELRI study (CIIR, COES, MIDAP). Source code and data processing live in the
+        <a href="https://github.com/matdknu/shiny-elri" target="_blank" rel="noopener noreferrer">shiny-elri</a> repository.
+        Research team: Matías Deneken Uribe, Roberto Cantillán, Bastián Olea Herrera.
+      </p>
+      <p data-lang="es" style="display:none;">
+        Desarrollado con la Unidad de Estudios Cuantitativos del CIIR para el estudio ELRI (CIIR, COES, MIDAP). El código y el procesamiento están en el repositorio
+        <a href="https://github.com/matdknu/shiny-elri" target="_blank" rel="noopener noreferrer">shiny-elri</a>.
+        Equipo: Matías Deneken Uribe, Roberto Cantillán, Bastián Olea Herrera.
+      </p>
+    </div>
+  </section>
+</div>
+```
