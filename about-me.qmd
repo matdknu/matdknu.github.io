@@ -97,3 +97,4 @@ format:
 }
 </style>
 ```
+![](files/images/marxist-learning.png){fig-align="center"}
