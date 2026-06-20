@@ -1,43 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://deneken.me/index.html</loc>
-    <lastmod>2026-06-01T20:07:41.090Z</lastmod>
-  </url>
-  <url>
-    <loc>https://deneken.me/portafolio/shiny_long/index.html</loc>
-    <lastmod>2026-06-01T20:12:27.167Z</lastmod>
-  </url>
-  <url>
-    <loc>https://deneken.me/photography.html</loc>
-    <lastmod>2026-05-18T23:42:56.934Z</lastmod>
-  </url>
-  <url>
-    <loc>https://deneken.me/vinculacion.html</loc>
-    <lastmod>2026-05-18T23:23:49.165Z</lastmod>
-  </url>
-  <url>
-    <loc>https://deneken.me/publications.html</loc>
-    <lastmod>2026-05-28T19:59:23.659Z</lastmod>
-  </url>
-  <url>
-    <loc>https://deneken.me/projects.html</loc>
-    <lastmod>2026-05-25T16:06:20.101Z</lastmod>
-  </url>
-  <url>
-    <loc>https://deneken.me/presentations.html</loc>
-    <lastmod>2026-05-25T16:06:33.626Z</lastmod>
-  </url>
-  <url>
-    <loc>https://deneken.me/about-me.html</loc>
-    <lastmod>2026-06-12T14:03:48.296Z</lastmod>
+    <loc>https://deneken.me/agenda.html</loc>
+    <lastmod>2026-06-20T17:27:06.175Z</lastmod>
   </url>
   <url>
     <loc>https://deneken.me/portafolio/index.html</loc>
     <lastmod>2026-06-01T15:09:25.939Z</lastmod>
   </url>
   <url>
-    <loc>https://deneken.me/agenda.html</loc>
-    <lastmod>2026-05-18T23:24:00.539Z</lastmod>
+    <loc>https://deneken.me/about-me.html</loc>
+    <lastmod>2026-06-12T14:03:48.296Z</lastmod>
+  </url>
+  <url>
+    <loc>https://deneken.me/presentations.html</loc>
+    <lastmod>2026-05-25T16:06:33.626Z</lastmod>
+  </url>
+  <url>
+    <loc>https://deneken.me/projects.html</loc>
+    <lastmod>2026-05-25T16:06:20.101Z</lastmod>
+  </url>
+  <url>
+    <loc>https://deneken.me/index.html</loc>
+    <lastmod>2026-06-20T17:27:14.768Z</lastmod>
+  </url>
+  <url>
+    <loc>https://deneken.me/publications.html</loc>
+    <lastmod>2026-06-20T17:26:57.981Z</lastmod>
+  </url>
+  <url>
+    <loc>https://deneken.me/vinculacion.html</loc>
+    <lastmod>2026-05-18T23:23:49.165Z</lastmod>
+  </url>
+  <url>
+    <loc>https://deneken.me/photography.html</loc>
+    <lastmod>2026-05-18T23:42:56.934Z</lastmod>
+  </url>
+  <url>
+    <loc>https://deneken.me/portafolio/shiny_long/index.html</loc>
+    <lastmod>2026-06-01T20:12:27.167Z</lastmod>
   </url>
 </urlset>

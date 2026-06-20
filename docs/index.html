@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Matías Deneken">
-<meta name="description" content="Web page Matias">
+<meta name="description" content="Matías Deneken — sociologist and data scientist.">
 
 <title>Matías Deneken</title>
 <style>
@@ -31,6 +31,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
@@ -38,8 +39,6 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <link href="site_libs/quarto-contrib/fontawesome6-1.2.0/all.min.css" rel="stylesheet">
 <link href="site_libs/quarto-contrib/fontawesome6-1.2.0/latex-fontsize.css" rel="stylesheet">
-<link href="site_libs/quarto-contrib/academicons-1.9.2/all.css" rel="stylesheet">
-<link href="site_libs/quarto-contrib/academicons-1.9.2/size.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "language": {
     "search-no-results-text": "No results",
@@ -291,44 +290,55 @@ document.addEventListener("DOMContentLoaded", function () {
 #language-switcher {
   display: inline-flex;
   align-items: center;
-  gap: 0.35rem;
-  margin-left: 0.35rem;
+  gap: 0.5rem;
+  margin-left: 0.5rem;
   white-space: nowrap;
 }
 
 #theme-switcher .theme-toggle-btn,
 #language-switcher .lang-btn {
-  border: 1px solid var(--border-strong, #d0d7de);
-  border-radius: 999px;
+  border: none;
+  border-radius: 0;
   background: transparent;
-  color: var(--ink-muted, #52526a);
-  font-family: var(--font-ui, Inter, system-ui, sans-serif);
-  font-size: 12px;
-  font-weight: 500;
-  letter-spacing: 0.04em;
-  min-width: 2.35rem;
-  padding: 0.42rem 0.62rem;
+  color: #bbbbbb;
+  font-family: "IBM Plex Mono", ui-monospace, monospace;
+  font-size: 10px;
+  font-weight: 400;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  min-width: auto;
+  padding: 0;
   cursor: pointer;
-  transition: background-color 0.15s ease, border-color 0.15s ease, color 0.15s ease;
+  transition: color 0.15s ease;
 }
 
 #theme-switcher .theme-toggle-btn {
-  min-width: 2.5rem;
-  font-size: 14px;
+  font-size: 10px;
   line-height: 1;
 }
 
 #theme-switcher .theme-toggle-btn:hover,
 #language-switcher .lang-btn:hover {
-  color: var(--ink, #0f0f14);
-  border-color: var(--ink, #0f0f14);
+  color: #1a1a1a;
 }
 
 #theme-switcher .theme-toggle-btn.is-dark,
 #language-switcher .lang-btn.active {
-  background: var(--ink, #0f0f14);
-  border-color: var(--ink, #0f0f14);
-  color: #ffffff;
+  background: transparent;
+  border: none;
+  color: #1a1a1a;
+}
+
+html[data-theme="dark"] #theme-switcher .theme-toggle-btn,
+html[data-theme="dark"] #language-switcher .lang-btn {
+  color: #6e6e88;
+}
+
+html[data-theme="dark"] #theme-switcher .theme-toggle-btn:hover,
+html[data-theme="dark"] #language-switcher .lang-btn:hover,
+html[data-theme="dark"] #theme-switcher .theme-toggle-btn.is-dark,
+html[data-theme="dark"] #language-switcher .lang-btn.active {
+  color: #ececf4;
 }
 
 .navbar .nav-item:has(#theme-switcher),
@@ -353,14 +363,6 @@ document.addEventListener("DOMContentLoaded", function () {
 <meta name="twitter:card" content="summary_large_image">
 </head><body class="nav-fixed"><div id="welcome-splash" class="welcome-splash" hidden="" aria-hidden="true">
   <div class="welcome-splash__backdrop"></div>
-  <div class="welcome-splash__graph" aria-hidden="true">
-    <div class="welcome-splash__graph-inner">
-      <canvas id="welcome-name-graph-canvas" aria-hidden="true"></canvas>
-    </div>
-  </div>
-  <div class="welcome-splash__glow" aria-hidden="true"></div>
-  <div class="welcome-splash__flash welcome-splash__flash--a" aria-hidden="true"></div>
-  <div class="welcome-splash__flash welcome-splash__flash--b" aria-hidden="true"></div>
   <div class="welcome-splash__content">
     <h1 class="welcome-splash__headline" data-headline-en="WELCOME" data-headline-es="BIENVENIDO">WELCOME</h1>
     <p class="welcome-splash__tagline" data-tagline-en="to Matías Deneken's web profile" data-tagline-es="al sitio web y perfil de Matías Deneken"></p>
@@ -382,44 +384,14 @@ document.addEventListener("DOMContentLoaded", function () {
   var headlineEl = splash.querySelector(".welcome-splash__headline");
   var taglineEl = splash.querySelector(".welcome-splash__tagline");
 
-  function animateLetters(el, text) {
-    el.innerHTML = text
-      .split("")
-      .map(function (ch, i) {
-        var display = ch === " " ? "\u00a0" : ch;
-        var extra = ch === " " ? " welcome-splash__letter--space" : "";
-        return (
-          '<span class="welcome-splash__letter' +
-          extra +
-          '" style="animation-delay:' +
-          (0.04 + i * 0.042) +
-          "s, " +
-          (0.55 + i * 0.04) +
-          's">' +
-          display +
-          "</span>"
-        );
-      })
-      .join("");
-  }
-
-  var headline =
+  headlineEl.textContent =
     lang === "es"
       ? headlineEl.getAttribute("data-headline-es")
       : headlineEl.getAttribute("data-headline-en");
-  var tagline =
+  taglineEl.textContent =
     lang === "es"
       ? taglineEl.getAttribute("data-tagline-es")
       : taglineEl.getAttribute("data-tagline-en");
-
-  animateLetters(headlineEl, headline);
-  taglineEl.textContent = tagline;
-
-  var graphApi = null;
-  var graphCanvas = document.getElementById("welcome-name-graph-canvas");
-  if (graphCanvas && window.initNameGraph) {
-    graphApi = window.initNameGraph(graphCanvas, { interactive: false, mode: "welcome" });
-  }
 
   splash.hidden = false;
   splash.setAttribute("aria-hidden", "false");
@@ -427,23 +399,19 @@ document.addEventListener("DOMContentLoaded", function () {
 
   requestAnimationFrame(function () {
     splash.classList.add("is-visible");
-    window.setTimeout(function () {
-      taglineEl.classList.add("is-visible");
-    }, 480);
   });
 
   window.setTimeout(function () {
     splash.classList.add("is-exiting");
-  }, 3600);
+  }, 2400);
 
   window.setTimeout(function () {
-    if (graphApi && graphApi.destroy) graphApi.destroy();
     splash.classList.remove("is-visible", "is-exiting");
     splash.hidden = true;
     splash.setAttribute("aria-hidden", "true");
     document.body.classList.remove("welcome-active");
     sessionStorage.setItem("welcome-seen", "1");
-  }, 4500);
+  }, 3000);
 });
 </script>
 
@@ -534,188 +502,206 @@ document.addEventListener("DOMContentLoaded", function () {
 <!-- margin-sidebar -->
     
 <!-- main -->
-<main class="content column-page" id="quarto-document-content">
+<main class="content page-columns page-full column-page" id="quarto-document-content">
 
-
-
-
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-
-  // Move ALL book sections to left sidebar (after links)
-  const bookSectionEn = document.querySelector('.about-book-section[data-lang="en"]');
-  const bookSectionEs = document.querySelector('.about-book-section[data-lang="es"]');
-  const aboutLinks = document.querySelector('.about-links');
-  
-  if (aboutLinks && (bookSectionEn || bookSectionEs)) {
-    const sidebarContainer = aboutLinks.parentNode;
-    
-    // Helper function to insert after a reference node
-    function insertAfter(newNode, referenceNode) {
-      if (referenceNode && referenceNode.parentNode) {
-        referenceNode.parentNode.insertBefore(newNode, referenceNode.nextSibling);
-      } else {
-        sidebarContainer.appendChild(newNode);
-      }
-    }
-    
-    // Remove book sections from their current location and mark as moved
-    if (bookSectionEn && bookSectionEn.parentNode) {
-      bookSectionEn.parentNode.removeChild(bookSectionEn);
-      bookSectionEn.classList.add('moved-to-sidebar');
-    }
-    if (bookSectionEs && bookSectionEs.parentNode) {
-      bookSectionEs.parentNode.removeChild(bookSectionEs);
-      bookSectionEs.classList.add('moved-to-sidebar');
-    }
-    
-    // Insert English first after the about-links container
-    // This ensures English appears first in the DOM
-    if (bookSectionEn) {
-      insertAfter(bookSectionEn, aboutLinks);
-    }
-    
-    // Then insert Spanish after English, so Spanish appears below English
-    if (bookSectionEs) {
-      insertAfter(bookSectionEs, bookSectionEn || aboutLinks);
-    }
-  }
-  
-});
-</script>
-<div class="about-book-section about-recent-work" data-lang="en">
-<h3 class="academic-news-heading">Academics news</h3>
-<div class="recent-work-item">
-  <h4 class="recent-work-subtitle">Recent paper</h4>
-  <p><strong><a href="https://www.crimrxiv.com/pub/3rl51qxc/release/1" target="_blank" rel="noopener">Fear of the police and the fragility of legitimacy: Insights from Chile and Brazil</a></strong></p>
-  <p class="recent-work-meta">CrimRxiv · preprint</p>
-</div>
-<div class="recent-work-item">
-  <h4 class="recent-work-subtitle">Recent book</h4>
-  <a href="https://books.google.co.uk/books/about/RE_Configuraciones_Interculturales.html?id=nM6YEQAAQBAJ&amp;redir_esc=y" target="_blank" rel="noopener">
-    <img src="https://books.google.co.uk/books/content?id=nM6YEQAAQBAJ&amp;printsec=frontcover&amp;img=1&amp;zoom=1&amp;edge=curl&amp;source=gbs_api" alt="(RE) Configuraciones Interculturales">
-  </a>
-  <p><strong><a href="https://books.google.co.uk/books/about/RE_Configuraciones_Interculturales.html?id=nM6YEQAAQBAJ&amp;redir_esc=y" target="_blank" rel="noopener">(RE) Configuraciones Interculturales: Un estudio longitudinal de las relaciones entre indígenas y no indígenas en Chile (2016-2024)</a></strong></p>
-  <p class="recent-work-meta">Co-edited with Eduardo Valenzuela. Editorial Catalonia, 2025.</p>
-</div>
-<div class="recent-work-item">
-  <h4 class="recent-work-subtitle">Recent conference</h4>
-  <p><strong><a href="https://deneken.me/comp-text_2026/#/title-slide" target="_blank" rel="noopener">Elite Identification in Latin America</a></strong></p>
-  <p class="recent-work-meta"><a href="https://deneken.me/comp-text_2026/#/title-slide" target="_blank" rel="noopener">Presentation</a> · COMPTEXT 2026</p>
-</div>
-</div>
-
-<div class="about-book-section about-recent-work" data-lang="es">
-<h3 class="academic-news-heading">Noticias académicas</h3>
-<div class="recent-work-item">
-  <h4 class="recent-work-subtitle">Artículo reciente</h4>
-  <p><strong><a href="https://www.crimrxiv.com/pub/3rl51qxc/release/1" target="_blank" rel="noopener">Fear of the police and the fragility of legitimacy: Insights from Chile and Brazil</a></strong></p>
-  <p class="recent-work-meta">CrimRxiv · preprint</p>
-</div>
-<div class="recent-work-item">
-  <h4 class="recent-work-subtitle">Libro reciente</h4>
-  <a href="https://books.google.co.uk/books/about/RE_Configuraciones_Interculturales.html?id=nM6YEQAAQBAJ&amp;redir_esc=y" target="_blank" rel="noopener">
-    <img src="https://books.google.co.uk/books/content?id=nM6YEQAAQBAJ&amp;printsec=frontcover&amp;img=1&amp;zoom=1&amp;edge=curl&amp;source=gbs_api" alt="(RE) Configuraciones Interculturales">
-  </a>
-  <p><strong><a href="https://books.google.co.uk/books/about/RE_Configuraciones_Interculturales.html?id=nM6YEQAAQBAJ&amp;redir_esc=y" target="_blank" rel="noopener">(RE) Configuraciones Interculturales: Un estudio longitudinal de las relaciones entre indígenas y no indígenas en Chile (2016-2024)</a></strong></p>
-  <p class="recent-work-meta">Co-editado con Eduardo Valenzuela. Editorial Catalonia, 2025.</p>
-</div>
-<div class="recent-work-item">
-  <h4 class="recent-work-subtitle">Conferencia reciente</h4>
-  <p><strong><a href="https://deneken.me/comp-text_2026/#/title-slide" target="_blank" rel="noopener">Elite Identification in Latin America</a></strong></p>
-  <p class="recent-work-meta"><a href="https://deneken.me/comp-text_2026/#/title-slide" target="_blank" rel="noopener">Presentación</a> · COMPTEXT 2026</p>
-</div>
-</div>
-
-<div class="quarto-about-trestles column-page">
-  <div class="about-entity">
-    <img src="files/images/my-face.JPG" class="about-image
-  rounded " style="width: 90%;">
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
 <h1 class="title">Matías Deneken</h1>
 </div>
+
+
+
 <div class="quarto-title-meta column-page">
+
+    
+  
+    
   </div>
+  
+
+
 </header>
-    <div class="about-links">
-  <a href="https://www.github.com/matdknu" class="about-link" rel="" target="_blank">
-    <i class="bi bi-github"></i>
-     <span class="about-link-text">GitHub</span>
-  </a>
-  <a href="/m.deneken@uc.cl" class="about-link" rel="" target="">
-    <i class="bi bi-envelope"></i>
-     <span class="about-link-text">E-mail</span>
-  </a>
-  <a href="https://www.linkedin.com/in/deneken/" class="about-link" rel="" target="_blank">
-    <i class="bi bi-linkedin"></i>
-     <span class="about-link-text">LinkedIn</span>
-  </a>
-  <a href="https://orcid.org" class="about-link" rel="" target="_blank">
-     <span class="about-link-text"><i class="ai  ai-orcid"></i> ORCID</span>
-  </a>
-  <a href="https://scholar.google.com" class="about-link" rel="" target="_blank">
-     <span class="about-link-text"><i class="ai  ai-google-scholar"></i> Google Scholar</span>
-  </a>
-</div>
+
+
+<div class="site-column home-page page-columns page-full">
+
+  <div data-lang="en" class="page-columns page-full">
+    <section class="home-hero page-columns page-full">
+      <div class="home-hero__main">
+        <p class="home-eyebrow">Santiago, Chile — PhD candidate track</p>
+        <h1 class="home-name">Matías<br>Deneken</h1>
+        <p class="home-tagline">Sociologist &amp; data scientist working on computational social science, democracy, and political violence.</p>
+        <div class="home-tags">
+          <span class="home-tag">Computational Social Science</span>
+          <span class="home-tag">Survey Methods</span>
+          <span class="home-tag">NLP</span>
+          <span class="home-tag">Democracy</span>
+          <span class="home-tag">Innovation</span>
+        </div>
+        <nav class="home-links" aria-label="External profiles">
+          <a href="https://www.github.com/matdknu" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a href="https://scholar.google.com/citations?user=matdknu" target="_blank" rel="noopener noreferrer">Scholar</a>
+          <a href="https://www.linkedin.com/in/deneken/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <a href="https://orcid.org" target="_blank" rel="noopener noreferrer">ORCID</a>
+        </nav>
+      </div>
+      <aside class="home-hero__aside">
+        <img class="home-photo" src="files/images/my-face.JPG" alt="Matías Deneken">
+        <p class="home-photo-caption">CIIR · OLES · MethodoLab</p>
+      </aside>
+    </section>
+
+    <hr class="site-rule">
+
+    <section class="home-about">
+      <div class="home-about__col">
+        <h2 class="section-heading anchored">Introduction</h2>
+        <p>Matías Deneken is a Chilean sociologist and data scientist whose work sits at the intersection of the sociology of violence, democracy, and computational social science. His research examines how social processes unfold in contemporary societies through the rigorous application of quantitative and computational methods. He has contributed to major large-scale longitudinal projects, including the <em>Estudio Longitudinal de Relaciones Interculturales (ELRI)</em> and the <em>Estudio Panel de Percepciones de Seguridad y Policías (EPSEP)</em>.</p>
+
+        <h2 class="section-heading anchored">Now</h2>
+        <p>Today, Matías is fully committed to building <strong><a href="https://www.methodolab.com" target="_blank" rel="noopener noreferrer">MethodoLab</a></strong> — a data science initiative he founded to push the frontier of computational methods in social research. He is also actively pursuing doctoral study opportunities <em>(exciting news coming soon)</em>.</p>
+        <p><a href="https://www.methodolab.com" target="_blank" rel="noopener noreferrer" class="btn-outline">Visit MethodoLab →</a></p>
+      </div>
+      <div class="home-about__col">
+        <h2 class="section-heading anchored">Past experience</h2>
+        <p>Matías was affiliated with the <strong>Observatory of Violence and Social Legitimacy (OLES)</strong> (<a href="https://www.oles.cl/" target="_blank" rel="noopener noreferrer">www.oles.cl</a>), where he worked as a Research Assistant designing and maintaining large-scale longitudinal databases and conducting automated web scraping pipelines for systematic monitoring of national newspapers.</p>
+        <p>He has been a <strong>Quantitative Studies Researcher</strong> at the <strong>Center for Intercultural and Indigenous Studies (CIIR)</strong> (<a href="https://www.ciir.cl/" target="_blank" rel="noopener noreferrer">www.ciir.cl</a>) since December 2022, where he coordinated the Longitudinal Survey on Intercultural Relations (ELRI) and co-edited the book <em>(RE) Configuraciones Interculturales</em>.</p>
+
+        <h2 class="section-heading anchored">Home</h2>
+        <p>I was born and raised in the commune of Puente Alto. A bit of its history can be found <a href="https://www.memoriachilena.gob.cl/602/w3-article-582647.html#presentacion" target="_blank" rel="noopener noreferrer">here</a>.</p>
+        <img class="home-home-photo" src="files/images/casa.jpeg" alt="A home in Puente Alto">
+      </div>
+    </section>
+
+    <hr class="site-rule">
+
+    <section class="home-agenda-cta">
+      <p class="home-agenda-cta__text"><strong>Current agenda</strong> — literature reviews, methods notes &amp; upcoming posts</p>
+      <a href="./agenda.html" class="btn-outline">View agenda →</a>
+    </section>
+
+    <hr class="site-rule">
+
+    <section class="home-recent">
+      <header class="home-recent__header">Recent work</header>
+      <ul class="home-recent__list">
+        <li class="home-recent__item">
+          <span class="home-recent__type">Preprint</span>
+          <div class="home-recent__body">
+            <p class="home-recent__title"><a href="https://www.crimrxiv.com/pub/3rl51qxc/release/1" target="_blank" rel="noopener noreferrer">Fear of the police and the fragility of legitimacy</a></p>
+            <p class="home-recent__authors">Deneken &amp; Díaz</p>
+            <p class="home-recent__venue">CrimRxiv</p>
+          </div>
+        </li>
+        <li class="home-recent__item">
+          <span class="home-recent__type">Book · 2025</span>
+          <div class="home-recent__body">
+            <p class="home-recent__title"><a href="https://books.google.co.uk/books/about/RE_Configuraciones_Interculturales.html?id=nM6YEQAAQBAJ&amp;redir_esc=y" target="_blank" rel="noopener noreferrer">(RE) Configuraciones Interculturales</a></p>
+            <p class="home-recent__authors">Deneken, Valenzuela &amp; CIIR</p>
+            <p class="home-recent__venue">Ed. Catalonia</p>
+          </div>
+        </li>
+        <li class="home-recent__item">
+          <span class="home-recent__type">Conference · 2026</span>
+          <div class="home-recent__body">
+            <p class="home-recent__title"><a href="https://deneken.me/comp-text_2026/#/title-slide" target="_blank" rel="noopener noreferrer">Elite Identification in Latin America</a></p>
+            <p class="home-recent__authors">Deneken</p>
+            <p class="home-recent__venue">COMPTEXT 2026</p>
+          </div>
+        </li>
+      </ul>
+    </section>
   </div>
-  <div class="about-contents"><div id="hero-heading">
-<div data-lang="en">
-<section id="introduction" class="level2">
-<h2 data-anchor-id="introduction">Introduction</h2>
-<p>Matías Deneken is a Chilean <span style="color: #0C447C; font-weight: 500;">sociologist</span> and <span style="color: #0F6E56; font-weight: 500;">data scientist</span> whose work sits at the intersection of the <span style="color: #993C1D; font-weight: 500;">sociology of violence</span>, <span style="color: #7F77DD; font-weight: 500;">democracy</span> and <span style="color: #B85B0A; font-weight: 500;">computational social science</span>. His research examines how social processes unfold in contemporary societies through the rigorous application of quantitative and computational methods. He has contributed to major large-scale longitudinal projects, including the <em>Estudio Longitudinal de Relaciones Interculturales (ELRI)</em> and the <em>Estudio Panel de Percepciones de Seguridad y Policías (EPSEP)</em>.</p>
-<p>See the interactive <a href="./agenda.html"><strong>Current Agenda</strong></a> for literature reviews, methods notes, and upcoming posts.</p>
-</section>
-<section id="now" class="level2">
-<h2 data-anchor-id="now">Now</h2>
-<p>Today, Matías is fully committed to building <a href="https://www.methodolab.com"><strong>MethodoLab</strong></a> — a data science initiative he founded to push the frontier of computational methods in social research. He is also actively pursuing doctoral study opportunities <span style="color: #B85B0A; font-style: italic;"><em>(exciting news coming soon)</em></span>.</p>
-<div class="methodolab-cta-wrap">
-  <a href="https://www.methodolab.com" target="_blank" class="cta-button">
-    🚀 Visit MethodoLab →
-  </a>
-</div>
-</section>
-<section id="past-experience" class="level2">
-<h2 data-anchor-id="past-experience">Past Experience</h2>
-<p>Matías was affiliated with the <strong>Observatory of Violence and Social Legitimacy (OLES)</strong> (<a href="https://www.oles.cl/">www.oles.cl</a>), an institution that brings together different university consortia, where he worked as a Research Assistant designing and maintaining large-scale longitudinal databases and conducting automated web scraping pipelines for systematic monitoring of national newspapers.</p>
-<p>He has been a <strong>Quantitative Studies Researcher</strong> at the <strong>Center for Intercultural and Indigenous Studies (CIIR)</strong> (<a href="https://www.ciir.cl">www.ciir.cl</a>) since December 2022, where he coordinated the Longitudinal Survey on Intercultural Relations (ELRI) — one of the most ambitious longitudinal instruments in Chilean social science — and co-edited the book <em>(RE) Configuraciones Interculturales</em>.</p>
-</section>
-<section id="home" class="level2">
-<h2 data-anchor-id="home">Home</h2>
-<p>I was born and raised in the commune of Puente Alto. A bit of its history can be found <a href="https://www.memoriachilena.gob.cl/602/w3-article-582647.html#presentacion">here</a>.</p>
-<p><img src="files/images/casa.jpeg" class="img-fluid" style="width:70.0%" alt="A home in Puente Alto"></p>
-</section>
-</div>
-<div data-lang="es" style="display: none;">
-<section id="introducción" class="level2">
-<h2 data-anchor-id="introducción">Introducción</h2>
-<p>Matías Deneken es un <span style="color: #0C447C; font-weight: 500;">sociólogo</span> y <span style="color: #0F6E56; font-weight: 500;">científico de datos</span> chileno cuyo trabajo se sitúa en la intersección de la <span style="color: #993C1D; font-weight: 500;">sociología de la violencia</span>, la <span style="color: #7F77DD; font-weight: 500;">democracia</span> y la <span style="color: #B85B0A; font-weight: 500;">ciencia de datos computacional</span>. Su investigación examina cómo se desarrollan los procesos sociales en las sociedades contemporáneas mediante la aplicación rigurosa de métodos cuantitativos y computacionales. Ha colaborado en estudios longitudinales a gran escala como el <em>Estudio Longitudinal de Relaciones Interculturales (ELRI)</em> y el <em>Estudio Panel de Percepciones de Seguridad y Policías (EPSEP)</em>.</p>
-<section id="proyectos-actuales" class="level3">
-<h3 data-anchor-id="proyectos-actuales">Proyectos Actuales</h3>
-<p>Actualmente, Matías está plenamente comprometido con el desarrollo de <a href="https://www.methodolab.com"><strong>MethodoLab</strong></a> — una iniciativa de ciencia de datos que fundó para avanzar en los métodos computacionales aplicados a la investigación social. También se encuentra activamente en la búsqueda de oportunidades de estudio doctoral. <span style="color: #B85B0A; font-style: italic;"><em>(próximamente novedades)</em></span></p>
-<div class="methodolab-cta-wrap">
-  <a href="https://www.methodolab.com" target="_blank" class="cta-button">
-    🚀 Visitar MethodoLab →
-  </a>
-</div>
-<p>La <a href="./agenda.html"><strong>agenda actual</strong></a> reúne de forma interactiva revisiones de literatura, notas de métodos y próximos posts.</p>
-</section>
-</section>
-<section id="experiencia" class="level2">
-<h2 data-anchor-id="experiencia">Experiencia</h2>
-<p>Matías estuvo afiliado al <strong>Observatorio de Violencia y Legitimidad Social (OLES)</strong> (<a href="https://www.oles.cl/">www.oles.cl</a>), institución que agrupa a diferentes consorcios universitarios, donde trabajó como Asistente de Investigación diseñando y manteniendo bases de datos longitudinales a gran escala y desarrollando pipelines de scraping web automatizado para el monitoreo sistemático de periódicos nacionales.</p>
-<p>Ha sido <strong>Investigador en Estudios Cuantitativos</strong> en el <strong>Centro de Estudios Interculturales e Indígenas (CIIR)</strong> (<a href="https://www.ciir.cl">www.ciir.cl</a>) desde diciembre de 2022, donde coordinó la Encuesta Longitudinal de Relaciones Interculturales (ELRI) — uno de los instrumentos longitudinales más ambiciosos de las ciencias sociales chilenas — y co-editó el libro <em>(RE) Configuraciones Interculturales</em>.</p>
-</section>
-<section id="hogar" class="level2">
-<h2 data-anchor-id="hogar">Hogar</h2>
-<p>Nací y me crié en la comuna de Puente Alto. Un poco de su historia puede leerse <a href="https://www.memoriachilena.gob.cl/602/w3-article-582647.html#presentacion">aquí</a>.</p>
-<p><img src="files/images/casa.jpeg" class="img-fluid" style="width:70.0%" alt="Una casa en Puente Alto"></p>
-</section>
-</div>
-</div></div>
-</div>
 
+  <div data-lang="es" style="display:none;" class="page-columns page-full">
+    <section class="home-hero page-columns page-full">
+      <div class="home-hero__main">
+        <p class="home-eyebrow">Santiago, Chile — candidatura doctoral</p>
+        <h1 class="home-name">Matías<br>Deneken</h1>
+        <p class="home-tagline">Sociólogo y científico de datos. Ciencia social computacional, democracia y violencia política.</p>
+        <div class="home-tags">
+          <span class="home-tag">Ciencia Social Computacional</span>
+          <span class="home-tag">Métodos de encuesta</span>
+          <span class="home-tag">NLP</span>
+          <span class="home-tag">Democracia</span>
+          <span class="home-tag">Innovación</span>
+        </div>
+        <nav class="home-links" aria-label="Perfiles externos">
+          <a href="https://www.github.com/matdknu" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a href="https://scholar.google.com/citations?user=matdknu" target="_blank" rel="noopener noreferrer">Scholar</a>
+          <a href="https://www.linkedin.com/in/deneken/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <a href="https://orcid.org" target="_blank" rel="noopener noreferrer">ORCID</a>
+        </nav>
+      </div>
+      <aside class="home-hero__aside">
+        <img class="home-photo" src="files/images/my-face.JPG" alt="Matías Deneken">
+        <p class="home-photo-caption">CIIR · OLES · MethodoLab</p>
+      </aside>
+    </section>
 
+    <hr class="site-rule">
+
+    <section class="home-about">
+      <div class="home-about__col">
+        <h2 class="section-heading anchored">Introducción</h2>
+        <p>Matías Deneken es un sociólogo y científico de datos chileno cuyo trabajo se sitúa en la intersección de la sociología de la violencia, la democracia y la ciencia de datos computacional. Ha colaborado en estudios longitudinales a gran escala como el <em>Estudio Longitudinal de Relaciones Interculturales (ELRI)</em> y el <em>Estudio Panel de Percepciones de Seguridad y Policías (EPSEP)</em>.</p>
+
+        <h2 class="section-heading anchored">Ahora</h2>
+        <p>Actualmente está plenamente comprometido con <strong><a href="https://www.methodolab.com" target="_blank" rel="noopener noreferrer">MethodoLab</a></strong> — iniciativa de ciencia de datos que fundó para avanzar métodos computacionales en investigación social. También busca oportunidades de estudio doctoral <em>(próximamente novedades)</em>.</p>
+        <p><a href="https://www.methodolab.com" target="_blank" rel="noopener noreferrer" class="btn-outline">Visitar MethodoLab →</a></p>
+      </div>
+      <div class="home-about__col">
+        <h2 class="section-heading anchored">Experiencia</h2>
+        <p>Estuvo afiliado al <strong>Observatorio de Violencia y Legitimidad Social (OLES)</strong> (<a href="https://www.oles.cl/" target="_blank" rel="noopener noreferrer">www.oles.cl</a>), donde trabajó como Asistente de Investigación en bases de datos longitudinales y pipelines de scraping web.</p>
+        <p>Es <strong>Investigador en Estudios Cuantitativos</strong> en el <strong>Centro de Estudios Interculturales e Indígenas (CIIR)</strong> (<a href="https://www.ciir.cl/" target="_blank" rel="noopener noreferrer">www.ciir.cl</a>) desde diciembre de 2022, donde coordinó la Encuesta Longitudinal de Relaciones Interculturales (ELRI) y co-editó <em>(RE) Configuraciones Interculturales</em>.</p>
+
+        <h2 class="section-heading anchored">Hogar</h2>
+        <p>Nací y me crié en la comuna de Puente Alto. Un poco de su historia puede leerse <a href="https://www.memoriachilena.gob.cl/602/w3-article-582647.html#presentacion" target="_blank" rel="noopener noreferrer">aquí</a>.</p>
+        <img class="home-home-photo" src="files/images/casa.jpeg" alt="Una casa en Puente Alto">
+      </div>
+    </section>
+
+    <hr class="site-rule">
+
+    <section class="home-agenda-cta">
+      <p class="home-agenda-cta__text"><strong>Agenda actual</strong> — revisiones de literatura, notas de métodos y próximos posts</p>
+      <a href="./agenda.html" class="btn-outline">Ver agenda →</a>
+    </section>
+
+    <hr class="site-rule">
+
+    <section class="home-recent">
+      <header class="home-recent__header">Trabajo reciente</header>
+      <ul class="home-recent__list">
+        <li class="home-recent__item">
+          <span class="home-recent__type">Preprint</span>
+          <div class="home-recent__body">
+            <p class="home-recent__title"><a href="https://www.crimrxiv.com/pub/3rl51qxc/release/1" target="_blank" rel="noopener noreferrer">Fear of the police and the fragility of legitimacy</a></p>
+            <p class="home-recent__authors">Deneken &amp; Díaz</p>
+            <p class="home-recent__venue">CrimRxiv</p>
+          </div>
+        </li>
+        <li class="home-recent__item">
+          <span class="home-recent__type">Libro · 2025</span>
+          <div class="home-recent__body">
+            <p class="home-recent__title"><a href="https://books.google.co.uk/books/about/RE_Configuraciones_Interculturales.html?id=nM6YEQAAQBAJ&amp;redir_esc=y" target="_blank" rel="noopener noreferrer">(RE) Configuraciones Interculturales</a></p>
+            <p class="home-recent__authors">Deneken, Valenzuela &amp; CIIR</p>
+            <p class="home-recent__venue">Ed. Catalonia</p>
+          </div>
+        </li>
+        <li class="home-recent__item">
+          <span class="home-recent__type">Conferencia · 2026</span>
+          <div class="home-recent__body">
+            <p class="home-recent__title"><a href="https://deneken.me/comp-text_2026/#/title-slide" target="_blank" rel="noopener noreferrer">Elite Identification in Latin America</a></p>
+            <p class="home-recent__authors">Deneken</p>
+            <p class="home-recent__venue">COMPTEXT 2026</p>
+          </div>
+        </li>
+      </ul>
+    </section>
+  </div>
+
+</div>
 
 
 
@@ -740,6 +726,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
   }
   toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
   const isCodeAnnotation = (el) => {
     for (const clz of el.classList) {
       if (clz.startsWith('code-annotation-')) {                     

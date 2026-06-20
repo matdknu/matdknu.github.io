@@ -10,7 +10,7 @@ format:
 ---
 
 ```{=html}
-<div class="wide-page-shell publications-shell">
+<div class="publications-shell site-column">
   <header class="page-header-minimal" data-lang="en">
     <h1 class="page-title-minimal">Publications</h1>
   </header>
@@ -39,64 +39,4 @@ format:
     </ol>
   </section>
 </div>
-
-<style>
-.wide-page-shell {
-  max-width: 1400px;
-  margin: 0 auto;
-  padding: 2rem 3rem;
-}
-
-.publications-shell .page-wrap {
-  max-width: none;
-  padding: 0;
-}
-
-.publications-body {
-  padding: 0.5rem 0 2rem;
-}
-
-.apa-list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  counter-reset: apa;
-}
-
-.apa-list li {
-  counter-increment: apa;
-  margin: 0 0 1.35rem;
-  padding-left: 2rem;
-  text-indent: -2rem;
-  font-size: 0.97rem;
-  line-height: 1.7;
-  color: var(--ink, #0f0f14);
-}
-
-.apa-list li::before {
-  content: counter(apa) ".";
-  font-weight: 500;
-  margin-right: 0.65rem;
-}
-
-.apa-list em {
-  font-style: italic;
-}
-
-.apa-list a {
-  word-break: break-word;
-}
-
-@media (max-width: 768px) {
-  .wide-page-shell {
-    padding: 1.5rem 1rem;
-  }
-
-  .apa-list li {
-    padding-left: 1.5rem;
-    text-indent: -1.5rem;
-    font-size: 0.92rem;
-  }
-}
-</style>
 ```

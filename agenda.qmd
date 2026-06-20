@@ -28,10 +28,10 @@ format:
           <div class="network-tooltip" id="network-tooltip"></div>
         </div>
         <div class="network-legend">
-          <span><i style="background:#8b7cf8;"></i>Computational</span>
-          <span><i style="background:#fb923c;"></i>Methods</span>
-          <span><i style="background:#2dd4bf;"></i>Political</span>
-          <span><i style="background:#f472b6;"></i>Social</span>
+          <span><i style="background:#1A1A1A;opacity:0.85;"></i>Computational</span>
+          <span><i style="background:#1A1A1A;opacity:0.65;"></i>Methods</span>
+          <span><i style="background:#1A1A1A;opacity:0.5;"></i>Political</span>
+          <span><i style="background:#1A1A1A;opacity:0.35;"></i>Social</span>
         </div>
       </div>
     </div>
@@ -46,10 +46,10 @@ format:
           <div class="network-tooltip" id="network-tooltip-es"></div>
         </div>
         <div class="network-legend">
-          <span><i style="background:#8b7cf8;"></i>Computacional</span>
-          <span><i style="background:#fb923c;"></i>Metodos</span>
-          <span><i style="background:#2dd4bf;"></i>Politico</span>
-          <span><i style="background:#f472b6;"></i>Social</span>
+          <span><i style="background:#1A1A1A;opacity:0.85;"></i>Computacional</span>
+          <span><i style="background:#1A1A1A;opacity:0.65;"></i>Metodos</span>
+          <span><i style="background:#1A1A1A;opacity:0.5;"></i>Politico</span>
+          <span><i style="background:#1A1A1A;opacity:0.35;"></i>Social</span>
         </div>
       </div>
     </div>
@@ -437,8 +437,8 @@ format:
       const x = edge.source.x + (edge.target.x - edge.source.x) * progress;
       const y = edge.source.y + (edge.target.y - edge.source.y) * progress;
       ctx.beginPath();
-      ctx.fillStyle = "rgba(255,255,255,0.65)";
-      ctx.arc(x, y, 2.1, 0, Math.PI * 2);
+      ctx.fillStyle = "rgba(26,26,26,0.25)";
+      ctx.arc(x, y, 1.5, 0, Math.PI * 2);
       ctx.fill();
     }
 
@@ -447,8 +447,8 @@ format:
 
       edges.forEach(function (edge, index) {
         ctx.beginPath();
-        ctx.strokeStyle = hovered && (hovered === edge.source || hovered === edge.target) ? "rgba(255,255,255,0.45)" : "rgba(88,77,134,0.65)";
-        ctx.lineWidth = hovered && (hovered === edge.source || hovered === edge.target) ? 1.4 : 0.9;
+        ctx.strokeStyle = hovered && (hovered === edge.source || hovered === edge.target) ? "rgba(26,26,26,0.22)" : "rgba(26,26,26,0.08)";
+        ctx.lineWidth = hovered && (hovered === edge.source || hovered === edge.target) ? 1.2 : 0.8;
         ctx.moveTo(edge.source.x, edge.source.y);
         ctx.lineTo(edge.target.x, edge.target.y);
         ctx.stroke();
@@ -457,25 +457,22 @@ format:
       });
 
       nodes.forEach(function (node) {
-        const pulse = Math.sin(tick * 0.04 + node.size) * 1.4;
-        const radius = node.size * 0.62 + pulse;
+        const pulse = Math.sin(tick * 0.04 + node.size) * 0.8;
+        const radius = node.size * 0.58 + pulse;
         const isHot = hovered === node;
+        const opacity = isHot ? 0.92 : 0.55;
 
         ctx.beginPath();
-        ctx.fillStyle = node.color;
-        ctx.shadowColor = isHot ? node.color : "rgba(0,0,0,0)";
-        ctx.shadowBlur = isHot ? 24 : 0;
+        ctx.fillStyle = "rgba(26,26,26," + opacity + ")";
         ctx.arc(node.x, node.y, radius, 0, Math.PI * 2);
         ctx.fill();
 
-        ctx.beginPath();
-        ctx.fillStyle = "rgba(255,255,255,0.92)";
-        ctx.font = "500 12px Inter, sans-serif";
+        ctx.fillStyle = isHot ? "#FAFAF7" : "#555555";
+        ctx.font = "400 10px 'IBM Plex Mono', monospace";
         ctx.textAlign = "center";
         ctx.textBaseline = "middle";
         ctx.fillText(node.label, node.x, node.y);
       });
-      ctx.shadowBlur = 0;
     }
 
     function render() {
