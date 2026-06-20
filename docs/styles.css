@@ -2326,6 +2326,7 @@ div.quarto-about-trestles .about-entity .about-book-section img {
   .home-hero__aside {
     width: 100%;
     order: -1;
+    transform: none;
   }
 
   .home-about {
@@ -2480,6 +2481,7 @@ div.quarto-about-trestles .about-entity .about-book-section img {
   .home-hero__aside {
     width: 100%;
     order: -1;
+    transform: none;
   }
 
   .home-about {
