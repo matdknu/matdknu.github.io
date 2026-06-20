@@ -424,8 +424,42 @@ pre,
 }
 
 /* —— Home page —— */
+main.content:has(.home-page) {
+  display: block !important;
+  max-width: var(--max-column-wide);
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2rem 1.5rem 4rem;
+}
+
+main.content:has(.home-page) #title-block-header {
+  display: none !important;
+}
+
+#quarto-content:has(.home-page) {
+  display: block !important;
+}
+
+/* Disable Quarto page grid inside home (content was pinned to body-content column on the right) */
+.home-page.page-columns,
+.home-page .page-columns,
+.home-page .page-full {
+  display: block !important;
+  grid-template-columns: none !important;
+}
+
+.home-page .page-columns > *,
+.home-page.page-columns > * {
+  grid-column: unset !important;
+  max-width: none !important;
+}
+
 .home-page {
   max-width: var(--max-column-wide);
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
   padding-top: 1.5rem;
   padding-bottom: 2rem;
 }
@@ -435,17 +469,19 @@ main.content:has(.home-page) {
 }
 
 .home-hero {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) 280px;
+  display: grid !important;
+  grid-template-columns: minmax(0, 1fr) 280px !important;
   gap: 2.5rem 3rem;
   align-items: start;
   padding: 1.5rem 0 2rem;
+  width: 100%;
 }
 
 .home-hero__main {
   flex: 1;
   min-width: 0;
   text-align: left;
+  grid-column: 1 !important;
 }
 
 .home-hero__aside {
@@ -453,6 +489,7 @@ main.content:has(.home-page) {
   flex-shrink: 0;
   text-align: center;
   justify-self: end;
+  grid-column: 2 !important;
 }
 
 .home-eyebrow {
@@ -2050,26 +2087,15 @@ div.quarto-about-trestles .about-entity .about-book-section img {
   display: none !important;
 }
 
-/* Quarto column layout overrides on home */
-.home-page.page-columns {
+.home-page > .lang-pane:not(.is-lang-hidden) {
   display: block !important;
-  grid-template-columns: none !important;
-}
-
-.home-page > .lang-pane.page-columns:not(.is-lang-hidden) {
-  display: block !important;
-  grid-template-columns: none !important;
-}
-
-.home-hero.page-columns {
-  display: grid !important;
-  grid-template-columns: minmax(0, 1fr) 280px !important;
 }
 
 .home-about {
   display: grid !important;
   grid-template-columns: 1fr 1fr !important;
   gap: 3rem 4rem;
+  width: 100%;
 }
 
 .home-page .section-heading .anchor,
@@ -2088,9 +2114,13 @@ div.quarto-about-trestles .about-entity .about-book-section img {
 }
 
 @media (max-width: 720px) {
-  .home-hero,
-  .home-hero.page-columns {
+  .home-hero {
     grid-template-columns: 1fr !important;
+  }
+
+  .home-hero__main,
+  .home-hero__aside {
+    grid-column: 1 !important;
   }
 
   .home-hero__aside {

@@ -4,7 +4,6 @@ description-meta: "Matías Deneken — sociologist and data scientist."
 image: "files/images/my-face.JPG"
 page-navigation: false
 toc: false
-page-layout: full
 format:
   html:
     title-block: false
@@ -191,4 +190,23 @@ format:
   </div>
 
 </div>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  var home = document.querySelector(".home-page");
+  if (!home) return;
+
+  var titleBlock = document.getElementById("title-block-header");
+  if (titleBlock) titleBlock.style.display = "none";
+
+  var main = document.querySelector("main.content");
+  if (main) {
+    main.classList.remove("page-columns", "page-full", "column-page");
+  }
+
+  home.querySelectorAll(".page-columns, .page-full, .column-page").forEach(function (el) {
+    el.classList.remove("page-columns", "page-full", "column-page");
+  });
+});
+</script>
 ```
