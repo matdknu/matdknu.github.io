@@ -1443,7 +1443,7 @@ html[data-theme="dark"] .network-legend__item--soc i {
 
 .photo-gallery {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: calc(0.65rem * 1.25);
   width: 100%;
   padding: 1rem 1.5rem 0;
