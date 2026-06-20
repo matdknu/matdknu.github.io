@@ -14,6 +14,7 @@
   --border-hover: #cccccc;
   --surface: #e8e5df;
   --max-column: 860px;
+  --max-column-wide: 1120px;
 
   --radius-sm: 4px;
 }
@@ -424,14 +425,19 @@ pre,
 
 /* —— Home page —— */
 .home-page {
+  max-width: var(--max-column-wide);
   padding-top: 1.5rem;
   padding-bottom: 2rem;
 }
 
+main.content:has(.home-page) {
+  max-width: var(--max-column-wide);
+}
+
 .home-hero {
   display: grid;
-  grid-template-columns: 1fr 180px;
-  gap: 2rem;
+  grid-template-columns: minmax(0, 1fr) 280px;
+  gap: 2.5rem 3rem;
   align-items: start;
   padding: 1.5rem 0 2rem;
 }
@@ -439,12 +445,14 @@ pre,
 .home-hero__main {
   flex: 1;
   min-width: 0;
+  text-align: left;
 }
 
 .home-hero__aside {
-  width: 180px;
+  width: 280px;
   flex-shrink: 0;
   text-align: center;
+  justify-self: end;
 }
 
 .home-eyebrow {
@@ -512,8 +520,8 @@ html[data-theme="dark"] .home-tag {
 }
 
 .home-photo {
-  width: 160px;
-  height: 160px;
+  width: 240px;
+  height: 240px;
   border-radius: 50%;
   border: 1px solid var(--border-hover);
   object-fit: cover;
@@ -532,8 +540,9 @@ html[data-theme="dark"] .home-tag {
 .home-about {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 2.5rem;
+  gap: 3rem 4rem;
   padding: 2rem 0;
+  width: 100%;
 }
 
 .home-about__col p {
@@ -2036,22 +2045,31 @@ div.quarto-about-trestles .about-entity .about-book-section img {
   }
 }
 
+/* Language panes — must beat Quarto page-columns display rules */
+[data-lang].is-lang-hidden {
+  display: none !important;
+}
+
 /* Quarto column layout overrides on home */
-.home-page.page-columns,
-.home-page > [data-lang].page-columns {
+.home-page.page-columns {
+  display: block !important;
+  grid-template-columns: none !important;
+}
+
+.home-page > .lang-pane.page-columns:not(.is-lang-hidden) {
   display: block !important;
   grid-template-columns: none !important;
 }
 
 .home-hero.page-columns {
   display: grid !important;
-  grid-template-columns: 1fr 180px !important;
+  grid-template-columns: minmax(0, 1fr) 280px !important;
 }
 
 .home-about {
   display: grid !important;
   grid-template-columns: 1fr 1fr !important;
-  gap: 2rem;
+  gap: 3rem 4rem;
 }
 
 .home-page .section-heading .anchor,

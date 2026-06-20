@@ -14,7 +14,7 @@ format:
 ```{=html}
 <div class="site-column home-page">
 
-  <div data-lang="en">
+  <div data-lang="en" class="lang-pane">
     <section class="home-hero">
       <div class="home-hero__main">
         <p class="home-eyebrow">Santiago, Chile — PhD candidate track</p>
@@ -102,7 +102,7 @@ format:
     </section>
   </div>
 
-  <div data-lang="es" style="display:none;">
+  <div data-lang="es" class="lang-pane is-lang-hidden">
     <section class="home-hero">
       <div class="home-hero__main">
         <p class="home-eyebrow">Santiago, Chile — candidatura doctoral</p>
