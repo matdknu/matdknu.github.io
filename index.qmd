@@ -20,11 +20,9 @@ format:
         <h1 class="home-name">Matías<br>Deneken</h1>
         <p class="home-tagline">Sociologist &amp; data scientist working on computational social science, democracy, and political violence.</p>
         <div class="home-tags">
-          <span class="home-tag">Computational Social Science</span>
-          <span class="home-tag">Survey Methods</span>
-          <span class="home-tag">NLP</span>
-          <span class="home-tag">Democracy</span>
-          <span class="home-tag">Innovation</span>
+          <a class="home-tag" href="https://www.science.org/doi/full/10.1126/science.1167742" target="_blank" rel="noopener noreferrer">Computational Social Science</a>
+          <a class="home-tag" href="https://arxiv.org/abs/2304.03442" target="_blank" rel="noopener noreferrer">Generative Agents</a>
+          <a class="home-tag" href="https://www.journals.uchicago.edu/doi/full/10.1086/590649" target="_blank" rel="noopener noreferrer">Polarization</a>
         </div>
         <nav class="home-links" aria-label="External profiles">
           <a href="https://www.github.com/matdknu" target="_blank" rel="noopener noreferrer">GitHub</a>
@@ -107,11 +105,9 @@ format:
         <h1 class="home-name">Matías<br>Deneken</h1>
         <p class="home-tagline">Sociólogo y científico de datos. Ciencia social computacional, democracia y violencia política.</p>
         <div class="home-tags">
-          <span class="home-tag">Ciencia Social Computacional</span>
-          <span class="home-tag">Métodos de encuesta</span>
-          <span class="home-tag">NLP</span>
-          <span class="home-tag">Democracia</span>
-          <span class="home-tag">Innovación</span>
+          <a class="home-tag" href="https://www.science.org/doi/full/10.1126/science.1167742" target="_blank" rel="noopener noreferrer">Ciencia Social Computacional</a>
+          <a class="home-tag" href="https://arxiv.org/abs/2304.03442" target="_blank" rel="noopener noreferrer">Agentes Generativos</a>
+          <a class="home-tag" href="https://www.journals.uchicago.edu/doi/full/10.1086/590649" target="_blank" rel="noopener noreferrer">Polarización</a>
         </div>
         <nav class="home-links" aria-label="Perfiles externos">
           <a href="https://www.github.com/matdknu" target="_blank" rel="noopener noreferrer">GitHub</a>
@@ -188,4 +184,22 @@ format:
   </div>
 
 </div>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  document.querySelectorAll("a.home-tag").forEach(function (tag) {
+    tag.addEventListener("mousedown", function () {
+      tag.classList.add("is-active");
+    });
+    tag.addEventListener("mouseup", function () {
+      window.setTimeout(function () {
+        tag.classList.remove("is-active");
+      }, 180);
+    });
+    tag.addEventListener("mouseleave", function () {
+      tag.classList.remove("is-active");
+    });
+  });
+});
+</script>
 ```
