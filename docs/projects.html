@@ -133,7 +133,11 @@ window.updateThemeToggleButton = function (theme) {
 window.switchLanguage = function (lang) {
   localStorage.setItem("site-lang", lang);
   document.querySelectorAll("[data-lang]").forEach(function (el) {
-    el.style.display = el.getAttribute("data-lang") === lang ? "" : "none";
+    var isActive = el.getAttribute("data-lang") === lang;
+    el.classList.toggle("is-lang-hidden", !isActive);
+    if (isActive) {
+      el.style.removeProperty("display");
+    }
   });
 
   var enBtn = document.getElementById("lang-en");
@@ -282,6 +286,22 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   injectNavChartTabs();
+
+  function neutralizeQuartoColumns() {
+    var main = document.querySelector("main.content");
+    if (!main) return;
+    main.classList.remove("page-columns", "page-full", "column-page");
+    var titleBlock = document.getElementById("title-block-header");
+    if (titleBlock && main.querySelector(".home-page")) {
+      titleBlock.style.display = "none";
+    }
+    main.querySelectorAll(".page-columns, .page-full, .column-page").forEach(function (el) {
+      if (el.closest(".photography-shell")) return;
+      el.classList.remove("page-columns", "page-full", "column-page");
+    });
+  }
+
+  neutralizeQuartoColumns();
 });
 </script>
 
@@ -302,18 +322,18 @@ document.addEventListener("DOMContentLoaded", function () {
   background: transparent;
   color: #bbbbbb;
   font-family: "IBM Plex Mono", ui-monospace, monospace;
-  font-size: 10px;
+  font-size: clamp(12px, 1.1vw, 14px);
   font-weight: 400;
-  letter-spacing: 0.07em;
+  letter-spacing: 0.06em;
   text-transform: uppercase;
   min-width: auto;
-  padding: 0;
+  padding: 0.35rem 0.15rem;
   cursor: pointer;
   transition: color 0.15s ease;
 }
 
 #theme-switcher .theme-toggle-btn {
-  font-size: 10px;
+  font-size: clamp(14px, 1.2vw, 16px);
   line-height: 1;
 }
 

@@ -286,6 +286,22 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   injectNavChartTabs();
+
+  function neutralizeQuartoColumns() {
+    var main = document.querySelector("main.content");
+    if (!main) return;
+    main.classList.remove("page-columns", "page-full", "column-page");
+    var titleBlock = document.getElementById("title-block-header");
+    if (titleBlock && main.querySelector(".home-page")) {
+      titleBlock.style.display = "none";
+    }
+    main.querySelectorAll(".page-columns, .page-full, .column-page").forEach(function (el) {
+      if (el.closest(".photography-shell")) return;
+      el.classList.remove("page-columns", "page-full", "column-page");
+    });
+  }
+
+  neutralizeQuartoColumns();
 });
 </script>
 
@@ -306,18 +322,18 @@ document.addEventListener("DOMContentLoaded", function () {
   background: transparent;
   color: #bbbbbb;
   font-family: "IBM Plex Mono", ui-monospace, monospace;
-  font-size: 10px;
+  font-size: clamp(12px, 1.1vw, 14px);
   font-weight: 400;
-  letter-spacing: 0.07em;
+  letter-spacing: 0.06em;
   text-transform: uppercase;
   min-width: auto;
-  padding: 0;
+  padding: 0.35rem 0.15rem;
   cursor: pointer;
   transition: color 0.15s ease;
 }
 
 #theme-switcher .theme-toggle-btn {
-  font-size: 10px;
+  font-size: clamp(14px, 1.2vw, 16px);
   line-height: 1;
 }
 
@@ -367,9 +383,11 @@ html[data-theme="dark"] #language-switcher .lang-btn.active {
 <meta name="twitter:card" content="summary_large_image">
 </head><body class="nav-fixed fullcontent"><div id="welcome-splash" class="welcome-splash" hidden="" aria-hidden="true">
   <div class="welcome-splash__backdrop"></div>
-  <div class="welcome-splash__content">
-    <h1 class="welcome-splash__headline" data-headline-en="WELCOME" data-headline-es="BIENVENIDO">WELCOME</h1>
-    <p class="welcome-splash__tagline" data-tagline-en="to Matías Deneken's web profile" data-tagline-es="al sitio web y perfil de Matías Deneken"></p>
+  <div class="welcome-splash__burst" aria-label="Social profiles">
+    <a href="https://www.github.com/matdknu" class="welcome-social" style="--i:0" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="bi bi-github" aria-hidden="true"></i></a>
+    <a href="https://scholar.google.com/citations?user=matdknu" class="welcome-social" style="--i:1" target="_blank" rel="noopener noreferrer" aria-label="Google Scholar"><span class="welcome-social__label">GS</span></a>
+    <a href="https://www.linkedin.com/in/deneken/" class="welcome-social" style="--i:2" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="bi bi-linkedin" aria-hidden="true"></i></a>
+    <a href="https://orcid.org" class="welcome-social" style="--i:3" target="_blank" rel="noopener noreferrer" aria-label="ORCID"><span class="welcome-social__label">ID</span></a>
   </div>
 </div>
 
@@ -384,19 +402,6 @@ document.addEventListener("DOMContentLoaded", function () {
   var splash = document.getElementById("welcome-splash");
   if (!splash) return;
 
-  var lang = localStorage.getItem("site-lang") || "en";
-  var headlineEl = splash.querySelector(".welcome-splash__headline");
-  var taglineEl = splash.querySelector(".welcome-splash__tagline");
-
-  headlineEl.textContent =
-    lang === "es"
-      ? headlineEl.getAttribute("data-headline-es")
-      : headlineEl.getAttribute("data-headline-en");
-  taglineEl.textContent =
-    lang === "es"
-      ? taglineEl.getAttribute("data-tagline-es")
-      : taglineEl.getAttribute("data-tagline-en");
-
   splash.hidden = false;
   splash.setAttribute("aria-hidden", "false");
   document.body.classList.add("welcome-active");
@@ -407,7 +412,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   window.setTimeout(function () {
     splash.classList.add("is-exiting");
-  }, 2400);
+  }, 1000);
 
   window.setTimeout(function () {
     splash.classList.remove("is-visible", "is-exiting");
@@ -415,7 +420,7 @@ document.addEventListener("DOMContentLoaded", function () {
     splash.setAttribute("aria-hidden", "true");
     document.body.classList.remove("welcome-active");
     sessionStorage.setItem("welcome-seen", "1");
-  }, 3000);
+  }, 1500);
 });
 </script>
 
@@ -704,25 +709,6 @@ document.addEventListener("DOMContentLoaded", function () {
   </div>
 
 </div>
-
-<script>
-document.addEventListener("DOMContentLoaded", function () {
-  var home = document.querySelector(".home-page");
-  if (!home) return;
-
-  var titleBlock = document.getElementById("title-block-header");
-  if (titleBlock) titleBlock.style.display = "none";
-
-  var main = document.querySelector("main.content");
-  if (main) {
-    main.classList.remove("page-columns", "page-full", "column-page");
-  }
-
-  home.querySelectorAll(".page-columns, .page-full, .column-page").forEach(function (el) {
-    el.classList.remove("page-columns", "page-full", "column-page");
-  });
-});
-</script>
 
 
 
