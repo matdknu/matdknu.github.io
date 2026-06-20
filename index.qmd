@@ -59,6 +59,8 @@ format:
 
     <section class="home-agenda-cta">
       <a href="agenda.qmd" class="btn-outline">View agenda →</a>
+      <a href="about-me.qmd" class="btn-outline">About me →</a>
+      <a href="photography.qmd" class="btn-outline">Photography →</a>
     </section>
 
     <hr class="site-rule">
@@ -140,6 +142,8 @@ format:
 
     <section class="home-agenda-cta">
       <a href="agenda.qmd" class="btn-outline">Ver agenda →</a>
+      <a href="about-me.qmd" class="btn-outline">Sobre mí →</a>
+      <a href="photography.qmd" class="btn-outline">Fotografía →</a>
     </section>
 
     <hr class="site-rule">

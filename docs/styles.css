@@ -803,7 +803,8 @@ html[data-theme="dark"] a.home-tag.is-active {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  gap: 1rem;
+  flex-wrap: wrap;
+  gap: 0.65rem 0.85rem;
   padding: 1rem 0;
 }
 
