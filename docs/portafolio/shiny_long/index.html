@@ -124,7 +124,9 @@ window.updateThemeToggleButton = function (theme) {
   var btn = document.getElementById("theme-toggle");
   if (!btn) return;
   var isDark = theme === "dark";
-  btn.textContent = isDark ? "☀" : "☾";
+  btn.innerHTML = isDark
+    ? '<i class="bi bi-sun-fill" aria-hidden="true"></i>'
+    : '<i class="bi bi-moon-fill" aria-hidden="true"></i>';
   btn.setAttribute("aria-label", isDark ? "Activar modo día" : "Activar modo noche");
   btn.setAttribute("title", isDark ? "Modo día" : "Modo noche");
   btn.setAttribute("aria-pressed", isDark ? "true" : "false");
@@ -193,7 +195,7 @@ document.addEventListener("DOMContentLoaded", function () {
     themeSwitcher = document.createElement("div");
     themeSwitcher.id = "theme-switcher";
     themeSwitcher.innerHTML =
-      '<button id="theme-toggle" class="theme-toggle-btn" type="button" aria-pressed="false" aria-label="Activar modo noche" title="Modo noche">☾</button>';
+      '<button id="theme-toggle" class="theme-toggle-btn" type="button" aria-pressed="false" aria-label="Activar modo noche" title="Modo noche"><i class="bi bi-moon-fill" aria-hidden="true"></i></button>';
   }
 
   var langSwitcher = document.getElementById("language-switcher");
@@ -311,55 +313,9 @@ document.addEventListener("DOMContentLoaded", function () {
 #language-switcher {
   display: inline-flex;
   align-items: center;
-  gap: 0.5rem;
-  margin-left: 0.5rem;
+  gap: 0.35rem;
+  margin-left: 0.35rem;
   white-space: nowrap;
-}
-
-#theme-switcher .theme-toggle-btn,
-#language-switcher .lang-btn {
-  border: none;
-  border-radius: 0;
-  background: transparent;
-  color: #bbbbbb;
-  font-family: "IBM Plex Mono", ui-monospace, monospace;
-  font-size: clamp(12px, 1.1vw, 14px);
-  font-weight: 400;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  min-width: auto;
-  padding: 0.35rem 0.15rem;
-  cursor: pointer;
-  transition: color 0.15s ease;
-}
-
-#theme-switcher .theme-toggle-btn {
-  font-size: clamp(14px, 1.2vw, 16px);
-  line-height: 1;
-}
-
-#theme-switcher .theme-toggle-btn:hover,
-#language-switcher .lang-btn:hover {
-  color: #1a1a1a;
-}
-
-#theme-switcher .theme-toggle-btn.is-dark,
-#language-switcher .lang-btn.active {
-  background: transparent;
-  border: none;
-  color: #1a1a1a;
-}
-
-html[data-theme="dark"] #theme-switcher .theme-toggle-btn,
-html[data-theme="dark"] #language-switcher .lang-btn {
-  color: #6e6e88;
-}
-
-html[data-theme="dark"] #theme-switcher .theme-toggle-btn:hover,
-html[data-theme="dark"] #language-switcher .lang-btn:hover,
-html[data-theme="dark"] #theme-switcher .theme-toggle-btn.is-dark,
-html[data-theme="dark"] #language-switcher .lang-btn.active {
-  color: #ececf4;
 }
 
 .navbar .nav-item:has(#theme-switcher),

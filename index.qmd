@@ -17,7 +17,7 @@ format:
     <section class="home-hero">
       <div class="home-hero__main">
         <h1 class="home-name">Matías<br>Deneken</h1>
-        <p class="home-tagline">Sociologist &amp; <span class="kw kw--data">data scientist</span> working on <span class="kw kw--computational">computational social science</span>, <span class="kw kw--democracy">democracy</span>, and political <span class="kw kw--violence">violence</span>.</p>
+        <p class="home-tagline">Sociologist &amp; data scientist working on computational social science, democracy, and political violence.</p>
         <div class="home-tags">
           <a class="home-tag" href="https://www.science.org/doi/full/10.1126/science.1167742" target="_blank" rel="noopener noreferrer">Computational Social Science</a>
           <a class="home-tag" href="https://arxiv.org/abs/2304.03442" target="_blank" rel="noopener noreferrer">Generative Agents</a>
@@ -25,9 +25,7 @@ format:
         </div>
         <nav class="home-links" aria-label="External profiles">
           <a href="https://www.github.com/matdknu" target="_blank" rel="noopener noreferrer">GitHub</a>
-          <a href="https://scholar.google.com/citations?user=matdknu" target="_blank" rel="noopener noreferrer">Scholar</a>
           <a href="https://www.linkedin.com/in/deneken/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-          <a href="https://orcid.org" target="_blank" rel="noopener noreferrer">ORCID</a>
         </nav>
       </div>
       <aside class="home-hero__aside">
@@ -100,7 +98,7 @@ format:
     <section class="home-hero">
       <div class="home-hero__main">
         <h1 class="home-name">Matías<br>Deneken</h1>
-        <p class="home-tagline">Sociólogo y <span class="kw kw--data">científico de datos</span>. <span class="kw kw--computational">Ciencia social computacional</span>, <span class="kw kw--democracy">democracia</span> y <span class="kw kw--violence">violencia</span> política.</p>
+        <p class="home-tagline">Sociólogo y científico de datos. Ciencia social computacional, democracia y violencia política.</p>
         <div class="home-tags">
           <a class="home-tag" href="https://www.science.org/doi/full/10.1126/science.1167742" target="_blank" rel="noopener noreferrer">Ciencia Social Computacional</a>
           <a class="home-tag" href="https://arxiv.org/abs/2304.03442" target="_blank" rel="noopener noreferrer">Agentes Generativos</a>
@@ -108,9 +106,7 @@ format:
         </div>
         <nav class="home-links" aria-label="Perfiles externos">
           <a href="https://www.github.com/matdknu" target="_blank" rel="noopener noreferrer">GitHub</a>
-          <a href="https://scholar.google.com/citations?user=matdknu" target="_blank" rel="noopener noreferrer">Scholar</a>
           <a href="https://www.linkedin.com/in/deneken/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-          <a href="https://orcid.org" target="_blank" rel="noopener noreferrer">ORCID</a>
         </nav>
       </div>
       <aside class="home-hero__aside">

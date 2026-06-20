@@ -5,26 +5,18 @@
       <i class="bi bi-github" aria-hidden="true"></i>
       <span class="welcome-social__name">GitHub</span>
     </a>
-    <a href="https://scholar.google.com/citations?user=matdknu" class="welcome-social" style="--i:1" target="_blank" rel="noopener noreferrer" aria-label="Google Scholar">
-      <span class="welcome-social__label">GS</span>
-      <span class="welcome-social__name">Scholar</span>
-    </a>
-    <a href="https://www.linkedin.com/in/deneken/" class="welcome-social" style="--i:2" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+    <a href="https://www.linkedin.com/in/deneken/" class="welcome-social" style="--i:1" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
       <i class="bi bi-linkedin" aria-hidden="true"></i>
       <span class="welcome-social__name">LinkedIn</span>
-    </a>
-    <a href="https://orcid.org" class="welcome-social" style="--i:3" target="_blank" rel="noopener noreferrer" aria-label="ORCID">
-      <span class="welcome-social__label">ID</span>
-      <span class="welcome-social__name">ORCID</span>
     </a>
   </div>
 </div>
 
 <script>
 document.addEventListener("DOMContentLoaded", function () {
-  if (sessionStorage.getItem("welcome-seen-v2")) return;
+  if (sessionStorage.getItem("welcome-seen-v3")) return;
   if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
-    sessionStorage.setItem("welcome-seen-v2", "1");
+    sessionStorage.setItem("welcome-seen-v3", "1");
     return;
   }
 
@@ -48,7 +40,7 @@ document.addEventListener("DOMContentLoaded", function () {
     splash.hidden = true;
     splash.setAttribute("aria-hidden", "true");
     document.body.classList.remove("welcome-active");
-    sessionStorage.setItem("welcome-seen-v2", "1");
+    sessionStorage.setItem("welcome-seen-v3", "1");
   }, 3000);
 });
 </script>

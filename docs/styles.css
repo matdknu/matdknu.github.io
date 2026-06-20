@@ -19,18 +19,12 @@
   --home-width: var(--page-width);
   --home-body-size: 13.225px;
 
-  --kw-violence-bg: #e8c4b8;
-  --kw-violence-ink: #6b2e1a;
-  --kw-data-bg: #b8dcc8;
-  --kw-data-ink: #1a4d36;
-  --kw-methods-bg: #b4cce8;
-  --kw-methods-ink: #1a3a66;
-  --kw-democracy-bg: #d0bfe8;
-  --kw-democracy-ink: #4a2866;
-  --kw-comp-bg: #a8ddd0;
-  --kw-comp-ink: #1a5248;
-  --kw-power-bg: #e8d4b0;
-  --kw-power-ink: #5c4218;
+  --kw-violence: #8b4a38;
+  --kw-data: #2a6648;
+  --kw-methods: #3d5f8a;
+  --kw-democracy: #5c4080;
+  --kw-comp: #2a6658;
+  --kw-power: #6b5220;
 
   --radius-sm: 4px;
 }
@@ -405,6 +399,15 @@ body.nav-fixed {
   font-size: clamp(14px, 1.2vw, 16px);
   line-height: 1;
   text-transform: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#theme-switcher .theme-toggle-btn .bi {
+  font-size: 1rem;
+  line-height: 1;
+  pointer-events: none;
 }
 
 #theme-switcher .theme-toggle-btn:hover,
@@ -415,6 +418,25 @@ body.nav-fixed {
 
 #theme-switcher .theme-toggle-btn.is-dark,
 #language-switcher .lang-btn.active {
+  background: var(--ink);
+  border-color: var(--ink);
+  color: var(--bg);
+}
+
+html[data-theme="dark"] #theme-switcher .theme-toggle-btn,
+html[data-theme="dark"] #language-switcher .lang-btn {
+  color: var(--ink-muted);
+  border-color: var(--border);
+}
+
+html[data-theme="dark"] #theme-switcher .theme-toggle-btn:hover,
+html[data-theme="dark"] #language-switcher .lang-btn:hover {
+  color: var(--ink);
+  border-color: var(--ink);
+}
+
+html[data-theme="dark"] #theme-switcher .theme-toggle-btn.is-dark,
+html[data-theme="dark"] #language-switcher .lang-btn.active {
   background: var(--ink);
   border-color: var(--ink);
   color: var(--bg);
@@ -557,73 +579,60 @@ main.content:has(.home-page) #title-block-header {
   width: 100%;
 }
 
-/* Concept keywords — cream-tint highlights (visible on page bg) */
+/* Concept keywords — tinted text only (no marker background) */
 .kw {
-  padding: 0.08em 0.32em;
-  border-radius: 3px;
-  box-decoration-break: clone;
-  -webkit-box-decoration-break: clone;
-  font-weight: 500;
+  background: none;
+  padding: 0;
+  border-radius: 0;
+  font-weight: inherit;
 }
 
 .kw--violence {
-  background: var(--kw-violence-bg);
-  color: var(--kw-violence-ink);
+  color: var(--kw-violence);
 }
 
 .kw--data {
-  background: var(--kw-data-bg);
-  color: var(--kw-data-ink);
+  color: var(--kw-data);
 }
 
 .kw--methods {
-  background: var(--kw-methods-bg);
-  color: var(--kw-methods-ink);
+  color: var(--kw-methods);
 }
 
 .kw--democracy {
-  background: var(--kw-democracy-bg);
-  color: var(--kw-democracy-ink);
+  color: var(--kw-democracy);
 }
 
 .kw--computational {
-  background: var(--kw-comp-bg);
-  color: var(--kw-comp-ink);
+  color: var(--kw-comp);
 }
 
 .kw--power {
-  background: var(--kw-power-bg);
-  color: var(--kw-power-ink);
+  color: var(--kw-power);
 }
 
 html[data-theme="dark"] .kw--violence {
-  background: rgba(232, 196, 184, 0.42);
-  color: #f5ddd4;
+  color: #e8b8a8;
 }
 
 html[data-theme="dark"] .kw--data {
-  background: rgba(184, 220, 200, 0.38);
-  color: #d4f0e4;
+  color: #9fd4b8;
 }
 
 html[data-theme="dark"] .kw--methods {
-  background: rgba(180, 204, 232, 0.38);
-  color: #d4e8ff;
+  color: #a8c8e8;
 }
 
 html[data-theme="dark"] .kw--democracy {
-  background: rgba(208, 191, 232, 0.38);
-  color: #ece4ff;
+  color: #c4b0e0;
 }
 
 html[data-theme="dark"] .kw--computational {
-  background: rgba(168, 221, 208, 0.38);
-  color: #d4f5ec;
+  color: #98dcc8;
 }
 
 html[data-theme="dark"] .kw--power {
-  background: rgba(232, 212, 176, 0.38);
-  color: #f5ecd4;
+  color: #e0cc98;
 }
 
 .home-hero__main {
@@ -1986,27 +1995,15 @@ html[data-theme="dark"] .welcome-splash__backdrop {
 }
 
 .welcome-social:nth-child(1) {
-  --pop-x: -22px;
-  --pop-y: -10px;
+  --pop-x: -14px;
+  --pop-y: -6px;
   --chart-color: #619cff;
 }
 
 .welcome-social:nth-child(2) {
-  --pop-x: -8px;
-  --pop-y: -18px;
-  --chart-color: #00cc96;
-}
-
-.welcome-social:nth-child(3) {
-  --pop-x: 8px;
-  --pop-y: -18px;
+  --pop-x: 14px;
+  --pop-y: -6px;
   --chart-color: #ef553b;
-}
-
-.welcome-social:nth-child(4) {
-  --pop-x: 22px;
-  --pop-y: -10px;
-  --chart-color: #ab63fa;
 }
 
 .welcome-social i {
