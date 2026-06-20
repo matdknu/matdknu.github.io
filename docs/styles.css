@@ -470,8 +470,8 @@ main.content:has(.home-page) {
 
 .home-hero {
   display: grid !important;
-  grid-template-columns: minmax(0, 1fr) 320px !important;
-  gap: 2.5rem 3rem;
+  grid-template-columns: minmax(0, 1fr) 280px !important;
+  gap: 2.5rem 2rem;
   align-items: start;
   padding: 1.5rem 0 2rem;
   width: 100%;
@@ -485,10 +485,10 @@ main.content:has(.home-page) {
 }
 
 .home-hero__aside {
-  width: 320px;
+  width: 280px;
   flex-shrink: 0;
-  text-align: center;
-  justify-self: end;
+  text-align: left;
+  justify-self: start;
   grid-column: 2 !important;
 }
 
@@ -563,7 +563,7 @@ html[data-theme="dark"] .home-tag {
   border: 1px solid var(--border-hover);
   object-fit: cover;
   display: block;
-  margin: 0 auto;
+  margin: 0;
 }
 
 .home-photo-caption {
