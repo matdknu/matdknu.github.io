@@ -1825,13 +1825,26 @@ main.content:has(.portafolio-detail-shell) {
 }
 
 .portafolio-detail-shell--immersive .portafolio-shiny-embed {
-  height: calc((100dvh - 7.25rem) * 0.5);
-  min-height: calc((100dvh - 7.25rem) * 0.5);
+  height: calc(100dvh - 14rem);
+  min-height: 78dvh;
   max-height: none;
 }
 
 .portafolio-detail-shell--immersive .portafolio-detail-about {
-  padding-top: 0.65rem;
+  margin-bottom: 0.85rem;
+  padding-top: 0;
+}
+
+.portafolio-detail-shell--immersive .portafolio-detail-about .section-title-minimal {
+  margin-bottom: 0.35rem;
+  font-size: clamp(14px, 1.6vw, 17px);
+}
+
+.portafolio-detail-shell--immersive .portafolio-detail-about .page-content p {
+  margin: 0;
+  font-size: 11px;
+  line-height: 1.75;
+  color: var(--ink-body);
 }
 
 .portafolio-detail-about .page-content {
@@ -2239,8 +2252,8 @@ div.quarto-about-trestles .about-entity .about-book-section img {
   }
 
   .portafolio-detail-shell--immersive .portafolio-shiny-embed {
-    height: calc((100dvh - 8rem) * 0.5);
-    min-height: calc((100dvh - 8rem) * 0.5);
+    height: calc(100dvh - 16rem);
+    min-height: 68dvh;
   }
 
   .portafolio-detail-shell--immersive .portafolio-detail-header {
