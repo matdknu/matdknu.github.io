@@ -1960,108 +1960,63 @@ html[data-theme="dark"] .welcome-splash__backdrop {
   position: relative;
   z-index: 2;
   display: flex;
-  align-items: flex-end;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 1rem 1.15rem;
-  padding: 0 1.5rem;
-  max-width: 520px;
-}
-
-.welcome-social {
-  --pop-x: 0px;
-  --pop-y: 0px;
-  --chart-color: #619cff;
-  display: inline-flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 0.45rem;
-  width: 96px;
-  height: 96px;
-  border: 2px solid rgba(255, 255, 255, 0.35);
-  border-radius: 10px;
-  color: #ffffff;
-  background: var(--chart-color);
-  text-decoration: none;
+  flex-wrap: wrap;
+  gap: 0.65rem 0.85rem;
+  padding: 0 2rem;
+  max-width: 720px;
+  text-align: center;
+}
+
+.welcome-concept {
+  --pop-y: 8px;
+  display: inline-block;
+  color: #b91c1c;
   font-family: var(--font-mono);
-  font-size: 11px;
+  font-size: clamp(11px, 1.15vw, 14px);
   font-weight: 700;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  opacity: 0;
-  transform: scale(0) translate(var(--pop-x), var(--pop-y));
-  box-shadow: 0 10px 28px rgba(26, 26, 26, 0.22);
-}
-
-.welcome-social:nth-child(1) {
-  --pop-x: -14px;
-  --pop-y: -6px;
-  --chart-color: #619cff;
-}
-
-.welcome-social:nth-child(2) {
-  --pop-x: 14px;
-  --pop-y: -6px;
-  --chart-color: #ef553b;
-}
-
-.welcome-social i {
-  font-size: 1.65rem;
-  line-height: 1;
-}
-
-.welcome-social__label {
-  font-size: 1.05rem;
-  font-weight: 800;
   letter-spacing: 0.06em;
+  text-transform: uppercase;
+  line-height: 1.35;
+  opacity: 0;
+  transform: translateY(var(--pop-y)) scale(0.92);
 }
 
-.welcome-social__name {
-  font-size: 9px;
-  font-weight: 700;
-  letter-spacing: 0.12em;
-  opacity: 0.92;
+html[data-theme="dark"] .welcome-concept {
+  color: #ef4444;
 }
 
-.welcome-social:hover,
-.welcome-social:focus-visible {
-  color: #ffffff;
-  transform: scale(1.06) translate(0, -2px);
-  box-shadow: 0 14px 32px rgba(26, 26, 26, 0.28);
+.welcome-concept:nth-child(1) { --pop-y: 10px; }
+.welcome-concept:nth-child(2) { --pop-y: 6px; }
+.welcome-concept:nth-child(3) { --pop-y: 12px; }
+.welcome-concept:nth-child(4) { --pop-y: 6px; }
+.welcome-concept:nth-child(5) { --pop-y: 10px; }
+
+.welcome-splash.is-visible .welcome-concept {
+  animation: welcomeConceptIn 0.55s cubic-bezier(0.22, 1.35, 0.36, 1) forwards;
+  animation-delay: calc(var(--i, 0) * 0.09s);
 }
 
-.welcome-splash.is-visible .welcome-social {
-  animation: welcomeSocialPop 0.55s cubic-bezier(0.22, 1.45, 0.36, 1) forwards;
-  animation-delay: calc(var(--i, 0) * 0.07s);
+.welcome-splash.is-exiting .welcome-concept {
+  animation: welcomeConceptOut 0.28s ease forwards;
 }
 
-.welcome-splash.is-exiting .welcome-social {
-  animation: welcomeSocialOut 0.3s ease forwards;
-}
-
-@keyframes welcomeSocialPop {
+@keyframes welcomeConceptIn {
   0% {
     opacity: 0;
-    transform: scale(0.2) translate(calc(var(--pop-x) * 0.15), calc(var(--pop-y) * 0.15));
-    box-shadow: 0 0 0 rgba(26, 26, 26, 0);
-  }
-  55% {
-    opacity: 1;
-    transform: scale(1.18) translate(var(--pop-x), var(--pop-y));
-    box-shadow: 0 16px 36px rgba(26, 26, 26, 0.28);
+    transform: translateY(calc(var(--pop-y) + 8px)) scale(0.88);
   }
   100% {
     opacity: 1;
-    transform: scale(1) translate(0, 0);
-    box-shadow: 0 10px 28px rgba(26, 26, 26, 0.22);
+    transform: translateY(0) scale(1);
   }
 }
 
-@keyframes welcomeSocialOut {
+@keyframes welcomeConceptOut {
   to {
     opacity: 0;
-    transform: scale(0.65);
+    transform: translateY(-6px) scale(0.94);
   }
 }
 
@@ -2338,7 +2293,7 @@ div.quarto-about-trestles .about-entity .about-book-section img {
 
   .welcome-splash,
   .welcome-splash__burst,
-  .welcome-social {
+  .welcome-concept {
     animation: none !important;
     transition: none !important;
   }

@@ -1,22 +1,19 @@
 <div id="welcome-splash" class="welcome-splash" hidden aria-hidden="true">
   <div class="welcome-splash__backdrop"></div>
-  <div class="welcome-splash__burst" aria-label="Social profiles">
-    <a href="https://www.github.com/matdknu" class="welcome-social" style="--i:0" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-      <i class="bi bi-github" aria-hidden="true"></i>
-      <span class="welcome-social__name">GitHub</span>
-    </a>
-    <a href="https://www.linkedin.com/in/deneken/" class="welcome-social" style="--i:1" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-      <i class="bi bi-linkedin" aria-hidden="true"></i>
-      <span class="welcome-social__name">LinkedIn</span>
-    </a>
+  <div class="welcome-splash__burst" aria-label="Research concepts">
+    <span class="welcome-concept" style="--i:0">Computational Social Science</span>
+    <span class="welcome-concept" style="--i:1">Democracy</span>
+    <span class="welcome-concept" style="--i:2">ABM</span>
+    <span class="welcome-concept" style="--i:3">LLM</span>
+    <span class="welcome-concept" style="--i:4">Political Violence</span>
   </div>
 </div>
 
 <script>
 document.addEventListener("DOMContentLoaded", function () {
-  if (sessionStorage.getItem("welcome-seen-v3")) return;
+  if (sessionStorage.getItem("welcome-seen-v4")) return;
   if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
-    sessionStorage.setItem("welcome-seen-v3", "1");
+    sessionStorage.setItem("welcome-seen-v4", "1");
     return;
   }
 
@@ -33,14 +30,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
   window.setTimeout(function () {
     splash.classList.add("is-exiting");
-  }, 2400);
+  }, 2600);
 
   window.setTimeout(function () {
     splash.classList.remove("is-visible", "is-exiting");
     splash.hidden = true;
     splash.setAttribute("aria-hidden", "true");
     document.body.classList.remove("welcome-active");
-    sessionStorage.setItem("welcome-seen-v3", "1");
-  }, 3000);
+    sessionStorage.setItem("welcome-seen-v4", "1");
+  }, 3200);
 });
 </script>
