@@ -1443,8 +1443,8 @@ html[data-theme="dark"] .network-legend__item--soc i {
 
 .photo-gallery {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 0.65rem;
+  grid-template-columns: repeat(3, 1fr);
+  gap: calc(0.65rem * 1.25);
   width: 100%;
   padding: 1rem 1.5rem 0;
 }
@@ -2489,6 +2489,7 @@ div.quarto-about-trestles .about-entity .about-book-section img {
 @media (max-width: 768px) {
   .photo-gallery {
     grid-template-columns: repeat(2, 1fr);
+    gap: calc(0.65rem * 1.25);
     padding-left: 1rem;
     padding-right: 1rem;
   }
