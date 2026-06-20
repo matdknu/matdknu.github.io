@@ -25,6 +25,7 @@
   --kw-democracy: #5c4080;
   --kw-comp: #2a6658;
   --kw-power: #6b5220;
+  --kw-cream: #8a7048;
 
   --radius-sm: 4px;
 }
@@ -611,6 +612,10 @@ main.content:has(.home-page) #title-block-header {
   color: var(--kw-power);
 }
 
+.kw--cream {
+  color: var(--kw-cream);
+}
+
 html[data-theme="dark"] .kw--violence {
   color: #e8b8a8;
 }
@@ -632,6 +637,10 @@ html[data-theme="dark"] .kw--computational {
 }
 
 html[data-theme="dark"] .kw--power {
+  color: #e0cc98;
+}
+
+html[data-theme="dark"] .kw--cream {
   color: #e0cc98;
 }
 
@@ -783,7 +792,7 @@ html[data-theme="dark"] a.home-tag.is-active {
 }
 
 .home-about .section-heading {
-  font-size: calc(14px * 1.15);
+  font-size: calc(14px * 1.15 * 1.15);
 }
 
 .home-about__col p {
@@ -886,8 +895,16 @@ html[data-theme="dark"] .home-agenda-cta .btn-outline.is-active {
 }
 
 /* —— About me —— */
+main.content:has(.about-me-shell) {
+  width: 92%;
+}
+
 .about-me-shell .page-wrap {
   padding: 0;
+}
+
+.about-me-shell .page-title-minimal {
+  font-size: clamp(28px, 3.8vw, 36px);
 }
 
 .about-me-body {
@@ -897,17 +914,18 @@ html[data-theme="dark"] .home-agenda-cta .btn-outline.is-active {
 .about-me-layout {
   display: flex;
   align-items: flex-start;
-  gap: 2.5rem;
+  gap: 2rem;
 }
 
 .about-me-content {
-  flex: 1 1 60%;
+  flex: 1 1 68%;
   min-width: 0;
 }
 
 .about-me-figure {
-  flex: 1 1 40%;
+  flex: 0 1 30%;
   min-width: 0;
+  max-width: 22rem;
   position: sticky;
   top: 5rem;
 }
@@ -920,13 +938,14 @@ html[data-theme="dark"] .home-agenda-cta .btn-outline.is-active {
   border-radius: var(--radius-sm);
 }
 
-.about-me-subtitle {
+.about-me-content .about-me-subtitle {
   font-family: var(--font-display);
-  font-size: clamp(16px, 2.2vw, 20px);
+  font-size: clamp(22px, 3vw, 28px);
   font-style: normal;
   font-weight: 400;
   line-height: 1.35;
   color: var(--ink);
+  margin: 0 0 1rem;
 }
 
 .about-me-content s {
@@ -941,6 +960,19 @@ html[data-theme="dark"] .home-agenda-cta .btn-outline.is-active {
 
 .publications-body {
   padding: 0.5rem 0 2rem;
+}
+
+.publications-subsection {
+  margin-bottom: 1.85rem;
+}
+
+.publications-subsection .section-title-minimal {
+  margin-bottom: 0.65rem;
+  font-size: clamp(14px, 1.6vw, 17px);
+}
+
+.publications-subsection .apa-list {
+  counter-reset: apa;
 }
 
 .apa-list {
