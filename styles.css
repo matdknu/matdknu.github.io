@@ -648,6 +648,18 @@ html[data-theme="dark"] .kw--power {
   text-align: left;
   justify-self: start;
   grid-column: 2 !important;
+  transform: translateX(-12%);
+}
+
+.home-photo {
+  width: 280px;
+  height: 280px;
+  border-radius: 50%;
+  border: 1px solid var(--border-hover);
+  object-fit: cover;
+  object-position: 42% center;
+  display: block;
+  margin: 0;
 }
 
 .home-eyebrow {
@@ -747,16 +759,6 @@ html[data-theme="dark"] a.home-tag.is-active {
 .home-links a:hover {
   color: var(--ink);
   text-decoration: underline;
-}
-
-.home-photo {
-  width: 280px;
-  height: 280px;
-  border-radius: 50%;
-  border: 1px solid var(--border-hover);
-  object-fit: cover;
-  display: block;
-  margin: 0;
 }
 
 .home-photo-caption {
