@@ -802,10 +802,30 @@ html[data-theme="dark"] a.home-tag.is-active {
 .home-agenda-cta {
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
   flex-wrap: wrap;
   gap: 0.65rem 0.85rem;
   padding: 1rem 0;
+}
+
+.home-agenda-cta .btn-outline {
+  transition: background-color 0.15s ease, color 0.15s ease, border-color 0.15s ease, transform 0.12s ease, box-shadow 0.15s ease;
+}
+
+.home-agenda-cta .btn-outline:active,
+.home-agenda-cta .btn-outline.is-active {
+  background: #b91c1c;
+  border-color: #b91c1c;
+  color: #fafaf7;
+  transform: scale(0.97);
+  box-shadow: 0 2px 10px rgba(185, 28, 28, 0.28);
+}
+
+html[data-theme="dark"] .home-agenda-cta .btn-outline:active,
+html[data-theme="dark"] .home-agenda-cta .btn-outline.is-active {
+  background: #ef4444;
+  border-color: #ef4444;
+  color: #0a0a0f;
 }
 
 .home-agenda-cta__text {

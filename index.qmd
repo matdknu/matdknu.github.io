@@ -183,19 +183,24 @@ format:
 
 <script>
 document.addEventListener("DOMContentLoaded", function () {
-  document.querySelectorAll("a.home-tag").forEach(function (tag) {
-    tag.addEventListener("mousedown", function () {
-      tag.classList.add("is-active");
+  function wirePressFeedback(selector) {
+    document.querySelectorAll(selector).forEach(function (el) {
+      el.addEventListener("mousedown", function () {
+        el.classList.add("is-active");
+      });
+      el.addEventListener("mouseup", function () {
+        window.setTimeout(function () {
+          el.classList.remove("is-active");
+        }, 180);
+      });
+      el.addEventListener("mouseleave", function () {
+        el.classList.remove("is-active");
+      });
     });
-    tag.addEventListener("mouseup", function () {
-      window.setTimeout(function () {
-        tag.classList.remove("is-active");
-      }, 180);
-    });
-    tag.addEventListener("mouseleave", function () {
-      tag.classList.remove("is-active");
-    });
-  });
+  }
+
+  wirePressFeedback("a.home-tag");
+  wirePressFeedback(".home-agenda-cta .btn-outline");
 });
 </script>
 ```
