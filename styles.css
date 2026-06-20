@@ -1938,7 +1938,7 @@ body.welcome-active {
 .welcome-splash.is-exiting {
   opacity: 0;
   visibility: hidden;
-  transition: opacity 0.35s ease, visibility 0.35s ease;
+  transition: opacity 0.22s ease, visibility 0.22s ease;
 }
 
 .welcome-splash__backdrop {
@@ -1969,29 +1969,58 @@ html[data-theme="dark"] .welcome-splash__backdrop {
   display: none !important;
 }
 
-.welcome-splash__burst {
+.welcome-splash__panel {
   position: relative;
   z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.55rem;
+  padding: 0 1.5rem;
+  max-width: 640px;
+  text-align: center;
+}
+
+.welcome-splash__greeting {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: clamp(18px, 2.4vw, 24px);
+  font-weight: 400;
+  font-style: italic;
+  color: var(--ink);
+  line-height: 1.2;
+  opacity: 0;
+  transform: translateY(6px);
+}
+
+.welcome-splash.is-visible .welcome-splash__greeting {
+  animation: welcomeConceptIn 0.38s cubic-bezier(0.22, 1.35, 0.36, 1) forwards;
+}
+
+.welcome-splash.is-exiting .welcome-splash__greeting {
+  animation: welcomeConceptOut 0.2s ease forwards;
+}
+
+.welcome-splash__burst {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 0.65rem 0.85rem;
-  padding: 0 2rem;
-  max-width: 720px;
+  gap: 0.4rem 0.65rem;
   text-align: center;
 }
 
 .welcome-concept {
-  --pop-y: 8px;
+  --pop-y: 6px;
   display: inline-block;
   color: #b91c1c;
   font-family: var(--font-mono);
-  font-size: clamp(11px, 1.15vw, 14px);
+  font-size: clamp(9px, 1vw, 11px);
   font-weight: 700;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  line-height: 1.35;
+  line-height: 1.3;
   opacity: 0;
   transform: translateY(var(--pop-y)) scale(0.92);
 }
@@ -2007,12 +2036,12 @@ html[data-theme="dark"] .welcome-concept {
 .welcome-concept:nth-child(5) { --pop-y: 10px; }
 
 .welcome-splash.is-visible .welcome-concept {
-  animation: welcomeConceptIn 0.55s cubic-bezier(0.22, 1.35, 0.36, 1) forwards;
-  animation-delay: calc(var(--i, 0) * 0.09s);
+  animation: welcomeConceptIn 0.38s cubic-bezier(0.22, 1.35, 0.36, 1) forwards;
+  animation-delay: calc(0.08s + var(--i, 0) * 0.05s);
 }
 
 .welcome-splash.is-exiting .welcome-concept {
-  animation: welcomeConceptOut 0.28s ease forwards;
+  animation: welcomeConceptOut 0.2s ease forwards;
 }
 
 @keyframes welcomeConceptIn {
@@ -2305,7 +2334,9 @@ div.quarto-about-trestles .about-entity .about-book-section img {
   }
 
   .welcome-splash,
+  .welcome-splash__panel,
   .welcome-splash__burst,
+  .welcome-splash__greeting,
   .welcome-concept {
     animation: none !important;
     transition: none !important;

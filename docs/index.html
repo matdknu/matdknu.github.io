@@ -339,20 +339,23 @@ document.addEventListener("DOMContentLoaded", function () {
 <meta name="twitter:card" content="summary_large_image">
 </head><body class="nav-fixed fullcontent"><div id="welcome-splash" class="welcome-splash" hidden="" aria-hidden="true">
   <div class="welcome-splash__backdrop"></div>
-  <div class="welcome-splash__burst" aria-label="Research concepts">
-    <span class="welcome-concept" style="--i:0">Computational Social Science</span>
-    <span class="welcome-concept" style="--i:1">Democracy</span>
-    <span class="welcome-concept" style="--i:2">ABM</span>
-    <span class="welcome-concept" style="--i:3">LLM</span>
-    <span class="welcome-concept" style="--i:4">Political Violence</span>
+  <div class="welcome-splash__panel">
+    <p class="welcome-splash__greeting">Welcome to Deneken's website..</p>
+    <div class="welcome-splash__burst" aria-label="Research concepts">
+      <span class="welcome-concept" style="--i:0">Computational Social Science</span>
+      <span class="welcome-concept" style="--i:1">Democracy</span>
+      <span class="welcome-concept" style="--i:2">ABM</span>
+      <span class="welcome-concept" style="--i:3">LLM</span>
+      <span class="welcome-concept" style="--i:4">Political Violence</span>
+    </div>
   </div>
 </div>
 
 <script>
 document.addEventListener("DOMContentLoaded", function () {
-  if (sessionStorage.getItem("welcome-seen-v4")) return;
+  if (sessionStorage.getItem("welcome-seen-v5")) return;
   if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
-    sessionStorage.setItem("welcome-seen-v4", "1");
+    sessionStorage.setItem("welcome-seen-v5", "1");
     return;
   }
 
@@ -369,15 +372,15 @@ document.addEventListener("DOMContentLoaded", function () {
 
   window.setTimeout(function () {
     splash.classList.add("is-exiting");
-  }, 2600);
+  }, 1200);
 
   window.setTimeout(function () {
     splash.classList.remove("is-visible", "is-exiting");
     splash.hidden = true;
     splash.setAttribute("aria-hidden", "true");
     document.body.classList.remove("welcome-active");
-    sessionStorage.setItem("welcome-seen-v4", "1");
-  }, 3200);
+    sessionStorage.setItem("welcome-seen-v5", "1");
+  }, 1600);
 });
 </script>
 
