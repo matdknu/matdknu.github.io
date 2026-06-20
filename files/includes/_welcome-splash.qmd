@@ -22,6 +22,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
   var splash = document.getElementById("welcome-splash");
   if (!splash) return;
+  var isMobile = window.matchMedia("(max-width: 767px)").matches;
+  var exitAt = isMobile ? 900 : 1200;
+  var removeAt = isMobile ? 1200 : 1600;
 
   splash.hidden = false;
   splash.setAttribute("aria-hidden", "false");
@@ -33,7 +36,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   window.setTimeout(function () {
     splash.classList.add("is-exiting");
-  }, 1200);
+  }, exitAt);
 
   window.setTimeout(function () {
     splash.classList.remove("is-visible", "is-exiting");
@@ -41,6 +44,6 @@ document.addEventListener("DOMContentLoaded", function () {
     splash.setAttribute("aria-hidden", "true");
     document.body.classList.remove("welcome-active");
     sessionStorage.setItem("welcome-seen-v5", "1");
-  }, 1600);
+  }, removeAt);
 });
 </script>
