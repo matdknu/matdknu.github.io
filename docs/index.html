@@ -384,18 +384,30 @@ html[data-theme="dark"] #language-switcher .lang-btn.active {
 </head><body class="nav-fixed fullcontent"><div id="welcome-splash" class="welcome-splash" hidden="" aria-hidden="true">
   <div class="welcome-splash__backdrop"></div>
   <div class="welcome-splash__burst" aria-label="Social profiles">
-    <a href="https://www.github.com/matdknu" class="welcome-social" style="--i:0" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="bi bi-github" aria-hidden="true"></i></a>
-    <a href="https://scholar.google.com/citations?user=matdknu" class="welcome-social" style="--i:1" target="_blank" rel="noopener noreferrer" aria-label="Google Scholar"><span class="welcome-social__label">GS</span></a>
-    <a href="https://www.linkedin.com/in/deneken/" class="welcome-social" style="--i:2" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="bi bi-linkedin" aria-hidden="true"></i></a>
-    <a href="https://orcid.org" class="welcome-social" style="--i:3" target="_blank" rel="noopener noreferrer" aria-label="ORCID"><span class="welcome-social__label">ID</span></a>
+    <a href="https://www.github.com/matdknu" class="welcome-social" style="--i:0" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+      <i class="bi bi-github" aria-hidden="true"></i>
+      <span class="welcome-social__name">GitHub</span>
+    </a>
+    <a href="https://scholar.google.com/citations?user=matdknu" class="welcome-social" style="--i:1" target="_blank" rel="noopener noreferrer" aria-label="Google Scholar">
+      <span class="welcome-social__label">GS</span>
+      <span class="welcome-social__name">Scholar</span>
+    </a>
+    <a href="https://www.linkedin.com/in/deneken/" class="welcome-social" style="--i:2" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+      <i class="bi bi-linkedin" aria-hidden="true"></i>
+      <span class="welcome-social__name">LinkedIn</span>
+    </a>
+    <a href="https://orcid.org" class="welcome-social" style="--i:3" target="_blank" rel="noopener noreferrer" aria-label="ORCID">
+      <span class="welcome-social__label">ID</span>
+      <span class="welcome-social__name">ORCID</span>
+    </a>
   </div>
 </div>
 
 <script>
 document.addEventListener("DOMContentLoaded", function () {
-  if (sessionStorage.getItem("welcome-seen")) return;
+  if (sessionStorage.getItem("welcome-seen-v2")) return;
   if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
-    sessionStorage.setItem("welcome-seen", "1");
+    sessionStorage.setItem("welcome-seen-v2", "1");
     return;
   }
 
@@ -412,15 +424,15 @@ document.addEventListener("DOMContentLoaded", function () {
 
   window.setTimeout(function () {
     splash.classList.add("is-exiting");
-  }, 1000);
+  }, 2400);
 
   window.setTimeout(function () {
     splash.classList.remove("is-visible", "is-exiting");
     splash.hidden = true;
     splash.setAttribute("aria-hidden", "true");
     document.body.classList.remove("welcome-active");
-    sessionStorage.setItem("welcome-seen", "1");
-  }, 1500);
+    sessionStorage.setItem("welcome-seen-v2", "1");
+  }, 3000);
 });
 </script>
 
@@ -537,9 +549,8 @@ document.addEventListener("DOMContentLoaded", function () {
   <div data-lang="en" class="lang-pane page-columns page-full">
     <section class="home-hero page-columns page-full">
       <div class="home-hero__main">
-        <p class="home-eyebrow">Santiago, Chile — PhD candidate track</p>
         <h1 class="home-name">Matías<br>Deneken</h1>
-        <p class="home-tagline">Sociologist &amp; data scientist working on computational social science, democracy, and political violence.</p>
+        <p class="home-tagline">Sociologist &amp; <span class="kw kw--data">data scientist</span> working on <span class="kw kw--computational">computational social science</span>, <span class="kw kw--democracy">democracy</span>, and political <span class="kw kw--violence">violence</span>.</p>
         <div class="home-tags">
           <a class="home-tag" href="https://www.science.org/doi/full/10.1126/science.1167742" target="_blank" rel="noopener noreferrer">Computational Social Science</a>
           <a class="home-tag" href="https://arxiv.org/abs/2304.03442" target="_blank" rel="noopener noreferrer">Generative Agents</a>
@@ -562,15 +573,15 @@ document.addEventListener("DOMContentLoaded", function () {
     <section class="home-about">
       <div class="home-about__col">
         <h2 class="section-heading anchored">Introduction</h2>
-        <p>Matías Deneken is a Chilean sociologist and data scientist whose work sits at the intersection of the sociology of violence, democracy, and computational social science. His research examines how social processes unfold in contemporary societies through the rigorous application of quantitative and computational methods. He has contributed to major large-scale longitudinal projects, including the <em>Estudio Longitudinal de Relaciones Interculturales (ELRI)</em> and the <em>Estudio Panel de Percepciones de Seguridad y Policías (EPSEP)</em>.</p>
+        <p>Matías Deneken is a Chilean sociologist and <span class="kw kw--data">data scientist</span> whose work sits at the intersection of the <span class="kw kw--violence">sociology of violence</span>, <span class="kw kw--democracy">democracy</span>, and <span class="kw kw--computational">computational social science</span>. His research examines how social processes unfold in contemporary societies through the rigorous application of <span class="kw kw--methods">quantitative and computational methods</span>. He has contributed to major large-scale longitudinal projects, including the <em>Estudio Longitudinal de Relaciones Interculturales (ELRI)</em> and the <em>Estudio Panel de Percepciones de Seguridad y Policías (EPSEP)</em>.</p>
 
         <h2 class="section-heading anchored">Now</h2>
-        <p>Today, Matías is fully committed to building <strong><a href="https://www.methodolab.com" target="_blank" rel="noopener noreferrer">MethodoLab</a></strong> — a data science initiative he founded to push the frontier of computational methods in social research. He is also actively pursuing doctoral study opportunities <em>(exciting news coming soon)</em>.</p>
+        <p>Today, Matías is fully committed to building <strong><a href="https://www.methodolab.com" target="_blank" rel="noopener noreferrer">MethodoLab</a></strong> — a <span class="kw kw--data">data science</span> initiative he founded to push the frontier of <span class="kw kw--methods">computational methods</span> in social research. He is also actively pursuing doctoral study opportunities <em>(exciting news coming soon)</em>.</p>
         <p><a href="https://www.methodolab.com" target="_blank" rel="noopener noreferrer" class="btn-outline">Visit MethodoLab →</a></p>
       </div>
       <div class="home-about__col">
         <h2 class="section-heading anchored">Past experience</h2>
-        <p>Matías was affiliated with the <strong>Observatory of Violence and Social Legitimacy (OLES)</strong> (<a href="https://www.oles.cl/" target="_blank" rel="noopener noreferrer">www.oles.cl</a>), where he worked as a Research Assistant designing and maintaining large-scale longitudinal databases and conducting automated web scraping pipelines for systematic monitoring of national newspapers.</p>
+        <p>Matías was affiliated with the <strong>Observatory of <span class="kw kw--violence">Violence</span> and Social Legitimacy (OLES)</strong> (<a href="https://www.oles.cl/" target="_blank" rel="noopener noreferrer">www.oles.cl</a>), where he worked as a Research Assistant designing and maintaining large-scale longitudinal databases and conducting automated web scraping pipelines for systematic monitoring of national newspapers.</p>
         <p>He has been a <strong>Quantitative Studies Researcher</strong> at the <strong>Center for Intercultural and Indigenous Studies (CIIR)</strong> (<a href="https://www.ciir.cl/" target="_blank" rel="noopener noreferrer">www.ciir.cl</a>) since December 2022, where he coordinated the Longitudinal Survey on Intercultural Relations (ELRI) and co-edited the book <em>(RE) Configuraciones Interculturales</em>.</p>
 
         <h2 class="section-heading anchored">Home</h2>
@@ -582,7 +593,6 @@ document.addEventListener("DOMContentLoaded", function () {
     <hr class="site-rule">
 
     <section class="home-agenda-cta">
-      <p class="home-agenda-cta__text"><strong>Current agenda</strong> — literature reviews, methods notes &amp; upcoming posts</p>
       <a href="./agenda.html" class="btn-outline">View agenda →</a>
     </section>
 
@@ -622,9 +632,8 @@ document.addEventListener("DOMContentLoaded", function () {
   <div data-lang="es" class="lang-pane is-lang-hidden page-columns page-full">
     <section class="home-hero page-columns page-full">
       <div class="home-hero__main">
-        <p class="home-eyebrow">Santiago, Chile — candidatura doctoral</p>
         <h1 class="home-name">Matías<br>Deneken</h1>
-        <p class="home-tagline">Sociólogo y científico de datos. Ciencia social computacional, democracia y violencia política.</p>
+        <p class="home-tagline">Sociólogo y <span class="kw kw--data">científico de datos</span>. <span class="kw kw--computational">Ciencia social computacional</span>, <span class="kw kw--democracy">democracia</span> y <span class="kw kw--violence">violencia</span> política.</p>
         <div class="home-tags">
           <a class="home-tag" href="https://www.science.org/doi/full/10.1126/science.1167742" target="_blank" rel="noopener noreferrer">Ciencia Social Computacional</a>
           <a class="home-tag" href="https://arxiv.org/abs/2304.03442" target="_blank" rel="noopener noreferrer">Agentes Generativos</a>
@@ -647,15 +656,15 @@ document.addEventListener("DOMContentLoaded", function () {
     <section class="home-about">
       <div class="home-about__col">
         <h2 class="section-heading anchored">Introducción</h2>
-        <p>Matías Deneken es un sociólogo y científico de datos chileno cuyo trabajo se sitúa en la intersección de la sociología de la violencia, la democracia y la ciencia de datos computacional. Ha colaborado en estudios longitudinales a gran escala como el <em>Estudio Longitudinal de Relaciones Interculturales (ELRI)</em> y el <em>Estudio Panel de Percepciones de Seguridad y Policías (EPSEP)</em>.</p>
+        <p>Matías Deneken es un sociólogo y <span class="kw kw--data">científico de datos</span> chileno cuyo trabajo se sitúa en la intersección de la <span class="kw kw--violence">sociología de la violencia</span>, la <span class="kw kw--democracy">democracia</span> y la <span class="kw kw--computational">ciencia social computacional</span>. Ha colaborado en estudios longitudinales a gran escala como el <em>Estudio Longitudinal de Relaciones Interculturales (ELRI)</em> y el <em>Estudio Panel de Percepciones de Seguridad y Policías (EPSEP)</em>.</p>
 
         <h2 class="section-heading anchored">Ahora</h2>
-        <p>Actualmente está plenamente comprometido con <strong><a href="https://www.methodolab.com" target="_blank" rel="noopener noreferrer">MethodoLab</a></strong> — iniciativa de ciencia de datos que fundó para avanzar métodos computacionales en investigación social. También busca oportunidades de estudio doctoral <em>(próximamente novedades)</em>.</p>
+        <p>Actualmente está plenamente comprometido con <strong><a href="https://www.methodolab.com" target="_blank" rel="noopener noreferrer">MethodoLab</a></strong> — iniciativa de <span class="kw kw--data">ciencia de datos</span> que fundó para avanzar <span class="kw kw--methods">métodos computacionales</span> en investigación social. También busca oportunidades de estudio doctoral <em>(próximamente novedades)</em>.</p>
         <p><a href="https://www.methodolab.com" target="_blank" rel="noopener noreferrer" class="btn-outline">Visitar MethodoLab →</a></p>
       </div>
       <div class="home-about__col">
         <h2 class="section-heading anchored">Experiencia</h2>
-        <p>Estuvo afiliado al <strong>Observatorio de Violencia y Legitimidad Social (OLES)</strong> (<a href="https://www.oles.cl/" target="_blank" rel="noopener noreferrer">www.oles.cl</a>), donde trabajó como Asistente de Investigación en bases de datos longitudinales y pipelines de scraping web.</p>
+        <p>Estuvo afiliado al <strong>Observatorio de <span class="kw kw--violence">Violencia</span> y Legitimidad Social (OLES)</strong> (<a href="https://www.oles.cl/" target="_blank" rel="noopener noreferrer">www.oles.cl</a>), donde trabajó como Asistente de Investigación en bases de datos longitudinales y pipelines de scraping web.</p>
         <p>Es <strong>Investigador en Estudios Cuantitativos</strong> en el <strong>Centro de Estudios Interculturales e Indígenas (CIIR)</strong> (<a href="https://www.ciir.cl/" target="_blank" rel="noopener noreferrer">www.ciir.cl</a>) desde diciembre de 2022, donde coordinó la Encuesta Longitudinal de Relaciones Interculturales (ELRI) y co-editó <em>(RE) Configuraciones Interculturales</em>.</p>
 
         <h2 class="section-heading anchored">Hogar</h2>
@@ -667,7 +676,6 @@ document.addEventListener("DOMContentLoaded", function () {
     <hr class="site-rule">
 
     <section class="home-agenda-cta">
-      <p class="home-agenda-cta__text"><strong>Agenda actual</strong> — revisiones de literatura, notas de métodos y próximos posts</p>
       <a href="./agenda.html" class="btn-outline">Ver agenda →</a>
     </section>
 
