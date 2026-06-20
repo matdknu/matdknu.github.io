@@ -35,7 +35,6 @@ format:
       </div>
       <aside class="home-hero__aside">
         <img class="home-photo" src="files/images/my-face.JPG" alt="Matías Deneken">
-        <p class="home-photo-caption">CIIR · OLES · MethodoLab</p>
       </aside>
     </section>
 
@@ -123,7 +122,6 @@ format:
       </div>
       <aside class="home-hero__aside">
         <img class="home-photo" src="files/images/my-face.JPG" alt="Matías Deneken">
-        <p class="home-photo-caption">CIIR · OLES · MethodoLab</p>
       </aside>
     </section>
 

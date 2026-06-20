@@ -470,7 +470,7 @@ main.content:has(.home-page) {
 
 .home-hero {
   display: grid !important;
-  grid-template-columns: minmax(0, 1fr) 280px !important;
+  grid-template-columns: minmax(0, 1fr) 320px !important;
   gap: 2.5rem 3rem;
   align-items: start;
   padding: 1.5rem 0 2rem;
@@ -485,7 +485,7 @@ main.content:has(.home-page) {
 }
 
 .home-hero__aside {
-  width: 280px;
+  width: 320px;
   flex-shrink: 0;
   text-align: center;
   justify-self: end;
@@ -557,8 +557,8 @@ html[data-theme="dark"] .home-tag {
 }
 
 .home-photo {
-  width: 240px;
-  height: 240px;
+  width: 280px;
+  height: 280px;
   border-radius: 50%;
   border: 1px solid var(--border-hover);
   object-fit: cover;
