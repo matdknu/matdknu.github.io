@@ -28,10 +28,10 @@ format:
           <div class="network-tooltip" id="network-tooltip"></div>
         </div>
         <div class="network-legend">
-          <span><i style="background:#1A1A1A;opacity:0.85;"></i>Computational</span>
-          <span><i style="background:#1A1A1A;opacity:0.65;"></i>Methods</span>
-          <span><i style="background:#1A1A1A;opacity:0.5;"></i>Political</span>
-          <span><i style="background:#1A1A1A;opacity:0.35;"></i>Social</span>
+          <span class="network-legend__item network-legend__item--comp"><i aria-hidden="true"></i>Computational</span>
+          <span class="network-legend__item network-legend__item--meth"><i aria-hidden="true"></i>Methods</span>
+          <span class="network-legend__item network-legend__item--pol"><i aria-hidden="true"></i>Political</span>
+          <span class="network-legend__item network-legend__item--soc"><i aria-hidden="true"></i>Social</span>
         </div>
       </div>
     </div>
@@ -46,10 +46,10 @@ format:
           <div class="network-tooltip" id="network-tooltip-es"></div>
         </div>
         <div class="network-legend">
-          <span><i style="background:#1A1A1A;opacity:0.85;"></i>Computacional</span>
-          <span><i style="background:#1A1A1A;opacity:0.65;"></i>Metodos</span>
-          <span><i style="background:#1A1A1A;opacity:0.5;"></i>Politico</span>
-          <span><i style="background:#1A1A1A;opacity:0.35;"></i>Social</span>
+          <span class="network-legend__item network-legend__item--comp"><i aria-hidden="true"></i>Computacional</span>
+          <span class="network-legend__item network-legend__item--meth"><i aria-hidden="true"></i>Metodos</span>
+          <span class="network-legend__item network-legend__item--pol"><i aria-hidden="true"></i>Politico</span>
+          <span class="network-legend__item network-legend__item--soc"><i aria-hidden="true"></i>Social</span>
         </div>
       </div>
     </div>
@@ -314,16 +314,16 @@ format:
 (function () {
   // <- EDIT HERE TO ADD NODES
   const NODES = [
-    { id: "nlp", label: "NLP", color: "#8b7cf8", size: 34, cat: "comp", desc: "Natural Language Processing - discourse analysis at scale" },
-    { id: "abm", label: "ABM", color: "#8b7cf8", size: 26, cat: "comp", desc: "Agent-Based Modelling - emergent social behavior" },
-    { id: "trace", label: "Digital Trace", color: "#fb923c", size: 24, cat: "meth", desc: "Behavioral footprints on platforms and news sites" },
-    { id: "demo", label: "Democracy", color: "#2dd4bf", size: 30, cat: "pol", desc: "Democratic erosion and legitimacy in Latin America" },
-    { id: "ai", label: "AI", color: "#8b7cf8", size: 28, cat: "comp", desc: "LLMs, embeddings, classification for social research" },
-    { id: "violence", label: "Violence", color: "#f472b6", size: 22, cat: "soc", desc: "Social legitimacy of violence - EPSEP study" },
-    { id: "inter", label: "Intercultural", color: "#f472b6", size: 22, cat: "soc", desc: "Indigenous relations in Chile - ELRI study" },
-    { id: "scraping", label: "Web Scraping", color: "#fb923c", size: 20, cat: "meth", desc: "Automated extraction of newspaper archives" },
-    { id: "survey", label: "Survey Methods", color: "#fb923c", size: 20, cat: "meth", desc: "Longitudinal design, panel attrition, multilevel models" },
-    { id: "polar", label: "Polarization", color: "#2dd4bf", size: 18, cat: "pol", desc: "Affective and ideological polarization via text + survey" }
+    { id: "nlp", label: "NLP", size: 34, cat: "comp", desc: "Natural Language Processing - discourse analysis at scale" },
+    { id: "abm", label: "ABM", size: 26, cat: "comp", desc: "Agent-Based Modelling - emergent social behavior" },
+    { id: "trace", label: "Digital Trace", size: 24, cat: "meth", desc: "Behavioral footprints on platforms and news sites" },
+    { id: "demo", label: "Democracy", size: 30, cat: "pol", desc: "Democratic erosion and legitimacy in Latin America" },
+    { id: "ai", label: "AI", size: 28, cat: "comp", desc: "LLMs, embeddings, classification for social research" },
+    { id: "violence", label: "Violence", size: 22, cat: "soc", desc: "Social legitimacy of violence - EPSEP study" },
+    { id: "inter", label: "Intercultural", size: 22, cat: "soc", desc: "Indigenous relations in Chile - ELRI study" },
+    { id: "scraping", label: "Web Scraping", size: 20, cat: "meth", desc: "Automated extraction of newspaper archives" },
+    { id: "survey", label: "Survey Methods", size: 20, cat: "meth", desc: "Longitudinal design, panel attrition, multilevel models" },
+    { id: "polar", label: "Polarization", size: 18, cat: "pol", desc: "Affective and ideological polarization via text + survey" }
   ];
 
   const EDGES = [
@@ -335,16 +335,48 @@ format:
     ["survey", "nlp"], ["survey", "abm"]
   ];
 
+  function catColors() {
+    const isDark = document.documentElement.getAttribute("data-theme") === "dark";
+    if (isDark) {
+      return {
+        comp: "#98dcc8",
+        meth: "#a8c8e8",
+        pol: "#c4b0e0",
+        soc: "#e8b8a8"
+      };
+    }
+    const style = getComputedStyle(document.documentElement);
+    return {
+      comp: style.getPropertyValue("--kw-comp").trim() || "#2a6658",
+      meth: style.getPropertyValue("--kw-methods").trim() || "#3d5f8a",
+      pol: style.getPropertyValue("--kw-democracy").trim() || "#5c4080",
+      soc: style.getPropertyValue("--kw-violence").trim() || "#8b4a38"
+    };
+  }
+
+  function hexToRgba(hex, alpha) {
+    const clean = hex.replace("#", "");
+    const full = clean.length === 3
+      ? clean.split("").map(function (c) { return c + c; }).join("")
+      : clean;
+    const r = parseInt(full.slice(0, 2), 16);
+    const g = parseInt(full.slice(2, 4), 16);
+    const b = parseInt(full.slice(4, 6), 16);
+    return "rgba(" + r + "," + g + "," + b + "," + alpha + ")";
+  }
+
   function bootNetwork(containerId, tooltipId) {
     const container = document.getElementById(containerId);
     if (!container) return;
 
+    const palette = catColors();
     const canvas = container.querySelector("canvas");
     const tooltip = document.getElementById(tooltipId);
     const ctx = canvas.getContext("2d");
     const dpr = window.devicePixelRatio || 1;
     const nodes = NODES.map(function (node, index) {
       return Object.assign({}, node, {
+        color: palette[node.cat] || palette.comp,
         x: 120 + (index % 5) * 120,
         y: 90 + Math.floor(index / 5) * 110,
         vx: 0,
@@ -437,8 +469,8 @@ format:
       const x = edge.source.x + (edge.target.x - edge.source.x) * progress;
       const y = edge.source.y + (edge.target.y - edge.source.y) * progress;
       ctx.beginPath();
-      ctx.fillStyle = "rgba(26,26,26,0.25)";
-      ctx.arc(x, y, 1.5, 0, Math.PI * 2);
+      ctx.fillStyle = hexToRgba(edge.source.color, 0.35);
+      ctx.arc(x, y, 1.4, 0, Math.PI * 2);
       ctx.fill();
     }
 
@@ -446,9 +478,10 @@ format:
       ctx.clearRect(0, 0, width, height);
 
       edges.forEach(function (edge, index) {
+        const hot = hovered && (hovered === edge.source || hovered === edge.target);
         ctx.beginPath();
-        ctx.strokeStyle = hovered && (hovered === edge.source || hovered === edge.target) ? "rgba(26,26,26,0.22)" : "rgba(26,26,26,0.08)";
-        ctx.lineWidth = hovered && (hovered === edge.source || hovered === edge.target) ? 1.2 : 0.8;
+        ctx.strokeStyle = hexToRgba(edge.source.color, hot ? 0.42 : 0.18);
+        ctx.lineWidth = hot ? 1.1 : 0.75;
         ctx.moveTo(edge.source.x, edge.source.y);
         ctx.lineTo(edge.target.x, edge.target.y);
         ctx.stroke();
@@ -457,18 +490,20 @@ format:
       });
 
       nodes.forEach(function (node) {
-        const pulse = Math.sin(tick * 0.04 + node.size) * 0.8;
+        const pulse = Math.sin(tick * 0.04 + node.size) * 0.6;
         const radius = node.size * 0.58 + pulse;
         const isHot = hovered === node;
-        const opacity = isHot ? 0.92 : 0.55;
 
         ctx.beginPath();
-        ctx.fillStyle = "rgba(26,26,26," + opacity + ")";
         ctx.arc(node.x, node.y, radius, 0, Math.PI * 2);
+        ctx.fillStyle = hexToRgba(node.color, isHot ? 0.16 : 0.1);
         ctx.fill();
+        ctx.strokeStyle = hexToRgba(node.color, isHot ? 0.88 : 0.62);
+        ctx.lineWidth = isHot ? 1.6 : 1.1;
+        ctx.stroke();
 
-        ctx.fillStyle = isHot ? "#FAFAF7" : "#555555";
-        ctx.font = "400 10px 'IBM Plex Mono', monospace";
+        ctx.fillStyle = node.color;
+        ctx.font = (isHot ? "500" : "400") + " 10px 'IBM Plex Mono', monospace";
         ctx.textAlign = "center";
         ctx.textBaseline = "middle";
         ctx.fillText(node.label, node.x, node.y);

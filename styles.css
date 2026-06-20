@@ -973,7 +973,7 @@ html[data-theme="dark"] a.home-tag.is-active {
   background: var(--bg);
   border: 1px solid var(--border);
   border-radius: var(--radius-sm);
-  padding: 1rem;
+  padding: 0.85rem;
   margin-bottom: 1.5rem;
 }
 
@@ -983,7 +983,11 @@ html[data-theme="dark"] a.home-tag.is-active {
   border: 1px solid var(--border);
   border-radius: var(--radius-sm);
   overflow: hidden;
-  background: var(--surface);
+  background: linear-gradient(180deg, rgba(250, 250, 247, 0.95) 0%, rgba(232, 229, 223, 0.45) 100%);
+}
+
+html[data-theme="dark"] .network-canvas {
+  background: linear-gradient(180deg, rgba(19, 19, 31, 0.95) 0%, rgba(10, 10, 15, 0.85) 100%);
 }
 
 .network-canvas canvas {
@@ -995,25 +999,91 @@ html[data-theme="dark"] a.home-tag.is-active {
 .network-legend {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.65rem 1rem;
-  padding: 0.75rem 0 0;
+  gap: 0.55rem 1.1rem;
+  padding: 0.7rem 0 0;
+  font-family: var(--font-mono);
   font-size: 9px;
+  font-weight: 500;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: var(--ink-muted);
 }
 
-.network-legend span {
+.network-legend__item {
   display: inline-flex;
   align-items: center;
-  gap: 0.35rem;
+  gap: 0.4rem;
 }
 
-.network-legend i {
-  width: 8px;
-  height: 8px;
+.network-legend__item i {
+  width: 7px;
+  height: 7px;
   border-radius: 50%;
   display: inline-block;
+  flex-shrink: 0;
+}
+
+.network-legend__item--comp {
+  color: var(--kw-comp);
+}
+
+.network-legend__item--comp i {
+  background: var(--kw-comp);
+}
+
+.network-legend__item--meth {
+  color: var(--kw-methods);
+}
+
+.network-legend__item--meth i {
+  background: var(--kw-methods);
+}
+
+.network-legend__item--pol {
+  color: var(--kw-democracy);
+}
+
+.network-legend__item--pol i {
+  background: var(--kw-democracy);
+}
+
+.network-legend__item--soc {
+  color: var(--kw-violence);
+}
+
+.network-legend__item--soc i {
+  background: var(--kw-violence);
+}
+
+html[data-theme="dark"] .network-legend__item--comp {
+  color: #98dcc8;
+}
+
+html[data-theme="dark"] .network-legend__item--comp i {
+  background: #98dcc8;
+}
+
+html[data-theme="dark"] .network-legend__item--meth {
+  color: #a8c8e8;
+}
+
+html[data-theme="dark"] .network-legend__item--meth i {
+  background: #a8c8e8;
+}
+
+html[data-theme="dark"] .network-legend__item--pol {
+  color: #c4b0e0;
+}
+
+html[data-theme="dark"] .network-legend__item--pol i {
+  background: #c4b0e0;
+}
+
+html[data-theme="dark"] .network-legend__item--soc {
+  color: #e8b8a8;
+}
+
+html[data-theme="dark"] .network-legend__item--soc i {
+  background: #e8b8a8;
 }
 
 .network-tooltip {
