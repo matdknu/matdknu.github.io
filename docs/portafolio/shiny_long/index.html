@@ -184,6 +184,25 @@ window.switchLanguage = function (lang) {
 };
 
 document.addEventListener("DOMContentLoaded", function () {
+  function fixNavbarBrand() {
+    var brandItem = document.querySelector(".navbar-brand-item");
+    var brand = brandItem
+      ? brandItem.querySelector(".navbar-brand")
+      : document.querySelector(".navbar-brand-container .navbar-brand");
+    var navContainer = document.querySelector(".navbar-container.container-fluid");
+    if (!brand || !navContainer) return;
+
+    if (brandItem) {
+      var brandContainer = document.createElement("div");
+      brandContainer.className = "navbar-brand-container";
+      brandContainer.appendChild(brand);
+      navContainer.insertBefore(brandContainer, navContainer.firstChild);
+      brandItem.remove();
+    }
+  }
+
+  fixNavbarBrand();
+
   var savedLang = localStorage.getItem("site-lang") || "en";
   var savedTheme = localStorage.getItem("site-theme") || "light";
   var navbar = document.querySelector(".navbar");
@@ -232,6 +251,11 @@ document.addEventListener("DOMContentLoaded", function () {
   document.getElementById("lang-es").onclick = function () {
     window.switchLanguage("es");
   };
+
+  var rightNav = document.querySelector(".navbar-nav.ms-auto");
+  if (rightNav) {
+    rightNav.classList.add("navbar-utilities");
+  }
 
   function updateNavbarState() {
     if (!navbar) return;

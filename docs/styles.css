@@ -272,33 +272,85 @@ body.nav-fixed {
 }
 
 .navbar .navbar-brand {
-  align-self: center;
-  transform: translateY(-15%);
+  display: inline-flex;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar .navbar-brand-item {
+  display: none !important;
 }
 
 .navbar .navbar-brand .navbar-title {
   position: relative;
-  visibility: hidden;
+  display: inline-block;
+  font-size: 0;
+  line-height: 1;
+  color: transparent;
+  user-select: none;
+  overflow: visible;
 }
 
 .navbar .navbar-brand .navbar-title::after {
   content: "@matdknu";
-  visibility: visible;
-  position: absolute;
-  left: 0;
-  top: 0;
+  display: inline-block;
+  position: relative;
+  left: auto;
+  top: auto;
   white-space: nowrap;
-  color: var(--kw-comp);
+  font-family: var(--font-mono);
+  font-size: clamp(17px, 1.8vw, 21px);
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  animation: navbar-brand-colors 6s ease-in-out infinite;
 }
 
-.navbar .navbar-brand:hover,
-.navbar .navbar-brand:focus {
-  text-decoration: none;
+@keyframes navbar-brand-colors {
+  0%,
+  100% {
+    color: var(--kw-comp);
+  }
+
+  20% {
+    color: var(--kw-methods);
+  }
+
+  40% {
+    color: var(--kw-democracy);
+  }
+
+  60% {
+    color: var(--kw-violence);
+  }
+
+  80% {
+    color: var(--kw-cream);
+  }
 }
 
-.navbar .navbar-brand:hover .navbar-title::after,
-.navbar .navbar-brand:focus .navbar-title::after {
-  color: var(--kw-methods);
+@keyframes navbar-brand-colors-dark {
+  0%,
+  100% {
+    color: #98dcc8;
+  }
+
+  20% {
+    color: #a8c8e8;
+  }
+
+  40% {
+    color: #c4b0e0;
+  }
+
+  60% {
+    color: #e8b8a8;
+  }
+
+  80% {
+    color: #e0cc98;
+  }
 }
 
 .navbar .nav-link {
@@ -309,7 +361,7 @@ body.nav-fixed {
   text-transform: uppercase;
   color: var(--ink-muted);
   border-bottom: none;
-  padding: 0.2rem 0.55rem;
+  padding: 0.2rem 0.72rem;
   white-space: nowrap;
 }
 
@@ -362,10 +414,11 @@ body.nav-fixed {
 .navbar a.nav-link[href*="Deneken_CV"] {
   border-bottom: 1px solid var(--ink);
   border-radius: 0;
-  padding: 0.35rem 0.15rem !important;
+  padding: 0.35rem 0.35rem !important;
   background: transparent;
   color: var(--ink);
-  font-weight: 400;
+  font-weight: 500;
+  letter-spacing: 0.08em;
 }
 
 .navbar a.nav-link[href*="Deneken_CV"]:hover,
@@ -373,6 +426,24 @@ body.nav-fixed {
   color: var(--ink);
   background: transparent;
   border-bottom-color: var(--ink);
+}
+
+.navbar .navbar-nav.ms-auto.navbar-utilities {
+  align-items: center;
+  gap: 0.55rem;
+}
+
+.navbar .navbar-nav.navbar-utilities .nav-item:has(a[href*="Deneken_CV"]) {
+  margin-right: 0.15rem;
+}
+
+#theme-switcher,
+#language-switcher {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  margin-left: 0;
+  white-space: nowrap;
 }
 
 .navbar .nav-item.nav-charts-strip-wrap,
@@ -389,23 +460,41 @@ body.nav-fixed {
   display: none !important;
 }
 
+.navbar .navbar-brand:hover,
+.navbar .navbar-brand:focus {
+  text-decoration: none;
+}
+
+.navbar .navbar-brand:hover .navbar-title::after,
+.navbar .navbar-brand:focus .navbar-title::after {
+  animation-play-state: paused;
+}
+
+.navbar .navbar-brand-container {
+  flex-shrink: 0;
+  overflow: visible;
+  min-width: 6.75rem;
+}
+
 .navbar .nav-item.compact .nav-link:has(.bi):not(:has(.menu-text:not(:empty))),
 .navbar .nav-item.compact .nav-link:has(.fa):not(:has(.menu-text:not(:empty))) {
   display: none !important;
 }
 
-.navbar .navbar-nav.ms-auto {
+.navbar .navbar-nav.me-auto {
   align-items: center;
-  gap: 0.15rem;
+  gap: 0.2rem;
 }
 
-#theme-switcher,
-#language-switcher {
-  display: inline-flex;
+.navbar .navbar-nav.ms-auto {
   align-items: center;
-  gap: 0.35rem;
+  gap: 0.45rem;
+}
+
+.navbar .navbar-nav.navbar-utilities > .nav-item:has(#theme-switcher) {
   margin-left: 0.35rem;
-  white-space: nowrap;
+  padding-left: 0.85rem;
+  border-left: 1px solid var(--border);
 }
 
 #theme-switcher .theme-toggle-btn,
@@ -2244,12 +2333,7 @@ html[data-theme="dark"] .navbar .navbar-title {
 }
 
 html[data-theme="dark"] .navbar .navbar-brand .navbar-title::after {
-  color: #98dcc8;
-}
-
-html[data-theme="dark"] .navbar .navbar-brand:hover .navbar-title::after,
-html[data-theme="dark"] .navbar .navbar-brand:focus .navbar-title::after {
-  color: #a8c8e8;
+  animation-name: navbar-brand-colors-dark;
 }
 
 html[data-theme="dark"] .navbar .nav-link {
@@ -2373,6 +2457,54 @@ div.quarto-about-trestles .about-entity .about-book-section img {
 
 /* —— Responsive —— */
 @media (min-width: 992px) {
+  .navbar .navbar-nav-scroll {
+    overflow: visible;
+  }
+
+  .navbar .navbar-container.container-fluid {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 0.75rem;
+  }
+
+  .navbar .navbar-brand-container {
+    margin: 0 !important;
+    flex: 0 0 auto;
+  }
+
+  .navbar .navbar-collapse {
+    display: flex !important;
+    flex: 1 1 auto;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    min-width: 0;
+    overflow: visible;
+    padding-right: 9.5rem;
+  }
+
+  .navbar .navbar-collapse > .navbar-nav.me-auto {
+    margin: 0 auto !important;
+    flex: 0 1 auto;
+    justify-content: center;
+    flex-wrap: nowrap;
+    overflow: visible;
+  }
+
+  .navbar .navbar-collapse > .navbar-nav.ms-auto.navbar-utilities {
+    position: absolute;
+    right: -0.15rem;
+    margin: 0 !important;
+    flex: 0 0 auto;
+    padding-left: 1rem;
+    transform: translateX(0.35rem);
+  }
+
+  html[data-theme="dark"] .navbar .navbar-nav.navbar-utilities > .nav-item:has(#theme-switcher) {
+    border-left-color: var(--border);
+  }
+
   .home-hero {
     align-items: start;
     padding-top: 0;
@@ -2639,9 +2771,18 @@ div.quarto-about-trestles .about-entity .about-book-section img {
   .welcome-splash__panel,
   .welcome-splash__burst,
   .welcome-splash__greeting,
-  .welcome-concept {
+  .welcome-concept,
+  .navbar .navbar-brand .navbar-title::after {
     animation: none !important;
     transition: none !important;
+  }
+
+  .navbar .navbar-brand .navbar-title::after {
+    color: var(--kw-comp);
+  }
+
+  html[data-theme="dark"] .navbar .navbar-brand .navbar-title::after {
+    color: #98dcc8;
   }
 }
 
