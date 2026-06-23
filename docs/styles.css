@@ -271,6 +271,11 @@ body.nav-fixed {
   letter-spacing: 0.02em;
 }
 
+.navbar .navbar-brand {
+  align-self: center;
+  transform: translateY(-15%);
+}
+
 .navbar .navbar-brand .navbar-title {
   position: relative;
   visibility: hidden;
