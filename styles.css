@@ -264,11 +264,36 @@ body.nav-fixed {
 
 .navbar .navbar-brand,
 .navbar .navbar-title {
-  font-family: var(--font-display);
-  font-size: clamp(20px, 2.2vw, 26px);
-  font-weight: 400;
-  color: var(--ink);
-  letter-spacing: 0;
+  font-family: var(--font-mono);
+  font-size: clamp(18px, 2vw, 22px);
+  font-weight: 500;
+  color: var(--kw-comp);
+  letter-spacing: 0.02em;
+}
+
+.navbar .navbar-brand .navbar-title {
+  position: relative;
+  visibility: hidden;
+}
+
+.navbar .navbar-brand .navbar-title::after {
+  content: "@matdknu";
+  visibility: visible;
+  position: absolute;
+  left: 0;
+  top: 0;
+  white-space: nowrap;
+  color: var(--kw-comp);
+}
+
+.navbar .navbar-brand:hover,
+.navbar .navbar-brand:focus {
+  text-decoration: none;
+}
+
+.navbar .navbar-brand:hover .navbar-title::after,
+.navbar .navbar-brand:focus .navbar-title::after {
+  color: var(--kw-methods);
 }
 
 .navbar .nav-link {
@@ -2210,7 +2235,16 @@ html[data-theme="dark"] .navbar {
 
 html[data-theme="dark"] .navbar .navbar-brand,
 html[data-theme="dark"] .navbar .navbar-title {
-  color: var(--ink);
+  color: #98dcc8;
+}
+
+html[data-theme="dark"] .navbar .navbar-brand .navbar-title::after {
+  color: #98dcc8;
+}
+
+html[data-theme="dark"] .navbar .navbar-brand:hover .navbar-title::after,
+html[data-theme="dark"] .navbar .navbar-brand:focus .navbar-title::after {
+  color: #a8c8e8;
 }
 
 html[data-theme="dark"] .navbar .nav-link {
