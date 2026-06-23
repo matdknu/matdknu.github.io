@@ -486,6 +486,54 @@ body.nav-fixed {
   gap: 0.2rem;
 }
 
+.navbar .navbar-nav.me-auto > .nav-item > .nav-link {
+  animation: navbar-brand-colors 6s ease-in-out infinite;
+}
+
+.navbar .navbar-nav.me-auto > .nav-item:nth-child(1) > .nav-link {
+  animation-delay: 0s;
+}
+
+.navbar .navbar-nav.me-auto > .nav-item:nth-child(2) > .nav-link {
+  animation-delay: -0.9s;
+}
+
+.navbar .navbar-nav.me-auto > .nav-item:nth-child(3) > .nav-link {
+  animation-delay: -1.8s;
+}
+
+.navbar .navbar-nav.me-auto > .nav-item:nth-child(4) > .nav-link {
+  animation-delay: -2.7s;
+}
+
+.navbar .navbar-nav.me-auto > .nav-item:nth-child(5) > .nav-link {
+  animation-delay: -3.6s;
+}
+
+.navbar .navbar-nav.me-auto > .nav-item:nth-child(6) > .nav-link {
+  animation-delay: -4.5s;
+}
+
+.navbar .navbar-nav.me-auto > .nav-item:nth-child(7) > .nav-link {
+  animation-delay: -5.4s;
+}
+
+.navbar .navbar-nav.me-auto > .nav-item > .nav-link:hover,
+.navbar .navbar-nav.me-auto > .nav-item > .nav-link:focus {
+  animation-play-state: paused;
+  text-decoration: none;
+}
+
+.navbar .navbar-nav.me-auto > .nav-item > .nav-link.active,
+.navbar .navbar-nav.me-auto > .nav-item > .nav-link[aria-current="page"] {
+  font-weight: 500;
+  color: currentColor;
+}
+
+html[data-theme="dark"] .navbar .navbar-nav.me-auto > .nav-item > .nav-link {
+  animation-name: navbar-brand-colors-dark;
+}
+
 .navbar .navbar-nav.ms-auto {
   align-items: center;
   gap: 0.45rem;
@@ -2772,13 +2820,18 @@ div.quarto-about-trestles .about-entity .about-book-section img {
   .welcome-splash__burst,
   .welcome-splash__greeting,
   .welcome-concept,
-  .navbar .navbar-brand .navbar-title::after {
+  .navbar .navbar-brand .navbar-title::after,
+  .navbar .navbar-nav.me-auto > .nav-item > .nav-link {
     animation: none !important;
     transition: none !important;
   }
 
   .navbar .navbar-brand .navbar-title::after {
     color: var(--kw-comp);
+  }
+
+  .navbar .navbar-nav.me-auto > .nav-item > .nav-link {
+    color: var(--ink-muted);
   }
 
   html[data-theme="dark"] .navbar .navbar-brand .navbar-title::after {
