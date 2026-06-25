@@ -8,6 +8,7 @@ project:
     - files/js/nav-mini-charts.js
     - files/images/my-face.jpg
     - files/images/casa.jpeg
+    - files/images/logo.png
     - files/images/photos/
   render:
     - index.qmd

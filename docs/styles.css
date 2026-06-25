@@ -704,7 +704,7 @@ main.content:has(.home-page) {
   max-width: none !important;
   margin-left: auto;
   margin-right: auto;
-  padding: 2rem 0 4rem;
+  padding: 2rem 0 1rem;
 }
 
 main.content:has(.home-page) #title-block-header {
@@ -1010,7 +1010,7 @@ html[data-theme="dark"] .home-agenda-cta .btn-outline.is-active {
 }
 
 .home-recent {
-  padding: 1.5rem 0 0.5rem;
+  padding: 1.5rem 0 0;
 }
 
 .home-recent__header {
@@ -2151,8 +2151,44 @@ main.content:has(.portafolio-detail-shell) {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--ink-faint);
-  padding: 1.25rem 1.5rem;
+  padding: 0 1.5rem 1.25rem;
   background: var(--bg);
+}
+
+.site-footer-logo {
+  display: flex;
+  justify-content: center;
+  padding: 0.65rem 0 0.85rem;
+}
+
+.site-footer-logo a {
+  display: inline-flex;
+  line-height: 0;
+  text-decoration: none;
+}
+
+.site-footer-logo img {
+  width: clamp(96px, 14vw, 128px);
+  height: clamp(96px, 14vw, 128px);
+  display: block;
+  opacity: 0.88;
+  transition: opacity 0.15s ease, transform 0.15s ease;
+}
+
+.site-footer-logo a:hover img,
+.site-footer-logo a:focus img {
+  opacity: 1;
+  transform: translateY(-1px);
+}
+
+html[data-theme="dark"] .site-footer-logo img {
+  filter: invert(1) brightness(1.15);
+  opacity: 0.78;
+}
+
+html[data-theme="dark"] .site-footer-logo a:hover img,
+html[data-theme="dark"] .site-footer-logo a:focus img {
+  opacity: 0.95;
 }
 
 #quarto-footer .nav-footer {
@@ -2654,7 +2690,7 @@ div.quarto-about-trestles .about-entity .about-book-section img {
 
   main.content:has(.home-page) {
     padding-top: 1rem;
-    padding-bottom: 2.5rem;
+    padding-bottom: 1rem;
   }
 
   .home-hero__main {

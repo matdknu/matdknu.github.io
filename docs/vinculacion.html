@@ -64,6 +64,8 @@ gtag('js', new Date());
 gtag('config', '', { 'anonymize_ip': true});
 </script>
 <!-- Academicons + embeds -->
+<link rel="icon" href="./files/images/logo.png" type="image/png" sizes="32x32">
+<link rel="apple-touch-icon" href="./files/images/logo.png">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
@@ -312,6 +314,40 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   injectNavChartTabs();
+
+  function injectFooterLogo() {
+    if (document.getElementById("site-footer-logo")) return;
+
+    var footer = document.querySelector("footer.footer");
+    if (!footer) return;
+
+    var iconLink = document.querySelector('link[rel="icon"]');
+    var logoSrc = iconLink ? iconLink.getAttribute("href") : "/files/images/logo.png";
+    var homeLink = document.querySelector(".navbar-brand");
+    var homeHref = homeLink ? homeLink.getAttribute("href") : "./index.html";
+
+    var wrap = document.createElement("div");
+    wrap.className = "site-footer-logo";
+    wrap.id = "site-footer-logo";
+
+    var link = document.createElement("a");
+    link.href = homeHref;
+    link.setAttribute("aria-label", "Home");
+
+    var img = document.createElement("img");
+    img.src = logoSrc;
+    img.alt = "matdknu logo";
+    img.width = 56;
+    img.height = 56;
+    img.decoding = "async";
+    img.loading = "lazy";
+
+    link.appendChild(img);
+    wrap.appendChild(link);
+    footer.insertBefore(wrap, footer.firstChild);
+  }
+
+  injectFooterLogo();
 
   function neutralizeQuartoColumns() {
     var main = document.querySelector("main.content");
