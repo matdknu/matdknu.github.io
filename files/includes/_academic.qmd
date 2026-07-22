@@ -96,29 +96,20 @@ window.switchLanguage = function (lang) {
     }
   });
 
-  var vincLink = document.querySelector('.navbar a.nav-link[href*="vinculacion"]');
-  if (vincLink) {
-    var vincText = vincLink.querySelector(".menu-text");
-    if (vincText) {
-      vincText.textContent = lang === "es" ? "Vinculación" : "Outreach";
+  function setNavLabel(selector, enLabel, esLabel) {
+    var link = document.querySelector(selector);
+    if (!link) return;
+    var text = link.querySelector(".menu-text");
+    if (text) {
+      text.textContent = lang === "es" ? esLabel : enLabel;
     }
   }
 
-  var photoLink = document.querySelector('.navbar a.nav-link[href*="photography"]');
-  if (photoLink) {
-    var photoText = photoLink.querySelector(".menu-text");
-    if (photoText) {
-      photoText.textContent = lang === "es" ? "Fotografía" : "Photography";
-    }
-  }
-
-  var aboutLink = document.querySelector('.navbar a.nav-link[href*="about-me"]');
-  if (aboutLink) {
-    var aboutText = aboutLink.querySelector(".menu-text");
-    if (aboutText) {
-      aboutText.textContent = lang === "es" ? "Sobre mí" : "About me";
-    }
-  }
+  // Keep Research and Outreach distinct — never reuse labels.
+  setNavLabel('#nav-menu-research', "Research", "Investigación");
+  setNavLabel('.navbar a.nav-link[href*="outreach"]', "Outreach", "Vinculación");
+  setNavLabel('.navbar a.nav-link[href*="photography"]', "Photography", "Fotografía");
+  setNavLabel('.navbar a.nav-link[href*="about-me"]', "About me", "Sobre mí");
 };
 
 document.addEventListener("DOMContentLoaded", function () {

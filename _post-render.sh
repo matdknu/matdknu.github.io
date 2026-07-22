@@ -2,3 +2,20 @@
 set -euo pipefail
 cp CNAME docs/CNAME
 : > docs/.nojekyll
+
+# Keep old /vinculacion.html working after rename to /outreach.html
+cat > docs/vinculacion.html <<'EOF'
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Redirecting…</title>
+  <link rel="canonical" href="./outreach.html">
+  <meta http-equiv="refresh" content="0; url=./outreach.html">
+  <script>location.replace("./outreach.html");</script>
+</head>
+<body>
+  <p>Moved to <a href="./outreach.html">outreach.html</a>.</p>
+</body>
+</html>
+EOF

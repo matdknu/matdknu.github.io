@@ -16,7 +16,7 @@ project:
     - projects.qmd
     - publications.qmd
     - presentations.qmd
-    - vinculacion.qmd
+    - outreach.qmd
     - about-me.qmd
     - photography.qmd
     - portafolio/index.qmd
@@ -51,7 +51,7 @@ website:
           - text: Presentations
             href: presentations.qmd
       - text: Outreach
-        href: vinculacion.qmd
+        href: outreach.qmd
       - text: Photography
         href: photography.qmd
     right: 
