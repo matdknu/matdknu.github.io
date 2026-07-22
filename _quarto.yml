@@ -36,12 +36,8 @@ website:
     left:
       - text: Home
         href: index.qmd
-      - text: Portafolio
-        href: portafolio/index.qmd
       - text: About me
         href: about-me.qmd
-      - text: Agenda
-        href: agenda.qmd
       - text: Research
         menu:
           - text: Projects
@@ -50,15 +46,11 @@ website:
             href: publications.qmd
           - text: Presentations
             href: presentations.qmd
-      - text: Outreach
-        href: outreach.qmd
       - text: Photography
         href: photography.qmd
     right: 
       - text: CV
         href: files/Deneken_CV.pdf
-      - icon: github
-        href: https://github.com/matdknu
         target: _blank
   
   page-navigation: true

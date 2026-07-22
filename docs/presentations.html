@@ -161,20 +161,31 @@ window.switchLanguage = function (lang) {
     }
   });
 
-  function setNavLabel(selector, enLabel, esLabel) {
-    var link = document.querySelector(selector);
-    if (!link) return;
+  // Use getAttribute("href"), never link.href — "#" resolves to the
+  // current page URL and would rename Research to Photography on that page.
+  document.querySelectorAll(".navbar-nav.me-auto > .nav-item > .nav-link").forEach(function (link) {
     var text = link.querySelector(".menu-text");
-    if (text) {
-      text.textContent = lang === "es" ? esLabel : enLabel;
-    }
-  }
+    if (!text) return;
 
-  // Keep Research and Outreach distinct — never reuse labels.
-  setNavLabel('#nav-menu-research', "Research", "Investigación");
-  setNavLabel('.navbar a.nav-link[href*="outreach"]', "Outreach", "Vinculación");
-  setNavLabel('.navbar a.nav-link[href*="photography"]', "Photography", "Fotografía");
-  setNavLabel('.navbar a.nav-link[href*="about-me"]', "About me", "Sobre mí");
+    var href = (link.getAttribute("href") || "").toLowerCase();
+    var id = link.id || "";
+
+    if (id === "nav-menu-research" || link.classList.contains("dropdown-toggle")) {
+      text.textContent = lang === "es" ? "Investigación" : "Research";
+      return;
+    }
+    if (href.indexOf("photography") !== -1) {
+      text.textContent = lang === "es" ? "Fotografía" : "Photography";
+      return;
+    }
+    if (href.indexOf("about-me") !== -1) {
+      text.textContent = lang === "es" ? "Sobre mí" : "About me";
+      return;
+    }
+    if (href.indexOf("index") !== -1 || href === "./" || href === "/") {
+      text.textContent = lang === "es" ? "Inicio" : "Home";
+    }
+  });
 };
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -272,8 +283,11 @@ document.addEventListener("DOMContentLoaded", function () {
   function injectNavChartTabs() {
     if (document.getElementById("nav-charts-strip")) return;
 
-    var anchorLink =
-      document.querySelector('.navbar a.nav-link[href*="photography"]');
+    var anchorLink = null;
+    document.querySelectorAll(".navbar a.nav-link").forEach(function (link) {
+      var href = (link.getAttribute("href") || "").toLowerCase();
+      if (href.indexOf("photography") !== -1) anchorLink = link;
+    });
     var anchorLi = anchorLink ? anchorLink.closest("li") : null;
     if (!anchorLi || !anchorLi.parentNode) return;
 
@@ -429,16 +443,8 @@ document.addEventListener("DOMContentLoaded", function () {
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./portafolio/index.html"> 
-<span class="menu-text">Portafolio</span></a>
-  </li>  
-  <li class="nav-item">
     <a class="nav-link" href="./about-me.html"> 
 <span class="menu-text">About me</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./agenda.html"> 
-<span class="menu-text">Agenda</span></a>
   </li>  
   <li class="nav-item dropdown ">
     <a class="nav-link dropdown-toggle" href="#" id="nav-menu-research" role="link" data-bs-toggle="dropdown" aria-expanded="false">
@@ -460,23 +466,14 @@ document.addEventListener("DOMContentLoaded", function () {
     </ul>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="./outreach.html"> 
-<span class="menu-text">Outreach</span></a>
-  </li>  
-  <li class="nav-item">
     <a class="nav-link" href="./photography.html"> 
 <span class="menu-text">Photography</span></a>
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./files/Deneken_CV.pdf"> 
+    <a class="nav-link" href="./files/Deneken_CV.pdf" target="_blank"> 
 <span class="menu-text">CV</span></a>
-  </li>  
-  <li class="nav-item compact">
-    <a class="nav-link" href="https://github.com/matdknu" target="_blank"> <i class="bi bi-github" role="img">
-</i> 
-<span class="menu-text"></span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
