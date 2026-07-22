@@ -40,12 +40,12 @@ website:
         href: about-me.qmd
       - text: Research
         menu:
-          - text: Projects
-            href: projects.qmd
           - text: Publications
             href: publications.qmd
           - text: Presentations
             href: presentations.qmd
+      - text: Projects
+        href: projects.qmd
       - text: Photography
         href: photography.qmd
     right: 

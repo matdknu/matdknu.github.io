@@ -109,6 +109,10 @@ window.switchLanguage = function (lang) {
       text.textContent = lang === "es" ? "Investigación" : "Research";
       return;
     }
+    if (href.indexOf("projects") !== -1) {
+      text.textContent = lang === "es" ? "Proyectos" : "Projects";
+      return;
+    }
     if (href.indexOf("photography") !== -1) {
       text.textContent = lang === "es" ? "Fotografía" : "Photography";
       return;
