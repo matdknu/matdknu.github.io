@@ -1,5 +1,5 @@
 ---
-title: "Vinculación"
+title: "Outreach"
 description-meta: "Extensión con lo social, medios y vinculación pública."
 page-navigation: true
 toc: false

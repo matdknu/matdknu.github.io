@@ -141,6 +141,8 @@ window.switchLanguage = function (lang) {
     el.classList.toggle("is-lang-hidden", !isActive);
     if (isActive) {
       el.style.removeProperty("display");
+    } else {
+      el.style.setProperty("display", "none", "important");
     }
   });
 
@@ -337,8 +339,8 @@ document.addEventListener("DOMContentLoaded", function () {
     var img = document.createElement("img");
     img.src = logoSrc;
     img.alt = "matdknu logo";
-    img.width = 56;
-    img.height = 56;
+    img.width = 128;
+    img.height = 128;
     img.decoding = "async";
     img.loading = "lazy";
 
@@ -353,10 +355,23 @@ document.addEventListener("DOMContentLoaded", function () {
     var main = document.querySelector("main.content");
     if (!main) return;
     main.classList.remove("page-columns", "page-full", "column-page");
+
     var titleBlock = document.getElementById("title-block-header");
-    if (titleBlock && main.querySelector(".home-page")) {
-      titleBlock.style.display = "none";
+    if (titleBlock) {
+      var hasCustomHeader =
+        main.querySelector(".home-page") ||
+        main.querySelector(".page-header-minimal") ||
+        main.querySelector(".vinculacion-shell") ||
+        main.querySelector(".projects-shell") ||
+        main.querySelector(".about-me-shell") ||
+        main.querySelector(".wide-page-shell") ||
+        main.querySelector(".agenda-shell") ||
+        main.querySelector(".photography-shell");
+      if (hasCustomHeader) {
+        titleBlock.remove();
+      }
     }
+
     main.querySelectorAll(".page-columns, .page-full, .column-page").forEach(function (el) {
       if (el.closest(".photography-shell")) return;
       el.classList.remove("page-columns", "page-full", "column-page");
@@ -455,7 +470,7 @@ document.addEventListener("DOMContentLoaded", function () {
   </li>
   <li class="nav-item">
     <a class="nav-link" href="./vinculacion.html"> 
-<span class="menu-text">Vinculación</span></a>
+<span class="menu-text">Outreach</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./photography.html"> 
@@ -506,7 +521,7 @@ document.addEventListener("DOMContentLoaded", function () {
 </header>
 
 
-<div class="wide-page-shell">
+<div class="wide-page-shell projects-shell">
   <header class="page-header-minimal" data-lang="en">
     <h1 class="page-title-minimal">Projects</h1>
   </header>
@@ -515,45 +530,94 @@ document.addEventListener("DOMContentLoaded", function () {
     <h1 class="page-title-minimal">Proyectos</h1>
   </header>
 
-  <section class="page-wrap">
-    <div class="page-content-wide">
-      <p class="coming-soon-simple" data-lang="en">Coming soon</p>
-      <p class="coming-soon-simple" data-lang="es" style="display:none;">Próximamente</p>
-    </div>
+  <section class="page-wrap projects-body" data-lang="en">
+    <ul class="home-card-grid projects-card-grid">
+      <li id="project-elri">
+        <a class="home-card" href="./portafolio/shiny_long/index.html">
+          <div class="home-card__media">
+            <img src="files/images/photos/flamencos_atacama.JPG" alt="">
+          </div>
+          <div class="home-card__body">
+            <span class="home-card__type">Dashboard · ELRI</span>
+            <p class="home-card__title">Longitudinal intercultural relations explorer</p>
+            <p class="home-card__meta">Interactive Shiny app for exploring ELRI panel waves (2016–2023): trust, contact, and identity.</p>
+            <p class="home-card__venue">R · Shiny · Survey data</p>
+          </div>
+        </a>
+      </li>
+      <li id="project-police-press">
+        <a class="home-card" href="#project-police-press">
+          <div class="home-card__media">
+            <img src="files/images/photos/buenos-aires.JPG" alt="">
+          </div>
+          <div class="home-card__body">
+            <span class="home-card__type">Corpus · NLP</span>
+            <p class="home-card__title">Police legitimacy in Chilean online press</p>
+            <p class="home-card__meta">Large-scale scraping and computational discourse analysis of national newspapers (2000–2024).</p>
+            <p class="home-card__venue">Python · NLP · Longitudinal text</p>
+          </div>
+        </a>
+      </li>
+      <li id="project-elite-networks">
+        <a class="home-card" href="#project-elite-networks">
+          <div class="home-card__media">
+            <img src="files/images/photos/la-paz.JPG" alt="">
+          </div>
+          <div class="home-card__body">
+            <span class="home-card__type">Methods · Networks</span>
+            <p class="home-card__title">Elite family networks in Latin America</p>
+            <p class="home-card__meta">Genealogical network extraction from Wikipedia biographies for elite identification research.</p>
+            <p class="home-card__venue">R · Network analysis · COMPTEXT</p>
+          </div>
+        </a>
+      </li>
+    </ul>
+  </section>
+
+  <section class="page-wrap projects-body" data-lang="es" style="display:none;">
+    <ul class="home-card-grid projects-card-grid">
+      <li id="project-elri-es">
+        <a class="home-card" href="./portafolio/shiny_long/index.html">
+          <div class="home-card__media">
+            <img src="files/images/photos/flamencos_atacama.JPG" alt="">
+          </div>
+          <div class="home-card__body">
+            <span class="home-card__type">Dashboard · ELRI</span>
+            <p class="home-card__title">Explorador longitudinal de relaciones interculturales</p>
+            <p class="home-card__meta">App Shiny para explorar las olas del panel ELRI (2016–2023): confianza, contacto e identidad.</p>
+            <p class="home-card__venue">R · Shiny · Encuestas</p>
+          </div>
+        </a>
+      </li>
+      <li id="project-police-press-es">
+        <a class="home-card" href="#project-police-press">
+          <div class="home-card__media">
+            <img src="files/images/photos/buenos-aires.JPG" alt="">
+          </div>
+          <div class="home-card__body">
+            <span class="home-card__type">Corpus · NLP</span>
+            <p class="home-card__title">Legitimidad policial en la prensa digital chilena</p>
+            <p class="home-card__meta">Scraping a gran escala y análisis computacional de discurso en medios nacionales (2000–2024).</p>
+            <p class="home-card__venue">Python · NLP · Texto longitudinal</p>
+          </div>
+        </a>
+      </li>
+      <li id="project-elite-networks-es">
+        <a class="home-card" href="#project-elite-networks">
+          <div class="home-card__media">
+            <img src="files/images/photos/la-paz.JPG" alt="">
+          </div>
+          <div class="home-card__body">
+            <span class="home-card__type">Métodos · Redes</span>
+            <p class="home-card__title">Redes familiares de élites en América Latina</p>
+            <p class="home-card__meta">Extracción de redes genealógicas desde biografías de Wikipedia para identificar élites.</p>
+            <p class="home-card__venue">R · Análisis de redes · COMPTEXT</p>
+          </div>
+        </a>
+      </li>
+    </ul>
   </section>
 </div>
-
-<style>
-.wide-page-shell {
-  max-width: 1400px;
-  margin: 0 auto;
-  padding: 2rem 3rem;
-}
-
-.page-content-wide {
-  min-height: 300px;
-  padding: 2rem 0;
-}
-
-.coming-soon-simple {
-  font-size: 1.5rem;
-  font-weight: 400;
-  color: var(--ink-muted, #52526a);
-  margin: 0;
-  font-style: italic;
-  line-height: 1.6;
-}
-
-@media (max-width: 768px) {
-  .wide-page-shell {
-    padding: 1.5rem 1rem;
-  }
-
-  .coming-soon-simple {
-    font-size: 1.25rem;
-  }
-}
-</style>
 
 
 

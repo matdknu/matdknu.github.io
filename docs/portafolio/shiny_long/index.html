@@ -142,6 +142,8 @@ window.switchLanguage = function (lang) {
     el.classList.toggle("is-lang-hidden", !isActive);
     if (isActive) {
       el.style.removeProperty("display");
+    } else {
+      el.style.setProperty("display", "none", "important");
     }
   });
 
@@ -338,8 +340,8 @@ document.addEventListener("DOMContentLoaded", function () {
     var img = document.createElement("img");
     img.src = logoSrc;
     img.alt = "matdknu logo";
-    img.width = 56;
-    img.height = 56;
+    img.width = 128;
+    img.height = 128;
     img.decoding = "async";
     img.loading = "lazy";
 
@@ -354,10 +356,23 @@ document.addEventListener("DOMContentLoaded", function () {
     var main = document.querySelector("main.content");
     if (!main) return;
     main.classList.remove("page-columns", "page-full", "column-page");
+
     var titleBlock = document.getElementById("title-block-header");
-    if (titleBlock && main.querySelector(".home-page")) {
-      titleBlock.style.display = "none";
+    if (titleBlock) {
+      var hasCustomHeader =
+        main.querySelector(".home-page") ||
+        main.querySelector(".page-header-minimal") ||
+        main.querySelector(".vinculacion-shell") ||
+        main.querySelector(".projects-shell") ||
+        main.querySelector(".about-me-shell") ||
+        main.querySelector(".wide-page-shell") ||
+        main.querySelector(".agenda-shell") ||
+        main.querySelector(".photography-shell");
+      if (hasCustomHeader) {
+        titleBlock.remove();
+      }
     }
+
     main.querySelectorAll(".page-columns, .page-full, .column-page").forEach(function (el) {
       if (el.closest(".photography-shell")) return;
       el.classList.remove("page-columns", "page-full", "column-page");
@@ -456,7 +471,7 @@ document.addEventListener("DOMContentLoaded", function () {
   </li>
   <li class="nav-item">
     <a class="nav-link" href="../../vinculacion.html"> 
-<span class="menu-text">Vinculación</span></a>
+<span class="menu-text">Outreach</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="../../photography.html"> 

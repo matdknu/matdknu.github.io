@@ -9,7 +9,7 @@
 <meta name="author" content="Matías Deneken">
 <meta name="description" content="Extensión con lo social, medios y vinculación pública.">
 
-<title>Vinculación – Matías Deneken</title>
+<title>Outreach – Matías Deneken</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -141,6 +141,8 @@ window.switchLanguage = function (lang) {
     el.classList.toggle("is-lang-hidden", !isActive);
     if (isActive) {
       el.style.removeProperty("display");
+    } else {
+      el.style.setProperty("display", "none", "important");
     }
   });
 
@@ -337,8 +339,8 @@ document.addEventListener("DOMContentLoaded", function () {
     var img = document.createElement("img");
     img.src = logoSrc;
     img.alt = "matdknu logo";
-    img.width = 56;
-    img.height = 56;
+    img.width = 128;
+    img.height = 128;
     img.decoding = "async";
     img.loading = "lazy";
 
@@ -353,10 +355,23 @@ document.addEventListener("DOMContentLoaded", function () {
     var main = document.querySelector("main.content");
     if (!main) return;
     main.classList.remove("page-columns", "page-full", "column-page");
+
     var titleBlock = document.getElementById("title-block-header");
-    if (titleBlock && main.querySelector(".home-page")) {
-      titleBlock.style.display = "none";
+    if (titleBlock) {
+      var hasCustomHeader =
+        main.querySelector(".home-page") ||
+        main.querySelector(".page-header-minimal") ||
+        main.querySelector(".vinculacion-shell") ||
+        main.querySelector(".projects-shell") ||
+        main.querySelector(".about-me-shell") ||
+        main.querySelector(".wide-page-shell") ||
+        main.querySelector(".agenda-shell") ||
+        main.querySelector(".photography-shell");
+      if (hasCustomHeader) {
+        titleBlock.remove();
+      }
     }
+
     main.querySelectorAll(".page-columns, .page-full, .column-page").forEach(function (el) {
       if (el.closest(".photography-shell")) return;
       el.classList.remove("page-columns", "page-full", "column-page");
@@ -394,10 +409,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 <link rel="stylesheet" href="styles.css">
-<meta property="og:title" content="Vinculación – Matías Deneken">
+<meta property="og:title" content="Outreach – Matías Deneken">
 <meta property="og:image" content="https://deneken.me/files/images/my-face.JPG">
 <meta property="og:site_name" content="Matías Deneken">
-<meta name="twitter:title" content="Vinculación – Matías Deneken">
+<meta name="twitter:title" content="Outreach – Matías Deneken">
 <meta name="twitter:image" content="https://deneken.me/files/images/my-face.JPG">
 <meta name="twitter:card" content="summary_large_image">
 </head>
@@ -455,7 +470,7 @@ document.addEventListener("DOMContentLoaded", function () {
   </li>
   <li class="nav-item">
     <a class="nav-link active" href="./vinculacion.html" aria-current="page"> 
-<span class="menu-text">Vinculación</span></a>
+<span class="menu-text">Outreach</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./photography.html"> 
@@ -489,7 +504,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Vinculación</h1>
+<h1 class="title">Outreach</h1>
 </div>
 
 
