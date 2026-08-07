@@ -83,6 +83,14 @@ format:
       <h2 class="section-title-minimal">Working Papers</h2>
       <ol class="apa-list">
         <li>
+          <strong>Deneken, M.</strong>, &amp; Biehl, A.
+          The Survey Mission: Foreign Patronage, Catholic Networks and the Politicisation of the Social Sciences at Chile’s Catholic University, 1955–1973.
+        </li>
+        <li>
+          <strong>Deneken, M.</strong>, Cárdenas Castro, J. C., Maltrain Silva, V., &amp; Iglesias Vásquez, M.
+          <a href="https://docs.google.com/document/d/1IR90FWYeC394dVUu4NCj0dtXS3rrkL1Z/edit" target="_blank" rel="noopener">Autonomy under Tutelage: Militancy, Freemasonry and the Refoundation of Sociology at the University of Concepción (1990–1999)</a>.
+        </li>
+        <li>
           <strong>Deneken, M.</strong>, &amp; Díaz, F.
           <a href="https://deneken.me/indigenous-violence/" target="_blank" rel="noopener">Normative opening and failed containment: Social uprising, state of exception, and justification of violence among Indigenous and non-Indigenous people in Chile (2018–2023)</a>.
         </li>

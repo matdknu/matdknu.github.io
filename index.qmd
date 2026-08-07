@@ -74,15 +74,15 @@ format:
           <header class="home-recent__header">Recent work</header>
           <ul class="home-card-grid">
             <li>
-              <a class="home-card" href="https://www.crimrxiv.com/pub/3rl51qxc/release/1" target="_blank" rel="noopener noreferrer">
+              <a class="home-card" href="https://osf.io/hq3se/files/xu4fs" target="_blank" rel="noopener noreferrer">
                 <div class="home-card__media">
                   <img src="files/images/photos/chapultepec-cdmx.JPG" alt="">
                 </div>
                 <div class="home-card__body">
-                  <span class="home-card__type">Preprint</span>
+                  <span class="home-card__type">In press</span>
                   <p class="home-card__title">Fear of the police and the fragility of legitimacy</p>
-                  <p class="home-card__meta">Deneken &amp; Díaz</p>
-                  <p class="home-card__venue">CrimRxiv</p>
+                  <p class="home-card__meta">Gerber et al.</p>
+                  <p class="home-card__venue">International Journal of Social Psychology</p>
                 </div>
               </a>
             </li>
@@ -225,15 +225,15 @@ format:
           <header class="home-recent__header">Trabajo reciente</header>
           <ul class="home-card-grid">
             <li>
-              <a class="home-card" href="https://www.crimrxiv.com/pub/3rl51qxc/release/1" target="_blank" rel="noopener noreferrer">
+              <a class="home-card" href="https://osf.io/hq3se/files/xu4fs" target="_blank" rel="noopener noreferrer">
                 <div class="home-card__media">
                   <img src="files/images/photos/chapultepec-cdmx.JPG" alt="">
                 </div>
                 <div class="home-card__body">
-                  <span class="home-card__type">Preprint</span>
+                  <span class="home-card__type">In press</span>
                   <p class="home-card__title">Fear of the police and the fragility of legitimacy</p>
-                  <p class="home-card__meta">Deneken &amp; Díaz</p>
-                  <p class="home-card__venue">CrimRxiv</p>
+                  <p class="home-card__meta">Gerber et al.</p>
+                  <p class="home-card__venue">International Journal of Social Psychology</p>
                 </div>
               </a>
             </li>
