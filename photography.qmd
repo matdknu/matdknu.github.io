@@ -32,9 +32,17 @@ format:
   </header>
 
   <section class="photography-body">
-    <div class="photo-gallery" id="photo-gallery">
+    <div class="photo-gallery photo-gallery--collage" id="photo-gallery">
 
-      <button type="button" class="photo-card"
+      <button type="button" class="photo-card photo-card--hero"
+        data-full="files/images/photos/museo_yugslavia.JPG"
+        data-caption-en="Museum of Yugoslavia, Belgrade"
+        data-caption-es="Museo de Yugoslavia, Belgrado">
+        <img src="files/images/photos/museo_yugslavia.JPG" alt="Museum of Yugoslavia, Belgrade" loading="lazy">
+        <span class="photo-card__caption">Museum of Yugoslavia</span>
+      </button>
+
+      <button type="button" class="photo-card photo-card--tall"
         data-full="files/images/photos/torres_del_paine.JPG"
         data-caption-en="Torres del Paine, Chile"
         data-caption-es="Torres del Paine, Chile">
@@ -42,7 +50,7 @@ format:
         <span class="photo-card__caption">Torres del Paine</span>
       </button>
 
-      <button type="button" class="photo-card"
+      <button type="button" class="photo-card photo-card--md"
         data-full="files/images/photos/atacama_desierto.JPG"
         data-caption-en="Atacama Desert"
         data-caption-es="Desierto de Atacama">
@@ -50,7 +58,15 @@ format:
         <span class="photo-card__caption">Atacama Desert</span>
       </button>
 
-      <button type="button" class="photo-card"
+      <button type="button" class="photo-card photo-card--wide"
+        data-full="files/images/photos/flamencos_atacama.JPG"
+        data-caption-en="Flamingos, Atacama"
+        data-caption-es="Flamencos, Atacama">
+        <img src="files/images/photos/flamencos_atacama.JPG" alt="Flamingos, Atacama" loading="lazy">
+        <span class="photo-card__caption">Flamingos · Atacama</span>
+      </button>
+
+      <button type="button" class="photo-card photo-card--sm"
         data-full="files/images/photos/puerto_natales.JPG"
         data-caption-en="Puerto Natales"
         data-caption-es="Puerto Natales">
@@ -58,12 +74,60 @@ format:
         <span class="photo-card__caption">Puerto Natales</span>
       </button>
 
-      <button type="button" class="photo-card"
+      <button type="button" class="photo-card photo-card--md photo-card--tilt-r"
         data-full="files/images/photos/punta_arenas.JPG"
         data-caption-en="Punta Arenas waterfront"
         data-caption-es="Costanera de Punta Arenas">
         <img src="files/images/photos/punta_arenas.JPG" alt="Punta Arenas waterfront" loading="lazy">
         <span class="photo-card__caption">Punta Arenas</span>
+      </button>
+
+      <button type="button" class="photo-card photo-card--tall photo-card--tilt-l"
+        data-full="files/images/photos/la-paz.JPG"
+        data-caption-en="La Paz, Bolivia"
+        data-caption-es="La Paz, Bolivia">
+        <img src="files/images/photos/la-paz.JPG" alt="La Paz, Bolivia" loading="lazy">
+        <span class="photo-card__caption">La Paz</span>
+      </button>
+
+      <button type="button" class="photo-card photo-card--wide"
+        data-full="files/images/photos/amsterdam.JPG"
+        data-caption-en="Amsterdam"
+        data-caption-es="Ámsterdam">
+        <img src="files/images/photos/amsterdam.JPG" alt="Amsterdam" loading="lazy">
+        <span class="photo-card__caption">Amsterdam</span>
+      </button>
+
+      <button type="button" class="photo-card photo-card--sm photo-card--tilt-r"
+        data-full="files/images/photos/cuzco.JPG"
+        data-caption-en="Cusco, Peru"
+        data-caption-es="Cusco, Perú">
+        <img src="files/images/photos/cuzco.JPG" alt="Cusco, Peru" loading="lazy">
+        <span class="photo-card__caption">Cusco</span>
+      </button>
+
+      <button type="button" class="photo-card photo-card--md"
+        data-full="files/images/photos/chapultepec-cdmx.JPG"
+        data-caption-en="Chapultepec, Mexico City"
+        data-caption-es="Chapultepec, Ciudad de México">
+        <img src="files/images/photos/chapultepec-cdmx.JPG" alt="Chapultepec, Mexico City" loading="lazy">
+        <span class="photo-card__caption">Chapultepec</span>
+      </button>
+
+      <button type="button" class="photo-card photo-card--wide photo-card--tilt-l"
+        data-full="files/images/photos/buenos-aires.JPG"
+        data-caption-en="Buenos Aires"
+        data-caption-es="Buenos Aires">
+        <img src="files/images/photos/buenos-aires.JPG" alt="Buenos Aires" loading="lazy">
+        <span class="photo-card__caption">Buenos Aires</span>
+      </button>
+
+      <button type="button" class="photo-card photo-card--sm"
+        data-full="files/images/photos/rio-janeiro.JPEG"
+        data-caption-en="Rio de Janeiro"
+        data-caption-es="Río de Janeiro">
+        <img src="files/images/photos/rio-janeiro.JPEG" alt="Rio de Janeiro" loading="lazy">
+        <span class="photo-card__caption">Rio de Janeiro</span>
       </button>
 
     </div>
