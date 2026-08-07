@@ -34,101 +34,101 @@ format:
   <section class="photography-body">
     <div class="photo-gallery" id="photo-gallery">
 
-      <button type="button" class="photo-card"
+      <a href="files/images/photos/web/museo_yugslavia-full.jpg" class="photo-card"
         data-full="files/images/photos/web/museo_yugslavia-full.jpg"
         data-caption-en="Museum of Yugoslavia, Belgrade"
         data-caption-es="Museo de Yugoslavia, Belgrado">
         <img src="files/images/photos/web/museo_yugslavia.jpg" alt="Museum of Yugoslavia, Belgrade" loading="lazy" width="720" height="720">
         <span class="photo-card__caption">Museum of Yugoslavia</span>
-      </button>
+      </a>
 
-      <button type="button" class="photo-card"
+      <a href="files/images/photos/web/torres_del_paine-full.jpg" class="photo-card"
         data-full="files/images/photos/web/torres_del_paine-full.jpg"
         data-caption-en="Torres del Paine, Chile"
         data-caption-es="Torres del Paine, Chile">
         <img src="files/images/photos/web/torres_del_paine.jpg" alt="Torres del Paine, Chile" loading="lazy" width="720" height="720">
         <span class="photo-card__caption">Torres del Paine</span>
-      </button>
+      </a>
 
-      <button type="button" class="photo-card"
+      <a href="files/images/photos/web/atacama_desierto-full.jpg" class="photo-card"
         data-full="files/images/photos/web/atacama_desierto-full.jpg"
         data-caption-en="Atacama Desert"
         data-caption-es="Desierto de Atacama">
         <img src="files/images/photos/web/atacama_desierto.jpg" alt="Atacama Desert" loading="lazy" width="720" height="720">
         <span class="photo-card__caption">Atacama Desert</span>
-      </button>
+      </a>
 
-      <button type="button" class="photo-card"
+      <a href="files/images/photos/web/flamencos_atacama-full.jpg" class="photo-card"
         data-full="files/images/photos/web/flamencos_atacama-full.jpg"
         data-caption-en="Flamingos, Atacama"
         data-caption-es="Flamencos, Atacama">
         <img src="files/images/photos/web/flamencos_atacama.jpg" alt="Flamingos, Atacama" loading="lazy" width="720" height="720">
         <span class="photo-card__caption">Flamingos · Atacama</span>
-      </button>
+      </a>
 
-      <button type="button" class="photo-card"
+      <a href="files/images/photos/web/puerto_natales-full.jpg" class="photo-card"
         data-full="files/images/photos/web/puerto_natales-full.jpg"
         data-caption-en="Puerto Natales"
         data-caption-es="Puerto Natales">
         <img src="files/images/photos/web/puerto_natales.jpg" alt="Puerto Natales" loading="lazy" width="720" height="720">
         <span class="photo-card__caption">Puerto Natales</span>
-      </button>
+      </a>
 
-      <button type="button" class="photo-card"
+      <a href="files/images/photos/web/punta_arenas-full.jpg" class="photo-card"
         data-full="files/images/photos/web/punta_arenas-full.jpg"
         data-caption-en="Punta Arenas waterfront"
         data-caption-es="Costanera de Punta Arenas">
         <img src="files/images/photos/web/punta_arenas.jpg" alt="Punta Arenas waterfront" loading="lazy" width="720" height="720">
         <span class="photo-card__caption">Punta Arenas</span>
-      </button>
+      </a>
 
-      <button type="button" class="photo-card"
+      <a href="files/images/photos/web/la-paz-full.jpg" class="photo-card"
         data-full="files/images/photos/web/la-paz-full.jpg"
         data-caption-en="La Paz, Bolivia"
         data-caption-es="La Paz, Bolivia">
         <img src="files/images/photos/web/la-paz.jpg" alt="La Paz, Bolivia" loading="lazy" width="720" height="720">
         <span class="photo-card__caption">La Paz</span>
-      </button>
+      </a>
 
-      <button type="button" class="photo-card"
+      <a href="files/images/photos/web/amsterdam-full.jpg" class="photo-card"
         data-full="files/images/photos/web/amsterdam-full.jpg"
         data-caption-en="Amsterdam"
         data-caption-es="Ámsterdam">
         <img src="files/images/photos/web/amsterdam.jpg" alt="Amsterdam" loading="lazy" width="720" height="720">
         <span class="photo-card__caption">Amsterdam</span>
-      </button>
+      </a>
 
-      <button type="button" class="photo-card"
+      <a href="files/images/photos/web/cuzco-full.jpg" class="photo-card"
         data-full="files/images/photos/web/cuzco-full.jpg"
         data-caption-en="Cusco, Peru"
         data-caption-es="Cusco, Perú">
         <img src="files/images/photos/web/cuzco.jpg" alt="Cusco, Peru" loading="lazy" width="720" height="720">
         <span class="photo-card__caption">Cusco</span>
-      </button>
+      </a>
 
-      <button type="button" class="photo-card"
+      <a href="files/images/photos/web/chapultepec-cdmx-full.jpg" class="photo-card"
         data-full="files/images/photos/web/chapultepec-cdmx-full.jpg"
         data-caption-en="Chapultepec, Mexico City"
         data-caption-es="Chapultepec, Ciudad de México">
         <img src="files/images/photos/web/chapultepec-cdmx.jpg" alt="Chapultepec, Mexico City" loading="lazy" width="720" height="720">
         <span class="photo-card__caption">Chapultepec</span>
-      </button>
+      </a>
 
-      <button type="button" class="photo-card"
+      <a href="files/images/photos/web/buenos-aires-full.jpg" class="photo-card"
         data-full="files/images/photos/web/buenos-aires-full.jpg"
         data-caption-en="Buenos Aires"
         data-caption-es="Buenos Aires">
         <img src="files/images/photos/web/buenos-aires.jpg" alt="Buenos Aires" loading="lazy" width="720" height="720">
         <span class="photo-card__caption">Buenos Aires</span>
-      </button>
+      </a>
 
-      <button type="button" class="photo-card"
+      <a href="files/images/photos/web/rio-janeiro-full.jpg" class="photo-card"
         data-full="files/images/photos/web/rio-janeiro-full.jpg"
         data-caption-en="Rio de Janeiro"
         data-caption-es="Río de Janeiro">
         <img src="files/images/photos/web/rio-janeiro.jpg" alt="Rio de Janeiro" loading="lazy" width="720" height="720">
         <span class="photo-card__caption">Rio de Janeiro</span>
-      </button>
+      </a>
 
     </div>
   </section>
@@ -199,6 +199,7 @@ document.addEventListener("DOMContentLoaded", function () {
     gallery.addEventListener("click", function (evt) {
       var card = evt.target.closest(".photo-card");
       if (!card) return;
+      evt.preventDefault();
       refreshCards();
       index = cards.indexOf(card);
       if (index < 0) index = 0;
