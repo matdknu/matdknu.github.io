@@ -1009,6 +1009,14 @@ html[data-theme="dark"] a.home-tag.is-active {
   padding: 1.75rem 0;
   width: 100%;
   max-width: none;
+  align-items: start;
+}
+
+.home-about__col {
+  display: flex;
+  flex-direction: column;
+  gap: 1.85rem;
+  min-width: 0;
 }
 
 .home-about__cell {
@@ -3179,6 +3187,10 @@ div.quarto-about-trestles .about-entity .about-book-section img {
 @media (max-width: 720px) {
   .home-about {
     grid-template-columns: 1fr !important;
+    gap: 1.5rem;
+  }
+
+  .home-about__col {
     gap: 1.5rem;
   }
 
