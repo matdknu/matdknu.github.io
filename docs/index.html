@@ -153,6 +153,8 @@ window.switchLanguage = function (lang) {
     esBtn.classList.toggle("active", lang === "es");
   }
 
+  document.dispatchEvent(new CustomEvent("site-lang-change", { detail: { lang: lang } }));
+
   document.querySelectorAll("[data-nav-en]").forEach(function (el) {
     var en = el.getAttribute("data-nav-en");
     var es = el.getAttribute("data-nav-es");
@@ -414,67 +416,18 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 }
 </style>
+
+
+<link rel="stylesheet" href="styles.css">
 <meta property="og:title" content="Matías Deneken">
 <meta property="og:image" content="https://deneken.me/files/images/my-face.JPG">
 <meta property="og:site_name" content="Matías Deneken">
 <meta name="twitter:title" content="Matías Deneken">
 <meta name="twitter:image" content="https://deneken.me/files/images/my-face.JPG">
 <meta name="twitter:card" content="summary_large_image">
-</head><body class="nav-fixed fullcontent"><div id="welcome-splash" class="welcome-splash" hidden="" aria-hidden="true">
-  <div class="welcome-splash__backdrop"></div>
-  <div class="welcome-splash__panel">
-    <p class="welcome-splash__greeting">Welcome to Deneken's website..</p>
-    <div class="welcome-splash__burst" aria-label="Research concepts">
-      <span class="welcome-concept" style="--i:0">Computational Social Science</span>
-      <span class="welcome-concept" style="--i:1">Democracy</span>
-      <span class="welcome-concept" style="--i:2">ABM</span>
-      <span class="welcome-concept" style="--i:3">LLM</span>
-      <span class="welcome-concept" style="--i:4">Political Violence</span>
-    </div>
-  </div>
-</div>
+</head>
 
-<script>
-document.addEventListener("DOMContentLoaded", function () {
-  if (sessionStorage.getItem("welcome-seen-v5")) return;
-  if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
-    sessionStorage.setItem("welcome-seen-v5", "1");
-    return;
-  }
-
-  var splash = document.getElementById("welcome-splash");
-  if (!splash) return;
-  var isMobile = window.matchMedia("(max-width: 767px)").matches;
-  var exitAt = isMobile ? 900 : 1200;
-  var removeAt = isMobile ? 1200 : 1600;
-
-  splash.hidden = false;
-  splash.setAttribute("aria-hidden", "false");
-  document.body.classList.add("welcome-active");
-
-  requestAnimationFrame(function () {
-    splash.classList.add("is-visible");
-  });
-
-  window.setTimeout(function () {
-    splash.classList.add("is-exiting");
-  }, exitAt);
-
-  window.setTimeout(function () {
-    splash.classList.remove("is-visible", "is-exiting");
-    splash.hidden = true;
-    splash.setAttribute("aria-hidden", "true");
-    document.body.classList.remove("welcome-active");
-    sessionStorage.setItem("welcome-seen-v5", "1");
-  }, removeAt);
-});
-</script>
-
-
-<link rel="stylesheet" href="styles.css">
-
-
-
+<body class="nav-fixed fullcontent">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">

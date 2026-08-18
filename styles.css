@@ -1302,7 +1302,8 @@ a.home-card:focus .home-card__media img {
   border-radius: var(--radius-sm);
 }
 
-.about-me-content .about-me-subtitle {
+.about-me-content .about-me-subtitle,
+.about-me-lineage .about-me-subtitle {
   font-family: var(--font-display);
   font-size: clamp(22px, 3vw, 28px);
   font-style: normal;
@@ -1315,6 +1316,64 @@ a.home-card:focus .home-card__media img {
 .about-me-content s {
   text-decoration: line-through;
   opacity: 0.55;
+}
+
+.about-me-lineage {
+  width: 100%;
+  max-width: 52rem;
+  margin: 2.25rem auto 0;
+  text-align: left;
+}
+
+.about-me-lineage .about-me-subtitle {
+  margin-top: 0;
+}
+
+.about-me-lineage + .about-me-lineage {
+  margin-top: 2.5rem;
+}
+
+.about-me-lineage p {
+  font-size: calc(var(--home-body-size) * 1.05);
+  line-height: 1.8;
+  color: var(--ink-body);
+  margin: 0 0 1rem;
+}
+
+.lineage-graph {
+  width: 100%;
+  height: 380px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  background: linear-gradient(180deg, rgba(250, 250, 247, 0.95) 0%, rgba(232, 229, 223, 0.45) 100%);
+  overflow: hidden;
+}
+
+.lineage-graph--short {
+  height: 280px;
+}
+
+html[data-theme="dark"] .lineage-graph {
+  background: linear-gradient(180deg, rgba(19, 19, 31, 0.95) 0%, rgba(10, 10, 15, 0.85) 100%);
+}
+
+.lineage-graph svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+  cursor: grab;
+}
+
+.lineage-graph svg:active {
+  cursor: grabbing;
+}
+
+.lineage-caption {
+  margin: 0.55rem 0 0 !important;
+  font-size: 10px !important;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--ink-muted) !important;
 }
 
 .projects-shell .page-wrap {
@@ -2471,155 +2530,6 @@ html[data-theme="dark"] .site-footer-logo a:focus img {
   font-size: 11px;
 }
 
-/* —— Welcome splash —— */
-body.welcome-active {
-  overflow: hidden;
-}
-
-.welcome-splash {
-  position: fixed;
-  inset: 0;
-  z-index: 10000;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity 0.25s ease, visibility 0.25s ease;
-}
-
-.welcome-splash.is-visible {
-  opacity: 1;
-  visibility: visible;
-}
-
-.welcome-splash.is-exiting {
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity 0.22s ease, visibility 0.22s ease;
-}
-
-.welcome-splash__backdrop {
-  position: absolute;
-  inset: 0;
-  background-color: rgba(250, 250, 247, 0.94);
-  background-image:
-    linear-gradient(rgba(26, 26, 26, 0.04) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(26, 26, 26, 0.04) 1px, transparent 1px);
-  background-size: 28px 28px;
-  backdrop-filter: blur(6px);
-  -webkit-backdrop-filter: blur(6px);
-}
-
-html[data-theme="dark"] .welcome-splash__backdrop {
-  background-color: rgba(10, 10, 15, 0.94);
-  background-image:
-    linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
-}
-
-.welcome-splash__graph,
-.welcome-splash__glow,
-.welcome-splash__flash,
-.welcome-splash__content,
-.welcome-splash__headline,
-.welcome-splash__tagline {
-  display: none !important;
-}
-
-.welcome-splash__panel {
-  position: relative;
-  z-index: 2;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 0.55rem;
-  padding: 0 1.5rem;
-  max-width: 640px;
-  text-align: center;
-}
-
-.welcome-splash__greeting {
-  margin: 0;
-  font-family: var(--font-display);
-  font-size: clamp(18px, 2.4vw, 24px);
-  font-weight: 400;
-  font-style: italic;
-  color: var(--ink);
-  line-height: 1.2;
-  opacity: 0;
-  transform: translateY(6px);
-}
-
-.welcome-splash.is-visible .welcome-splash__greeting {
-  animation: welcomeConceptIn 0.38s cubic-bezier(0.22, 1.35, 0.36, 1) forwards;
-}
-
-.welcome-splash.is-exiting .welcome-splash__greeting {
-  animation: welcomeConceptOut 0.2s ease forwards;
-}
-
-.welcome-splash__burst {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 0.4rem 0.65rem;
-  text-align: center;
-}
-
-.welcome-concept {
-  --pop-y: 6px;
-  display: inline-block;
-  color: #b91c1c;
-  font-family: var(--font-mono);
-  font-size: clamp(9px, 1vw, 11px);
-  font-weight: 700;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  line-height: 1.3;
-  opacity: 0;
-  transform: translateY(var(--pop-y)) scale(0.92);
-}
-
-html[data-theme="dark"] .welcome-concept {
-  color: #ef4444;
-}
-
-.welcome-concept:nth-child(1) { --pop-y: 10px; }
-.welcome-concept:nth-child(2) { --pop-y: 6px; }
-.welcome-concept:nth-child(3) { --pop-y: 12px; }
-.welcome-concept:nth-child(4) { --pop-y: 6px; }
-.welcome-concept:nth-child(5) { --pop-y: 10px; }
-
-.welcome-splash.is-visible .welcome-concept {
-  animation: welcomeConceptIn 0.38s cubic-bezier(0.22, 1.35, 0.36, 1) forwards;
-  animation-delay: calc(0.08s + var(--i, 0) * 0.05s);
-}
-
-.welcome-splash.is-exiting .welcome-concept {
-  animation: welcomeConceptOut 0.2s ease forwards;
-}
-
-@keyframes welcomeConceptIn {
-  0% {
-    opacity: 0;
-    transform: translateY(calc(var(--pop-y) + 8px)) scale(0.88);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0) scale(1);
-  }
-}
-
-@keyframes welcomeConceptOut {
-  to {
-    opacity: 0;
-    transform: translateY(-6px) scale(0.94);
-  }
-}
-
 /* —— Quarto / legacy overrides —— */
 #quarto-content,
 .quarto-container,
@@ -3022,19 +2932,6 @@ div.quarto-about-trestles .about-entity .about-book-section img {
     align-items: flex-start;
     gap: 0.4rem;
   }
-
-  .welcome-splash__greeting {
-    font-size: clamp(16px, 4.5vw, 20px);
-  }
-
-  .welcome-splash__panel {
-    gap: 0.45rem;
-    padding: 0 1rem;
-  }
-
-  .welcome-concept {
-    font-size: 8px;
-  }
 }
 
 @media (max-width: 900px) {
@@ -3099,6 +2996,14 @@ div.quarto-about-trestles .about-entity .about-book-section img {
     order: 0;
   }
 
+  .lineage-graph {
+    height: 460px;
+  }
+
+  .lineage-graph--short {
+    height: 300px;
+  }
+
   .apa-list li {
     padding-left: 1.5rem;
     text-indent: -1.5rem;
@@ -3128,11 +3033,6 @@ div.quarto-about-trestles .about-entity .about-book-section img {
     scroll-behavior: auto;
   }
 
-  .welcome-splash,
-  .welcome-splash__panel,
-  .welcome-splash__burst,
-  .welcome-splash__greeting,
-  .welcome-concept,
   .navbar .navbar-brand .navbar-title::after,
   .navbar .navbar-nav.me-auto > .nav-item > .nav-link {
     animation: none !important;
