@@ -6,7 +6,6 @@ project:
     - styles.css
     - files/js/name-graph.js
     - files/js/nav-mini-charts.js
-    - files/js/lineage-graph.js
     - files/images/my-face.jpg
     - files/images/casa.jpeg
     - files/images/logo.png

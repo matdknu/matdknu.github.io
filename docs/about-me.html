@@ -534,18 +534,62 @@ document.addEventListener("DOMContentLoaded", function () {
       </div>
     </div>
 
-    <section class="about-me-lineage">
-      <h2 class="about-me-subtitle anchored">Undergraduate lineage</h2>
-      <p>My undergraduate training in Chile sits at the end of a strictly linear chain of mentorship: from nineteenth-century French historiography and the <em>école méthodique</em>, through economic history and hispanism, into Enrique Dussel’s philosophy of liberation, and then Juan C. Cárdenas’s critical sociology.</p>
-      <div class="lineage-graph" id="lineage-ug-en"></div>
-      <p class="lineage-caption">Arrows mark the direction of mentorship. Drag the nodes.</p>
-    </section>
+    <section class="about-me-lineage about-me-lineage--combined">
+      <h2 class="about-me-subtitle anchored">Academic lineage</h2>
+      <p>Two mentorship chains meet here: the doctoral line runs upward into computational social science; the undergraduate line runs downward into critical sociology and its longer intellectual history.</p>
 
-    <section class="about-me-lineage">
-      <h2 class="about-me-subtitle anchored">Doctoral lineage</h2>
-      <p>The doctoral line is shorter and computational. I will be supervised by <strong>Milena Tsvetkova</strong> at the LSE Department of Methodology. She was trained by <strong>Michael Macy</strong> at Cornell — a direct line in computational social science, networks, and social dynamics.</p>
-      <div class="lineage-graph lineage-graph--short" id="lineage-phd-en"></div>
-      <p class="lineage-caption">Arrows mark the direction of mentorship. Drag the nodes.</p>
+      <figure class="lineage-stack figure" aria-label="Combined academic lineage">
+        <div class="lineage-branch lineage-branch--up">
+          <p class="lineage-branch__label">Doctoral</p>
+          <ol class="lineage-chain">
+            <li class="lineage-node lineage-node--g2">
+              <span class="lineage-node__name">Michael Macy</span>
+              <span class="lineage-node__meta">Cornell · CSS</span>
+            </li>
+            <li class="lineage-node lineage-node--g6">
+              <span class="lineage-node__name">Milena Tsvetkova</span>
+              <span class="lineage-node__meta">LSE · Advisor</span>
+            </li>
+          </ol>
+        </div>
+
+        <div class="lineage-hub">
+          <div class="lineage-node lineage-node--self">
+            <span class="lineage-node__name">Matías Deneken</span>
+            <span class="lineage-node__meta">Chile · LSE PhD</span>
+          </div>
+        </div>
+
+        <div class="lineage-branch lineage-branch--down">
+          <p class="lineage-branch__label">Undergraduate</p>
+          <ol class="lineage-chain">
+            <li class="lineage-node lineage-node--g4">
+              <span class="lineage-node__name">Juan C. Cárdenas</span>
+              <span class="lineage-node__meta">Chile · Critical sociology</span>
+            </li>
+            <li class="lineage-node lineage-node--g3">
+              <span class="lineage-node__name">Enrique Dussel</span>
+              <span class="lineage-node__meta">Philosophy of liberation</span>
+            </li>
+            <li class="lineage-node lineage-node--g2">
+              <span class="lineage-node__name">Robert Ricard</span>
+              <span class="lineage-node__meta">France · Hispanism</span>
+            </li>
+            <li class="lineage-node lineage-node--g2">
+              <span class="lineage-node__name">Henri Hauser</span>
+              <span class="lineage-node__meta">France · Economic history</span>
+            </li>
+            <li class="lineage-node lineage-node--g1">
+              <span class="lineage-node__name">Gabriel Monod</span>
+              <span class="lineage-node__meta">France · École méthodique</span>
+            </li>
+            <li class="lineage-node lineage-node--g1">
+              <span class="lineage-node__name">Édouard Laboulaye</span>
+              <span class="lineage-node__meta">France · 19th century</span>
+            </li>
+          </ol>
+        </div>
+      </figure>
     </section>
   </section>
 
@@ -560,96 +604,65 @@ document.addEventListener("DOMContentLoaded", function () {
       </div>
     </div>
 
-    <section class="about-me-lineage">
-      <h2 class="about-me-subtitle anchored">Línea de formación de pregrado</h2>
-      <p>Mi formación de pregrado en Chile cierra una cadena estrictamente lineal de mentoría: de la historiografía francesa del siglo XIX y la <em>école méthodique</em>, pasando por la historia económica y el hispanismo, hasta la filosofía de la liberación de Enrique Dussel y la sociología crítica de Juan C. Cárdenas.</p>
-      <div class="lineage-graph" id="lineage-ug-es"></div>
-      <p class="lineage-caption">Las flechas indican la dirección de la mentoría. Arrastra los nodos.</p>
-    </section>
+    <section class="about-me-lineage about-me-lineage--combined">
+      <h2 class="about-me-subtitle anchored">Línea académica</h2>
+      <p>Dos cadenas de mentoría se encuentran aquí: la línea doctoral sube hacia la ciencia social computacional; la de pregrado baja hacia la sociología crítica y su historia intelectual más larga.</p>
 
-    <section class="about-me-lineage">
-      <h2 class="about-me-subtitle anchored">Línea de formación doctoral</h2>
-      <p>La línea doctoral es más corta y computacional. Seré dirigido por <strong>Milena Tsvetkova</strong> en el Department of Methodology de la LSE. Ella fue formada por <strong>Michael Macy</strong> en Cornell: una línea directa en ciencia social computacional, redes y dinámica social.</p>
-      <div class="lineage-graph lineage-graph--short" id="lineage-phd-es"></div>
-      <p class="lineage-caption">Las flechas indican la dirección de la mentoría. Arrastra los nodos.</p>
+      <figure class="lineage-stack figure" aria-label="Línea académica combinada">
+        <div class="lineage-branch lineage-branch--up">
+          <p class="lineage-branch__label">Doctorado</p>
+          <ol class="lineage-chain">
+            <li class="lineage-node lineage-node--g2">
+              <span class="lineage-node__name">Michael Macy</span>
+              <span class="lineage-node__meta">Cornell · CSS</span>
+            </li>
+            <li class="lineage-node lineage-node--g6">
+              <span class="lineage-node__name">Milena Tsvetkova</span>
+              <span class="lineage-node__meta">LSE · Directora</span>
+            </li>
+          </ol>
+        </div>
+
+        <div class="lineage-hub">
+          <div class="lineage-node lineage-node--self">
+            <span class="lineage-node__name">Matías Deneken</span>
+            <span class="lineage-node__meta">Chile · Doctorado LSE</span>
+          </div>
+        </div>
+
+        <div class="lineage-branch lineage-branch--down">
+          <p class="lineage-branch__label">Pregrado</p>
+          <ol class="lineage-chain">
+            <li class="lineage-node lineage-node--g4">
+              <span class="lineage-node__name">Juan C. Cárdenas</span>
+              <span class="lineage-node__meta">Chile · Sociología crítica</span>
+            </li>
+            <li class="lineage-node lineage-node--g3">
+              <span class="lineage-node__name">Enrique Dussel</span>
+              <span class="lineage-node__meta">Filosofía de la liberación</span>
+            </li>
+            <li class="lineage-node lineage-node--g2">
+              <span class="lineage-node__name">Robert Ricard</span>
+              <span class="lineage-node__meta">Francia · Hispanismo</span>
+            </li>
+            <li class="lineage-node lineage-node--g2">
+              <span class="lineage-node__name">Henri Hauser</span>
+              <span class="lineage-node__meta">Francia · Historia económica</span>
+            </li>
+            <li class="lineage-node lineage-node--g1">
+              <span class="lineage-node__name">Gabriel Monod</span>
+              <span class="lineage-node__meta">Francia · Escuela metódica</span>
+            </li>
+            <li class="lineage-node lineage-node--g1">
+              <span class="lineage-node__name">Édouard Laboulaye</span>
+              <span class="lineage-node__meta">Francia · Siglo XIX</span>
+            </li>
+          </ol>
+        </div>
+      </figure>
     </section>
   </section>
 </div>
-
-<script src="https://cdn.jsdelivr.net/npm/d3@7/dist/d3.min.js"></script>
-<script src="files/js/lineage-graph.js"></script>
-<script>
-document.addEventListener("DOMContentLoaded", function () {
-  var undergrad = {
-    height: 380,
-    aria: "Undergraduate academic lineage",
-    nodes: [
-      { name: "Édouard Laboulaye\n(France — 19th century)", group: 1, size: 15 },
-      { name: "Gabriel Monod\n(France — École méthodique)", group: 1, size: 20 },
-      { name: "Henri Hauser\n(France — Economic history)", group: 2, size: 25 },
-      { name: "Robert Ricard\n(France — Hispanism)", group: 2, size: 30 },
-      { name: "Enrique Dussel\n(Philosophy of liberation)", group: 3, size: 45 },
-      { name: "Juan C. Cárdenas\n(Chile — Critical sociology)", group: 4, size: 35 },
-      { name: "Matías Deneken\n(Chile — Undergraduate)", group: 5, size: 25 }
-    ],
-    links: [
-      { source: 0, target: 1, value: 10 },
-      { source: 1, target: 2, value: 10 },
-      { source: 2, target: 3, value: 10 },
-      { source: 3, target: 4, value: 10 },
-      { source: 4, target: 5, value: 10 },
-      { source: 5, target: 6, value: 10 }
-    ]
-  };
-
-  var undergradEs = {
-    height: 380,
-    aria: "Línea de formación de pregrado",
-    nodes: [
-      { name: "Édouard Laboulaye\n(Francia — Siglo XIX)", group: 1, size: 15 },
-      { name: "Gabriel Monod\n(Francia — Escuela metódica)", group: 1, size: 20 },
-      { name: "Henri Hauser\n(Francia — Historia económica)", group: 2, size: 25 },
-      { name: "Robert Ricard\n(Francia — Hispanismo)", group: 2, size: 30 },
-      { name: "Enrique Dussel\n(Filosofía de la liberación)", group: 3, size: 45 },
-      { name: "Juan C. Cárdenas\n(Chile — Sociología crítica)", group: 4, size: 35 },
-      { name: "Matías Deneken\n(Chile — Formado en pregrado)", group: 5, size: 25 }
-    ],
-    links: undergrad.links
-  };
-
-  var phd = {
-    height: 280,
-    aria: "Doctoral academic lineage",
-    nodes: [
-      { name: "Michael Macy\n(Cornell — CSS)", group: 2, size: 32 },
-      { name: "Milena Tsvetkova\n(LSE — Advisor)", group: 6, size: 38 },
-      { name: "Matías Deneken\n(LSE — PhD)", group: 5, size: 28 }
-    ],
-    links: [
-      { source: 0, target: 1, value: 10 },
-      { source: 1, target: 2, value: 10 }
-    ]
-  };
-
-  var phdEs = {
-    height: 280,
-    aria: "Línea de formación doctoral",
-    nodes: [
-      { name: "Michael Macy\n(Cornell — CSS)", group: 2, size: 32 },
-      { name: "Milena Tsvetkova\n(LSE — Directora)", group: 6, size: 38 },
-      { name: "Matías Deneken\n(LSE — Doctorado)", group: 5, size: 28 }
-    ],
-    links: phd.links
-  };
-
-  if (window.mountLineageGraph) {
-    window.mountLineageGraph("#lineage-ug-en", undergrad);
-    window.mountLineageGraph("#lineage-phd-en", phd);
-    window.mountLineageGraph("#lineage-ug-es", undergradEs);
-    window.mountLineageGraph("#lineage-phd-es", phdEs);
-  }
-});
-</script>
 
 
 
