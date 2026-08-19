@@ -88,8 +88,6 @@ window.switchLanguage = function (lang) {
     esBtn.classList.toggle("active", lang === "es");
   }
 
-  document.dispatchEvent(new CustomEvent("site-lang-change", { detail: { lang: lang } }));
-
   document.querySelectorAll("[data-nav-en]").forEach(function (el) {
     var en = el.getAttribute("data-nav-en");
     var es = el.getAttribute("data-nav-es");

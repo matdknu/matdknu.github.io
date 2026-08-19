@@ -153,8 +153,6 @@ window.switchLanguage = function (lang) {
     esBtn.classList.toggle("active", lang === "es");
   }
 
-  document.dispatchEvent(new CustomEvent("site-lang-change", { detail: { lang: lang } }));
-
   document.querySelectorAll("[data-nav-en]").forEach(function (el) {
     var en = el.getAttribute("data-nav-en");
     var es = el.getAttribute("data-nav-es");
@@ -533,62 +531,6 @@ document.addEventListener("DOMContentLoaded", function () {
         <img src="files/images/marxist-learning.png" alt="">
       </div>
     </div>
-
-    <section class="about-me-lineage about-me-lineage--combined">
-      <h2 class="about-me-subtitle anchored">Academic lineage</h2>
-      <p>Two mentorship chains meet here: the doctoral line runs upward into computational social science; the undergraduate line runs downward into critical sociology and its longer intellectual history.</p>
-
-      <figure class="lineage-diagram figure" aria-label="Combined academic lineage">
-        <ul class="lineage-flow">
-          <li class="lineage-flow__tag lineage-flow__tag--up">↑ Doctoral</li>
-          <li class="lineage-card lineage-card--g2">
-            <span class="lineage-card__name">Michael Macy</span>
-            <span class="lineage-card__meta">Cornell · CSS</span>
-          </li>
-          <li class="lineage-edge lineage-edge--phd" aria-hidden="true"></li>
-          <li class="lineage-card lineage-card--g6">
-            <span class="lineage-card__name">Milena Tsvetkova</span>
-            <span class="lineage-card__meta">LSE · Advisor</span>
-          </li>
-          <li class="lineage-edge lineage-edge--phd" aria-hidden="true"></li>
-          <li class="lineage-card lineage-card--self">
-            <span class="lineage-card__name">Matías Deneken</span>
-            <span class="lineage-card__meta">Chile · LSE PhD</span>
-          </li>
-          <li class="lineage-flow__tag lineage-flow__tag--down">↓ Undergraduate</li>
-          <li class="lineage-edge lineage-edge--ug" aria-hidden="true"></li>
-          <li class="lineage-card lineage-card--g4">
-            <span class="lineage-card__name">Juan C. Cárdenas</span>
-            <span class="lineage-card__meta">Chile · Critical sociology</span>
-          </li>
-          <li class="lineage-edge lineage-edge--ug" aria-hidden="true"></li>
-          <li class="lineage-card lineage-card--g3">
-            <span class="lineage-card__name">Enrique Dussel</span>
-            <span class="lineage-card__meta">Philosophy of liberation</span>
-          </li>
-          <li class="lineage-edge lineage-edge--ug" aria-hidden="true"></li>
-          <li class="lineage-card lineage-card--g2">
-            <span class="lineage-card__name">Robert Ricard</span>
-            <span class="lineage-card__meta">France · Hispanism</span>
-          </li>
-          <li class="lineage-edge lineage-edge--ug" aria-hidden="true"></li>
-          <li class="lineage-card lineage-card--g2">
-            <span class="lineage-card__name">Henri Hauser</span>
-            <span class="lineage-card__meta">France · Economic history</span>
-          </li>
-          <li class="lineage-edge lineage-edge--ug" aria-hidden="true"></li>
-          <li class="lineage-card lineage-card--g1">
-            <span class="lineage-card__name">Gabriel Monod</span>
-            <span class="lineage-card__meta">France · École méthodique</span>
-          </li>
-          <li class="lineage-edge lineage-edge--ug" aria-hidden="true"></li>
-          <li class="lineage-card lineage-card--g1">
-            <span class="lineage-card__name">Édouard Laboulaye</span>
-            <span class="lineage-card__meta">France · 19th century</span>
-          </li>
-        </ul>
-      </figure>
-    </section>
   </section>
 
   <section class="page-wrap about-me-body" data-lang="es" style="display:none;">
@@ -601,62 +543,6 @@ document.addEventListener("DOMContentLoaded", function () {
         <img src="files/images/marxist-learning.png" alt="">
       </div>
     </div>
-
-    <section class="about-me-lineage about-me-lineage--combined">
-      <h2 class="about-me-subtitle anchored">Línea académica</h2>
-      <p>Dos cadenas de mentoría se encuentran aquí: la línea doctoral sube hacia la ciencia social computacional; la de pregrado baja hacia la sociología crítica y su historia intelectual más larga.</p>
-
-      <figure class="lineage-diagram figure" aria-label="Línea académica combinada">
-        <ul class="lineage-flow">
-          <li class="lineage-flow__tag lineage-flow__tag--up">↑ Doctorado</li>
-          <li class="lineage-card lineage-card--g2">
-            <span class="lineage-card__name">Michael Macy</span>
-            <span class="lineage-card__meta">Cornell · CSS</span>
-          </li>
-          <li class="lineage-edge lineage-edge--phd" aria-hidden="true"></li>
-          <li class="lineage-card lineage-card--g6">
-            <span class="lineage-card__name">Milena Tsvetkova</span>
-            <span class="lineage-card__meta">LSE · Directora</span>
-          </li>
-          <li class="lineage-edge lineage-edge--phd" aria-hidden="true"></li>
-          <li class="lineage-card lineage-card--self">
-            <span class="lineage-card__name">Matías Deneken</span>
-            <span class="lineage-card__meta">Chile · Doctorado LSE</span>
-          </li>
-          <li class="lineage-flow__tag lineage-flow__tag--down">↓ Pregrado</li>
-          <li class="lineage-edge lineage-edge--ug" aria-hidden="true"></li>
-          <li class="lineage-card lineage-card--g4">
-            <span class="lineage-card__name">Juan C. Cárdenas</span>
-            <span class="lineage-card__meta">Chile · Sociología crítica</span>
-          </li>
-          <li class="lineage-edge lineage-edge--ug" aria-hidden="true"></li>
-          <li class="lineage-card lineage-card--g3">
-            <span class="lineage-card__name">Enrique Dussel</span>
-            <span class="lineage-card__meta">Filosofía de la liberación</span>
-          </li>
-          <li class="lineage-edge lineage-edge--ug" aria-hidden="true"></li>
-          <li class="lineage-card lineage-card--g2">
-            <span class="lineage-card__name">Robert Ricard</span>
-            <span class="lineage-card__meta">Francia · Hispanismo</span>
-          </li>
-          <li class="lineage-edge lineage-edge--ug" aria-hidden="true"></li>
-          <li class="lineage-card lineage-card--g2">
-            <span class="lineage-card__name">Henri Hauser</span>
-            <span class="lineage-card__meta">Francia · Historia económica</span>
-          </li>
-          <li class="lineage-edge lineage-edge--ug" aria-hidden="true"></li>
-          <li class="lineage-card lineage-card--g1">
-            <span class="lineage-card__name">Gabriel Monod</span>
-            <span class="lineage-card__meta">Francia · Escuela metódica</span>
-          </li>
-          <li class="lineage-edge lineage-edge--ug" aria-hidden="true"></li>
-          <li class="lineage-card lineage-card--g1">
-            <span class="lineage-card__name">Édouard Laboulaye</span>
-            <span class="lineage-card__meta">Francia · Siglo XIX</span>
-          </li>
-        </ul>
-      </figure>
-    </section>
   </section>
 </div>
 
