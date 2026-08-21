@@ -153,8 +153,6 @@ window.switchLanguage = function (lang) {
     esBtn.classList.toggle("active", lang === "es");
   }
 
-  document.dispatchEvent(new CustomEvent("site-lang-change", { detail: { lang: lang } }));
-
   document.querySelectorAll("[data-nav-en]").forEach(function (el) {
     var en = el.getAttribute("data-nav-en");
     var es = el.getAttribute("data-nav-es");
@@ -549,8 +547,8 @@ document.addEventListener("DOMContentLoaded", function () {
           </div>
           <div class="home-about__cell">
             <h2 class="section-heading anchored">Past experience</h2>
-            <p>Matías was affiliated with the <strong>Observatory of Violence and Social Legitimacy (OLES)</strong> (<a href="https://www.oles.cl/" target="_blank" rel="noopener noreferrer">www.oles.cl</a>), where he worked as a Research Assistant designing and maintaining large-scale longitudinal databases and conducting automated web scraping pipelines for systematic monitoring of national newspapers.</p>
-            <p>He has been a <strong>Quantitative Studies Researcher</strong> at the <strong>Center for Intercultural and Indigenous Studies (CIIR)</strong> (<a href="https://www.ciir.cl/" target="_blank" rel="noopener noreferrer">www.ciir.cl</a>) since December 2022, where he coordinated the Longitudinal Survey on Intercultural Relations (ELRI) and co-edited the book <em>(RE) Configuraciones Interculturales</em>.</p>
+<p>Matías was affiliated with the <strong>Observatory of Violence and Social Legitimacy (OLES)</strong> (<a href="https://www.oles.cl/" target="_blank" rel="noopener noreferrer">www.oles.cl</a>), where he worked as a Research Assistant designing and maintaining large-scale longitudinal databases and conducting automated web scraping pipelines for systematic monitoring of national newspapers.</p>
+<p>He was a <strong>Quantitative Studies Researcher</strong> at the <strong>Center for Intercultural and Indigenous Studies (CIIR)</strong> (<a href="https://www.ciir.cl/" target="_blank" rel="noopener noreferrer">www.ciir.cl</a>) from December 2022, where he coordinated the Longitudinal Survey on Intercultural Relations (ELRI) and co-edited the book <em>(RE) Configuraciones Interculturales</em>. He has also contributed to other national science projects (FONDECYT, FONDEF IDeA, VRID) on political discourse,right-wing movements, Latin American social thought, education and demography, and has taught at the university level.</p>
           </div>
           <div class="home-about__cell">
             <h2 class="section-heading anchored">Consultancy project</h2>
