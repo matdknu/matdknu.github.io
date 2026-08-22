@@ -383,7 +383,6 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     main.querySelectorAll(".page-columns, .page-full, .column-page").forEach(function (el) {
-      if (el.closest(".photography-shell")) return;
       el.classList.remove("page-columns", "page-full", "column-page");
     });
   }

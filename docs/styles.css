@@ -380,6 +380,18 @@ body.nav-fixed {
   white-space: nowrap;
 }
 
+/* en :root */
+--kw-ai: #1f6f8b;
+
+/* junto a las demás .kw-- */
+.kw--ai {
+  color: var(--kw-ai);
+}
+
+html[data-theme="dark"] .kw--ai {
+  color: #8fd0e6;
+}
+
 .navbar .nav-link .menu-text {
   font-size: inherit;
   letter-spacing: inherit;
