@@ -56,11 +56,11 @@ format:
         <div class="home-about__col">
           <div class="home-about__cell">
             <h2 class="section-heading">Now</h2>
-            <p>He will begin his PhD in <strong>Computational Social Science</strong> at the <a href="https://www.lse.ac.uk/methodology" target="_blank" rel="noopener noreferrer">Department of Methodology, London School of Economics</a>.</p>
+            <p>He will begin his PhD in <strong>Computational Social Science</strong> at the <a href="https://www.lse.ac.uk/methodology" target="_blank" rel="noopener noreferrer">Department of Methodology, London School of Economics (incoming)</a>.</p>
           </div>
           <div class="home-about__cell">
             <h2 class="section-heading">Home</h2>
-            <p>I was born and raised in the commune of <span class="kw kw--cream">Puente Alto</span>. A bit of its history can be found <a href="https://www.memoriachilena.gob.cl/602/w3-article-582647.html#presentacion" target="_blank" rel="noopener noreferrer">here</a>.</p>
+            <p>I was born and raised in the working-class commune of <span class="kw kw--cream">Puente Alto</span>. A bit of its history can be found <a href="https://www.memoriachilena.gob.cl/602/w3-article-582647.html#presentacion" target="_blank" rel="noopener noreferrer">here</a>.</p>
             <img class="home-home-photo" src="files/images/casa.jpeg" alt="A home in Puente Alto">
           </div>
         </div>
